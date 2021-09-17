@@ -1,0 +1,31 @@
+.menu {
+    width: 11.2rem;
+    height: 108rem;
+    position: fixed;
+
+    background: linear-gradient(359.43deg, #FF5400 2.1%, #F17F21 98.52%);
+    box-shadow: 4px 4px 15px rgba(122, 176, 225, 0.25);
+}
+.menu .logo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.menu .logo img {
+    padding: 6vh 0;
+}
+.menu .box {
+    width: 100%;
+    height: auto;
+}
+.menu .box .icon {
+    margin: 0 auto;
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+.active {
+    background-color: #ffb87e;
+}

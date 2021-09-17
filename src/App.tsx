@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import './App.css';
+// css antd
+import 'antd/dist/antd.css';
+import IndexMenu from './components/index_menu/IndexMenu';
+import TopBarUser from './components/top_bar_user/TopBarUser';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+    render() {
+        return (
+            <div>
+                <Router>
+                <div className="App">
+                    {/* Sub menu */}
+                    <IndexMenu />
+
+                    {/* main */}
+                    <main>
+                        {/* Top bar user */}
+                        <TopBarUser />
+
+                        {/* Route content */}
+                        <div className="content">
+                            <h1>content</h1>
+                        </div>
+                    </main>
+                </div>
+                </Router>
+            </div>
+        )
+    }
 }
-
-export default App;
