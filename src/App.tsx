@@ -7,6 +7,8 @@ import './App.css';
 import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
+import StudentInformation from './components/section9_student_records/student_information/StudentInformation';
+import EditStudentInformation from './components/section9_student_records/edit_student_information/EditStudentInformation';
 
 export default class App extends Component {
     render() {
@@ -24,7 +26,11 @@ export default class App extends Component {
 
                         {/* Route content */}
                         <div className="content">
-                            <h1>content</h1>
+                            {/* 9.1 hồ sơ sinh viên - thông tin sinh viên */}
+                            {/* 9.1 thông tin sinh viên */}
+                            <Route path="/student-information" component={StudentInformation}></Route>
+                            {/* 9.1.1 chỉnh sửa thông tin sinh viên */}
+                            <Route path="/edit-student-information" component={EditStudentInformation}></Route>
                         </div>
                     </main>
                 </div>
