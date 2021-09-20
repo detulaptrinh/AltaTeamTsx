@@ -67,7 +67,7 @@ const data = [
   },
 ];
 
-const CourseSetting: React.FC = () => {
+const CourseSetting = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
   const [isModalAdd, setIsModalAdd] = useState<boolean>(false);
 
@@ -125,7 +125,7 @@ const CourseSetting: React.FC = () => {
     setIsModalAdd(true);
   };
 
-  const handleAddCourse = (values: any) => {
+  const handleAddCourse = (values: any): void => {
     console.log(values);
   };
 

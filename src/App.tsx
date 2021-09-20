@@ -9,6 +9,7 @@ import IndexMenu from "./components/index_menu/IndexMenu";
 import TopBarUser from "./components/top_bar_user/TopBarUser";
 import CourseSetting from "./components/Section22_CourseSetting/CourseSetting";
 import TrainingLevelsManage from "./components/Section23_TrainingLevelsManage/TrainingLevelsManage";
+import DeclareSchoolYear from "./components/Section2_DeclareSchoolYear/DeclareSchoolYear";
 
 export default class App extends Component {
   render() {
@@ -26,6 +27,10 @@ export default class App extends Component {
 
               {/* Route content */}
               <div className="content">
+                <Route
+                  path="/DeclareSchoolYear"
+                  component={DeclareSchoolYear}
+                />
                 <Route path="/CourseSetting" component={CourseSetting} />
                 <Route
                   path="/TrainingLevelsManage"

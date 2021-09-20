@@ -20,7 +20,7 @@ import {
 const { Option } = Select;
 const { TextArea } = Input;
 
-const data: { level: string; status: boolean; note: string }[] = [
+const data = [
   {
     level: "THCS",
     status: false,
@@ -68,7 +68,7 @@ const data: { level: string; status: boolean; note: string }[] = [
   },
 ];
 
-const TrainingLevelsManage: React.FC = () => {
+const TrainingLevelsManage = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
   const [isModalAdd, setIsModalAdd] = useState<boolean>(false);
 
