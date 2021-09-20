@@ -31,7 +31,14 @@ export default class EditStudentInformation extends Component {
                 {/* switch tab */}
                 <Row className="switch-tab">
                     <Col className="left-tab" span={12}>
-                        col-8aaaaaaaaaaaaaaaaaa
+                        <div className="left-tab-box">
+                            <div className="left-tab-box-general-information">
+                                <a href="">Thông tin chung</a>
+                            </div>
+                            <div className="left-tab-box-study-process">
+                                <a href="">Quá trình học tập</a>
+                            </div>
+                        </div>
                     </Col>
                     <Col className="right-btn" span={12}>
                         <div className="right-btn-box">
@@ -140,7 +147,7 @@ export default class EditStudentInformation extends Component {
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Hình thức:</Col>
                                             <Col className="text-right" span={16}>
-                                                <Select defaultValue="lucy" style={{ width: 360 }} onChange={handleChange}>
+                                                <Select defaultValue="lucy" style={{ width: 360}} onChange={handleChange}>
                                                     <Option value="jack">Jack</Option>
                                                     <Option value="lucy">Lucy</Option>
                                                     <Option value="Yiminghe">yiminghe</Option>

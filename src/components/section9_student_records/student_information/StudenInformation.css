@@ -41,6 +41,82 @@
     height: auto;
 }
 
+.section-9-1 .left-tab-box {
+    margin-top: 0.8rem;
+    width: 47.1rem;
+    height: 4.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    /* Grey/5 */
+    background: #F2F2F2;
+    border-radius: 3.2rem;
+
+    position: relative;
+}
+
+.section-9-1 .left-tab-box-general-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 4rem 0.7rem;
+
+    width: 22.7rem;
+    height: 3.6rem;
+
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+
+    /* /Orange / 7 */
+    background: #373839;
+    border-radius: 2.4rem;
+}
+
+.section-9-1 .left-tab-box-general-information a {
+    /* LMS Student / Sub-header */
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+
+    color: #FFFFFF;
+}
+
+.section-9-1 .left-tab-box-study-process {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 22.7rem;
+    height: 3.6rem;
+
+    margin-left: 22.5rem;
+}
+
+.section-9-1 .left-tab-box-study-process a {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    /* identical to box height */
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+    color: #373839;
+
+    opacity: 0.5;
+}
+
 /* right btn */
 .section-9-1 .right-btn {
     width: 100%;
@@ -198,6 +274,7 @@
     color: #373839;
     opacity: 0.8;
 }
+
 .section-9-1 .communications-text-right {
     width: auto;
     height: 3.7rem;
@@ -208,6 +285,7 @@
     color: #373839;
     opacity: 0.8;
 }
+
 .section-9-1 .site-card-border-less-wrapper-mt-0 {
     margin-top: 0 !important;
 }

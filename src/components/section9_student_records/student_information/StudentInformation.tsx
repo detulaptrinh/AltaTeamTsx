@@ -27,7 +27,14 @@ export default class StudentInformation extends Component {
 
                 <Row className="switch-tab">
                     <Col className="left-tab" span={12}>
-                        col-8aaaaaaaaaaaaaaaaaa
+                        <div className="left-tab-box">
+                            <div className="left-tab-box-general-information">
+                                <a href="">Thông tin chung</a>
+                            </div>
+                            <div className="left-tab-box-study-process">
+                                <a href="">Quá trình học tập</a>
+                            </div>
+                        </div>
                     </Col>
                     <Col className="right-btn" span={12}>
                         <div className="right-btn-box">
