@@ -9,6 +9,7 @@ import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
 import StudentInformation from './components/section9_student_records/student_information/StudentInformation';
 import EditStudentInformation from './components/section9_student_records/edit_student_information/EditStudentInformation';
+import StudyProcess from './components/section9_student_records/study_process/StudyProcess';
 
 export default class App extends Component {
     render() {
@@ -31,6 +32,8 @@ export default class App extends Component {
                             <Route path="/student-information" component={StudentInformation}></Route>
                             {/* 9.1.1 chỉnh sửa thông tin sinh viên */}
                             <Route path="/edit-student-information" component={EditStudentInformation}></Route>
+                            {/* 9.2 kết quả học tập */}
+                            <Route path="/study-process" component={StudyProcess} />
                         </div>
                     </main>
                 </div>

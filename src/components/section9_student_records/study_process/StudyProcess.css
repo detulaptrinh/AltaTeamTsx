@@ -1,0 +1,295 @@
+/* Breadcrumb */
+.section-9-2 .title {
+    height: 6rem;
+    line-height: 6rem;
+    letter-spacing: 0.015em;
+    display: flex;
+
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+}
+
+.section-9-2 .title span {
+    font-size: 1.8rem;
+    /* Inactivated Icon */
+    color: #C9C4C0;
+}
+
+.section-9-2 .title i {
+    font-size: 3rem;
+    color: #FF7506;
+    height: 6rem;
+    line-height: 6rem;
+    padding: 0 1rem;
+}
+
+.section-9-2 .title .title-edit-info-student {
+    font-size: 4.8rem;
+    /* /Orange / 7 */
+    color: #373839;
+}
+
+/* switch tab */
+.section-9-2 .switch-tab {
+    width: 100%;
+    height: 5.2rem;
+}
+
+/* left-tab */
+.section-9-2 .left-tab {
+    width: 100%;
+    height: auto;
+}
+
+.section-9-2 .left-tab-box {
+    margin-top: 0.8rem;
+    width: 47.1rem;
+    height: 4.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    /* Grey/5 */
+    background: #F2F2F2;
+    border-radius: 3.2rem;
+
+    position: relative;
+}
+
+.section-9-2 .left-tab-box-general-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 4rem 0.7rem;
+
+    width: 22.7rem;
+    height: 3.6rem;
+
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+}
+
+.section-9-2 .left-tab-box-general-information a {
+    /* LMS Student / Sub-header */
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+    color: #373839;
+    opacity: 0.5;
+}
+
+.section-9-2 .left-tab-box-study-process {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 22.7rem;
+    height: 3.6rem;
+
+    margin-left: 22.5rem;
+
+    /* /Orange / 7 */
+    background: #373839;
+    border-radius: 2.4rem;
+}
+
+.section-9-2 .left-tab-box-study-process a {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    /* identical to box height */
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+    color: #FFFFFF;
+}
+
+/* right btn */
+.section-9-2 .right-btn {
+    width: 100%;
+    height: 5.2rem;
+}
+
+.section-9-2 .right-btn-box {
+    float: right;
+}
+
+.section-9-2 .right-btn .btn-delete {
+    width: 5.5rem;
+    height: 5.2rem;
+    border-right: 0.1rem solid #C9C4C0;
+    float: left;
+}
+
+.section-9-2 .right-btn .btn-delete i {
+    color: #FF7506;
+    font-size: 3.5rem;
+    margin-top: 0.7rem;
+}
+
+/* btn */
+.section-9-2 .right-btn .btn-excel {
+    width: 17.6rem;
+    height: 5.2rem;
+    margin-left: 2rem;
+    display: inline-block;
+    float: left;
+}
+
+.section-9-2 .btn-bk-ffffff {
+    width: 17.6rem;
+    height: 5.2rem;
+    line-height: 5.2rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #FF7506;
+    color: #FF7506;
+    text-align: center;
+
+    /* font */
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+/* box general information */
+.section-9-2 .general-information {
+    width: 1640px;
+    height: 258px;
+    margin-top: 2.8rem;
+    /* /Orange / 1 */
+    background: #FFF9F4;
+
+    /* Orange/4 */
+    border: 1px solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 0 6.4rem;
+}
+
+.section-9-2 .general-information-title {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #CC5C00;
+    padding: 2.4rem 0;
+}
+
+.section-9-2 .general-information-box {
+    width: 100%;
+    height: auto;
+}
+
+.section-9-2 .title-left-104 {
+    width: 10.4rem;
+    height: 3.6rem;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.section-9-2 .content-right {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #373839;
+    opacity: 0.8;
+}
+
+.section-9-2 .title-left-168 {
+    width: 16.8rem;
+    height: 3.6rem;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.section-9-2 .content-header {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #373839;
+    letter-spacing: 0.015em;
+    padding-left: calc(20.6rem - 1.6rem);
+}
+
+/* collapse */
+.section-9-2 .ant-space {
+    width: 100%;
+}
+
+.section-9-2 .ant-space .ant-space-item {
+    margin-top: 2.4rem;
+}
+
+.section-9-2 .ant-collapse {
+    background-color: #FFFFFF;
+}
+
+.section-9-2 .ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    padding: 16px 16px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.section-9-2 .ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow {
+    color: #FF7506;
+    font-size: 2rem;
+}
+
+.section-9-2 .ant-collapse-content>.ant-collapse-content-box {
+    padding: 2.6rem 6.4rem;
+}
+
+/* Kết quả học tập */
+.section-9-2 .ant-collapse-content-box .box {
+    width: 151.2rem;
+    min-height: 15.2rem;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 8px;
+}
+
+.section-9-2 .ant-card-head-title {
+    padding: 0.85rem 0;
+}
+
+.section-9-2 .ant-card-head {
+    padding: 0;
+    height: 5.1rem;
+}
+
+.section-9-2 .box .ant-card-head-wrapper {
+    background: #823B00;
+    text-align: center;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.2rem;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+}
