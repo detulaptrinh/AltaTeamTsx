@@ -7,7 +7,7 @@ import './App.css';
 import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
-import TabEdit from './components/Section19_Tab/TabEdit';
+import Tab from './components/Section19_Tab/Tab';
 
 export default class App extends Component {
     render() {
@@ -25,7 +25,7 @@ export default class App extends Component {
 
                         {/* Route content */}
                         <div className="content">
-                            <TabEdit/>
+                            <Tab/>
                         </div>
                     </main>
                 </div>
