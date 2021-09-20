@@ -1,0 +1,105 @@
+.box-class-detail__breadcrumb .ant-breadcrumb .box-class-detail__breadcrumb-item {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #c9c4c0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0rem 2.4rem;
+}
+.box-class-detail__breadcrumb .ant-breadcrumb span {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ff7506;
+}
+.box-class-detail__breadcrumb .ant-breadcrumb .box-class-detail__breadcrumb-item-active {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 6rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 0rem 2.4rem;
+}
+/*  */
+.box-class-detail__box {
+    width: 100%;
+    height: 25.8rem;
+    background: #fff9f4;
+    border: 1px solid #ff7506;
+    box-sizing: border-box;
+    border-radius: 1.6rem;
+}
+.box-class-detail__box-title {
+    width: 100%;
+    height: 5rem;
+    background-color: wheat;
+}
+.box-class-detail__box-title__txt {
+    float: left;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #cc5c00;
+    margin: 2.4rem 0 0 6.4rem;
+}
+.box-class-detail__box-title__button {
+    float: right;
+    margin: 2.133rem 6.933rem 0 0;
+}
+.box-class-detail__box-title__button-btn {
+    background: none;
+    border: none;
+    margin-left: 0.5rem;
+}
+.box-class-detail__box-subtitle {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+}
+.box-class-detail__box1 {
+    width: calc(100% - 64rem);
+    height: 100%;
+    background-color: yellow;
+}
+.box-class-detail__box1-title {
+    float: left;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box-class-detail__box1-txt {
+    float: right;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+    opacity: 0.8;
+}
+.box-class-detail__box2 {
+    width: calc(100% - 50rem);
+    height: 100%;
+    background-color: rosybrown;
+}
+.box-class-detail__box3 {
+    width: calc(100% - 50rem);
+    height: 100%;
+    background-color: brown;
+}
