@@ -1,0 +1,545 @@
+.TrainingLevelsManage__title {
+  display: flex;
+  align-items: center;
+}
+
+.TrainingLevelsManage__title > span {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #c9c4c0;
+}
+
+.TrainingLevelsManage__title > img {
+  margin: 0 3.121rem;
+}
+
+.TrainingLevelsManage__title > h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 0;
+}
+
+.TrainingLevelsManage__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+}
+
+.TrainingLevelsManage__select {
+  border: 1px solid #373839;
+  border-radius: 4px;
+}
+
+.TrainingLevelsManage__select.ant-select {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.TrainingLevelsManage__select.ant-select:not(.ant-select-disabled):hover
+  .ant-select-selector {
+  border-color: #373839;
+}
+
+.TrainingLevelsManage__select.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: #373839;
+  box-shadow: none;
+}
+
+.TrainingLevelsManage__select.ant-select-single.ant-select-show-arrow
+  .ant-select-selection-search {
+  right: 30px;
+  border-right: 1px solid #373839;
+}
+
+.TrainingLevelsManage__select .ant-select-arrow {
+  width: 24px;
+  height: 24px;
+  right: 4px;
+  top: 11px;
+}
+
+.TrainingLevelsManage__btnAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 176px;
+  height: 52px;
+  background: #ff7506;
+  border-color: #ff7506;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.TrainingLevelsManage__btnAdd:hover,
+.TrainingLevelsManage__btnAdd:focus {
+  border-color: #ff7506;
+  background-color: #ff7506;
+  color: #ffffff;
+}
+
+.TrainingLevelsManage__btnAdd > img {
+  margin-right: 1.3rem;
+}
+
+.TrainingLevelsManage-content {
+  padding: 2.5rem 6.4rem;
+  margin-top: 2.4rem;
+  background: #ffffff;
+  box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+  border-radius: 16px;
+}
+
+.TrainingLevelsManage-content__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.TrainingLevelsManage-content__head > h4 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 0;
+}
+
+.TrainingLevelsManage__search {
+  width: 438px;
+  height: 40px;
+  background: #f0f3f6;
+  border-radius: 24px;
+  border-color: #f0f3f6;
+}
+
+.TrainingLevelsManage__search.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+.TrainingLevelsManage__search.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):focus {
+  border-color: #f0f3f6;
+}
+
+.TrainingLevelsManage__search.ant-input-affix-wrapper-focused {
+  box-shadow: none;
+}
+
+.TrainingLevelsManage__search .ant-input-prefix {
+  margin-right: 2.5rem;
+}
+
+.TrainingLevelsManage__search.ant-input-affix-wrapper > input.ant-input {
+  background: #f0f3f6;
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #373839;
+}
+
+.TrainingLevelsManage__table.ant-table-wrapper {
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 4.3rem;
+}
+
+.TrainingLevelsManage__table .ant-table-thead {
+  background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
+}
+
+.TrainingLevelsManage__table .ant-table-thead > tr > th {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background: transparent;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.TrainingLevelsManage__table .ant-table-thead > tr > th::before {
+  display: none;
+}
+
+.TrainingLevelsManage__table .ant-table-column-sorter {
+  color: #fff;
+}
+
+.TrainingLevelsManage__table .ant-table-tbody > tr > td {
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
+  border-bottom: none;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.TrainingLevelsManage__table .ant-table-tbody > tr.ant-table-row:hover > td {
+  background: transparent;
+}
+
+.TrainingLevelsManage__table .ant-table-tbody > tr:nth-of-type(even) {
+  background: #f0f3f6;
+}
+
+.TrainingLevelsManage__table .primary {
+  font-style: italic;
+  line-height: 2rem;
+  color: #0b80ec;
+}
+
+.TrainingLevelsManage__table .danger {
+  font-style: italic;
+  line-height: 2rem;
+  color: #ed2025;
+}
+
+.TrainingLevelsManage__table .btnEdit,
+.TrainingLevelsManage__table .btnTrash {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.TrainingLevelsManage__table .btnEdit {
+  margin-right: 2rem;
+}
+
+.TrainingLevelsManage-content__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TrainingLevelsManage-content__foot .showRow {
+  display: flex;
+  align-items: center;
+}
+
+.TrainingLevelsManage-content__foot .showRow > span {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #373839;
+}
+
+.TrainingLevelsManage__showRow.ant-input {
+  margin: 0 1rem;
+  width: 48px;
+  height: 32px;
+  border: 1px solid #ff7506;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.TrainingLevelsManage__showRow.ant-input:hover {
+  border-color: #ff7506;
+}
+
+.TrainingLevelsManage__showRow.ant-input:focus {
+  box-shadow: none;
+}
+
+.TrainingLevelsManage__pagination .ant-pagination-item-link {
+  border: none;
+}
+
+.TrainingLevelsManage__pagination
+  .ant-pagination-prev:hover
+  .ant-pagination-item-link,
+.TrainingLevelsManage__pagination
+  .ant-pagination-next:hover
+  .ant-pagination-item-link {
+  color: #ff7506;
+}
+
+.TrainingLevelsManage__pagination .ant-pagination-item {
+  height: 26px;
+  min-width: 26px;
+  border: none;
+  border-radius: 50%;
+}
+
+.TrainingLevelsManage__pagination .ant-pagination-item > a {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #373839;
+}
+
+.TrainingLevelsManage__pagination .ant-pagination-item-active {
+  background: #ff7506;
+}
+
+.TrainingLevelsManage__pagination .ant-pagination-item-active > a {
+  color: #fff;
+}
+
+.TrainingLevelsManage-modal .ant-modal-close {
+  display: none;
+}
+
+.TrainingLevelsManage-modal .ant-modal-header {
+  text-align: center;
+  border-bottom: none;
+  padding: 0;
+}
+
+.TrainingLevelsManage-modal .ant-modal-header .ant-modal-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.TrainingLevelsManage-modal .ant-modal-body {
+  padding: 0;
+}
+
+.TrainingLevelsManage-modal .ant-modal-footer {
+  border-top: none;
+  text-align: center;
+  padding: 0;
+}
+
+.TrainingLevelsManage-modal .ant-modal-footer .ant-btn {
+  width: 160px;
+  height: 52px;
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.TrainingLevelsManage-modal .ant-modal-footer .ant-btn.ant-btn-primary {
+  background: #ff7506;
+  border-color: #ff7506;
+  color: #fff;
+  margin-left: 3.1rem;
+}
+
+.TrainingLevelsManage-modal-del.ant-modal {
+  width: 435px !important;
+}
+
+.TrainingLevelsManage-modal-del .ant-modal-content {
+  border-radius: 8px;
+  padding: 2.6rem 3.8rem 4rem;
+}
+
+.TrainingLevelsManage-modal-del .ant-modal-header {
+  margin-bottom: 1.6rem;
+}
+
+.TrainingLevelsManage-modal-del .TrainingLevelsManage-modal-del-desc {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+  margin-bottom: 3.2rem;
+}
+
+.TrainingLevelsManage-modal-add-edit.ant-modal {
+  width: 884px !important;
+}
+
+.TrainingLevelsManage-modal-add-edit .ant-modal-content {
+  padding: 2.4rem 6.4rem 4rem;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.TrainingLevelsManage-modal-add-edit .ant-modal-header {
+  margin-bottom: 2.4rem;
+}
+
+.TrainingLevelsManage-modal-add-edit .ant-modal-footer {
+  display: none;
+}
+
+.TrainingLevelsManage__form .ant-form-item {
+  margin-bottom: 1.6rem;
+}
+
+.TrainingLevelsManage__form .ant-form-item-label {
+  text-align: left;
+}
+
+.TrainingLevelsManage__form .ant-form-item-label > label {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.TrainingLevelsManage__form .ant-form-item-label > label::before {
+  display: none !important;
+}
+
+.TrainingLevelsManage__form .TrainingLevelsManage__form-input {
+  height: 40px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+  border-color: #f2f2f2;
+}
+
+.TrainingLevelsManage__form .TrainingLevelsManage__form-input:focus {
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid rgba(55, 56, 57, 0.5);
+}
+
+.TrainingLevelsManage__form .yearly-form {
+  display: flex;
+  align-items: center;
+}
+
+.TrainingLevelsManage__form
+  .TrainingLevelsManage__form-checkbox
+  .ant-checkbox-inner {
+  border-color: #0b80ec;
+}
+
+.TrainingLevelsManage__form
+  .TrainingLevelsManage__form-checkbox
+  > span:last-child {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.TrainingLevelsManage__form .yearly-form .yearly-input {
+  width: 60px;
+  margin-left: 4.8rem;
+}
+
+.TrainingLevelsManage__form .yearly-form > span {
+  margin-left: 0.8rem;
+}
+
+.TrainingLevelsManage__form .yearly-desc {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #373839;
+  margin: 1.6rem 0;
+}
+
+.TrainingLevelsManage__form .trainingTime {
+  display: flex;
+  align-items: center;
+}
+
+.TrainingLevelsManage__form .trainingTime .trainingTime-input {
+  width: 60px;
+}
+
+.TrainingLevelsManage__form .trainingTime > span {
+  margin: 0 3.4rem 0 0.8rem;
+}
+
+.TrainingLevelsManage__form .TrainingLevelsManage__form-textarea {
+  min-height: 120px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  border-color: #f2f2f2;
+  margin-bottom: 1.6rem;
+}
+
+.TrainingLevelsManage__form .TrainingLevelsManage__form-textarea:focus {
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid rgba(55, 56, 57, 0.5);
+}
+
+.TrainingLevelsManage__form .TrainingLevelsManage__form-btns {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.TrainingLevelsManage__form-btns .ant-btn {
+  width: 160px;
+  height: 52px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  border-color: #f2f2f2;
+}
+
+.TrainingLevelsManage__form-btns .ant-btn.TrainingLevelsManage__form-submit {
+  background: #ff7506;
+  color: #fff;
+  border-color: #ff7506;
+  margin-left: 3.2rem;
+}
