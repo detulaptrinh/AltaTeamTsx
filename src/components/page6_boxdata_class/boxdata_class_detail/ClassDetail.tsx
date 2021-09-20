@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Breadcrumb } from 'antd';
-import './page6_class_detail.css'
+import './ClassDetail.css'
 import editIcon from '../../assets/boxdata/editIcon.svg'
 import trashIcon from '../../assets/boxdata/trashIcon.svg'
 
-class Page6_class_detail extends Component {
+class ClassDetail extends Component {
     render() {
         return (
             <>
@@ -51,4 +51,4 @@ class Page6_class_detail extends Component {
     }
 }
 
-export default Page6_class_detail;
+export default ClassDetail;

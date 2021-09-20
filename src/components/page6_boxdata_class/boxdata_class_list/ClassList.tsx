@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import ReactDOM from 'react-dom';
-import './page6_boxdata_class.css'
+import './ClassList.css'
 import { Link } from 'react-router-dom';
 import { Select, Table, Modal, Form, Input, Pagination, InputNumber, Menu, Dropdown, Checkbox } from 'antd';
 import { DownOutlined } from "@ant-design/icons";
@@ -129,7 +129,7 @@ interface DataType {
     buttondelete: string;
 }
 
-class Page6_boxdata_class extends Component {
+class ClassList extends Component {
     render() {
         // const [visible, setVisible] = useState(false);
 
@@ -365,4 +365,4 @@ class Page6_boxdata_class extends Component {
     }
 }
 
-export default Page6_boxdata_class;
+export default ClassList;

@@ -7,9 +7,15 @@ import './App.css';
 import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
-import Page6_boxdata_class from './components/page6_boxdata_class/Page6_boxdata_class';
-import Page6_class_detail from './components/page6_class_detail/Page6_class_detail';
-import Page5_boxdata_sbj from './components/page5_boxdata_sbj/Page5_boxdata_sbj';
+
+import SubjectList from './components/page5_boxdata_sbj/SubjectList';
+import ClassList from './components/page6_boxdata_class/boxdata_class_list/ClassList';
+import ClassDetail from './components/page6_boxdata_class/boxdata_class_detail/ClassDetail';
+
+import StudentInformation from './components/section9_student_records/student_information/StudentInformation';
+import EditStudentInformation from './components/section9_student_records/edit_student_information/EditStudentInformation';
+
+
 
 
 export default class App extends Component {
@@ -28,9 +34,12 @@ export default class App extends Component {
 
                             {/* Route content */}
                             <div className="content">
-                                <Route path="/boxdatasbj" component={Page5_boxdata_sbj} />
-                                <Route path="/boxdataclass" component={Page6_boxdata_class} />
-                                <Route path="/boxdatadetail" component={Page6_class_detail} />
+                                <Route path="/boxdatasbj" component={SubjectList} />
+                                <Route path="/boxdataclass" component={ClassList} />
+                                <Route path="/boxdatadetail" component={ClassDetail} />
+
+                                <Route path="/student-information" component={StudentInformation} />
+                                <Route path="/edit-student-information" component={EditStudentInformation} />
                             </div>
                         </main>
                     </div>

@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import ReactDOM from 'react-dom';
-import './page5_boxdata_sbj.css'
+import './SubjectList.css'
 import { Select, Table, Modal, Form, Input, Pagination, InputNumber } from 'antd';
 import unIcon from '../../assets/boxdata/unIcon.svg'
 import plusIcon from '../../assets/boxdata/plusIcon.svg'
@@ -136,7 +136,7 @@ interface DataType {
     buttondelete: string;
 }
 
-class Page5_boxdata_sbj extends Component {
+class SubjectList extends Component {
     render() {
         // const [visible, setVisible] = useState(false);
         // const [isModalVisible, setIsModalVisible] = useState(false);
@@ -296,4 +296,4 @@ class Page5_boxdata_sbj extends Component {
     }
 }
 
-export default Page5_boxdata_sbj;
+export default SubjectList;
