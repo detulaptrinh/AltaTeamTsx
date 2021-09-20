@@ -12,12 +12,6 @@ import SubjectList from './components/page5_boxdata_sbj/SubjectList';
 import ClassList from './components/page6_boxdata_class/boxdata_class_list/ClassList';
 import ClassDetail from './components/page6_boxdata_class/boxdata_class_detail/ClassDetail';
 
-import StudentInformation from './components/section9_student_records/student_information/StudentInformation';
-import EditStudentInformation from './components/section9_student_records/edit_student_information/EditStudentInformation';
-
-
-
-
 export default class App extends Component {
     render() {
         return (
@@ -37,9 +31,6 @@ export default class App extends Component {
                                 <Route path="/boxdatasbj" component={SubjectList} />
                                 <Route path="/boxdataclass" component={ClassList} />
                                 <Route path="/boxdatadetail" component={ClassDetail} />
-
-                                <Route path="/student-information" component={StudentInformation} />
-                                <Route path="/edit-student-information" component={EditStudentInformation} />
                             </div>
                         </main>
                     </div>
