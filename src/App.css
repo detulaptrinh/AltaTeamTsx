@@ -2,7 +2,7 @@
     font-size: 1.6rem;
 }
 
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 
 main {
     width: calc(100% - 28.1rem);
@@ -13,5 +13,4 @@ main {
 .content {
     width: 100%;
     min-height: 90rem;
-    background-color: #c8d6e5;
 }

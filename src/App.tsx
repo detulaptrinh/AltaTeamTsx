@@ -7,27 +7,33 @@ import './App.css';
 import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
+import Page6_boxdata_class from './components/page6_boxdata_class/Page6_boxdata_class';
+import Page6_class_detail from './components/page6_class_detail/Page6_class_detail';
+import Page5_boxdata_sbj from './components/page5_boxdata_sbj/Page5_boxdata_sbj';
+
 
 export default class App extends Component {
     render() {
         return (
             <div>
                 <Router>
-                <div className="App">
-                    {/* Sub menu */}
-                    <IndexMenu />
+                    <div className="App">
+                        {/* Sub menu */}
+                        <IndexMenu />
 
-                    {/* main */}
-                    <main>
-                        {/* Top bar user */}
-                        <TopBarUser />
+                        {/* main */}
+                        <main>
+                            {/* Top bar user */}
+                            <TopBarUser />
 
-                        {/* Route content */}
-                        <div className="content">
-                            <h1>content</h1>
-                        </div>
-                    </main>
-                </div>
+                            {/* Route content */}
+                            <div className="content">
+                                <Route path="/boxdatasbj" component={Page5_boxdata_sbj} />
+                                <Route path="/boxdataclass" component={Page6_boxdata_class} />
+                                <Route path="/boxdatadetail" component={Page6_class_detail} />
+                            </div>
+                        </main>
+                    </div>
                 </Router>
             </div>
         )

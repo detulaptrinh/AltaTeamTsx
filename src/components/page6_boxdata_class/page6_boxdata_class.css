@@ -1,0 +1,728 @@
+.box__title h1 {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+/*  */
+.box__chb {
+    float: left;
+    width: 27.8rem;
+    height: 87.8rem;
+    background: #ffffff;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 1.6rem;
+}
+/*  */
+.box__btn {
+    float: right;
+    width: calc(100% - 30.2rem);
+    height: 5.2rem;
+}
+/*  */
+.box__sbj {
+    float: right;
+    width: calc(100% - 30.2rem);
+    height: 80.2rem;
+    margin-top: 2.4rem;
+    border-radius: 1.6rem;
+    background: #ffffff;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+/*  */
+.box__chb-slt {
+    width: 27.8rem;
+    height: 15rem;
+    background: #373839;
+    border-radius: 10px 10px 0 0;
+}
+.box__chb-slt p {
+    padding: 1.2rem 0 0 2rem;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #ffffff;
+    line-height: 130%;
+}
+.box__chb-slt_sch p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
+.box__chb-slt_sch_select {
+    float: right;
+    width: 14.4rem;
+    height: 3.2rem;
+    bottom: 4.5rem;
+    right: 1.5rem;
+    background: #ffffff;
+    border: 1px solid #373839;
+    border-radius: 4px;
+}
+.box__chb-slt_yr p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
+.box__chb-slt_yr_select {
+    float: right;
+    height: 3.2rem;
+    right: 1.5rem;
+    bottom: 4.5rem;
+    width: 14.4rem;
+    background: #ffffff;
+    border: 1px solid #373839;
+    border-radius: 4px;
+}
+.box__chb-btn {
+    margin-top: 6rem;
+}
+.box__chb-btn-clk {
+    width: 23rem;
+    height: 5.6rem;
+    text-align: left;
+    background: #fff9f4;
+    border: 1px solid #ff7506;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 2.4rem;
+    margin-top: 2.4rem;
+    padding-left: 24px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__chb-btn-clk:hover {
+    background: #cc5c00;
+    color: #ffffff;
+}
+/*  */
+
+/*  */
+.box__btn-block {
+    margin-top: 2rem;
+}
+.box__btn-block-title {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #373839;
+}
+.box__btn-block_select {
+    width: 13.6rem;
+    height: 3.2rem;
+    background: #ffffff;
+    border-radius: 4px;
+}
+.box__btn .ant-select .ant-select-selector {
+    border: none;
+    border: 1px solid #373839;
+    padding: 0px 4px 0px 8px;
+    border-radius: 8px;
+}
+/* .box__btn-button{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+} */
+/*  */
+.box__btn-button_del {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.box__btn-button_del-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-top: 0.5rem;
+    padding-right: 1rem;
+    border-right: 1px solid #c9c4c0;
+}
+.box__btn-del .ant-modal-content {
+    width: 43.5rem;
+    height: 26.4rem;
+    background: #ffffff;
+    border-radius: 8px;
+    left: 10%;
+}
+.box__btn-del h1 {
+    text-align: center;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-del p {
+    padding: 2.4rem 2rem 0 2rem;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+}
+.box__btn-del .box__btn-del-cancel {
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    height: 6.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-del .box__btn-del-acp {
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    height: 6.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #ff7506;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
+/*  */
+.box__btn-button_export {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 16rem;
+    height: 5.2rem;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    border: 1px solid #ff7506;
+    color: #ff7506;
+    background-color: transparent;
+    margin: 0rem 1rem;
+    border-radius: 8px;
+}
+/*  */
+.box__btn-button_cre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 17.6rem;
+    height: 5.2rem;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    border: none;
+    color: #fff;
+    background: #ff7506;
+    margin: 0.2rem 0.8rem 0 1rem;
+    border-radius: 8px;
+}
+.box__btn-button_cre-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 23px;
+    margin: 0 0.5rem 0 0.5rem;
+}
+.box__btn-button_cre .ant-dropdown-link {
+    color: #fff;
+}
+.box__btn-button a:active {
+    color: #fff;
+}
+.box__btn-button a:hover {
+    color: #fff;
+}
+/* .box__btn-button .box__btn-button_cre-open button{
+    width: 100rem;
+    height: 100rem;
+    background-color: violet;
+}
+.box__btn-button .ant-dropdown-open .box__btn-button_cre-upload{
+    width: 17.6rem;
+    height: 5.2rem;
+    top: 6.8rem;
+    background: #FFFFFF;
+    border: 1px solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 8rem;
+} */
+
+/* upload file */
+.box__btn-upload {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.box__btn-upload .ant-modal-content {
+    width: 88.4rem;
+    height: 29.6rem;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 30%;
+    left: -15%;
+}
+.box__btn-upload h1 {
+    text-align: center;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-upload-fileattach {
+    margin-top: 2.4rem;
+}
+.box__btn-upload-fileattach p {
+    float: left;
+    margin-left: 6.4rem;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-upload-fileattach__btn1 {
+    margin-left: 4.3rem;
+    width: 36.6rem;
+    height: 3.2rem;
+    background: #efefef;
+    border-radius: 4rem;
+    border: none;
+}
+.box__btn-upload-fileattach__btn1 img {
+    float: left;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid #c9c4c0;
+}
+.box__btn-upload-fileattach__btn2 {
+    float: right;
+    margin-right: 6.4rem;
+    width: 17.1rem;
+    height: 3.2rem;
+    background: #ffd8b8;
+    border: 1px solid #ff7506;
+}
+.box__btn-upload-filesamp {
+    margin-top: 2.1rem;
+    width: auto;
+}
+.box__btn-upload-filesamp p {
+    float: left;
+    margin-left: 6.4rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-upload-filesamp img {
+    margin-left: 5.5rem;
+}
+.box__btn-upload-filesamp i {
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #373839;
+}
+.box__btn-upload .box__btn-upload-cancel {
+    cursor: pointer;
+    margin-top: 4rem;
+    margin-left: 9rem;
+    height: 6.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-upload .box__btn-upload-acp {
+    cursor: pointer;
+    margin-left: 3.2rem;
+    height: 6.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #c9c4c0;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
+/* import file */
+.box__btn-import .ant-modal-content {
+    width: 88.4rem;
+    height: 78.8rem;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1rem;
+    right: 20%;
+    margin-top: -15%;
+}
+.box__btn-import .ant-form h1 {
+    font-weight: bold;
+    text-align: center;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+    transform: translateY(-50%);
+}
+.box__btn-import .ant-form p {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-top: 2rem;
+    letter-spacing: 0.015em;
+    color: #cc5c00;
+}
+.box__btn-import-school {
+    width: 100%;
+    height: 6rem;
+}
+.box__btn-import-block1 {
+    float: left;
+    width: 40%;
+}
+.box__btn-import-block2 {
+    width: 45%;
+    float: right;
+}
+.box__btn-import .box__btn-import-school .box__btn-import_year {
+    width: 14.4rem;
+}
+.box__btn-import .box__btn-import-school .box__btn-import-block1 .ant-select .ant-select-selector {
+    border: none;
+    padding: 0.4rem 1.2rem;
+    border: 1px solid #373839;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.box__btn-import .box__btn-import-school .box__btn-import-school-txt1 {
+    float: left;
+    margin-top: 1rem;
+    padding-right: 2rem;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-import .box__btn-import-school .box__btn-import-school-txt2 {
+    float: left;
+    margin-top: 1rem;
+    padding-right: 2.6rem;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-import .box__btn-import-block2 .box__btn-import_blck {
+    float: right;
+    width: 25.2rem;
+    height: 4rem;
+    border-radius: 4px;
+}
+.ant-input {
+    float: right;
+    width: 56.1rem;
+    height: 4rem;
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+.box__btn-import .ant-input-sbj {
+    left: 15%;
+    float: left;
+    width: 17.1rem;
+    height: 4rem;
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+.box__btn-import .ant-modal-content .ant-select .ant-select-selector {
+    float: right;
+    width: 100%;
+    padding: 0.4rem 1.2rem;
+    max-width: 56.1rem;
+    height: 4rem;
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+.box__btn-import .box__btn-import-list .box__btn-import-list-txt {
+    display: inline;
+    margin-top: -10rem;
+    margin-left: 1.6rem;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-import .box__btn-import-list .box__btn-import-list-slct {
+    display: inline;
+}
+.box__btn-import .box__btn-import-list .box__btn-import-list-select {
+    transform: translateY(30%);
+    margin-left: 0.8rem;
+    width: 14.4rem;
+    border-radius: 4px;
+}
+.box__btn-import .box__btn-import-list .ant-select .ant-select-selector {
+    border: none;
+    border: 1px solid #7c7c7c;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.box__btn-import .box__btn-button-import {
+    text-align: center;
+}
+.box__btn-button-cancel {
+    cursor: pointer;
+    margin-top: 8rem;
+    height: 5.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 23px;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__btn-button-save {
+    cursor: pointer;
+    margin-top: 8rem;
+    margin-left: 3.2rem;
+    height: 5.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #ff7506;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
+/*  */
+/*  */
+.box__sbj p {
+    margin: 2.6rem 0 0 6.4rem;
+    float: left;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__sbj-search__input {
+    float: right;
+    margin: 2.6rem 6.5rem 0 0;
+    width: 43.8rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    padding-left: 4rem;
+    background: #f0f3f6;
+    border-radius: 2.4rem;
+    border: none;
+}
+.box__sbj-tblclass {
+    margin: 8.9rem 6.4rem 0 6.4rem;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
+}
+.box__sbj-tbl .ant-table-wrapper {
+    border: 1px solid black;
+    border-radius: 8rem;
+}
+
+.box__sbj-tblclass .ant-table-thead > tr > th {
+    background: #ff7506;
+}
+.box__sbj-tblclass {
+    border-radius: 8rem;
+}
+/* .box__sbj-tbl .ant-table-thead .ant-table-selection-column{
+    border-radius: 8rem;
+    border: 1px solid black;
+} */
+/* .box__sbj-tbl .ant-table-thead tr th:nth-child(1){
+    border-radius: 8rem;
+} */
+.box__sbj-tblclass .ant-table-tbody tr:nth-child(odd) {
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+}
+.box__sbj-tblclass .ant-table-tbody tr:nth-child(even) {
+    background: #f0f3f6;
+    border: 1px solid #f2f2f2;
+}
+.box__sbj-tblclass .ant-table-cell:nth-child(5) {
+    width: 1rem;
+}
+.box__sbj-tblclass .ant-table-cell:nth-child(6) {
+    width: 1rem;
+}
+.box__sbj-tblclass .ant-table-cell:nth-child(7) {
+    width: 1rem;
+}
+
+/*  */
+.box__sbj-pagtion {
+    margin-top: 12rem;
+}
+.box__sbj-pagtion-txt p {
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #373839;
+}
+.box__sbj-pagtion .ant-input-number {
+    right: 19.9rem;
+    bottom: -2rem;
+    width: 4.8rem;
+    height: 3.2rem;
+    background-color: transparent;
+    border: 1px solid #ff7506;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.box__sbj-pagin {
+    float: right;
+    margin-top: -1rem;
+    margin-right: 6.4rem;
+}
+.box__sbj-pagin .ant-pagination-item-active a {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff9f4;
+    border-radius: 50%;
+    background: #ff7506;
+}
+.box__sbj-pagin .ant-pagination a:hover {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff9f4;
+    border-radius: 50%;
+    background: #ff7506;
+}
+.box__sbj-pagin .ant-pagination-options {
+    display: none;
+}
+.box__sbj-pagin .ant-pagination li {
+    border: none;
+}
+.box__sbj-pagin .ant-pagination-prev button {
+    border: none;
+}
+.box__sbj-pagin .ant-pagination-prev button:hover {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff9f4;
+    border-radius: 50%;
+    background: #ff7506;
+}
+.box__sbj-pagin .ant-pagination-next button {
+    border: none;
+}
+.box__sbj-pagin .ant-pagination-next button:hover {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff9f4;
+    border-radius: 50%;
+    background: #ff7506;
+}
+.box__sbj-pagin .ant-pagination-jump-prev a:hover {
+    color: rgba(0, 0, 0, 0.85);
+}
