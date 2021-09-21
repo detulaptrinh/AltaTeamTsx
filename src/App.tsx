@@ -7,7 +7,7 @@ import './App.css';
 import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
-import Tab from './components/Section19_Tab/Tab';
+import Tab from './components/Section20_SystemUser/GroupUser';
 
 export default class App extends Component {
     render() {
