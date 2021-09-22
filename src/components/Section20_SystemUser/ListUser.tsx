@@ -1,13 +1,15 @@
 import React from 'react'
-import './GroupUser.css'
+import './ListUser.css'
 import "@fontsource/source-sans-pro";
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
-import { PlusOutlined } from '@ant-design/icons';
+import { PlusOutlined, FormOutlined} from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col } from 'antd';
-import { Table } from 'antd';
+import { Table, Tag, Radio, Space } from 'antd';
 import { Card } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
+import editIcon from '../../assets/avg/edit.svg'
+import deleteIcon from '../../assets/avg/delete.svg'
 import {
     Form,
     Input,
@@ -18,73 +20,104 @@ import {
 import { Modal } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 
+function showDeleteConfirm() {
+    confirm({
+      title: 'Xóa thông tin',
+      content: 'Xác nhận muốn xoá thông tin này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
+      okText: 'Xác nhận',
+      okType: 'danger',
+      cancelText: 'Hủy',
+      onOk() {
+        console.log('OK');
+      },
+      onCancel() {
+        console.log('Cancel');
+      },
+    });
+}
 const { confirm } = Modal;
 const { Option } = Select;
 
 const columns = [
     {
-        title: 'Tên nhóm',
+        title: 'Tên',
         dataIndex: 'name',
-        sorter: true,
         width: '15%'
     },
     {
-        title: 'Tổng số thành viên',
-        dataIndex: 'member',
-        sorter: true,
+        title: 'Email',
+        dataIndex: 'email',
         width: '25%'
     },
     {
-        title: 'Ghi chú',
-        dataIndex: 'ghichu',
-        width: '50%'
+        title: 'Nhóm người dùng',
+        dataIndex: 'groupuser', 
+        width: '25%'
     },
     {
-        title: 'Action',
-        width: '10%'
+        title: 'Trạng thái',
+        dataIndex: 'ghichu',
+        width: '25%'
+    },
+   
+    {       
+        render: () => (
+            <Space size="middle">
+              <a><img src={editIcon} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
+              <a onClick={showDeleteConfirm}><img src={deleteIcon} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
+            </Space>
+          ),
     },
 ];
 
 const dataSource = [
     {
-        name: 'Quản trị viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
+        name: 'Nguyễn Văn C',
+        email: 'abcdefkdd@gmail.com',
+        groupuser: 'Quản trị viên',
+        ghichu: 'Đang hoạt động',
     },
     {
-        name: 'Học sinh tiểu học',
-        member: 8,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
+        name: 'Nguyễn Văn C',
+        email: 'abcdefkdd@gmail.com',
+        groupuser: 'Quản trị viên',
+        ghichu: 'Đang hoạt động'
     },
     {
-        name: 'Phòng hành chính',
-        member: 7,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
+        name: 'Nguyễn Văn C',
+        email: 'abcdefkdd@gmail.com',
+        groupuser: 'Quản trị viên',
+        ghichu: 'Đang hoạt động'
     },
     {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
+        name: 'Nguyễn Văn C',
+        email: 'abcdefkdd@gmail.com',
+        groupuser: 'Quản trị viên',
+        ghichu: 'Đang hoạt động'
     },
     {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
+        name: 'Nguyễn Văn C',
+        email: 'abcdefkdd@gmail.com',
+        groupuser: 'Quản trị viên',
+        ghichu: 'Đang hoạt động' 
     },
     {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
+        name: 'Nguyễn Văn C',
+        email: 'abcdefkdd@gmail.com',
+        groupuser: 'Quản trị viên',
+        ghichu: 'Đang hoạt động'
     },
     {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
+        name: 'Nguyễn Văn C',
+        email: 'abcdefkdd@gmail.com',
+        groupuser: 'Quản trị viên',
+        ghichu: 'Đang hoạt động'
     },
     {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
+        name: 'Nguyễn Văn C',
+        email: 'abcdefkdd@gmail.com',
+        groupuser: 'Quản trị viên',
+        ghichu: 'Đang hoạt động'
     },
 
 ];
@@ -165,7 +198,7 @@ function TabEdit() {
             <Col className="tab__title">   
             <Col span={12}>
             <div className="tab__title__left">
-                <p>Danh sách các nhóm người dùng</p>
+                <p>Danh sách người dùng trên hệ thống</p>
                 </div>
                 </Col>
 
@@ -209,6 +242,9 @@ function TabEdit() {
         </>
     )
     /* Modal */
-}
+     /* Modal */
+  
+  }
+
 
 export default TabEdit
