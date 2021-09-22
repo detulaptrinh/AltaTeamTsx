@@ -5,6 +5,7 @@ import editIcon from '../../../assets/boxdata/editIcon.svg'
 import trashIcon from '../../../assets/boxdata/trashIcon.svg'
 import viewIcon from '../../../assets/boxdata/viewIcon.svg'
 import { Row, Col, Table } from 'antd';
+import 'antd/dist/antd.less'
 
 const columns = [
     {
@@ -18,7 +19,7 @@ const columns = [
     {
         title: 'Tên môn học',
         dataIndex: 'name',
-        render: (text: string) => <p>{text}</p>,
+        render: (text: string) => <a>{text}</a>,
     },
     {
         title: 'Loại môn',
@@ -99,8 +100,13 @@ const data = [
         hk2: '4',
     },
 ]; // rowSelection object indicates the need for row selection
+
+
+
 class DetailSubject extends Component {
+
     render() {
+
         return (
             <>
                 <div className="section-6-4">

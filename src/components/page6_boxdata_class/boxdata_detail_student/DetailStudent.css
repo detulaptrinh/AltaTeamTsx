@@ -165,26 +165,45 @@
 .section-6-3 .table-list {
     margin: 2.4rem 6.4rem 0 6.4rem;
     height: auto;
-    border-radius: 8px 8px 0px 0px;
 }
-/* .section-6-3 .table-list .ant-table-wrapper {
-    border: 1px solid black;
-    border-radius: 8rem;
-} */
-
+.section-6-3 .ant-table-thead .ant-table-cell {
+    background: #ff7506;
+}
+.section-6-3 .table-list .ant-table-thead > tr > th {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+    border: none;
+    padding: 0.85rem;
+}
 .section-6-3 .table-list .ant-table-thead > tr > th {
     background: #ff7506;
 }
-.section-6-3 .table-list {
-    border-radius: 8rem;
+.section-6-3 .table-list .ant-table-thead .ant-table-cell:first-child {
+    border-top-left-radius: 0.8rem;
 }
-/* .box__sbj-tbl .ant-table-thead .ant-table-selection-column{
-    border-radius: 8rem;
-    border: 1px solid black;
-} */
-/* .box__sbj-tbl .ant-table-thead tr th:nth-child(1){
-    border-radius: 8rem;
-} */
+.section-6-3 .table-list .ant-table-thead .ant-table-cell:last-child {
+    border-top-right-radius: 0.8rem;
+}
+.section-6-3 .table-list .ant-table-tbody .ant-table-cell {
+    color: #373839;
+}
+.section-6-3 .table-list .ant-table-tbody .ant-table-cell a {
+    color: #373839;
+}
+.section-6-3 .table-list .ant-table-tbody {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+    color: orange;
+}
 .section-6-3 .table-list .ant-table-tbody tr:nth-child(odd) {
     background: #ffffff;
     border: 1px solid #f2f2f2;
@@ -193,11 +212,31 @@
     background: #f0f3f6;
     border: 1px solid #f2f2f2;
 }
-/* .section-6-3 .table-list .ant-table-cell:nth-child(7) {
-    width: 1rem;
-} */
+.section-6-3 .table-list .ant-table-cell:nth-child(1) {
+    text-align: center;
+}
+.section-6-3 .table-list .ant-table-tbody .ant-table-cell span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    width: 14.367rem;
+    height: 3.7rem;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
 
-.section-6-3 .table-list .status-btn {
+    font-family: Source Sans Pro;
+    top: calc(50% - 21px / 2);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+/* .section-6-3 .table-list .status-btn {
     border: none;
     border: 1;
     display: flex;
@@ -222,4 +261,4 @@
     align-items: center;
     text-align: center;
     color: #3cc13b;
-}
+} */

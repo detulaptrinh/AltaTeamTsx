@@ -3,8 +3,8 @@ import { Breadcrumb } from 'antd';
 import './DetailStudent.css'
 import editIcon from '../../../assets/boxdata/editIcon.svg'
 import trashIcon from '../../../assets/boxdata/trashIcon.svg'
-import viewIcon from '../../../assets/boxdata/viewIcon.svg'
-import { Row, Col, Table } from 'antd';
+import ellipseIcon from '../../../assets/boxdata/ellipseIcon.svg'
+import { Row, Col, Table, Tag } from 'antd';
 
 const columns = [
     {
@@ -31,6 +31,11 @@ const columns = [
     {
         title: 'Tình trạng',
         dataIndex: 'status',
+        render: (tag: string) => {
+            const color = tag.includes('Đang theo học') ? "green" : tag.includes('Đã chuyển lớp') ? "orange" : tag.includes('Đã chuyển trường') ? "default" : tag.includes('Đã thôi học') ? "red" : "blue"
+            return <Tag color={color} key={tag}>{tag}</Tag>
+            // return <Tag color={color} key={tag}><img src={ellipseIcon} alt="" /> {tag}</Tag>
+        }
     },
     {
         title: '',
@@ -46,7 +51,8 @@ const data = [
         name: 'Nguyễn Văn A',
         year: '2020-2021',
         date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
+        status: 'Đang theo học',
+        // status: <button className="status-btn">Đang theo học</button>,
         buttonedit: <img src={editIcon} alt="" />,
     },
     {
@@ -56,7 +62,8 @@ const data = [
         name: 'Nguyễn Văn A',
         year: '2020-2021',
         date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
+        status: 'Đã chuyển lớp',
+        // status: <button className="status-btn">Đang theo học</button>,
         buttonedit: <img src={editIcon} alt="" />,
     },
     {
@@ -66,7 +73,8 @@ const data = [
         name: 'Nguyễn Văn A',
         year: '2020-2021',
         date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
+        status: 'Đã chuyển trường',
+        // status: <button className="status-btn">Đang theo học</button>,
         buttonedit: <img src={editIcon} alt="" />,
     },
     {
@@ -76,7 +84,8 @@ const data = [
         name: 'Nguyễn Văn A',
         year: '2020-2021',
         date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
+        status: 'Đã thôi học',
+        // status: <button className="status-btn">Đang theo học</button>,
         buttonedit: <img src={editIcon} alt="" />,
     },
     {
@@ -86,7 +95,8 @@ const data = [
         name: 'Nguyễn Văn A',
         year: '2020-2021',
         date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
+        status: 'Đang tốt nghiệp',
+        // status: <button className="status-btn">Đang theo học</button>,
         buttonedit: <img src={editIcon} alt="" />,
     },
     {
@@ -96,7 +106,8 @@ const data = [
         name: 'Nguyễn Văn A',
         year: '2020-2021',
         date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
+        status: 'Đang theo học',
+        // status: <button className="status-btn">Đang theo học</button>,
         buttonedit: <img src={editIcon} alt="" />,
     },
     {
@@ -106,7 +117,8 @@ const data = [
         name: 'Nguyễn Văn A',
         year: '2020-2021',
         date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
+        status: 'Đang theo học',
+        // status: <button className="status-btn">Đang theo học</button>,
         buttonedit: <img src={editIcon} alt="" />,
     },
 ]; // rowSelection object indicates the need for row selection
