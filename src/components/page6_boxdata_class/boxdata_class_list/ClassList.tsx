@@ -4,14 +4,14 @@ import './ClassList.css'
 import { Link } from 'react-router-dom';
 import { Select, Table, Modal, Form, Input, Pagination, InputNumber, Menu, Dropdown, Checkbox } from 'antd';
 import { DownOutlined } from "@ant-design/icons";
-import unIcon2 from '../../assets/boxdata/unIcon2.svg'
-import plusIcon from '../../assets/boxdata/plusIcon.svg'
-import viewIcon from '../../assets/boxdata/viewIcon.svg'
-import editIcon from '../../assets/boxdata/editIcon.svg'
-import trashIcon from '../../assets/boxdata/trashIcon.svg'
-import uploadIcon from '../../assets/boxdata/uploadIcon.svg'
-import downloadIcon from '../../assets/boxdata/downloadIcon.svg'
-import searchIcon from '../../assets/boxdata/searchIcon.svg'
+import unIcon2 from '../../../assets/boxdata/unIcon2.svg'
+import plusIcon from '../../../assets/boxdata/plusIcon.svg'
+import viewIcon from '../../../assets/boxdata/viewIcon.svg'
+import editIcon from '../../../assets/boxdata/editIcon.svg'
+import trashIcon from '../../../assets/boxdata/trashIcon.svg'
+import uploadIcon from '../../../assets/boxdata/uploadIcon.svg'
+import downloadIcon from '../../../assets/boxdata/downloadIcon.svg'
+import searchIcon from '../../../assets/boxdata/searchIcon.svg'
 
 const { Option } = Select;
 
