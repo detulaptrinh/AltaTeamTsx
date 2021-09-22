@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Breadcrumb } from 'antd';
-import './ClassDetail.css'
+import './DetailSubject.css'
 import editIcon from '../../../assets/boxdata/editIcon.svg'
 import trashIcon from '../../../assets/boxdata/trashIcon.svg'
 import viewIcon from '../../../assets/boxdata/viewIcon.svg'
@@ -12,29 +12,25 @@ const columns = [
         dataIndex: 'stt',
     },
     {
-        title: 'Mã học viên',
+        title: 'Mã môn học',
         dataIndex: 'id',
     },
     {
-        title: 'Tên học viên',
+        title: 'Tên môn học',
         dataIndex: 'name',
-        render: (text: string) => <a>{text}</a>,
+        render: (text: string) => <p>{text}</p>,
     },
     {
-        title: 'Niên khóa',
-        dataIndex: 'year',
+        title: 'Loại môn',
+        dataIndex: 'type',
     },
     {
-        title: 'Ngày nhập học',
-        dataIndex: 'date',
+        title: 'Số tiết HK1',
+        dataIndex: 'hk1',
     },
     {
-        title: 'Tình trạng',
-        dataIndex: 'status',
-    },
-    {
-        title: '',
-        dataIndex: 'buttonedit',
+        title: 'Số tiết HK2',
+        dataIndex: 'hk2',
     },
 ];
 
@@ -42,80 +38,73 @@ const data = [
     {
         key: '1',
         stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        id: 'D43',
+        name: 'Toán học',
+        type: 'Môn bắc buộc',
+        hk1: '4',
+        hk2: '4',
     },
     {
         key: '1',
         stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        id: 'D43',
+        name: 'Toán học',
+        type: 'Môn bắc buộc',
+        hk1: '4',
+        hk2: '4',
     },
     {
         key: '1',
         stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        id: 'D43',
+        name: 'Toán học',
+        type: 'Môn bắc buộc',
+        hk1: '4',
+        hk2: '4',
     },
     {
         key: '1',
         stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        id: 'D43',
+        name: 'Toán học',
+        type: 'Môn bắc buộc',
+        hk1: '4',
+        hk2: '4',
     },
     {
         key: '1',
         stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        id: 'D43',
+        name: 'Toán học',
+        type: 'Môn bắc buộc',
+        hk1: '4',
+        hk2: '4',
     },
     {
         key: '1',
         stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        id: 'D43',
+        name: 'Toán học',
+        type: 'Môn bắc buộc',
+        hk1: '4',
+        hk2: '4',
     },
     {
         key: '1',
         stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        id: 'D43',
+        name: 'Toán học',
+        type: 'Môn bắc buộc',
+        hk1: '4',
+        hk2: '4',
     },
 ]; // rowSelection object indicates the need for row selection
-class ClassDetail extends Component {
+class DetailSubject extends Component {
     render() {
         return (
             <>
-                <div className="section-6-3">
-                    <div className="section-6-3__breadcrumb">
+                <div className="section-6-4">
+                    <div className="section-6-4__breadcrumb">
                         <Row>
                             <Col span={24}>
                                 <div className="breadcrumb-title">
@@ -129,7 +118,7 @@ class ClassDetail extends Component {
                         </Row>
                     </div>
 
-                    <div className="section-6-3__information">
+                    <div className="section-6-4__information">
                         <Row>
                             <Col span={12}>
                                 <div className="information-title">Thông tin học viên</div>
@@ -196,7 +185,7 @@ class ClassDetail extends Component {
                         </div>
                     </div>
 
-                    <div className="section-6-3__student-list">
+                    <div className="section-6-4__student-list">
                         <Row className="student-list">
                             <Col className="student-list-tab" span={24}>
                                 <div className="student-list-tab-box">
@@ -223,4 +212,4 @@ class ClassDetail extends Component {
     }
 }
 
-export default ClassDetail;
+export default DetailSubject;
