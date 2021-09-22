@@ -5,14 +5,12 @@ import './StudyProcess.css';
 
 // icon antd
 import { Row, Col, Card, Collapse, Space } from 'antd';
+import LearningOutcomes from './learning_outcomes/LearningOutcomes';
+import DanhSachKhenThuong from './danh_sach_khen_thuong/DanhSachKhenThuong';
 
 const { Panel } = Collapse;
 
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
+const style = { borderTopLeftRadius: '0.8rem' };
 
 export default class StudyProcess extends Component {
     render() {
@@ -109,27 +107,16 @@ export default class StudyProcess extends Component {
                 <Space direction="vertical">
                     <Collapse collapsible="header">
                         <Panel header="Kết quả học tập" key="1">
-                            <div className="box">
-                                <Row>
-                                    <Col span={8}>
-                                        <Card title="Học kỳ 1" bordered={false}>
-                                            âsđâsd
-                                        </Card>
-                                    </Col>
-                                    <Col span={8}>col-8</Col>
-                                    <Col span={8}>col-8</Col>
-                                </Row>
-                            </div>
+                            <LearningOutcomes />
                         </Panel>
                     </Collapse>
                     <Collapse collapsible="header">
                         <Panel header="Danh sách khen thưởng" key="2">
-                            <p>{text}</p>
+                            <DanhSachKhenThuong />
                         </Panel>
                     </Collapse>
                     <Collapse collapsible="header">
                         <Panel header="Danh sách kỹ luật" key="3">
-                            <p>{text}</p>
                         </Panel>
                     </Collapse>
                 </Space>
