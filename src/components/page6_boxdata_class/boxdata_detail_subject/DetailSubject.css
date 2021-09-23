@@ -223,29 +223,3 @@
     line-height: 130%;
     color: #373839;
 }
-.section-6-4 .table-list .status-btn {
-    border: none;
-    border: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 16px;
-    width: 14.367rem;
-    height: 3.7rem;
-    border: 1px solid #49c510;
-    background-color: #fff;
-    box-sizing: border-box;
-    border-radius: 0.4rem;
-
-    font-family: Source Sans Pro;
-    top: calc(50% - 21px / 2);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.6rem;
-    line-height: 130%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #3cc13b;
-}
