@@ -7,7 +7,11 @@ import './App.css';
 import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
-import Boxphancong from './components/Section14_BoxProfile/Test';
+import Dashboard from './components/Section2_Dashboard/Dashboard';
+import Page2 from './components/Section2_Dashboard/Page2'
+import Page3 from './components/Section2_Dashboard/Page3'
+import Page4 from './components/Section2_Dashboard/Page4'
+import Profile from './components/Section14_BoxProfile/Profile';
 import ProfileTeacher from './components/Section14_BoxProfile/ProfileTeacher';
 import ProfileTeacherEdit from './components/Section14_BoxProfile/ProfileTeacherEdit'
 
@@ -18,17 +22,15 @@ export default class App extends Component {
             <div>
                 <Router>
                 <div className="App">
-                    {/* Sub menu */}
                     <IndexMenu />
-
-                    {/* main */}
                     <main>
-                        {/* Top bar user */}
                         <TopBarUser />
-
-                        {/* Route content */}
                         <div className="content">
-                            <Route exact path="/" component={Boxphancong}/>
+                            <Route exact path="/" component={Dashboard}/>
+                            <Route path="/page2" component={Page2} />
+                            <Route path="/page3" component={Page3} />
+                            <Route path="/page4" component={Page4} />
+                            <Route path="/profile" component={Profile} />
                             <Route path="/profile-teacher" component={ProfileTeacher}/>
                             <Route path="/profile-teacher-edit" component={ProfileTeacherEdit}/>
 

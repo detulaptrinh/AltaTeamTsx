@@ -2,10 +2,12 @@ import React from 'react'
 import BoxColors from './BoxColors'
 import { DatePicker, Select } from 'antd';
 import "./dash.css"
+import DemoArea from './DemoArea';
+import DemoColumn from './DemoColumn';
 
 const { Option } = Select;
 
-function Dashboard(date, dateString) {
+function Dashboard(date: any, dateString: any) {
     console.log(date, dateString)
 
     return (
@@ -15,7 +17,7 @@ function Dashboard(date, dateString) {
                 <div className="overview_content_currentCourse">
                     <div className="choose_schoolYear">
                         <form action="">
-                            <label className="label" for="school_year">Niên khóa</label>
+                            <label className="label">Niên khóa</label>
                             <Select id="choose_year" defaultValue="2020-2021">
                                     <Option value="2017-2018">2017-2018</Option>
                                     <Option value="2018-2019">2018-2019</Option>
@@ -39,6 +41,7 @@ function Dashboard(date, dateString) {
                                 </Select>
                             </form>
                         </div>
+                        <DemoArea/>
                     </div>
                     <div className="count_students">
                         <div className="count_students_header">
@@ -57,8 +60,9 @@ function Dashboard(date, dateString) {
                     <div className="result_charts">
                         <div className="charts_header">
                             <p className="charts_title">Thống kê số lượng truy cập</p>
-                            <DatePicker alt="" onChange={Dashboard} />
+                            <DatePicker onChange={Dashboard} />
                         </div>
+                    <DemoArea/>
                     </div>
                 </div>
             </div>

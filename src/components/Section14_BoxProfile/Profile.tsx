@@ -23,95 +23,149 @@ import {
 } from '@ant-design/icons';
 import {Link} from "react-router-dom"
 import './profile.css'
+import IconEyes from '../../assets/avg/eyeIcon.svg'
+import IconReload from '../../assets/avg/reload.svg'
+import IconTrash from '../../assets/avg/trashicon.svg'
 
 const { Option } = Select;
 
 //   tao bang
-  const columns =  [ 
-    {
-      title: '',
-      dataIndex: 'row',
-      render: () => (
-        <Space>
-          <Checkbox/>
-        </Space>
-      ),
+const columns = [
+  {
+    title: 'Mã giảng viên',
+    dataIndex: 'id',
+    sorter: {
+      compare: (a:any, b:any) => a.id - b.id,
+      multiple: 3,
     },
-    {
-      title: 'Mã lớp',
-      dataIndex: 'ma',
-      
+
+  },
+  {
+    title: 'Tên giảng viên',
+    dataIndex: 'name',
+    sorter: {
+      compare: (a:any,b:any) => a.name - b.name,
+      multiple: 3,
     },
-    {
-      title: 'Tên lớp',
-      dataIndex: 'name',
+
+  },
+  {
+    title: 'Ngày sinh',
+    dataIndex: 'date',
+    sorter: {
+      compare: (a:any,b:any) => a.date - b.date,
+      multiple: 3,
     },
-    {
-      title: 'Ngày bắt đầu',
-      dataIndex: 'datebatdau',
+
+  },
+  {
+    title: 'Giới tính',
+    dataIndex: 'sex',
+    sorter: {
+      compare: (a:any,b:any) => a.sex - b.sex,
+      multiple: 3,
     },
-    {
-    title: 'Ngày kết thúc',
-    dataIndex: 'dateketthuc',
+
+  },
+  {
+    title: 'Tổ - Bộ môn',
+    dataIndex: 'object',
+    sorter: {
+      compare: (a:any,b:any) => a.object - b.object,
+      multiple: 3,
     },
-    {
-    title: 'Danh sách chủ đề',
-    dataIndex: 'danhsach',
-    render: () => <ContainerOutlined style={{ fontSize: '32px' , color: '#FF7506' }}/>,
-  
+
+  },
+  {
+    title: 'Chức vụ',
+    dataIndex: 'position',
+    sorter: {
+      compare: (a:any,b:any) => a.position - b.position,
+      multiple: 3,
     },
-    {
-    title: '',
+
+  },
+  {
+    title: 'Tình trạng',
+    dataIndex: 'status',
+    render: (btn:any) => <button className="btn__status">{btn}</button>,
+    sorter: {
+      compare: (a:any,b:any) => a.status - b.status,
+      multiple: 3,
+    },
+
+  },
+  {
+    title: ' ',
     dataIndex: 'icon',
     render: () => (
       <Space >
-        <FormOutlined style={{ fontSize: '32px' , color: '#FF7506' }}/>,
-        <DeleteOutlined style={{ fontSize: '32px' , color: '#FF7506' }}/>,
+        <img src={IconEyes} alt=""/>
+        <img src={IconReload} alt=""/>
+        <img src={IconTrash} alt=""/>
       </Space>
     ),
-    },
-    
-  ]; 
-  const data= [
+  }
+
+];
+  const data = [
     {
       key: '1',
-      ma: '123 456 789',
-      name: '6A',
-      datebatdau: '01/01/2021',
-      dateketthuc: '30/12/2021',
-      danhsach: '',
-      icon: '',
+      id: '2020-6A',
+      name: 'Nguyễn Văn A',
+      date: '12/02/1998',
+      sex: 'Nam',
+      object: 'Toán',
+      position: 'Giáo viên',
+      status: 'Đang hoạt động',
+      buttonview: 'Xem',
+      buttonreload: 'Load',
+      buttondelete: 'Xóa'
+  
     },
     {
-      key: '2',
-      ma: '123 456 789',
-      name: '6A',
-      datebatdau: '01/01/2021',
-      dateketthuc: '30/12/2021',
-      danhsach: '',
-      icon: '',
+      key: '1',
+      id: '2020-6A',
+      name: 'Nguyễn Văn A',
+      date: '12/02/1998',
+      sex: 'Nam',
+      object: 'Toán',
+      position: 'Giáo viên',
+      status: 'Đã nghỉ việc'
     },
     {
-      key: '3',
-      ma: '123 456 789',
-      name: '6A',
-      datebatdau: '01/01/2021',
-      dateketthuc: '30/12/2021',
-      danhsach: '',
-      icon: '',
+      key: '1',
+      id: '2020-6A',
+      name: 'Nguyễn Văn A',
+      date: '12/02/1998',
+      sex: 'Nam',
+      object: 'Toán',
+      position: 'Giáo viên',
+      status: 'Tạm nghỉ'
     },
     {
-      key: '4',
-      ma: '123 456 789',
-      name: '6A',
-      datebatdau: '01/01/2021',
-      dateketthuc: '30/12/2021',
-      danhsach: '',
-      icon: '',
+      key: '1',
+      id: '2020-6A',
+      name: 'Nguyễn Văn A',
+      date: '12/02/1998',
+      sex: 'Nam',
+      object: 'Toán',
+      position: 'Giáo viên',
+      status: 'Nghỉ hưu'
     },
-  ]; 
+    {
+      key: '1',
+      id: '2020-6A',
+      name: 'Nguyễn Văn A',
+      date: '12/02/1998',
+      sex: 'Nam',
+      object: 'Toán',
+      position: 'Giáo viên',
+      status: 'Đang hoạt động'
+    }
+  ];
 
-  export default class Boxphancong extends Component {
+  export default class Profile extends Component {
     render() {
 
       return (

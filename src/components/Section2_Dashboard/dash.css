@@ -139,7 +139,7 @@
     flex-basis: 80%;
     gap: 1rem;
     padding: 1.6rem 6.4rem;
-    height: 28rem;
+    height: 36.8rem;
     border-radius: 1rem;
     z-index: 1;
     background: #ffffff;
@@ -148,7 +148,7 @@
   .result_charts{
     flex-basis:100%;
     padding: 1.6rem 6.4rem;
-    height: 25rem;
+    height: 32.8rem;
     border-radius: 1rem;
     z-index: 1;
     background: #ffffff;
@@ -157,7 +157,7 @@
   }
   .count_students {
     padding: 1.6rem 2.4rem;
-    height: 28rem;
+    height: 36.8rem;
     border-radius: 1rem;
     flex-basis: 30%;
     /* margin-left: 30px; */
@@ -177,6 +177,13 @@
   .result_study_header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .result_study canvas{
+      width:95rem !important;
+      height: 28rem !important;
+      margin-bottom: 52rem;
+      margin-left: 5rem !important;
   }
   .charts_header {
     display: flex;
@@ -472,17 +479,17 @@
     line-height: 23px;
     margin: 0 0.5rem 0 0.5rem;
 }
-.box__btn-cre .ant-modal-content{
-    width: 88.4rem;
-    height: 60rem;
+.box__btn-page3 .ant-modal-content{
+    width: 82rem;
+    height: 42rem;
     background: #FFFFFF;
     border-radius: 16px;
     padding: 1rem;
     right: 20%;
 }
-.box__btn-cres .ant-modal-content{
+.box__btn-page4 .ant-modal-content{
     width: 88.4rem;
-    height: 45rem;
+    height: 35rem;
     background: #FFFFFF;
     border-radius: 16px;
     padding: 1rem;
@@ -518,14 +525,14 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
-.ant-input{
+/* .ant-input{
     padding: 0.4rem 1.2rem;
     float: right;
     width: 56.1rem;
     height: 4rem;
     background: #F2F2F2;
     border-radius: 8px;
-}
+} */
 .ant-input-sbj{
     left: 24%;
     padding: 0.4rem 1.2rem;
@@ -535,7 +542,7 @@
     background: #F2F2F2;
     border-radius: 8px;
 }
-.box__btn-cre .ant-modal-content .ant-select .ant-select-selector {
+.box__btn-page3 .ant-modal-content .ant-select .ant-select-selector {
     margin-bottom: 1rem;
     float: right;
     padding: 0.4rem 1.2rem;
@@ -545,15 +552,51 @@
     background: #F2F2F2;
     border-radius: 8px;
 }
-.box__btn-cre Select Option{
+.box__btn-page4 .ant-modal-content .ant-select .ant-select-selector {
+    margin-bottom: 1rem;
+    float: right;
+    padding: 0.4rem 1.2rem;
+    width: 100%;
+    max-width: 56.1rem;
+    height: 4rem;
+    background: #F2F2F2;
+    border-radius: 8px;
+}
+.box__btn-page3 .ant-modal-content .ant-input {
+    width:56.1rem;
+    height: 4rem;
+    background: #F2F2F2;
+    border-radius: 8px;
+}
+.box__btn-page4 .ant-modal-content .ant-input {
+    width:56.1rem;
+    height: 4rem;
+    background: #F2F2F2;
+    border-radius: 8px;
+}
+.box__btn-page4 .ant-modal-content .input__page4-kk{
+    width:29rem;
+    margin-right: 27rem;
+}
+.box__btn-page3 Select Option{
+    width: 50%;
+}.box__btn-page4 Select Option{
     width: 50%;
 }
-.box__btn-cre .ant-modal-content .ant-select-arrow span{
+.box__btn-page3 .ant-modal-content .ant-select-arrow span{
     height: 1rem;
     width: 1.8rem;
     margin-left: -50%;
     margin-top: -40%;
-    color: #FF7506;
+    font-size: 1.6rem;
+    color: #2c1a0c;
+}
+.box__btn-page4 .ant-modal-content .ant-select-arrow span{
+    height: 1rem;
+    width: 1.8rem;
+    margin-left: -50%;
+    margin-top: -40%;
+    font-size: 1.6rem;
 }
 .ant-select-arrow span{
     color: #FF7506;
@@ -589,10 +632,10 @@
     background: #F2F2F2;
     border-radius: 8px;
 }
-.box__btn-button-cancel{
+.box__btn-button-cancel-page3{
     cursor: pointer;
     margin-top: 8rem;
-    margin-left: 25rem;
+    margin-left: 20rem;
     height: 5.2rem;
     width: 16rem;
     border: none;
@@ -607,13 +650,46 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
-.box__btn-button-save{
+.box__btn-button-save-page3{
     cursor: pointer;
     margin-top: 8rem;
-    margin-left: 3.2rem;
+    margin-left: 4rem;
     height: 5.2rem;
     width: 16rem;
-    width: 14rem;
+    border: none;
+    border-radius: 8px;
+    background: #FF7506;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+}
+.box__btn-button-cancel-page4{
+    cursor: pointer;
+    margin-left: 20rem;
+    height: 5.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 23px;
+    letter-spacing: 0.015em;
+    color: #373839;
+    margin-top: -20rem;
+}
+.box__btn-button-save-page4{
+    cursor: pointer;
+    margin-left: 4rem;
+    height: 5.2rem;
+    width: 16rem;
     border: none;
     border-radius: 8px;
     background: #FF7506;
