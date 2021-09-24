@@ -7,6 +7,10 @@ import './App.css';
 import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
+import Boxphancong from './components/Section14_BoxProfile/Test';
+import ProfileTeacher from './components/Section14_BoxProfile/ProfileTeacher';
+import ProfileTeacherEdit from './components/Section14_BoxProfile/ProfileTeacherEdit'
+
 
 export default class App extends Component {
     render() {
@@ -24,7 +28,10 @@ export default class App extends Component {
 
                         {/* Route content */}
                         <div className="content">
-                            <h1>content</h1>
+                            <Route exact path="/" component={Boxphancong}/>
+                            <Route path="/profile-teacher" component={ProfileTeacher}/>
+                            <Route path="/profile-teacher-edit" component={ProfileTeacherEdit}/>
+
                         </div>
                     </main>
                 </div>
