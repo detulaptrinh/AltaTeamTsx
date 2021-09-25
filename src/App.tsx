@@ -13,6 +13,7 @@ import ClassList from './components/page6_boxdata_class/boxdata_class_list/Class
 import DetailStudent from './components/page6_boxdata_class/boxdata_detail_student/DetailStudent';
 import DetailSubject from './components/page6_boxdata_class/boxdata_detail_subject/DetailSubject';
 import PointType from './components/page7_boxdata_type/PointType';
+import StudentProfile from './components/page8_profile/student_profile/StudentProfile';
 
 export default class App extends Component {
     render() {
@@ -35,6 +36,7 @@ export default class App extends Component {
                                 <Route path="/boxdatastudent" component={DetailStudent} />
                                 <Route path="/boxdatasubject" component={DetailSubject} />
                                 <Route path="/boxdatatype" component={PointType} />
+                                <Route path="/studentprofile" component={StudentProfile} />
                             </div>
                         </main>
                     </div>

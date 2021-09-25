@@ -1,0 +1,343 @@
+.section-8 .box__title h1 {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+/*  */
+.section-8 .box__btn {
+    width: 100%;
+    height: 5.2rem;
+}
+/*  */
+.section-8 .box__sbj {
+    width: 100%;
+    height: 80.2rem;
+    margin-top: 2.4rem;
+    border-radius: 1.6rem;
+    background: #ffffff;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+}
+/* button left */
+.section-8 .box__btn-block {
+    display: inline-flex;
+}
+.section-8 .box__btn-block_select {
+    width: 13.6rem;
+    height: 3.2rem;
+    background: #ffffff;
+    border-radius: 4px;
+}
+.section-8 .box__btn-class {
+    display: inline-flex;
+    margin-left: 1.6rem;
+}
+.section-8 .box__btn-class_select {
+    width: 13.6rem;
+    height: 3.2rem;
+    background: #ffffff;
+    border-radius: 4px;
+}
+/* button center */
+.section-8 .box__btn-tag{
+    margin-top: 1rem;
+}
+.section-8 .box__btn-tag button {
+    border: none;
+    width: 20.5rem;
+    height: 3.9rem;
+    border-radius: 24px;
+    margin-left: 1.6rem;
+}
+.section-8 .box__btn-tag .box__btn-tag-none{
+    background: #F2F2F2;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+    opacity: 0.5;
+}
+.section-8 .box__btn-tag .box__btn-tag-active{
+    background: #373839;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+}
+/* button right */
+.section-8 .box__btn-button_del {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.section-8 .box__btn-button_del-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-top: 0.5rem;
+    padding-right: 1rem;
+    border-right: 1px solid #c9c4c0;
+}
+.section-8 .box__btn-button_export {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 16rem;
+    height: 5.2rem;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    border: 1px solid #ff7506;
+    color: #ff7506;
+    background-color: transparent;
+    margin: 0rem 1rem;
+    border-radius: 8px;
+}
+.section-8 .section-8 .box__btn-button_cre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 17.6rem;
+    height: 5.2rem;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    border: none;
+    color: #fff;
+    background: #ff7506;
+    margin: 0.2rem 0.8rem 0 1rem;
+    border-radius: 8px;
+}
+.section-8 .section-8 .box__btn-button_cre-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 23px;
+    margin: 0 0.5rem 0 0.5rem;
+}
+/*  */
+.section-8 .box__sbj p {
+    margin: 2.6rem 0 0 6.4rem;
+    float: left;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.section-8 .box__sbj-search__input {
+    float: right;
+    margin: 2.6rem 6.5rem 0 0;
+    width: 43.8rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    padding-left: 4rem;
+    background: #f0f3f6;
+    border-radius: 2.4rem;
+    border: none;
+}
+/*  */
+.section-8 .table-list {
+    margin: 8.9rem 6.4rem 0 6.4rem;
+    height: auto;
+}
+.section-8 .ant-table-thead .ant-table-cell {
+    background: #ff7506;
+}
+.section-8 .table-list .ant-table-thead > tr > th {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+    border: none;
+    padding: 0.85rem;
+}
+.section-8 .table-list .ant-table-thead > tr > th {
+    background: #ff7506;
+}
+.section-8 .table-list .ant-table-thead .ant-table-cell:first-child {
+    border-top-left-radius: 0.8rem;
+}
+.section-8 .table-list .ant-table-thead .ant-table-cell:last-child {
+    border-top-right-radius: 0.8rem;
+}
+.section-8 .table-list .ant-table-tbody .ant-table-cell {
+    color: #373839;
+}
+.section-8 .table-list .ant-table-tbody .ant-table-cell a {
+    color: #373839;
+}
+.section-8 .table-list .ant-table-tbody {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+    color: orange;
+}
+.section-8 .table-list .ant-table-tbody tr:nth-child(odd) {
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+}
+.section-8 .table-list .ant-table-tbody tr:nth-child(even) {
+    background: #f0f3f6;
+    border: 1px solid #f2f2f2;
+}
+.section-8 .table-list .ant-table-cell:nth-child(8) {
+    width: 1rem;
+}
+.section-8 .table-list .ant-table-cell:nth-child(9) {
+    width: 1rem;
+}
+.section-8 .table-list .ant-table-cell:nth-child(10) {
+    width: 1rem;
+}
+.section-8 .table-list .ant-table-tbody .ant-table-cell span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    width: 14.367rem;
+    height: 3.7rem;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+
+    font-family: Source Sans Pro;
+    top: calc(50% - 21px / 2);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+/* .section-8 .table-list .status-btn {
+    border: none;
+    border: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    width: 14.367rem;
+    height: 3.7rem;
+    border: 1px solid #49c510;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+
+    font-family: Source Sans Pro;
+    top: calc(50% - 21px / 2);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3cc13b;
+} */
+
+/*  */
+.section-8 .box__sbj-pagtion {
+    margin-top: 10rem;
+}
+.section-8 .box__sbj-pagtion-txt p {
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #373839;
+}
+.section-8 .box__sbj-pagtion .ant-input-number {
+    right: 19.9rem;
+    bottom: -2rem;
+    width: 4.8rem;
+    height: 3.2rem;
+    background-color: transparent;
+    border: 1px solid #ff7506;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.section-8 .box__sbj-pagin {
+    float: right;
+    margin-top: -1rem;
+    margin-right: 6.4rem;
+}
+.section-8 .box__sbj-pagin .ant-pagination-item-active a {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff9f4;
+    border-radius: 50%;
+    background: #ff7506;
+}
+.section-8 .box__sbj-pagin .ant-pagination a:hover {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff9f4;
+    border-radius: 50%;
+    background: #ff7506;
+}
+.section-8 .box__sbj-pagin .ant-pagination-options {
+    display: none;
+}
+.section-8 .box__sbj-pagin .ant-pagination li {
+    border: none;
+}
+.section-8 .box__sbj-pagin .ant-pagination-prev button {
+    border: none;
+}
+.section-8 .box__sbj-pagin .ant-pagination-prev button:hover {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff9f4;
+    border-radius: 50%;
+    background: #ff7506;
+}
+.section-8 .box__sbj-pagin .ant-pagination-next button {
+    border: none;
+}
+.section-8 .box__sbj-pagin .ant-pagination-next button:hover {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff9f4;
+    border-radius: 50%;
+    background: #ff7506;
+}
+.section-8 .box__sbj-pagin .ant-pagination-jump-prev a:hover {
+    color: rgba(0, 0, 0, 0.85);
+}
