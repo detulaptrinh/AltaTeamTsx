@@ -14,7 +14,7 @@ import Page4 from './components/Section2_Dashboard/Page4'
 import Profile from './components/Section14_BoxProfile/Profile';
 import ProfileTeacher from './components/Section14_BoxProfile/ProfileTeacher';
 import ProfileTeacherEdit from './components/Section14_BoxProfile/ProfileTeacherEdit'
-
+import WorkingProcess from './components/Section14_BoxProfile/WorkingProcess'
 
 export default class App extends Component {
     render() {
@@ -33,7 +33,7 @@ export default class App extends Component {
                             <Route path="/profile" component={Profile} />
                             <Route path="/profile-teacher" component={ProfileTeacher}/>
                             <Route path="/profile-teacher-edit" component={ProfileTeacherEdit}/>
-
+                            <Route path="/profile-process" component={WorkingProcess}/>
                         </div>
                     </main>
                 </div>
