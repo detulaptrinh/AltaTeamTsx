@@ -97,8 +97,7 @@ color: #C9C4C0;
 
 
 
-.left-tab-box {
-    
+.switch-list {
     width: 53rem;
     height: 4.8rem;
     display: flex;
@@ -106,31 +105,28 @@ color: #C9C4C0;
     justify-content: center;
     align-items: center;
     padding: 0.6rem;
-    /* Grey/5 */
+
     background: #F2F2F2;
     border-radius: 3.2rem;
-
     position: relative;
 }
-.left-tab-box-general-information {
+
+.switch-list__tab-left {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     width: 23.5rem;
     height: 3.6rem;
     position: absolute;
     left: 0.6rem;
     top: 0.6rem;
     /* /Orange / 7 */
-  
     border-radius: 2.4rem;
 }
 
- .left-tab-box-general-information a {
+ .switch-list__tab-left a {
     /* LMS Student / Sub-header */
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
@@ -142,7 +138,7 @@ color: #C9C4C0;
     opacity: 0.5;
     color: #373839;
 }
-.left-tab-box-study-process {
+.switch-list__tab-right {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -153,7 +149,7 @@ color: #C9C4C0;
     border-radius: 2.4rem;
     margin-left: 24.1rem;
 }
-.left-tab-box-study-process a {
+.switch-list__tab-right a {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 600;
@@ -161,54 +157,17 @@ color: #C9C4C0;
 
     /* identical to box height */
     letter-spacing: 0.015em;
-
     /* /Orange / 7 */
     color: #FFFFFF;
 }
 
-.switch__tab{
+
+.box__btn {
     display: flex;
-    margin-top: 3.2rem;
-
-}
-
-.box__btn-group{
     float:right;
-    display: flex;
 }
 
-.box__btn-group > .box__btn-group__export{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0;
-    width: 146px;
-    height: 52px;
-    border: 1px solid #FF7506;
-    box-sizing: border-box;
-    border-radius: 8px;
-    
-    /* LMS Student / Sub-header */
-
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
-/* identical to box height */
-
-    letter-spacing: 0.015em;
-
-/* Orange/4 */
-
-    color: #FF7506;
-
-
-}
-
-.box__btn-group > .box__btn-group__add{
+.box__btn > .box__btn-group__add{
     flex-direction: initial;
     display: flex;
     justify-content: center;
@@ -222,8 +181,7 @@ color: #C9C4C0;
     flex-grow: 0;
     margin-left: 16px;
     order: 1;
-
-    font-family: Mulish;
+    font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -232,66 +190,6 @@ color: #C9C4C0;
 
     letter-spacing: 0.015em;
     color: #FFFFFF;
-}
-.box__select{
-    display: flex;
-    float: left;
-    margin-top: 0.7rem;
-    
-}
-.box__select__year{
-    width: 133px;
-    height: 32px;
-    
-}
-
-/* btn */
- .btn-bk-ffffff {
-    width: 17.6rem;
-    height: 5.2rem;
-    line-height: 5.2rem;
-    border-radius: 0.8rem;
-    border: 0.1rem solid #FF7506;
-    color: #FF7506;
-    text-align: center;
-
-    /* font */
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-
- .btn-bk-ff7506 {
-    width: 17.6rem;
-    height: 5.2rem;
-    line-height: 5.2rem;
-    border-radius: 0.8rem;
-    border: none;
-    color: #FFFFFF;
-    background-color: #FF7506;
-    text-align: center;
-
-    /* font */
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-
-.section-9-1 .right-btn .btn-excel {
-    width: 17.6rem;
-    height: 5.2rem;
-    margin-left: 2rem;
-    display: inline-block;
-    float: left;
-}
-
-.section-9-1 .right-btn .btn-edit {
-    width: 17.6rem;
-    height: 5.2rem;
-    margin-left: 2rem;
-    display: inline-block;
 }
 
 .ant-table-cell.ant-table-column-has-sorters{
@@ -303,20 +201,20 @@ color: #C9C4C0;
 .ant-table-thead > tr > th{
     background: none;
     font-family: 'Mulish';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 23px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
 /* identical to box height */
 
-letter-spacing: 0.015em;
+    letter-spacing: 0.015em;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
 .ant-table-tbody > tr > td{
     font-family: 'Source Sans Pro';
-font-style: normal;
+    font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 130%;
@@ -381,10 +279,10 @@ color: #FFFFFF;
     margin-bottom: 2.4rem;
     width: 43.8rem;
     height: 4rem;
-   
+
     border-radius: 24px;
 }
-.box__sbj-search{
+.ant-input.box__sbj-search{
     font-family: 'Source Sans Pro';
     font-style: italic;
     font-weight: normal;
@@ -453,7 +351,6 @@ color: #FFFFFF;
 .box__sbj-pagin .ant-pagination-jump-prev a:hover {
     color: rgba(0, 0, 0, 0.85);
 }
-
 
 .pagination{
     display: flex;

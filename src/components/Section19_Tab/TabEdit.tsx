@@ -19,23 +19,63 @@ import { Modal } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 
 const { confirm } = Modal;
+const { Option } = Select;
 
 
 function TabEdit() {
   return (
     <>
+
+            <div className="section19__title">
+                <Row>
+                    <Col span={24}>
+                        <div className="title">
+                            <h1>Thông tin nhà trường</h1>
+                        </div>
+                    </Col>
+                </Row>
+                <Row className="row1">
+                    <Col span={24} className="switch__tab">
+                        <Col span={5}><div className="box__select">
+                            <Col span={12}>
+                                <Select defaultValue="1" className="box__select__year">
+                                    <Option value="1">2020-2021</Option>
+                                    <Option value="2">2019-2020</Option>
+                                    <Option value="3">2018-2019</Option>
+                                  
+                                </Select>
+                            </Col>
+                          
+                        </div>
+                        </Col>
+                        <Col span={9}>
+
+                        </Col>
+
+                        <Col span={10}>
+                        <div className="box__btn">
+                          <Button className="box__btn-group__cancel">Hủy</Button>
+                          <Button className="box__btn-group__save" >Lưu</Button>
+                       </div>
+                        </Col>
+                    </Col>
+                </Row>
+
+            </div>
+
+
       <div className="tab">
         <Card title="Thông tin chung" className="card1">
           <Row className="row1">
-            <Col span={24}><div className="tab__content">
-              <Col span={5}><div className="tab__content__image">
+            <Col span={24}><div className="tabedit__content">
+              <Col span={5}><div className="tabedit__content__image">
                 <img src={image1} />
               </div>
               </Col>
 
 
               <Col span={10}>
-                <div className="tab__content__form-left">
+                <div className="tabedit__content__form-left">
                   <p className="title__content__form-left">Thông tin trường học</p>
                   <Form>
                     <Form.Item label="Tên trường" name="size">
@@ -83,7 +123,7 @@ function TabEdit() {
               </Col>
 
               <Col span={9}>
-                <div className="tab__content__form-right">
+                <div className="tabedit__content__form-right">
                   <Form>
                     <Form.Item label="Fax" name="size">
                       <Input defaultValue="04941884194" />
@@ -122,15 +162,15 @@ function TabEdit() {
 
         <Card title="Thông tin cơ sở" className="card2" >
           <Row className="row2">
-            <Col span={24}><div className="tab__content2">
+            <Col span={24}><div className="tabedit__content2">
               <Col span={5}>
-                <div className="tab__content__image2">
+                <div className="tabedit__content__image2">
                   <img src={image2} />
                 </div>
               </Col>
 
               <Col span={10}>
-                <div className="tab__content2__form-left__top">
+                <div className="tabedit__content2__form-left__top">
                   <Form >
                     <Form.Item label="Tên cơ sở" name="size">
                       <Input defaultValue="Cơ sở A" />
@@ -148,7 +188,7 @@ function TabEdit() {
 
 
               <Col span={9}>
-                <div className="tab__content2__form-right__top">
+                <div className="tabedit__content2__form-right__top">
                   <Form>
                     <Form.Item label="Người phụ trách" name="size">
                       <Input defaultValue="Nguyễn Văn D" />
@@ -164,7 +204,7 @@ function TabEdit() {
 
               </Col>
 
-              <div className="tab__content__rec"></div>
+              <div className="tabedit__content__rec"></div>
 
             </div>
             </Col>
@@ -175,16 +215,16 @@ function TabEdit() {
           </div>
 
           <Row className="row3">
-            <Col span={24}><div className="tab__content2">
+            <Col span={24}><div className="tabedit__content2">
               <Col span={5}>
-                <div className="tab__content__image3">
+                <div className="tabedit__content__image3">
                   <img src={image2} />
                 </div>
               </Col>
 
               <Col span={10}>
 
-                <div className="tab__content2__form-left__bottom">
+                <div className="tabedit__content2__form-left__bottom">
                   <Form>
                     <Form.Item label="Tên cơ sở" name="size">
                       <Input defaultValue="Cơ sở A" />
@@ -202,7 +242,7 @@ function TabEdit() {
 
               <Col span={9}>
 
-                <div className="tab__content2__form-right__bottom">
+                <div className="tabedit__content2__form-right__bottom">
                   <Form>
                     <Form.Item label="Người phụ trách" name="size">
                       <Input defaultValue="Nguyễn Văn D" />
@@ -217,7 +257,7 @@ function TabEdit() {
                 </div>
               </Col>
 
-              <div className="tab__content__rec"></div>
+              <div className="tabedit__content__rec"></div>
 
             </div>
             </Col>

@@ -1,5 +1,5 @@
-import React from 'react'
-import './ListUser.css'
+import React, { useState } from 'react'
+import './ClassroomSetting.css'
 import "@fontsource/source-sans-pro";
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { PlusOutlined, FormOutlined} from '@ant-design/icons';
@@ -19,7 +19,7 @@ import {
 
 import { Modal } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
-
+     
 function showDeleteConfirm() {
     confirm({
       title: 'Xóa thông tin',
@@ -34,31 +34,34 @@ function showDeleteConfirm() {
         console.log('Cancel');
       },
     });
+    
 }
+
+
+
 const { confirm } = Modal;
 const { Option } = Select;
 
 const columns = [
     {
-        title: 'Tên',
-        dataIndex: 'name',
-        width: '15%'
-    },
-    {
-        title: 'Email',
-        dataIndex: 'email',
-        width: '25%'
-    },
-    {
-        title: 'Nhóm người dùng',
-        dataIndex: 'groupuser', 
-        width: '25%'
+        title: 'Loại lớp',
+        dataIndex: 'class',
+        sorter: true,
+        width: '10%'
+       
     },
     {
         title: 'Trạng thái',
-        dataIndex: 'ghichu',
-        width: '25%'
+        dataIndex: 'status',
+        width: '30%'
+        
     },
+    {
+        title: 'Ghi chú',
+        dataIndex: 'ghichu', 
+        width: '50%'
+    },
+   
    
     {       
         render: () => (
@@ -72,60 +75,65 @@ const columns = [
 
 const dataSource = [
     {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động',
+        class: 'Căn bản',
+        status: 'Đã vô hiệu hóa',
+        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
     },
     {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động'
+        class: 'Nâng cao',
+        status: 'Đang hoạt động',
+        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
     },
     {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động'
+        class: 'Tăng cường',
+        status: 'Đang hoạt động',
+        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
     },
     {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động'
+        class: 'Phụ đạo',
+        status: 'Đang hoạt động',
+        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
     },
     {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động' 
+        class: 'Phụ đạo',
+        status: 'Đang hoạt động',
+        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
     },
     {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động'
+        class: 'Phụ đạo',
+        status: 'Đang hoạt động',
+        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
     },
     {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động'
+        class: 'Phụ đạo',
+        status: 'Đang hoạt động',
+        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
     },
     {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động'
+        class: 'Phụ đạo',
+        status: 'Đang hoạt động',
+        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
     },
 
 ];
 
-
-function ListUser() {
+function ClassroomSetting() {
+    const [isModalVisible, setIsModalVisible] = useState(false);
+  
+    const showModal = () => {
+      setIsModalVisible(true);
+    };
+  
+    const handleOk = () => {
+      setIsModalVisible(false);
+    };
+  
+    const handleCancel = () => {
+      setIsModalVisible(false);
+    };
     return (
         <>
+        
 
             <div className="Section20__Title">
                 <Row>
@@ -133,7 +141,7 @@ function ListUser() {
                         <div className="title">
                             <Breadcrumb separator=">">
                                 <Breadcrumb.Item className="tittle__breadcrumb__left">Cài đặt hệ thống</Breadcrumb.Item>
-                                <Breadcrumb.Item className="tittle__breadcrumb__right">Người dùng hệ thống</Breadcrumb.Item>
+                                <Breadcrumb.Item className="tittle__breadcrumb__right">Thiết lập lớp học</Breadcrumb.Item>
                             </Breadcrumb>
                         </div>
                     </Col>
@@ -146,29 +154,22 @@ function ListUser() {
                         <Col span={5}><div className="box__select">
                             <Col span={12}>
                                 <Select defaultValue="1" className="box__select__year">
-                                    <Option value="1">Chọn kỳ</Option>
-                                    <Option value="2">HKI</Option>
-                                    <Option value="3">HKII</Option>
-                                    <Option value="3">HKIII</Option>
-                                </Select>
-                            </Col>
-                            <Col span={12}>
-                                <Select defaultValue="1" className="box__select__year">
-                                    <Option value="1">Chọn khối</Option>
-                                    <Option value="2">Khối 7</Option>
-                                    <Option value="3">Khối 8</Option>
-                                    <Option value="3">Khối 9</Option>
+                                    <Option value="1">2020-2021</Option>
+                                    <Option value="2">2019-2020</Option>
+                                    <Option value="3">2018-2019</Option>
                                 </Select>
                             </Col>
                         </div>
                         </Col>
 
+
                         <Col span={9}>
-                            <div className="switch-list">
-                                <div className="switch-list__tab-left">
+
+                            <div className="left-tab-box">
+                                <div className="left-tab-box-general-information">
                                     <a href="">Nhóm người dùng</a>
                                 </div>
-                                <div className="switch-list__tab-right">
+                                <div className="left-tab-box-study-process">
                                     <a href="">Danh sách người dùng</a>
                                 </div>
                             </div>
@@ -177,9 +178,15 @@ function ListUser() {
                         </Col>
 
                         <Col span={10}>
-                            <div className="box__btn">
+                            <div className="box__btn-group">
                                 
-                                <Button className="box__btn-group__add" ><PlusOutlined />Thêm mới</Button>
+                                <Button className="box__btn-group__add" onClick={showModal} ><PlusOutlined />Thêm mới</Button>
+
+                                <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                                <p>Some contents...</p>
+                                <p>Some contents...</p>
+                                 <p>Some contents...</p>
+                                </Modal>
                             </div>
                         </Col>
                     </Col>
@@ -187,9 +194,6 @@ function ListUser() {
 
             </div>
 
-
-
-            
 
             <div className="tab">
 
@@ -240,9 +244,7 @@ function ListUser() {
         </>
     )
     /* Modal */
-     /* Modal */
-  
-  }
 
+    }
 
-export default ListUser
+export default ClassroomSetting

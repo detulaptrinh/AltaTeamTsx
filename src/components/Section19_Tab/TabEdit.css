@@ -84,7 +84,7 @@
 
     
 }
-.tab__tittle__icon__edit{
+.tabedit__tittle__icon__edit{
     position: relative;
     width: 24px;
     height: 24px;
@@ -93,7 +93,7 @@
     color: #FFFFFF;
    
 }
-.tab__tittle__icon__delete{
+.tabedit__tittle__icon__delete{
     position: relative;
     width: 24px;
     height: 24px;
@@ -102,26 +102,26 @@
     color: #FFFFFF;
     
 }
-.tab__content{
+.tabedit__content{
     display: flex;
     height: 100%;
 }
-.tab__content2{
+.tabedit__content2{
     display: flex;
 }
-.tab__content__form-left{
+.tabedit__content__form-left{
     margin-left: 6.5rem;
     margin-top: 3.2rem;
     margin-right: 11.2rem;
 }
 
-.tab__content__form-right{
+.tabedit__content__form-right{
     margin-left: 3rem;
     margin-top: 7.6rem;
     margin-right: 6.4rem;
     
 }
-.tab__content2__form-left__top{
+.tabedit__content2__form-left__top{
     margin-top: 3.2rem;
     margin-left: 6.5rem;
     margin-right: 11.2rem;
@@ -129,18 +129,18 @@
    
   
 }
-.tab__content2__form-right__top{
+.tabedit__content2__form-right__top{
     margin-top: 3.2rem;
     margin-left: 3rem;
     margin-right: 6.4rem;
    
 }
-.tab__content2__form-left__bottom{
+.tabedit__content2__form-left__bottom{
     margin-top: 3.2rem;
     margin-left: 6.5rem;
     margin-right: 11.2rem;
 }
-.tab__content2__form-right__bottom{
+.tabedit__content2__form-right__bottom{
     margin-top: 3.2rem;
     margin-left: 3rem;
     margin-right: 6.4rem;
@@ -157,7 +157,7 @@
     background: #F2F2F2;
     box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
 }
-.tab__content__rec{
+.tabedit__content__rec{
     width: 1640px;
     height: 16px;
     left: 0px;
@@ -168,7 +168,7 @@
 background: #F2F2F2;
 box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
 }
-.tab__content__image{
+.tabedit__content__image{
     width: 23.2rem;
     height: 23.2rem;
     border-radius: 22rem;
@@ -177,13 +177,13 @@ box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
     margin-left: auto;
     margin-right: auto;
 }
-.tab__content__image2{
+.tabedit__content__image2{
     margin-top: 3.2rem;
     text-align: center;
     width: 332px;
     height: 187px;
 }
-.tab__content__image3{
+.tabedit__content__image3{
     margin-top: 3.2rem;
     text-align: center;
     width: 33.2rem;
@@ -193,7 +193,7 @@ box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
 }
 
 
-.tab__content__text__tittle1{
+.tabedit__content__text__tittle1{
     
     height: 20px;
     width: 163px;
@@ -208,7 +208,7 @@ box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
     font-weight: bold;
 }
 
-.tab__content__text__tittle2{
+.tabedit__content__text__tittle2{
     
     height: 20px;
     left: 450px;
@@ -226,7 +226,7 @@ box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
 }
 
 
-.tab__content__icon__camera{
+.tabedit__content__icon__camera{
     
     width: 56px;
     height: 56px;
@@ -237,17 +237,43 @@ box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
     border-radius: 50%;
     
 }
-.tab__content__icon__camera2{
-    
+.tabedit__content__icon__camera2{
     width: 56px;
     height: 56px;
     left: 156px;
     top: 650px;
-    
-    
 }
+.box__btn{
+    display: flex;
+    float: right;
+}
+.box__btn-group__cancel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 160px;
+    height: 52px;
 
+/* Grey/5 */
 
+background: #F2F2F2;
+border-radius: 8px;
+}
+.box__btn-group__save{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-left: 16px;
+    width: 160px;
+    height: 52px;
+    background: #FF7506;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
  /*Modal antd customize CSS*/
 
 .ant-modal-confirm-btns{
@@ -286,35 +312,6 @@ box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
 .anticon.anticon-exclamation-circle{
      visibility: hidden;
  }
-.ant-btn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 15.8rem;
-    height: 5.2rem;
-    background: #F2F2F2;
-    border-radius: 0.8rem;
-    left: 0%;
-    right: 54.55%;
-    top: 0%;
-    bottom: 0%;
-
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
-/* identical to box height */
-
-    letter-spacing: 0.015em;
-
-/* /Orange / 7 */
-
-color: #373839;
-
-}
 .ant-modal-content{
     border-radius: 8px;
     width: 43.5rem;
@@ -366,7 +363,7 @@ color: #373839;
     opacity: 0.8;
 }
 
-.ant-input{
+.ant-input {
     width: 360px;
     height: 40px;
     background-color: #FFFFFF;

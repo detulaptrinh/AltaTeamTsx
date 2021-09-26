@@ -133,11 +133,11 @@ function TabEdit() {
 
                         <Col span={9}>
 
-                            <div className="left-tab-box">
-                                <div className="left-tab-box-general-information">
+                            <div className="switch-group">
+                                <div className="switch-group__tab-left">
                                     <a href="">Nhóm người dùng</a>
                                 </div>
-                                <div className="left-tab-box-study-process">
+                                <div className="switch-group__tab-right">
                                     <a href="">Danh sách người dùng</a>
                                 </div>
                             </div>
