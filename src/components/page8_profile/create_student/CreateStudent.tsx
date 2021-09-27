@@ -7,8 +7,8 @@ import './CreateStudent.css';
 import { Row, Col, Card, Input, Checkbox, Select, DatePicker } from 'antd';
 
 // avatar
-import avatar_thong_tin from '../../../assets/avg/avatar-thong tin.png';
-import internal from 'stream';
+import importAvatar from '../../../assets/boxdata/importAvatar.png';
+import editAvatar from '../../../assets/boxdata/editAvatar.png';
 
 const style = { height: '16px', background: '#F2F2F2' };
 
@@ -17,53 +17,25 @@ const { Option } = Select; //select
 export default class CreateStudent extends Component {
     render() {
         return (
-            <div className="section-9-1-1">
+            <div className="section-8-3">
                 {/* Breadcrumb */}
                 <Row>
                     <Col span={24}>
                         <div className="title">
                             <div><span>Hồ sơ học viên</span></div>
                             <i className='bx bx-chevron-right'></i>
-                            <div className="title-edit-info-student">Chỉnh sửa thông tin học viên</div>
-                        </div>
-                    </Col>
-                </Row>
-
-                {/* switch tab */}
-                <Row className="switch-tab">
-                    <Col className="left-tab" span={12}>
-                        <div className="left-tab-box">
-                            <div className="left-tab-box-general-information">
-                                <a href="">Thông tin chung</a>
-                            </div>
-                            <div className="left-tab-box-study-process">
-                                <a href="">Quá trình học tập</a>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col className="right-btn" span={12}>
-                        <div className="right-btn-box">
-                            <div className="btn-delete">
-                                <i className='bx bx-trash' ></i>
-                            </div>
-                            <div className="btn-excel">
-                                <div className="btn-bk-cancel">Huỷ</div>
-                            </div>
-                            <div className="btn-edit">
-                                <div className="btn-bk-ff7506">
-                                    <i className='bx bx-edit' ></i> Lưu
-                                </div>
-                            </div>
+                            <div className="title-create-student">Thêm học viên</div>
                         </div>
                     </Col>
                 </Row>
 
                 {/* card */}
                 <div className="site-card-border-less-wrapper">
-                    <Card title="Thông tin chung" bordered={false}>
+                    <Card className="card-border" title="Thông tin chung" bordered={false}>
                         <Row>
                             <Col span={6}>
-                                <img src={avatar_thong_tin} alt="" />
+                                <img src={importAvatar} alt="" />
+                                <img className="card-avatar" src={editAvatar} alt="" />
                             </Col>
                             <Col span={18}>
                                 <div className="ant-col-title">Thông tin học viên</div>
@@ -71,32 +43,30 @@ export default class CreateStudent extends Component {
                                     <Col span={12}>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Họ và tên:</Col>
-                                            <Col className="text-right" span={16}><Input placeholder="Phạm Hoàng C" /></Col>
+                                            <Col className="text-right" span={16}><Input /></Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Giới tính:</Col>
                                             <Col className="text-right" span={16}>
-                                                <Select defaultValue="lucy" style={{ width: 95 }} >
-                                                    <Option value="jack">Jack</Option>
-                                                    <Option value="lucy">Lucy</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
+                                                <Select defaultValue="Nam" style={{ width: 95 }} onChange={handleChange}>
+                                                    <Option value="1">Nam</Option>
+                                                    <Option value="2">Nữ</Option>
                                                 </Select>
                                             </Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Ngày sinh:</Col>
                                             <Col span={16}>
-                                                <DatePicker />
+                                                <DatePicker placeholder="dd/mm/yy" />
                                             </Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Nơi sinh:</Col>
-                                            <Col className="text-right" span={16}><Input placeholder="Phạm Hoàng C" /></Col>
+                                            <Col className="text-right" span={16}><Input /></Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Dân tộc:</Col>
-                                            <Col className="text-right" span={16}><Input placeholder="Phạm Hoàng C" /></Col>
+                                            <Col className="text-right" span={16}><Input /></Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Tôn giáo:</Col>
@@ -107,49 +77,46 @@ export default class CreateStudent extends Component {
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Niên khóa:</Col>
                                             <Col className="text-right" span={16}>
-                                                <Select defaultValue="lucy" style={{ width: 360 }} >
-                                                    <Option value="jack">Jack</Option>
-                                                    <Option value="lucy">Lucy</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
+                                                <Select defaultValue="1" style={{ width: 360 }} onChange={handleChange}>
+                                                    <Option value="1">2020-2021</Option>
+                                                    <Option value="2">2019-2020</Option>
+                                                    <Option value="3">2018-2019</Option>
+                                                    <Option value="4">2017-2018</Option>
                                                 </Select>
                                             </Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Khối:</Col>
                                             <Col className="text-right" span={16}>
-                                                <Select defaultValue="lucy" style={{ width: 120 }} >
-                                                    <Option value="jack">Jack</Option>
-                                                    <Option value="lucy">Lucy</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
+                                                <Select defaultValue="1" style={{ width: 120 }} onChange={handleChange}>
+                                                    <Option value="1">7</Option>
+                                                    <Option value="2">8</Option>
+                                                    <Option value="3">9</Option>
                                                 </Select>
-                                                <Select defaultValue="lucy" style={{ width: 120, marginLeft: 20 }} >
-                                                    <Option value="jack">Jack</Option>
-                                                    <Option value="lucy">Lucy</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
+                                                <Select defaultValue="1" style={{ width: 120, marginLeft: 20 }} onChange={handleChange}>
+                                                    <Option value="1">7A</Option>
+                                                    <Option value="2">7B</Option>
                                                 </Select>
                                             </Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Mã học viên:</Col>
-                                            <Col className="text-right" span={16}>
-                                                <Input className="checked-184" placeholder="Phạm Hoàng C" />
-                                                <Checkbox >Sinh mã tự động</Checkbox>
+                                            <Col className="text-right txt-right" span={16}>
+                                                <Input className="checked-184" />
+                                                <Checkbox onChange={onChange}>Sinh mã tự động</Checkbox>
                                             </Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Ngày nhập học:</Col>
                                             <Col span={16}>
-                                                <DatePicker />
+                                                <DatePicker placeholder="dd/mm/yy" />
                                             </Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Hình thức:</Col>
                                             <Col className="text-right" span={16}>
-                                                <Select defaultValue="lucy" style={{ width: 360 }} >
-                                                    <Option value="jack">Jack</Option>
+                                                <Select defaultValue="1" style={{ width: 360 }} onChange={handleChange}>
+                                                    <Option value="1">Trúng tuyển</Option>
                                                     <Option value="lucy">Lucy</Option>
                                                     <Option value="Yiminghe">yiminghe</Option>
                                                     <Option value="Yiminghe">yiminghe</Option>
@@ -159,11 +126,11 @@ export default class CreateStudent extends Component {
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Trạng thái:</Col>
                                             <Col className="text-right" span={16}>
-                                                <Select defaultValue="lucy" style={{ width: 360 }} >
-                                                    <Option value="jack">Jack</Option>
-                                                    <Option value="lucy">Lucy</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
-                                                    <Option value="Yiminghe">yiminghe</Option>
+                                                <Select defaultValue="1" style={{ width: 360 }} onChange={handleChange}>
+                                                    <Option value="1">Đang theo học</Option>
+                                                    <Option value="2">Đã chuyển lớp</Option>
+                                                    <Option value="3">Đã chuyển trường</Option>
+                                                    <Option value="4">Đã thôi học</Option>
                                                 </Select>
                                             </Col>
                                         </Row>
@@ -202,11 +169,11 @@ export default class CreateStudent extends Component {
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Email:</Col>
-                                            <Col className="text-right" span={16}><Input placeholder="" /></Col>
+                                            <Col className="text-right" span={16}><Input placeholder="example123@gmail.com" /></Col>
                                         </Row>
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Điện thoại:</Col>
-                                            <Col className="text-right" span={16}><Input placeholder="" /></Col>
+                                            <Col className="text-right" span={16}><Input placeholder="0xxxxxxxxx" /></Col>
                                         </Row>
                                     </Col>
                                 </Row>
@@ -236,15 +203,15 @@ export default class CreateStudent extends Component {
                             <Col span={8} className="pl-130">
                                 <Row className="ant-row-text">
                                     <Col className="text-left" span={12}>Năm sinh bố:</Col>
-                                    <Col className="text-right w-104" span={12}><Input placeholder="" /></Col>
+                                    <Col className="text-right w-104" span={12}><Input style={{ width: 104 }} placeholder="" /></Col>
                                 </Row>
                                 <Row className="ant-row-text">
                                     <Col className="text-left" span={12}>Năm sinh mẹ:</Col>
-                                    <Col className="text-right w-104" span={12}><Input placeholder="" /></Col>
+                                    <Col className="text-right w-104" span={12}><Input style={{ width: 104 }} placeholder="" /></Col>
                                 </Row>
                                 <Row className="ant-row-text">
                                     <Col className="text-left" span={12}>Năm sinh GH:</Col>
-                                    <Col className="text-right w-104" span={12}><Input placeholder="" /></Col>
+                                    <Col className="text-right w-104" span={12}><Input style={{ width: 104 }} placeholder="" /></Col>
                                 </Row>
                             </Col>
                             <Col span={8} style={{ paddingLeft: '1rem' }}>
@@ -269,26 +236,46 @@ export default class CreateStudent extends Component {
                             <Col span={8}>
                                 <Row className="ant-row-text">
                                     <Col className="text-left" span={12}>Điện thoại bố:</Col>
-                                    <Col className="text-right w-231" span={12}><Input placeholder="" /></Col>
+                                    <Col className="text-right w-231" span={12}><Input style={{ width: 231 }} placeholder="" /></Col>
                                 </Row>
                             </Col>
                             <Col span={8} style={{ paddingLeft: '1rem' }}>
                                 <Row className="ant-row-text">
                                     <Col className="text-left" span={12}>Điện thoại mẹ:</Col>
-                                    <Col className="text-right w-231" span={12}><Input placeholder="" /></Col>
+                                    <Col className="text-right w-231" span={12}><Input style={{ width: 231 }} placeholder="" /></Col>
                                 </Row>
                             </Col>
                             <Col span={8} style={{ paddingLeft: '1rem' }}>
                                 <Row className="ant-row-text">
                                     <Col className="text-left" span={12}>Điện thoại giám:</Col>
-                                    <Col className="text-right w-231" span={12}><Input placeholder="" /></Col>
+                                    <Col className="text-right w-231" span={12}><Input style={{ width: 231 }} placeholder="" /></Col>
                                 </Row>
                             </Col>
                         </Row>
                     </Card>
+                </div>
+
+                <div className="card-button">
+                    <button className="card-button-cancel">Hủy</button>
+                    <button className="card-button-save">Lưu</button>
+
                 </div>
             </div>
         )
     }
 }
 
+// checkbox
+function onChange(e: any) {
+    console.log(`checked = ${e.target.checked}`);
+}
+
+// select
+function handleChange(value: any) {
+    console.log(`selected ${value}`);
+}
+
+// date
+function onChangeDate(date: boolean, dateString: string) {
+    console.log(date, dateString);
+}
