@@ -8,6 +8,7 @@ import { Row, Col, Card, Input, Checkbox, Select, DatePicker } from 'antd';
 
 // avatar
 import avatar_thong_tin from '../../../assets/avg/avatar-thong tin.png';
+import ModalDelete from '../ModalDelete';
 
 const style = { height: '16px', background: '#F2F2F2' };
 
@@ -43,7 +44,7 @@ export default class EditStudentInformation extends Component {
                     <Col className="right-btn" span={12}>
                         <div className="right-btn-box">
                             <div className="btn-delete">
-                                <i className='bx bx-trash' ></i>
+                                <ModalDelete />
                             </div>
                             <div className="btn-excel">
                                 <div className="btn-bk-cancel">Huỷ</div>

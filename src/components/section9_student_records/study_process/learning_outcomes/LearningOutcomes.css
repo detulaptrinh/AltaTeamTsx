@@ -33,6 +33,7 @@
 
 .section-9-2 .box .ant-card-body {
     padding: 1.3rem 4rem;
+    border-right: 0.1rem solid #C9C4C0;
 }
 
 .section-9-2 .box .ant-card-body div:not(:last-child) {

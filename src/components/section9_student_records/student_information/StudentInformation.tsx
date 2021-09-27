@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 // css
 import './StudenInformation.css';
 
+import ModalDelete from '../ModalDelete';
+
 // avatar
 import avatar_thong_tin from '../../../assets/avg/avatar-thong tin.png';
 
@@ -39,7 +41,7 @@ export default class StudentInformation extends Component {
                     <Col className="right-btn" span={12}>
                         <div className="right-btn-box">
                             <div className="btn-delete">
-                                <i className='bx bx-trash' ></i>
+                                <ModalDelete />
                             </div>
                             <div className="btn-excel">
                                 <div className="btn-bk-ffffff">Xuất file</div>
