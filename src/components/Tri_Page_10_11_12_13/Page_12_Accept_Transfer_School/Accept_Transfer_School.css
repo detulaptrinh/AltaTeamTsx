@@ -1,0 +1,195 @@
+.transfer_school_header {
+  width: 100%;
+  height: 15rem;
+}
+.transfer_school_header_breadcrumb_container {
+  width: 100%;
+  height: 6rem;
+}
+
+.transfer_school_header_breadcrumb {
+  /* LMS Student / Sub-header */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 0.015em;
+  /* Inactivated Icon */
+  color: #c9c4c0;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.transfer_school_header_breadcrumb .ant-breadcrumb-separator {
+  width: 0.957rem;
+  height: 1.664rem;
+  margin-left: 1rem;
+  color: #ff7506;
+  font-size: 2rem;
+  transform: rotate(-180deg);
+}
+.transfer_school_header_breadcrumb_transfer_school {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 0rem 2.4rem;
+}
+
+.transfer_school_header_select {
+  height: 9rem;
+}
+.transfer_school_header_button_add {
+  height: 9rem;
+}
+
+.select-year-transfer-school {
+  margin-top: 4.2rem;
+}
+.button-add {
+  float: right;
+  margin-top: 3.2rem;
+}
+.transfer_school_body_group {
+  width: 100%;
+  height: 80.9rem;
+  box-shadow: 0.4rem 0.4rem 2.5rem 0.4rem rgba(154, 202, 245, 0.25);
+  border-radius: 1.6rem;
+  background: #ffffff;
+}
+/* BODY TABLE */
+.transfer_school_body_group_header_left {
+  height: 6.5rem;
+}
+.transfer_school_body_group_header_left_name {
+  font-family: "Mulish";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  text-align: left;
+  color: #373839;
+  margin-top: 2.4rem;
+  margin-left: 6.4rem;
+}
+
+.transfer_school_body_group_header_right {
+  height: 6.5rem;
+}
+
+.transfer_school_body_group_header_search {
+  float: right;
+  margin-top: 2.4rem;
+  margin-right: 6.4rem;
+}
+
+.transfer_school_body_group_table {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  margin-top: 2.4rem;
+  justify-content: center;
+  
+}
+.transfer_school_body_group_table_table {
+  width: 92%;
+  height: 60rem;
+  border: 0.01rem solid #f0f3f6;
+  border-radius: 1rem;
+}
+.transfer_school_body_group_table_table .ant-table-thead > tr > th {
+  color: #ffffff;
+  text-align: center;
+  background: none;
+  border-bottom: 10em;
+  font-family: "Mulish";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+ 
+}
+.transfer_school_body_group_table_table .ant-table-thead{
+  background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+}
+
+
+.transfer_school_body_group_table_table .ant-table-thead > tr > th,
+.transfer_school_body_group_table_table .ant-table-tbody > tr > td,
+.transfer_school_body_group_table_table .ant-table tfoot > tr > th,
+.transfer_school_body_group_table_table .ant-table tfoot > tr > td {
+  padding: 1rem;
+  overflow-wrap: break-word;
+  
+}
+.transfer_school_body_group_table_table
+  .ant-table-tbody
+  > tr
+  .transfer_school_body_group_table_table.ant-table-row:hover
+  > td {
+  background: #f0f3f6;
+}
+.transfer_school_body_group_table_table .ant-table-thead > tr > th,
+.transfer_school_body_group_table_table .ant-table-tbody > tr > td,
+.transfer_school_body_group_table_table .ant-table tfoot > tr > th,
+.transfer_school_body_group_table_table .ant-table tfoot > tr > td {
+  padding: 1rem;
+  overflow-wrap: normal;
+  text-align: center;
+  width: 20rem;
+  height: 4rem;
+}
+.transfer_school_body_group_table_table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #f0f0f0;
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  text-align: center;
+  background: none;
+}
+.transfer_school_body_group_table_table
+  table
+  > thead
+  > tr:first-child
+  th:last-child {
+  border-top-right-radius: 1rem;
+}
+.transfer_school_body_group_table_table
+  table
+  > thead
+  > tr:first-child
+  th:first-child {
+  border-top-left-radius: 1rem;
+}
+
+.transfer_school_footer_group_pagination_right {
+  width: 100%;
+  height: 7rem;
+}
+.transfer_school_footer_group_pagination_left {
+  width: 100%;
+  height: 7rem;
+}
+
+.transfer_school_footer_group_pagination_txt {
+  float: left;
+  padding: 5rem 0rem 0rem 6.4rem;
+}
+.transfer_school_footer_group_pagination_numb {
+  float: right;
+  padding: 5rem 6.4rem 0rem 0rem;
+}

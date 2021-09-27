@@ -7,27 +7,38 @@ import './App.css';
 import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
-
+import StudentProfile from './components/Tri_Page_10_11_12_13/Page_10/StudentProfile';
+import TransferSchool from './components/Tri_Page_10_11_12_13/Page_12_Accept_Transfer_School/Accept_Transfer_School';
+import SelectsYear from './components/Tri_Page_10_11_12_13/Categories/SelectsYear';
+import BoxTable from './components/Tri_Page_10_11_12_13/Categories/Searchs';
+import Searchs from './components/Tri_Page_10_11_12_13/Categories/Searchs';
+import PaginationText from './components/Tri_Page_10_11_12_13/Categories/PaginationText';
+import PaginationNumber from './components/Tri_Page_10_11_12_13/Categories/PaginationsNumber';
 export default class App extends Component {
     render() {
         return (
             <div>
                 <Router>
-                <div className="App">
-                    {/* Sub menu */}
-                    <IndexMenu />
+                    <div className="App">
+                        {/* Sub menu */}
+                        <IndexMenu />
 
-                    {/* main */}
-                    <main>
-                        {/* Top bar user */}
-                        <TopBarUser />
+                        {/* main */}
+                        <main>
+                            {/* Top bar user */}
+                            <TopBarUser />
 
-                        {/* Route content */}
-                        <div className="content">
-                            <h1>content</h1>
-                        </div>
-                    </main>
-                </div>
+                            {/* Route content */}
+                            <div className="content">
+                                <Route path="/studentProfile" component={StudentProfile} />
+                                <Route path="/transferSchool" component={TransferSchool} />
+                                <Route path="/SelectsYear" component={SelectsYear} />
+                                <Route path="/searchs" component={Searchs} />
+                                <Route path="/pagitxt" component={PaginationText} />
+                                <Route path="/paginumber" component={PaginationNumber} />
+                            </div>
+                        </main>
+                    </div>
                 </Router>
             </div>
         )
