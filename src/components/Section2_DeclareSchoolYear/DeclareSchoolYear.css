@@ -438,3 +438,199 @@
   color: #373839;
   margin-bottom: 3.2rem;
 }
+
+.DeclareSchoolYear-modal-add-edit.ant-modal {
+  width: 884px !important;
+}
+
+.DeclareSchoolYear-modal-add-edit .ant-modal-content {
+  border-radius: 16px;
+  padding: 2.4rem 5rem 3.9rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .ant-modal-header {
+  margin-bottom: 2.4rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #c9c4c0;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__left > p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 1.6rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__left-selects > span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #373839;
+  margin: 0 0.8rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__right-inherit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.DeclareSchoolYear__checkbox .ant-checkbox-inner {
+  border: 2px solid #0b80ec;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+.DeclareSchoolYear__checkbox > span:last-child {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__right-desc {
+  display: flex;
+  align-items: flex-start;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__right-desc > p {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  color: #373839;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting {
+  margin: 2.4rem 0 4.8rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #cc5c00;
+  margin-bottom: 2.4rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control-btn > img {
+  border-radius: 50%;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control > h6 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 0;
+  margin-right: 0.8rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control-input {
+  width: 244px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid rgba(55, 56, 57, 0.5);
+  border-radius: 8px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+  margin-right: 1.4rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control > span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #373839;
+  margin: 0 1.5rem 0 1rem;
+}
+
+.DeclareSchoolYear__datepicker.ant-picker {
+  padding: 0 0.4rem 0 0.8rem;
+  border-color: #373839;
+  border-radius: 4px;
+}
+
+.DeclareSchoolYear__datepicker.ant-picker.ant-picker-focused {
+  box-shadow: none;
+}
+
+.DeclareSchoolYear__datepicker .ant-picker-input > input {
+  height: 32px;
+  border-right: 1px solid #373839;
+  border-radius: 0;
+}
+
+.DeclareSchoolYear__datepicker .ant-picker-clear {
+  display: none;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__btnAdd {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__btnAdd > img {
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__btnAdd > span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #0b80ec;
+}

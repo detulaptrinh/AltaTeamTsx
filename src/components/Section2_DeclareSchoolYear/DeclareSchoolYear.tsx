@@ -1,15 +1,38 @@
 import React, { Fragment, useState } from "react";
 import "./DeclareSchoolYear.css";
-import { Button, Input, Modal, Pagination, Select, Table } from "antd";
+import {
+  Button,
+  Checkbox,
+  ConfigProvider,
+  DatePicker,
+  Input,
+  Modal,
+  Pagination,
+  Select,
+  Table,
+} from "antd";
 import caret_down from "../../assets/avg/caret_down.svg";
 import fi_plus from "../../assets/avg/fi_plus.svg";
 import fi_search from "../../assets/avg/fi_search.svg";
 import fi_edit from "../../assets/avg/fi_edit-monhoc.svg";
 import fi_trash from "../../assets/avg/fi_trash-xoamonhoc.svg";
+import fi_info from "../../assets/avg/fi_info.svg";
+import minus_primary from "../../assets/avg/MinusPrimary.svg";
+import plus_primary from "../../assets/avg/PlusPrimary.svg";
+import calendar_alt from "../../assets/avg/u_calendar-alt.svg";
+import moment from "moment";
+import locale from "antd/lib/locale/vi_VN";
 
 const { Option } = Select;
 
-const data = [
+interface ISchoolYear {
+  index: number;
+  schoolYear: string;
+  timeStart: string;
+  timeEnd: string;
+}
+
+const data: ISchoolYear[] = [
   {
     index: 1,
     schoolYear: "2020-2021",
@@ -62,6 +85,7 @@ const data = [
 
 const DeclareSchoolYear = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
+  const [isModalAdd, setIsModalAdd] = useState<boolean>(false);
 
   const columns = [
     {
@@ -90,7 +114,7 @@ const DeclareSchoolYear = (): JSX.Element => {
       title: "",
       render: () => (
         <Fragment>
-          <button className="btnEdit">
+          <button className="btnEdit" onClick={showModalAdd}>
             <img src={fi_edit} alt="fi_edit" />
           </button>
           <button className="btnTrash" onClick={showModalDel}>
@@ -111,6 +135,14 @@ const DeclareSchoolYear = (): JSX.Element => {
 
   const handleCancelDel = (): void => {
     setIsModalDel(false);
+  };
+
+  const showModalAdd = (): void => {
+    setIsModalAdd(true);
+  };
+
+  const handleCancelAdd = (): void => {
+    setIsModalAdd(false);
   };
 
   return (
@@ -157,6 +189,7 @@ const DeclareSchoolYear = (): JSX.Element => {
         <div className="DeclareSchoolYear__data">
           <div className="DeclareSchoolYear__data-head">
             <Button
+              onClick={showModalAdd}
               className="DeclareSchoolYear__btnAdd"
               icon={<img src={fi_plus} alt="fi_plus" />}
             >
@@ -212,6 +245,126 @@ const DeclareSchoolYear = (): JSX.Element => {
           Xác nhận muốn xoá niên khoá này và toàn bộ thông tin bên trong? Sau
           khi xoá sẽ không thể hoàn tác.
         </p>
+      </Modal>
+
+      {/* MODAL ADD */}
+      <Modal
+        className="DeclareSchoolYear-modal DeclareSchoolYear-modal-add-edit"
+        title="Thiết lập niên khoá"
+        visible={isModalAdd}
+        onCancel={handleCancelAdd}
+        okText="Lưu"
+        cancelText="Huỷ"
+        centered
+      >
+        <div className="schoolYear">
+          <div className="schoolYear__left">
+            <p>Niên khoá:</p>
+            <div className="schoolYear__left-selects">
+              <Select
+                className="DeclareSchoolYear__select"
+                defaultValue="2020"
+                style={{ width: 144 }}
+                suffixIcon={<img src={caret_down} alt="caret_down" />}
+              >
+                <Option value="2019">2019</Option>
+                <Option value="2018">2018</Option>
+              </Select>
+              <span>đến</span>
+              <Select
+                className="DeclareSchoolYear__select"
+                defaultValue="2021"
+                style={{ width: 144 }}
+                suffixIcon={<img src={caret_down} alt="caret_down" />}
+              >
+                <Option value="2020">2020</Option>
+                <Option value="2019">2019</Option>
+              </Select>
+            </div>
+          </div>
+          <div className="schoolYear__right">
+            <div className="schoolYear__right-inherit">
+              <Checkbox className="DeclareSchoolYear__checkbox">
+                Kế thừa dữ liệu:
+              </Checkbox>
+              <Select
+                className="DeclareSchoolYear__select"
+                placeholder="Niên khoá"
+                style={{ width: 144 }}
+                suffixIcon={<img src={caret_down} alt="caret_down" />}
+              >
+                <Option value="2015-2016">2015-2016</Option>
+                <Option value="2018-2019">2018-2019</Option>
+              </Select>
+            </div>
+            <div className="schoolYear__right-desc">
+              <img src={fi_info} alt="fi_info" />
+              <p>
+                Dữ liệu được kế thừa bao gồm các thông tin:
+                <br />- Thông tin học viên và Danh sách lớp học
+                <br />- Thông tin môn học
+                <br />- Phân công giảng dạy
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="timeSetting">
+          <h4 className="timeSetting__title">Cài đặt thời gian</h4>
+          <div className="timeSetting__control">
+            <button className="timeSetting__control-btn">
+              <img src={minus_primary} alt="minus_primary" />
+            </button>
+            <h6>Tên học kì:</h6>
+            <Input
+              className="timeSetting__control-input"
+              defaultValue="Học kỳ I"
+            />
+            <span>Từ</span>
+            <ConfigProvider locale={locale}>
+              <DatePicker
+                className="DeclareSchoolYear__datepicker"
+                defaultValue={moment("05/09/2020", "DD/MM/YYYY")}
+                format={"DD/MM/YYYY"}
+                suffixIcon={<img src={calendar_alt} alt="calendar_alt" />}
+              />
+            </ConfigProvider>
+            <span>đến</span>
+            <DatePicker
+              className="DeclareSchoolYear__datepicker"
+              defaultValue={moment("02/01/2021", "DD/MM/YYYY")}
+              format={"DD/MM/YYYY"}
+              suffixIcon={<img src={calendar_alt} alt="calendar_alt" />}
+            />
+          </div>
+          <div className="timeSetting__control">
+            <button className="timeSetting__control-btn">
+              <img src={minus_primary} alt="minus_primary" />
+            </button>
+            <h6>Tên học kì:</h6>
+            <Input
+              className="timeSetting__control-input"
+              defaultValue="Học kỳ II"
+            />
+            <span>Từ</span>
+            <DatePicker
+              className="DeclareSchoolYear__datepicker"
+              defaultValue={moment("05/09/2020", "DD/MM/YYYY")}
+              format={"DD/MM/YYYY"}
+              suffixIcon={<img src={calendar_alt} alt="calendar_alt" />}
+            />
+            <span>đến</span>
+            <DatePicker
+              className="DeclareSchoolYear__datepicker"
+              defaultValue={moment("02/01/2021", "DD/MM/YYYY")}
+              format={"DD/MM/YYYY"}
+              suffixIcon={<img src={calendar_alt} alt="calendar_alt" />}
+            />
+          </div>
+          <button className="timeSetting__btnAdd">
+            <img src={plus_primary} alt="plus_primary" />
+            <span>Thêm học kì mới</span>
+          </button>
+        </div>
       </Modal>
     </Fragment>
   );

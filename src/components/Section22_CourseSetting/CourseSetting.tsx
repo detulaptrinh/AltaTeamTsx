@@ -19,7 +19,13 @@ import {
 
 const { Option } = Select;
 
-const data = [
+interface ICourse {
+  type: string;
+  status: boolean;
+  note: string;
+}
+
+const data: ICourse[] = [
   {
     type: "Môn Căn bản",
     status: false,
@@ -70,6 +76,7 @@ const data = [
 const CourseSetting = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
   const [isModalAdd, setIsModalAdd] = useState<boolean>(false);
+  const [statusCourse, setStatusCourse] = useState<boolean>(false);
 
   const columns = [
     {
@@ -230,8 +237,12 @@ const CourseSetting = (): JSX.Element => {
 
           <Form.Item label="Trạng thái" name="status" valuePropName="checked">
             <div className="CourseSetting__form-switch">
-              <Switch />
-              <span>Đang hoạt động</span>
+              <Switch onChange={(e: any) => setStatusCourse(!statusCourse)} />
+              {statusCourse ? (
+                <span>Đang hoạt động</span>
+              ) : (
+                <span>Vô hiệu hoá</span>
+              )}
             </div>
           </Form.Item>
 

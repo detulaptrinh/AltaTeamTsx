@@ -20,7 +20,13 @@ import {
 const { Option } = Select;
 const { TextArea } = Input;
 
-const data = [
+interface ITrainingLevel {
+  level: string;
+  status: boolean;
+  note: string;
+}
+
+const data: ITrainingLevel[] = [
   {
     level: "THCS",
     status: false,
@@ -71,6 +77,8 @@ const data = [
 const TrainingLevelsManage = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
   const [isModalAdd, setIsModalAdd] = useState<boolean>(false);
+  const [isYearly, setIsYearly] = useState<boolean>(false);
+  const [isTrainingTime, setIsTrainingTime] = useState<boolean>(true);
 
   const columns = [
     {
@@ -248,15 +256,23 @@ const TrainingLevelsManage = (): JSX.Element => {
           >
             <div className="yearly-form">
               <Checkbox
+                onChange={() => {
+                  setIsYearly(!isYearly);
+                  setIsTrainingTime(!isTrainingTime);
+                }}
+                checked={isYearly}
                 className="TrainingLevelsManage__form-checkbox"
-                defaultChecked
               >
                 Niên chế
               </Checkbox>
-              <Input className="TrainingLevelsManage__form-input yearly-input" />
-              <span>Năm</span>
-              <Input className="TrainingLevelsManage__form-input yearly-input" />
-              <span>Học kỳ/Năm</span>
+              {isYearly && (
+                <Fragment>
+                  <Input className="TrainingLevelsManage__form-input yearly-input" />
+                  <span>Năm</span>
+                  <Input className="TrainingLevelsManage__form-input yearly-input" />
+                  <span>Học kỳ/Năm</span>
+                </Fragment>
+              )}
             </div>
             <p className="yearly-desc">
               Đào tạo theo niên chế là đào tạo them đơn vị năm học.
@@ -267,23 +283,29 @@ const TrainingLevelsManage = (): JSX.Element => {
               Mỗi năm học thường được tổ chức thành hai học kỳ.
             </p>
             <Checkbox
+              onChange={() => {
+                setIsTrainingTime(!isTrainingTime);
+                setIsYearly(!isYearly);
+              }}
+              checked={isTrainingTime}
               className="TrainingLevelsManage__form-checkbox"
-              defaultChecked
             >
               Tín chỉ
             </Checkbox>
           </Form.Item>
 
-          <Form.Item label="Thời gian đào tạo" name="trainingTime">
-            <div className="trainingTime">
-              <Input className="TrainingLevelsManage__form-input trainingTime-input" />
-              <span>Năm</span>
-              <Input className="TrainingLevelsManage__form-input trainingTime-input" />
-              <span>Học phần bắt buộc</span>
-              <Input className="TrainingLevelsManage__form-input trainingTime-input" />
-              <span>Học phần tự chọn</span>
-            </div>
-          </Form.Item>
+          {isTrainingTime && (
+            <Form.Item label="Thời gian đào tạo" name="trainingTime">
+              <div className="trainingTime">
+                <Input className="TrainingLevelsManage__form-input trainingTime-input" />
+                <span>Năm</span>
+                <Input className="TrainingLevelsManage__form-input trainingTime-input" />
+                <span>Học phần bắt buộc</span>
+                <Input className="TrainingLevelsManage__form-input trainingTime-input" />
+                <span>Học phần tự chọn</span>
+              </div>
+            </Form.Item>
+          )}
 
           <Form.Item label="Ghi chú" name="note">
             <TextArea className="TrainingLevelsManage__form-textarea" />

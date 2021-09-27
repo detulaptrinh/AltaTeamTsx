@@ -457,7 +457,10 @@
 .TrainingLevelsManage__form
   .TrainingLevelsManage__form-checkbox
   .ant-checkbox-inner {
-  border-color: #0b80ec;
+  border: 2px solid #0b80ec;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
 }
 
 .TrainingLevelsManage__form
