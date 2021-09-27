@@ -14,6 +14,7 @@ import DetailStudent from './components/page6_boxdata_class/boxdata_detail_stude
 import DetailSubject from './components/page6_boxdata_class/boxdata_detail_subject/DetailSubject';
 import PointType from './components/page7_boxdata_type/PointType';
 import StudentProfile from './components/page8_profile/student_profile/StudentProfile';
+import CreateStudent from './components/page8_profile/create_student/CreateStudent';
 
 export default class App extends Component {
     render() {
@@ -37,6 +38,7 @@ export default class App extends Component {
                                 <Route path="/boxdatasubject" component={DetailSubject} />
                                 <Route path="/boxdatatype" component={PointType} />
                                 <Route path="/studentprofile" component={StudentProfile} />
+                                <Route path="/studentcreate" component={CreateStudent} />
                             </div>
                         </main>
                     </div>
