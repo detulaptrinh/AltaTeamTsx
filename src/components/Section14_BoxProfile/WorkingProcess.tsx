@@ -29,15 +29,17 @@ export default class WorkingProcess extends Component {
                 </Col>
               </Row>
               <Row>
-                <Col className="info__tab__box" span={8}>
+                <Col className="info__tab__box" span={7}>
                     <div className="left-tab-box">
                             <div className="left-tab-box-general-information">
-                                <a href="">Thông tin chung</a>
+                                <Link to="/profile-teacher">Thông tin chung</Link>
                             </div>
                             <div className="left-tab-box-study-process">
-                                <a href="">Quá trình học tập</a>
+                                <Link to="/profile-process">Quá trình học tập</Link>
                             </div>
                         </div>
+                </Col>
+                <Col span={6}>
                   <Select id="school_year" defaultValue="2020-2021">
                     <Option value="2017-2018">2017-2018</Option>
                     <Option value="2017-2018">2018-2019</Option>
@@ -52,7 +54,7 @@ export default class WorkingProcess extends Component {
                   </Select>
                 </Col>
                 
-                <Col className="right-btn" span={8} offset={8}>
+                <Col className="right-btn" span={8} offset={3}>
                   <div className="box">
                   <div className="btn-excel">
                   <button className="btn-bk-ffffff" /* onClick={showModals} */>Xuất file</button>

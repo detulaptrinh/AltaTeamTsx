@@ -37,6 +37,16 @@ export default class ProfileTeacher extends Component {
                 </Col>
               </Row>
               <Row>
+              <Col className="info__tab__box" span={7}>
+                    <div className="left-tab-box">
+                            <div className="left-tab-box-general-information">
+                                <Link to="/profile-teacher">Thông tin chung</Link>
+                            </div>
+                            <div className="left-tab-box-study-process">
+                                <Link to="/profile-process">Quá trình học tập</Link>
+                            </div>
+                        </div>
+                </Col>
                 <Col span={8}>
                   <Select id="school_year" defaultValue="2020-2021">
                     <Option value="2017-2018">2017-2018</Option>
@@ -45,7 +55,7 @@ export default class ProfileTeacher extends Component {
                     <Option value="2017-2018" selected>2020-2021</Option>
                   </Select>
                 </Col>
-                <Col className="right-btn" span={8} offset={8}>
+                <Col className="right-btn" span={8} offset={1}>
                   <div className="box">
                     <div className="btn-delete">
                       <button /* onClick={showModal} */>
