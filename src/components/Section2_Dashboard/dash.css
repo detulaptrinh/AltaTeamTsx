@@ -185,6 +185,9 @@
       margin-bottom: 52rem;
       margin-left: 5rem !important;
   }
+  .result_charts canvas{
+      height: 25rem !important;
+  }
   .charts_header {
     display: flex;
     justify-content: space-between;

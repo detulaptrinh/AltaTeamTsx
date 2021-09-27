@@ -371,8 +371,16 @@
 .table__page .ant-table-thead > tr > th {
     color:white;
     font-weight: 600;
-    background: #f17f21;
-    height:5rem;
+    background: none;
+}
+.table__page .ant-table-thead{
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+}
+.table__page .ant-table-thead .ant-table-cell:first-child{
+    border-top-left-radius: 1.6rem;
+}
+.table__page .ant-table-thead .ant-table-cell:last-child{
+    border-top-right-radius: 1.6rem;
 }
 .table__edit__profile .ant-table-thead > tr > th{
     background: black;
@@ -915,3 +923,11 @@ input.ant-input.input__textr__profile {
 /* .box__right__mr{
     margin-right: 1rem;
 } */
+.info__tab__box{
+    display:flex;
+}
+.left-tab-box{
+    display: flex;
+    background: grey;
+    padding: 10px 16px;
+}

@@ -6,8 +6,6 @@ import {
   Select,
   Table, 
   Space,
-  Divider, 
-  Checkbox,
   Pagination, 
   InputNumber,
   Modal,
@@ -15,9 +13,6 @@ import {
   Upload
 } from 'antd';
 import { 
-  FormOutlined,
-  DeleteOutlined, 
-  ContainerOutlined,
   UploadOutlined,
   DownloadOutlined,
 } from '@ant-design/icons';

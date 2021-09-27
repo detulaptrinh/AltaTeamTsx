@@ -29,7 +29,15 @@ export default class WorkingProcess extends Component {
                 </Col>
               </Row>
               <Row>
-                <Col span={8}>
+                <Col className="info__tab__box" span={8}>
+                    <div className="left-tab-box">
+                            <div className="left-tab-box-general-information">
+                                <a href="">Thông tin chung</a>
+                            </div>
+                            <div className="left-tab-box-study-process">
+                                <a href="">Quá trình học tập</a>
+                            </div>
+                        </div>
                   <Select id="school_year" defaultValue="2020-2021">
                     <Option value="2017-2018">2017-2018</Option>
                     <Option value="2017-2018">2018-2019</Option>

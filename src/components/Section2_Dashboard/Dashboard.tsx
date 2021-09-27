@@ -41,7 +41,7 @@ function Dashboard(date: any, dateString: any) {
                                 </Select>
                             </form>
                         </div>
-                        <DemoArea/>
+                        <DemoColumn/>
                     </div>
                     <div className="count_students">
                         <div className="count_students_header">
