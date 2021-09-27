@@ -990,3 +990,45 @@ input.ant-input.input__textr__profile {
     color: #FFFFFF;
 
 }
+.box__collapse .ant-space{
+    width: 100%;
+}
+.box__collapse .ant-space .ant-space-item{
+    margin-top: 2.4rem;
+    
+}
+.box__collapse .ant-collapse{
+    background-color:#FFFFFF;
+    border-radius:0.8rem;
+
+}
+
+.box__collapse .ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    padding: 16px 16px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.box__collapse .ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow {
+    color: #FF7506;
+    font-size: 2rem;  
+}
+.box__collapse .ant-collapse-content>.ant-collapse-content-box {
+    padding: 2.6rem 6.4rem;
+}
+.box__collapse .ant-collapse .ant-collapse-item{
+    border-radius:0.8rem;
+}
+.box__collapse .ant-collapse-item-active{
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+    color: white;
+}
+.box__collapse .ant-collapse-item-active .ant-collapse-header .ant-collapse-header-text{
+    color:white;
+}
+.box__collapse .ant-collapse>.ant-collapse-item-active>.ant-collapse-header .ant-collapse-arrow {
+    color: white;
+}

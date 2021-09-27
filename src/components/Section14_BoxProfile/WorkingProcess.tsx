@@ -85,7 +85,7 @@ export default class WorkingProcess extends Component {
                   </div>
                 </Col>
               </Row>
-              <Col span={12}>
+              <div className="box__collapse">
               <Space direction="vertical">
                     <Collapse collapsible="header">
                         <Panel header="Quá trình công tác" key="1">
@@ -96,7 +96,7 @@ export default class WorkingProcess extends Component {
                         </Panel>
                     </Collapse>
                 </Space>
-              </Col>
+              </div>
                 
             </>
         )
