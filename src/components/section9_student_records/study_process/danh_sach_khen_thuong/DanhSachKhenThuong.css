@@ -1,0 +1,47 @@
+.danh-sach-khen-thuong {
+    margin: 0;
+    padding: 0;
+}
+
+.danh-sach-khen-thuong-seach {
+    width: 100%;
+    min-height: 4rem;
+    margin-bottom: 1.6rem;
+}
+
+.danh-sach-khen-thuong-seach-box {
+    width: 43.8rem;
+    height: 4rem;
+    background: #F0F3F6;
+    border-radius: 2.4rem;
+    float: right;
+    margin-left: calc(100% - 43.8rem);
+    display: flex;
+}
+
+.danh-sach-khen-thuong-seach-box i {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #373839;
+    opacity: 0.5;
+    font-size: 2rem;
+}
+
+.danh-sach-khen-thuong-seach-box input {
+    min-width: 38rem;
+    height: 3.8rem;
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    color: #373839;
+    border: none;
+    background: none;
+
+    opacity: 0.5;
+    margin-left: 2rem;
+}
+
+/* table */
