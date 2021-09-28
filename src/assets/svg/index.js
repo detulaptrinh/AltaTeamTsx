@@ -13,6 +13,7 @@ import IconUser from "./usersIcon.svg";
 import IconEdit from "./edit.svg";
 import IconShow from "./show.svg";
 import IconPlus from "./plus.svg";
+import IconList from "./listicon.svg";
 
 export {
     IconBag,
@@ -30,4 +31,5 @@ export {
     IconEdit,
     IconShow,
     IconPlus,
+    IconList,
 }
