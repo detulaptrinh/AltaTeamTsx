@@ -6,6 +6,7 @@ import "./App.css";
 // css antd
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
+
 import Tab from './components/Section19_Tab/Tab';
 import TabEdit from './components/Section19_Tab/TabEdit';
 import ListUser from './components/Section20_SystemUser/ListUser';
@@ -41,6 +42,14 @@ import Cauhinh from './components/Sesion18_Cauhinh/Boxcauhinh'
 import Xemlichthi from './components/Sesion16_Chitietlichthi/Boxlichthi'
 import Quanlybaikiemtra from './components/Sesion16_Quanlybaikiemtra/Boxbaikiemtra'
 
+// Tri
+import StudentProfile from './components/Tri_Page_10_11_12_13/Section_10_Student_Profile/StudentProfile';
+import TransferSchool from './components/Tri_Page_10_11_12_13/Section_12_Accept_Transfer_School/Accept_Transfer_School';
+import SelectsYear from './components/Tri_Page_10_11_12_13/Categories/SelectsYear';
+import Searchs from './components/Tri_Page_10_11_12_13/Categories/Searchs';
+import PaginationText from './components/Tri_Page_10_11_12_13/Categories/PaginationText';
+import PaginationNumber from './components/Tri_Page_10_11_12_13/Categories/PaginationsNumber';
+        
 // Long
 import CourseSetting from "./components/Section22_CourseSetting/CourseSetting";
 import TrainingLevelsManage from "./components/Section23_TrainingLevelsManage/TrainingLevelsManage";
@@ -81,6 +90,14 @@ export default class App extends Component {
                                 <Route path="/lichthi" component={Xemlichthi}/>
                                 <Route path="/kiemtra" component={Quanlybaikiemtra}/>
                               
+                                {/* tri */}
+                                <Route path="/studentProfile" component={StudentProfile} />
+                                <Route path="/transferSchool" component={TransferSchool} />
+                                <Route path="/SelectsYear" component={SelectsYear} />
+                                <Route path="/searchs" component={Searchs} />
+                                <Route path="/pagitxt" component={PaginationText} />
+                                <Route path="/paginumber" component={PaginationNumber} />
+                              
                                 {/* huy */}
                                 <Route path="/boxdatasbj" component={SubjectList} />
                                 <Route path="/boxdataclass" component={ClassList} />
@@ -110,6 +127,7 @@ export default class App extends Component {
                             </div>
                         </main>
                     </div>
+
 
                 </Router>
             </div>
