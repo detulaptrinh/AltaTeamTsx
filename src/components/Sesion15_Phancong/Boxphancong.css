@@ -1,0 +1,470 @@
+.sesion15_box1{
+
+    width: 278px;
+    height: 900px;
+    margin-left: 0px;
+    margin-top: -40px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Tab */
+
+    box-shadow: 0.25rem 0.25rem 1.563rem 0.25rem rgba(154, 202, 245, 0.25);
+    border-radius: 1rem;
+}
+.sesion15_box2{
+
+    width: 1320px;
+    height: 820px;
+    margin-left: 300px;
+    margin-top: -820px;
+
+    background: #FFFFFF;
+    /* Tab */
+
+    box-shadow: 0.25rem 0.25rem 1.563rem 0.25rem rgba(154, 202, 245, 0.25);
+    border-radius: 1rem;
+}
+.sesion15_box3{
+ 
+    width: 278px;
+    height: 171px;
+    margin-left: 0rem;
+    margin-top: 0rem;
+
+    /* /Orange / 7 */
+
+    background: #373839;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.sesion15_text1{
+    /* Danh sách phân công giảng dạy */
+   
+    width: 378px;
+    height: 171px;
+    margin-left:66px;
+    padding-top: 26px;
+    /* LMS Student / sub-head 1 */
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.75rem;
+    /* identical to box height */
+    letter-spacing: 0.015em;
+    /* /Orange / 7 */
+    color: #373839;
+}
+.sesion15_btn1{
+   
+    width: 230px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 31px;
+    /* /Orange / 5 */
+    background: #CC5C00;
+    border-radius: 0.5rem;
+}
+.sesion15_btn2{
+   
+    width: 230px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 31px;
+    /* /Orange / 1 */  
+    background: #FFF9F4;
+    /* Orange/4 */ 
+    border: 0.063rem solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+.sesion15_btn3{
+
+    width: 230px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 31px;
+    
+    /* /Orange / 1 */
+    
+    background: #FFF9F4;
+    /* Orange/4 */
+    
+    border:  0.063rem  solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+.sesion15_btn4{
+ 
+    width: 230px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 31px;
+    
+    /* /Orange / 1 */
+    
+    background: #FFF9F4;
+    /* Orange/4 */
+    
+    border:  0.063rem  solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    
+}
+.sesion15_btn5{
+   
+    width: 230px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 31px;
+    
+    /* /Orange / 1 */
+    
+    background: #FFF9F4;
+    /* Orange/4 */
+    
+    border:  0.063rem  solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+.sesion15_btn6{
+
+    width: 230px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 31px;
+    
+    /* /Orange / 1 */
+    
+    background: #FFF9F4;
+    /* Orange/4 */
+    
+    border:  0.063rem  solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+.sesion15_textbtn1{
+ 
+    width: 52px;
+    height: 23px;
+    margin-left: 16px;
+    margin-top: 16px;
+    /* LMS Student / Sub-header */
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.438rem;
+    /* identical to box height */
+    letter-spacing: 0.015em;
+    /* White */
+    color: #FFFFFF;
+}
+.sesion15_textbtn2{
+ 
+    width: 194px;
+    height: 23px;
+    margin-left: 16px;
+    margin-top: 16px;
+    text-align: left;
+
+    /* LMS Student / sub-header phụ */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion15_gv{
+
+    width: 150px;
+    height: 21px;
+    margin-left: 24px;
+    padding-top: 24px;   
+    /* LMS Student / Content */
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    /* White */
+    color: #FFFFFF;
+}
+.sesion15_nienkhoa{
+    /* Niên khóa */
+    
+    width: 74px;
+    height: 20px;
+    margin-left: 24px;
+    margin-top: 40px;
+    /* LMS Student / Menu */
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.25rem;
+    letter-spacing: 0.015em;
+    /* White */
+    color: #FFFFFF;
+}
+.sesion15_bomon{
+    /* Bộ Môn */
+   
+    width: 54px;
+    height: 20px;
+    margin-left: 24px;
+    margin-top: 40px;
+    /* LMS Student / Menu */
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.25rem;
+    letter-spacing: 0.015em;
+    /* White */
+    color: #FFFFFF;
+}
+.sesion15_selectNK{
+ 
+    margin-top: -10px;
+    color: #373839;
+}
+.sesion15_selectNK select{
+ 
+    margin-left: 90px;
+    margin-top: -9px;
+    padding: 0rem;
+    width: 106px;
+    height: 30px;
+    border: none;
+    border-radius:0.5rem;
+    font-size: 1.6rem;
+    border: 0.016rem solid #373839;
+    -webkit-appearance: button;
+    outline: none;
+}
+.sesion15_selectNK::before{
+    content: url("/src/assets/avg/downArrowIcon.svg");
+
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-top: -10px;
+    margin-left: 170px;
+    width: 3rem;
+    height: 3.1rem;
+    background: white;
+    border: 0.016rem solid #373839;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+}
+.sesion15_selectBM{
+    margin-top: -10px;
+    color: #373839;
+}
+.sesion15_selectBM select{
+  
+    margin-left: 90px;
+    margin-top: -10px;
+    padding: 0rem;
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius:0.5rem;
+    font-size: 1.6rem;
+    border: 0.016rem solid #373839;
+    -webkit-appearance: button;
+    outline: none;
+}
+.sesion15_selectBM::before{
+    content: url("/src/assets/avg/downArrowIcon.svg");
+
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-top: -9px;
+    margin-left: 200px;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border: 0.016rem solid #373839;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+}
+.sesion15_body-table{
+    width: 100%;
+    height: 60rem;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+   
+}
+.sesion15_body-table table> thead > tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+
+}
+.sesion15_body-table table > thead > tr:first-child th:first-child {
+border-top-left-radius: 1rem;
+}
+.sesion15_table{
+    width: 90%;
+    height: 50rem;
+    border: 0.01rem solid #f0f3f6;
+    border-radius: 1rem;
+    
+}
+.ant-table-thead > tr > th {
+    color: #ffffff;
+  
+    background: none;
+    border-bottom: 0em;
+    font-family: "Mulish";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    text-align: left;
+
+  }
+  
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td,
+  .ant-table tfoot > tr > th,
+  .ant-table tfoot > tr > td {
+    padding: 1rem;
+    overflow-wrap: break-word;
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background: #f0f3f6;
+    text-align: center;
+  }
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td,
+  .ant-table tfoot > tr > th,
+  .ant-table tfoot > tr > td {
+    padding: 1rem;
+    overflow-wrap: normal;
+    text-align: center;
+  }
+  .ant-table-tbody > tr > td {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td,
+  .ant-table tfoot > tr > th,
+  .ant-table tfoot > tr > td {
+    width: 90rem;
+    height: 2rem;
+    overflow-wrap: normal;
+  }
+  .sesion15_col-left {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #373839;
+    margin-top: 80px;
+  }
+  
+  .sesion15_col-left .ant-input-number {
+    width: 48px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #ff7506;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+  }
+  .sesion15_col-left-txt-view {
+    margin: 0.9rem 2rem 0 6.4rem;
+    
+   
+  }
+  .sesion15_col-left-txt-rol {
+    margin: 0.6rem 0 0 2rem;
+  
+  }
+  
+  .sesion15_footer-col-right {
+    width: 100%;
+    height: 5rem;
+    margin-top: 80px;
+  }
+  
+  .sesion15_footer-col-right-pagination{
+    float: right;
+    margin-right: 6.4rem;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination-item-active a{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FFF9F4;
+    border-radius: 50%;
+    background: #FF7506;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination a:hover{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FFF9F4;
+    border-radius: 50%;
+    background: #FF7506;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination-options{
+    display: none;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination li{
+    border: none;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination-prev button{
+    border: none;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination-prev button:hover{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FFF9F4;
+    border-radius: 50%;
+    background: #FF7506;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination-next button{
+    border: none;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination-next button:hover{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FFF9F4;
+    border-radius: 50%;
+    background: #FF7506;
+  }
+  .sesion15_footer-col-right-pagination .ant-pagination-jump-prev a:hover{
+    color: rgba(0, 0, 0, 0.85);
+  }  

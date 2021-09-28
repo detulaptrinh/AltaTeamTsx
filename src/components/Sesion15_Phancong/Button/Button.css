@@ -1,0 +1,98 @@
+.sesion15_button{
+ /* button */
+/* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+ 
+    width: 176px;
+    height: 52px;
+   
+ 
+   
+
+    /* Orange/4 */
+
+    background: #FF7506;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+
+    }
+.sesion15_icon{
+
+    padding-left: 0%;
+ 
+    padding-top: 5%;
+
+
+  
+}
+.sesion15_icon1{
+
+    align-items: center;
+    padding-left: 0%;
+    padding-top: 0%;
+
+
+}
+.sesion15_text{
+
+    width: 100px;
+    height: 23px;
+    margin-left: calc(50% - 88px/2 + 17px);
+    margin-top: calc(50% - 23px/2);
+    
+    /* LMS Student / Sub-header */
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    
+    letter-spacing: 0.015em;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.sesion15_b{
+    width: 52px;
+    height: 0px;
+    padding-left: 20px;
+    margin-top: 25px;
+
+    /* Inactivated Icon */
+
+    border: 1px solid #C9C4C0;
+    transform: rotate(90deg);
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+.sesion15_divhang{
+   margin-left: 83%;
+   padding-top: 0px;
+    display: flex;
+}

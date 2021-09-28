@@ -1,0 +1,65 @@
+.textcaidat{
+    /* Phân công giảng dạy */
+    position: absolute;
+    width: 280px;
+    height: 23px;
+    left: 190px;
+    top: 80px;
+    /* LMS Student / Sub-header */
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    letter-spacing: 0.015em;
+    /* Inactivated Icon */
+    color: #C9C4C0;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+.textcauhinhh{
+    /* Danh sách chủ đề */
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    left: 410px;
+    top: 60px;
+
+    /* LMS Student / H1 */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+.iconrightt{
+    position: absolute;
+    align-items: center;
+    left: 20.5%;
+    right: 99.5%;
+    top: 81px;
+    bottom: 41.67%;
+
+    /* Orange/4 */
+
+   
+}

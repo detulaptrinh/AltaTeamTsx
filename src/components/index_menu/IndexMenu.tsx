@@ -1,42 +1,40 @@
 import React, { Component } from 'react'
-
-// css
 import './IndexMenu.css'
-
-// icon avg
-import logo from '../../assets/avg/logo.svg';
-import eyes from '../../assets/avg/eyeIcon.svg';
-import chart from '../../assets/avg/chartIcon.svg';
-import users from '../../assets/avg/usersIcon.svg';
-import bag from '../../assets/avg/bagIcon.svg';
-import book from '../../assets/avg/bookopenIcon.svg';
-import setting from '../../assets/avg/settingIcon.svg';
+import {
+    IconLogo,
+    IconEyes,
+    IconChart,
+    IconUser,
+    IconBag,
+    IconBook,
+    IconSettings,
+} from "../../assets/svg";
 
 export default class IndexMenu extends Component {
     render() {
         return (
             <div className="menu">
                 <div className="logo">
-                    <img src={logo} alt="Logo" />
+                    <img src={IconLogo} alt="Logo" />
                 </div>
                 <div className="box">
                     <div className="icon active">
-                        <img src={eyes} alt="" />
+                        <img src={IconEyes} alt="" />
                     </div>
                     <div className="icon">
-                        <img src={chart} alt="" />
+                        <img src={IconChart} alt="" />
                     </div>
                     <div className="icon">
-                        <img src={users} alt="" />
+                        <img src={IconUser} alt="" />
                     </div>
                     <div className="icon">
-                        <img src={bag} alt="" />
+                        <img src={IconBag} alt="" />
                     </div>
                     <div className="icon">
-                        <img src={book} alt="" />
+                        <img src={IconBook} alt="" />
                     </div>
                     <div className="icon">
-                        <img src={setting} alt="" />
+                        <img src={IconSettings} alt="" />
                     </div>
                 </div>
             </div>

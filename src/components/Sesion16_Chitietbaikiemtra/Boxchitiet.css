@@ -1,0 +1,872 @@
+.sesion16_col_chitietbikiemtra{
+    /* 16.1.Xem chi tiết bài kiểm tra */
+
+
+    position: relative;
+    width: 884px;
+    height: 706px;
+    left: 100px;
+    top: 50px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.sesion16_icon_close{
+    position: absolute;
+    left: 95.83%;
+    top: 10px;
+   
+}
+.sesion16_boxchitiet{ 
+    position: absolute;
+    width: 756px;
+    height: 278px;
+    left: 64px;
+    top: 288px;
+
+    /* /Orange / 1 */
+
+    background: #FFF9F4;
+    /* Orange/4 */
+
+    border: 1px solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+.sesion16_textct{
+    /* Xem chi tiết bài kiểm tra */
+    position: absolute;
+    width: 342px;
+    height: 35px;
+    left: 271px;
+    top: 0px;
+
+    /* LMS Student / H2 */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16_buttonhuy{
+    /* button */
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 160px;
+    height: 52px;
+    left: 266px;
+    top: 614px;
+
+    /* Grey/5 */
+
+    background: #F2F2F2;
+    border-radius: 8px;
+}
+.sesion16_texthuy{
+    position: static;
+    width: 36px;
+    height: 23px;
+    left: calc(50% - 36px/2);
+    top: calc(50% - 23px/2);
+    
+    /* LMS Student / Sub-header */
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    
+    letter-spacing: 0.015em;
+    
+    /* /Orange / 7 */
+    
+    color: #373839;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.sesion16_buttonconfirm{
+    /* button */
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 160px;
+    height: 52px;
+    left: 458px;
+    top: 614px;
+
+    /* Orange/4 */
+
+    background: #FF7506;
+    border-radius: 8px;
+}
+.sesion16_textconfirm{
+    position: static;
+    width: 94px;
+    height: 23px;
+    left: calc(50% - 84px/2);
+    top: calc(50% - 23px/2);
+    
+    /* LMS Student / Sub-header */
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    
+    letter-spacing: 0.015em;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.sesion16_textmonhoc{
+/* Môn học: */
+
+
+    position: absolute;
+    width: 86px;
+    height: 20px;
+    left: 64px;
+    top: 83px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16_texttoanhoc{
+    /* Toán học */
+    position: absolute;
+    width: 81px;
+    height: 21px;
+    left: 110px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_textlop{
+   /* Lớp: */
+
+
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    left: 64px;
+    top: 120px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839; 
+}
+.sesion16_text6a1{
+    /* 6A1 */
+
+
+    position: absolute;
+    width: 25px;
+    height: 21px;
+    left: 110px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_textkhoakhoi{
+    /* Khoa-khối: */
+
+
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 64px;
+    top: 158px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16_text6{
+    /* 6 */
+
+
+    position: absolute;
+    width: 8px;
+    height: 21px;
+    left: 110px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_textgiangvien{
+    /* Giảng viên: */
+
+
+    position: absolute;
+    width: 112px;
+    height: 20px;
+    left: 64px;
+    top: 196px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16_textnva{
+    /* Nguyễn Văn A */
+
+
+    position: absolute;
+    width: 112px;
+    height: 21px;
+    left: 110px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_textthoigian{
+    /* Thời gian: */
+
+
+    position: absolute;
+    width: 93px;
+    height: 20px;
+    left: 520px;
+    top: 83px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16_text45p{
+    /* 45 phút */
+
+
+    position: absolute;
+    width: 75px;
+    height: 21px;
+    left: 144px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_texthinhthuc{
+    /* Hình thức: */
+
+
+    position: absolute;
+    width: 96px;
+    height: 20px;
+    left: 520px;
+    top: 121px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16_texttuluan{
+    /* Tự luận */
+
+
+    position: absolute;
+    width: 80px;
+    height: 21px;
+    left: 144px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_textphanloai{
+    /* Phân loại: */
+
+
+    position: absolute;
+    width: 93px;
+    height: 20px;
+    left: 520px;
+    top: 159px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16_textgiuaky{
+    /* Giữa kỳ */
+
+
+    position: absolute;
+    width: 80px;
+    height: 21px;
+    left: 144px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_textbatdau{
+    /* Ngày bắt đầu: */
+
+
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    left: 520px;
+    top: 197px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16_textbatdau1{
+    /* 20/01/2021 - 07:00 AM */
+
+
+    position: absolute;
+    width: 186px;
+    height: 21px;
+    left: 144px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_textketthuc{
+    /* Ngày kết thúc: */
+
+
+    position: absolute;
+    width: 135px;
+    height: 20px;
+    left: 520px;
+    top: 235px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+
+}
+.sesion16_textketthuc1{
+    /* 20/01/2021 - 09:00 AM */
+
+
+    position: absolute;
+    width: 186px;
+    height: 21px;
+    left: 144px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_text_chude{
+    /* Chủ đề: */
+
+
+    position: absolute;
+    width: 85px;
+    height: 20px;
+    left: 32px;
+    top: 24px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+}
+.sesion16_text_chude1{
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. */
+
+
+    position: absolute;
+    width: 570px;
+    height: 21px;
+    left: 168px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_text_mota{
+    /* Mô tả: */
+
+
+    position: absolute; 
+    width: 66.85px;
+    height: 20px;
+    left: 32px;
+    top: 61px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16_text_mota1{
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et vestibulum ante, id malesuada libero. In hac habitasse platea dictumst. Maecenas est erat, volutpat ut hendrerit efficitur, pulvinar vitae nisi. */
+
+
+    position: absolute;
+    width: 525px;
+    height: 63px;
+    left: 168px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+
+    text-align: justify;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_text_caidat{
+    /* Cài đặt khác: */
+
+
+    position: absolute;
+    width: 117px;
+    height: 20px;
+    left: 32px;
+    top: 140px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+
+}
+.sesion16_text_caidat1{
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. */
+
+
+    position: absolute;
+    width: 445px;
+    height: 21px;
+    left: 168px;
+    top: 0px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+    opacity: 0.8;
+}
+.sesion16_text_dinhkem{
+    /* Tệp đính kèm: */
+
+
+    position: absolute;
+    width: 122px;
+    height: 20px;
+    left: 32px;
+    top: 183px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16_text_kieufile{
+    /* Kiểu file .pdf .jpeg .jpg. Dung lượng tối đa 100MB. */
+    position: absolute;
+    width: 418px;
+    height: 20px;
+    left: 199px;
+    top: 213px;
+
+    /* LMS Student / Status */
+
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Black / 4 */
+
+    color: #292B2E;
+
+    opacity: 0.5;
+}
+.sesion16_box_dinhkem{
+    /* attach file */
+    position: absolute;
+    width: 350px;
+    height: 32px;
+    left: 168px;
+    top: -10px;
+
+    /* Grey / 1 */
+
+    background: #EFEFEF;
+    border-radius: 4px;
+}
+.sesion16_text_tailen{
+    /* DSTT_KT45P_12A1.doc */
+    position: absolute;
+    width: 156px;
+    height: 21px;
+    left: 52px;
+    top: 5px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+    text-align: right;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16_icon_paper{
+    position: absolute;
+    left: 2.5%;
+    top: 8.43%;
+  
+}
+.sesion16_b{
+    position: absolute;
+    width: 0px;
+    height: 19px;
+    left: 40px;
+    top: 6px;
+
+    /* Inactivated Icon */
+
+    border: 1px solid #C9C4C0;
+}
+.sesion16_upload{
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 138px;
+    height: 32px;
+    left: 554px;
+    top: -10px;
+
+    /* /Orange / 2 */
+
+    background: #FFD8B8;
+    /* Orange/4 */
+
+    border: 1px solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
