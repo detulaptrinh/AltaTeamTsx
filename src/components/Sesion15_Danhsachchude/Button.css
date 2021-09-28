@@ -1,0 +1,47 @@
+.sesion15__textphanconggd{
+    width: 290px;
+    height: 23px;
+    margin-left: calc(50% - 191px/2);
+    margin-top: calc(50% - 23px/2);
+
+    /* LMS Student / Sub-header */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+
+    color: #FFFFFF;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.sesion15__button{
+    /* button */
+/* Auto Layout */
+   position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 238px;
+    height: 52px;
+    margin-left: 1320px;
+    margin-top: 90px;
+
+    /* Orange/4 */
+
+    background: #FF7506;
+    border-radius: 8px;
+}
