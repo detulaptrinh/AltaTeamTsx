@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './GroupUser.css'
 import "@fontsource/source-sans-pro";
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
@@ -90,10 +90,10 @@ const dataSource = [
 ];
 
 
-function TabEdit() {
-    return (
+class GroupUser extends Component {
+    render(){
+        return(
         <>
-
             <div className="Section20__Title">
                 <Row>
                     <Col span={24}>
@@ -210,5 +210,6 @@ function TabEdit() {
     )
     /* Modal */
 }
+}
 
-export default TabEdit
+export default GroupUser;
