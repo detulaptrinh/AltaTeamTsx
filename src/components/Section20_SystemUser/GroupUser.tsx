@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './GroupUser.css'
-import "@fontsource/source-sans-pro";
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { PlusOutlined } from '@ant-design/icons';
 import { Button } from 'antd';

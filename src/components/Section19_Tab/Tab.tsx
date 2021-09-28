@@ -1,6 +1,5 @@
 import React from 'react'
 import './Tab.css'
-import "@fontsource/source-sans-pro";
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { FormOutlined, PlusOutlined} from '@ant-design/icons';
 import { Button } from 'antd';

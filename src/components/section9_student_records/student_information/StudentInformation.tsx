@@ -6,7 +6,7 @@ import './StudenInformation.css';
 import ModalDelete from '../ModalDelete';
 
 // avatar
-import avatar_thong_tin from '../../../assets/avg/avatar-thong tin.png';
+import { Avatar } from '../../../assets/images';
 
 // icon antd
 import { Row, Col, Card } from 'antd';
@@ -60,7 +60,7 @@ export default class StudentInformation extends Component {
                     <Card title="Thông tin chung" bordered={false}>
                         <Row>
                             <Col span={6}>
-                                <img src={avatar_thong_tin} alt="" />
+                                <img src={Avatar} alt="" />
                             </Col>
                             <Col span={18}>
                                 <div className="ant-col-title">Thông tin học viên</div>

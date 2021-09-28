@@ -1,7 +1,6 @@
-import Avatar from './Frame19.png';
-import Avt from './avatar-thong tin.png';
+import Avatar from './frame19.png';
 
 export {
     Avatar,
-    Avt,
+    
 }

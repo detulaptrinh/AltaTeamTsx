@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './ClassroomSetting.css'
-import "@fontsource/source-sans-pro";
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { PlusOutlined, FormOutlined} from '@ant-design/icons';
 import { Button } from 'antd';
