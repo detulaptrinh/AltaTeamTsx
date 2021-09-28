@@ -162,7 +162,7 @@ const data = [
 ]; // 
 
 
-class StudentProfile extends Component {
+class ProfileStudent extends Component {
     render() {
         return (
             <div className="section-8">
@@ -239,4 +239,4 @@ class StudentProfile extends Component {
     }
 }
 
-export default StudentProfile;
+export default ProfileStudent;

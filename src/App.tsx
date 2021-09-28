@@ -30,7 +30,7 @@ import ClassList from './components/section6_boxdata_class/boxdata_class_list/Cl
 import DetailStudent from './components/section6_boxdata_class/boxdata_detail_student/DetailStudent';
 import DetailSubject from './components/section6_boxdata_class/boxdata_detail_subject/DetailSubject';
 import PointType from './components/section7_boxdata_type/PointType';
-import StudentProfile from './components/section8_profile/student_profile/StudentProfile';
+import ProfileStudent from './components/section8_profile/student_profile/StudentProfile';
 import CreateStudent from './components/section8_profile/create_student/CreateStudent';
 
 
