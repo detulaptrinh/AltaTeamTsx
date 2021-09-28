@@ -1,0 +1,501 @@
+.CourseSetting__title {
+  display: flex;
+  align-items: center;
+}
+
+.CourseSetting__title > span {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #c9c4c0;
+}
+
+.CourseSetting__title > img {
+  margin: 0 3.121rem;
+}
+
+.CourseSetting__title > h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 0;
+}
+
+.CourseSetting__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+}
+
+.CourseSetting__select {
+  border: 1px solid #373839;
+  border-radius: 4px;
+}
+
+.CourseSetting__select.ant-select {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.CourseSetting__select.ant-select:not(.ant-select-disabled):hover
+  .ant-select-selector {
+  border-color: #373839;
+}
+
+.CourseSetting__select.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: #373839;
+  box-shadow: none;
+}
+
+.CourseSetting__select.ant-select-single.ant-select-show-arrow
+  .ant-select-selection-search {
+  right: 30px;
+  border-right: 1px solid #373839;
+}
+
+.CourseSetting__select .ant-select-arrow {
+  width: 24px;
+  height: 24px;
+  right: 4px;
+  top: 11px;
+}
+
+.CourseSetting__btnAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 176px;
+  height: 52px;
+  background: #ff7506;
+  border-color: #ff7506;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.CourseSetting__btnAdd:hover,
+.CourseSetting__btnAdd:focus {
+  border-color: #ff7506;
+  background-color: #ff7506;
+  color: #ffffff;
+}
+
+.CourseSetting__btnAdd > img {
+  margin-right: 1.3rem;
+}
+
+.CourseSetting-content {
+  padding: 2.5rem 6.4rem;
+  margin-top: 2.4rem;
+  background: #ffffff;
+  box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+  border-radius: 16px;
+}
+
+.CourseSetting-content__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.CourseSetting-content__head > h4 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 0;
+}
+
+.CourseSetting__search {
+  width: 438px;
+  height: 40px;
+  background: #f0f3f6;
+  border-radius: 24px;
+  border-color: #f0f3f6;
+}
+
+.CourseSetting__search.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+.CourseSetting__search.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):focus {
+  border-color: #f0f3f6;
+}
+
+.CourseSetting__search.ant-input-affix-wrapper-focused {
+  box-shadow: none;
+}
+
+.CourseSetting__search .ant-input-prefix {
+  margin-right: 2.5rem;
+}
+
+.CourseSetting__search.ant-input-affix-wrapper > input.ant-input {
+  background: #f0f3f6;
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #373839;
+}
+
+.CourseSetting__table.ant-table-wrapper {
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 4.3rem;
+}
+
+.CourseSetting__table .ant-table-thead {
+  background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
+}
+
+.CourseSetting__table .ant-table-thead > tr > th {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background: transparent;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.CourseSetting__table .ant-table-thead > tr > th::before {
+  display: none;
+}
+
+.CourseSetting__table .ant-table-column-sorter {
+  color: #fff;
+}
+
+.CourseSetting__table .ant-table-tbody > tr > td {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  border-bottom: none;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.CourseSetting__table .ant-table-tbody > tr.ant-table-row:hover > td {
+  background: transparent;
+}
+
+.CourseSetting__table .ant-table-tbody > tr:nth-of-type(even) {
+  background: #f0f3f6;
+}
+
+.CourseSetting__table .primary {
+  font-style: italic;
+  line-height: 2rem;
+  color: #0b80ec;
+}
+
+.CourseSetting__table .danger {
+  font-style: italic;
+  line-height: 2rem;
+  color: #ed2025;
+}
+
+.CourseSetting__table .btnEdit,
+.CourseSetting__table .btnTrash {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.CourseSetting__table .btnEdit {
+  margin-right: 2rem;
+}
+
+.CourseSetting-content__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CourseSetting-content__foot .showRow {
+  display: flex;
+  align-items: center;
+}
+
+.CourseSetting-content__foot .showRow > span {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #373839;
+}
+
+.CourseSetting__showRow.ant-input {
+  margin: 0 1rem;
+  width: 48px;
+  height: 32px;
+  border: 1px solid #ff7506;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.CourseSetting__showRow.ant-input:hover {
+  border-color: #ff7506;
+}
+
+.CourseSetting__showRow.ant-input:focus {
+  box-shadow: none;
+}
+
+.CourseSetting__pagination .ant-pagination-item-link {
+  border: none;
+}
+
+.CourseSetting__pagination .ant-pagination-prev:hover .ant-pagination-item-link,
+.CourseSetting__pagination
+  .ant-pagination-next:hover
+  .ant-pagination-item-link {
+  color: #ff7506;
+}
+
+.CourseSetting__pagination .ant-pagination-item {
+  height: 26px;
+  min-width: 26px;
+  border: none;
+  border-radius: 50%;
+}
+
+.CourseSetting__pagination .ant-pagination-item > a {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #373839;
+}
+
+.CourseSetting__pagination .ant-pagination-item-active {
+  background: #ff7506;
+}
+
+.CourseSetting__pagination .ant-pagination-item-active > a {
+  color: #fff;
+}
+
+.CourseSetting-modal .ant-modal-close {
+  display: none;
+}
+
+.CourseSetting-modal .ant-modal-header {
+  text-align: center;
+  border-bottom: none;
+  padding: 0;
+}
+
+.CourseSetting-modal .ant-modal-header .ant-modal-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.CourseSetting-modal .ant-modal-body {
+  padding: 0;
+}
+
+.CourseSetting-modal .ant-modal-footer {
+  border-top: none;
+  text-align: center;
+  padding: 0;
+}
+
+.CourseSetting-modal .ant-modal-footer .ant-btn {
+  width: 160px;
+  height: 52px;
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.CourseSetting-modal .ant-modal-footer .ant-btn.ant-btn-primary {
+  background: #ff7506;
+  border-color: #ff7506;
+  color: #fff;
+  margin-left: 3.1rem;
+}
+
+.CourseSetting-modal-del.ant-modal {
+  width: 435px !important;
+}
+
+.CourseSetting-modal-del .ant-modal-content {
+  border-radius: 8px;
+  padding: 2.6rem 3.8rem 4rem;
+}
+
+.CourseSetting-modal-del .ant-modal-header {
+  margin-bottom: 1.6rem;
+}
+
+.CourseSetting-modal-del .CourseSetting-modal-del-desc {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+  margin-bottom: 3.2rem;
+}
+
+.CourseSetting-modal-add-edit.ant-modal {
+  width: 884px !important;
+}
+
+.CourseSetting-modal-add-edit .ant-modal-content {
+  border-radius: 16px;
+  padding: 2.4rem 6.4rem 4rem;
+}
+
+.CourseSetting-modal-add-edit .ant-modal-header {
+  margin-bottom: 2.4rem;
+}
+
+.CourseSetting-modal-add-edit .ant-modal-footer {
+  display: none;
+}
+
+.CourseSetting-modal-add-edit .ant-row {
+  align-items: center;
+}
+
+.CourseSetting-modal-add-edit .ant-form-item {
+  margin-bottom: 1.6rem;
+}
+
+.CourseSetting-modal-add-edit .ant-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.CourseSetting-modal-add-edit .ant-form-horizontal .ant-form-item-label {
+  text-align: left;
+}
+
+.CourseSetting-modal-add-edit
+  .ant-form-horizontal
+  .ant-form-item-label
+  > label {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.CourseSetting-modal-add-edit
+  .ant-form-horizontal
+  .ant-form-item-label
+  > label::before {
+  display: none;
+}
+
+.CourseSetting__form-input.ant-input {
+  height: 40px;
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+  border-radius: 8px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.CourseSetting__form-input.ant-input:focus {
+  box-shadow: none;
+}
+
+.CourseSetting__form-switch {
+  display: flex;
+  align-items: center;
+}
+
+.CourseSetting__form-switch > span {
+  margin-left: 0.8rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.CourseSetting__form-btns {
+  text-align: center;
+  margin-top: 3.2rem;
+}
+
+.CourseSetting__form-btns .ant-btn {
+  width: 160px;
+  height: 52px;
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.CourseSetting__form-btns .ant-btn.CourseSetting__form-submit {
+  background: #ff7506;
+  border-color: #ff7506;
+  color: #fff;
+  margin-left: 3.2rem;
+}

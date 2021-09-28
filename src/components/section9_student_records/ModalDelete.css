@@ -1,0 +1,77 @@
+/* modal */
+.ant-modal-content>button {
+    display: none;
+}
+
+.ant-modal-footer {
+    border: none;
+    text-align: center;
+}
+
+.ant-modal-footer>button {
+    width: 160px;
+    height: 52px;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.ant-modal-footer {
+    padding: 0 40px;
+    padding-bottom: 40px;
+}
+
+.ant-modal-footer .ant-btn+.ant-btn:not(.ant-dropdown-trigger) {
+    margin-bottom: 0;
+    margin-left: 32px;
+}
+
+.ant-modal-footer>.ant-btn {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.015em;
+    color: #373839;
+    border: none;
+    background: #F2F2F2;
+}
+
+.ant-modal-footer>.ant-btn-primary {
+    background: #FF7506;
+    color: #FFFFFF;
+}
+
+.ant-modal-content {
+    margin: 0 auto;
+    width: 435px;
+    min-height: 243px;
+    border-radius: 8px;
+}
+
+.ant-modal-body {
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.ant-modal-body h3 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 0.015em;
+    color: #373839;
+    padding-top: 26px;
+    padding-bottom: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.ant-modal-body p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #373839;
+    padding-bottom: 32px;
+    margin: 0;
+}

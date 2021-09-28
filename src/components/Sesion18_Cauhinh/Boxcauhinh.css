@@ -1,0 +1,499 @@
+.sesion18_boxcauhinh{
+    /* Board_Body */
+    width: 1620px;
+    height: 900px;
+    margin-left: 0px;
+    margin-top: 70px;
+
+    background: #FFFFFF;
+    /* Tab */
+
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 16px;
+}
+.sesison18_txtcauhinh{
+    /* Cấu hình */
+    width: 194px;
+    height: 35px;
+    margin-left: 64px;
+    padding-top: 10px;
+
+    /* LMS Student / H2 */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesison18_txttheme{
+    /* Theme hiện có */
+
+    width: 201px;
+    height: 35px;
+    margin-left: 795px;
+    margin-top:-400px;
+
+    /* LMS Student / H2 */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesison18_b{
+    /* Line 68 */
+    width: 1800px;
+    height: 0px;
+    margin-left: 700px;
+    margin-top: 0px;
+
+    /* Grey/6 */
+
+    border: 2px solid #E1E1E1;
+    transform: rotate(90deg);
+}
+.sesison18_buttoncancel{
+    /* button */
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 160px;
+    height: 52px;
+    margin-left: calc(50% - 160px/2 + 484px);
+    margin-top: 170px;
+
+    /* Grey/5 */
+
+    background: #F2F2F2;
+    border-radius: 8px;
+}
+.sesison18_buttonsave{
+    /* button */
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 160px;
+    height: 52px;
+    margin-left: calc(50% - 160px/2 + 676px);
+    margin-top: -50px;
+
+    /* Orange/4 */
+
+    background: #FF7506;
+    border-radius: 8px;
+}
+.sesison18_texthuy{
+        /* Button */
+    width: 36px;
+    height: 23px;
+    margin-left: calc(50% - 36px/2);
+    margin-top: calc(50% - 23px/2);
+
+    /* LMS Student / Sub-header */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.sesison18_textsave{
+    /* Button */
+    width: 36px;
+    height: 23px;
+    margin-left: calc(50% - 36px/2);
+    margin-top: calc(50% - 23px/2);
+
+    /* LMS Student / Sub-header */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.sesison18_theme1{
+    /* Rectangle 1984 */
+    width: 201px;
+    height: 113px;
+    margin-left: 800px;
+    margin-top: -380px;
+
+    /* /Blue / 1 */
+
+    background: #ECF7FD;
+    border-radius: 8px;
+}
+.sesison18_texttheme1{
+    /* Lorem ipsum dolor sit */
+   
+    width: 186px;
+    height: 21px;
+    margin-left: 827px;
+    margin-top: 10px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesison18_theme2{
+    width: 201px;
+    height: 113px;
+    margin-left: 1091px;
+    margin-top: -165px;
+    
+    /* /Blue / 1 */
+    
+    background: #ECF7FD;
+    border-radius: 8px;
+}
+.sesison18_texttheme2{
+
+    width: 186px;
+    height: 21px;
+    margin-left: 1112px;
+    margin-top: 10px;
+    
+    /* LMS Student / Content */
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    
+    
+    /* /Orange / 7 */
+    
+    color: #373839;
+}
+.sesison18_theme3{
+
+    width: 201px;
+    height: 113px;
+    margin-left: 1375px;
+    margin-top: -165px;
+    
+    /* /Blue / 1 */
+    
+    background: #ECF7FD;
+    border-radius: 8px;
+}
+.sesison18_texttheme3{
+    
+    width: 186px;
+    height: 21px;
+    margin-left: 1396px;
+    margin-top: 10px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+    }
+.sesison18_theme4{
+
+    width: 201px;
+    height: 113px;
+    margin-left: 796px;
+    margin-top: 39px;
+    
+    /* /Blue / 1 */
+    
+    background: #ECF7FD;
+    border-radius: 8px;
+}
+.sesison18_texttheme4{
+    
+    width: 186px;
+    height: 21px;
+    margin-left: 827px;
+    margin-top: 10px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesison18_theme5{
+    width: 201px;
+    height: 113px;
+    margin-left: 1091px;
+    margin-top: -165px;
+    
+    /* /Blue / 1 */
+    
+    background: #ECF7FD;
+    border-radius: 8px;
+}
+.sesison18_texttheme5{
+
+   
+    width: 186px;
+    height: 21px;
+    margin-left: 1112px;
+    margin-top: 10px;
+    
+    /* LMS Student / Content */
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    
+    
+    /* /Orange / 7 */
+    
+    color: #373839;
+        
+}
+.sesison18_theme6{
+
+    width: 201px;
+    height: 113px;
+    margin-left: 1375px;
+    margin-top: -165px;
+    
+    /* /Blue / 1 */
+    
+    background: #ECF7FD;
+    border-radius: 8px;
+}
+.sesison18_texttheme6{
+ 
+    width: 186px;
+    height: 21px;
+    margin-left: 1396px;
+    margin-top: 10px;
+    
+    /* LMS Student / Content */
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    
+    
+    /* /Orange / 7 */
+    
+    color: #373839;    
+}
+.sesison18_colcauhinh{
+    /* Frame 612 */
+
+    width: 614px;
+    height: 346px;
+    margin-left: 64px;
+    margin-top: 20px;
+
+    /* BG */
+
+    background: #FFFFFF;
+    /* /Orange / 5 */
+
+    border: 1px solid #CC5C00;
+    box-sizing: border-box;
+    border-radius: 8px;    
+}
+.sesison18_textthemsudung{
+    /* Theme đang sử dụng */
+
+    width: 189px;
+    height: 23px;
+    margin-left: 277px;
+    padding-top: 20px;
+
+    /* LMS Student / Sub-header */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+
+    /* Grey/3 */
+
+    color: #7C7C7C;    
+}
+.sesison18_txtcaptcha{
+    /* Sample */
+    width: 64px;
+    height: 20px;
+    padding-left: 54px;
+    padding-top: 440px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 2px;
+}
+.sesison18_txtngonngu{
+    /* Ngôn ngữ: */
+
+    width: 114px;
+    height: 20px;
+    margin-left: 54px;
+    margin-top: 30px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesison18_textcheck{
+    /* Kích hoạt captcha khi đăng nhập vào hệ thống */
+
+    width: 418px;
+    height: 21px;
+    margin-left: 10px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesison18_checkbox{
+
+    margin-left: 180px;
+    padding-top: 0px;
+
+
+}
+.sesison18_selectngonngu{
+    width: 485px;
+    height: 60px;
+    margin-left: 180px;
+    margin-top: -40px;
+    color: #373839;
+}
+.sesison18_selectngonngu select{
+    padding: 0rem;
+    width: 47rem;
+    height: 3rem;
+    border: none;
+    border-radius:0.3rem;
+    font-size: 1.6rem;
+    border: 0.016rem solid #373839;
+    -webkit-appearance: button;
+    outline: none;
+}

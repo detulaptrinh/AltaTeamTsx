@@ -1,0 +1,507 @@
+.sesion16__col_lichthi{
+    width: 884px;
+    height: 316px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.sesion16__icon_close{
+    margin-left: 95%;
+    
+    margin-top: 1%;
+   
+}
+.sesion16__textct{
+    /* Xem chi tiết lịch thi */
+
+    width: 367px;
+    height: 35px;
+    margin-left: 260px;
+    padding-top: 0px;
+
+    /* LMS Student / H2 */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16__textmonthi{
+    /* Môn thi: */
+
+    width: 60px;
+    height: 20px;
+    margin-left: 64px;
+     margin-top: 0px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+}
+.sesion16__texttoanhoc{
+    /* Toán học */
+
+    width: 91px;
+    height: 21px;
+    margin-left: 70px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16__textphanloai{
+    /* Phân loại: */
+
+    width: 73px;
+    height: 20px;
+    margin-left: 135px;
+    margin-top: 0px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+}
+.sesion16__textgiuaky{
+    /* Giữa kỳ */
+    width: 70px;
+    height: 21px;
+    margin-left: 85px;
+    margin-top: -20px;
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16__textthoigian{
+    /* Thời gian: */
+
+    width: 73px;
+    height: 20px;
+    margin-left: 120px;
+    margin-top: 0px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+
+}
+.sesion16__text45p{
+    /* 45 phút */
+
+    width: 71px;
+    height: 21px;
+    margin-left: 85px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16__texthocky{
+    /* Học kỳ: */
+
+    width: 54px;
+    height: 20px;
+    margin-left: 120px;
+    margin-top: 0px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+}
+.sesion16__texthocky1{
+    /* Học kỳ 1 */
+
+    width: 77px;
+    height: 21px;
+    margin-left: 70px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16__textngaythi{
+    /* Ngày thi: */
+
+    width: 66px;
+    height: 20px;
+    margin-left: 64px;
+    margin-top: 0px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+
+}
+.sesion16__textngaythi1{
+    /* 20/01/2021 */
+
+    width: 75px;
+    height: 21px;
+    margin-left: 80px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16__textkhoakhoi{
+    /* Khoa-khối: */
+
+    width: 80px;
+    height: 20px;
+    margin-left: 130px;
+    margin-top: 0px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+
+}
+.sesion16__text6{
+    /* 6 */
+    width: 8px;
+    height: 21px;
+    margin-left: 90px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16__textlop{
+    /* Lớp: */
+
+    width: 32px;
+    height: 20px;
+    margin-left: 115px;
+    margin-top: 0px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+}
+.sesion16__textlop1{
+    /* 9A1,9A3,9A4,9A5 */
+
+    width: 111px;
+    height: 21px;
+    margin-left: 50px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16__textphancong{
+    /* Phân công chấm thi: */
+
+    width: 148px;
+    height: 20px;
+    margin-left: 64px;
+    margin-top: 0px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* Darkest_Test_N1 */
+
+    color: #373839;
+}
+.sesion16__textnamepc{
+    /* Nguyễn Văn C */
+
+    width: 192px;
+    height: 21px;
+    margin-left: 160px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16__icon_paper{
+ 
+    margin-left: 64px;
+  
+    margin-top: 40px;
+
+
+    /* Inactivated Icon */
+
+   
+}
+.sesion16__text_dinhkem{
+    /* File đính kèm: */
+
+    width: 103px;
+    height: 20px;
+    margin-left: 6px;
+    margin-top: 40px;
+
+    /* LMS Student / Menu */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16__text_Loremisump{
+    /* Loremisump.pdf */
+
+    width: 111px;
+    height: 21px;
+    margin-left: 120px;
+    margin-top: -20px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16__buttondow{
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 20px;
+
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    margin-left: 64px;
+    margin-top: 80px;
+
+    /* /Orange / 2 */
+
+    background: #FFD8B8;
+    border-radius: 4px;
+}
+.sesion16__textdow{
+
+    width: 94px;
+    height: 21px;
+    margin-left: 0px;
+    margin-top: calc(50% - 21px/2);
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.sesion16_icondow{
+
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+.sesion16__divtexthang1{
+ 
+    display: flex;
+}
+.sesion16__divtexthang2{
+    float:left;
+    display: flex;
+    margin-top: 0px;
+}
+.sesion16__divhang3{
+    float:left;
+    display: flex;
+    margin-top: 0px;
+}

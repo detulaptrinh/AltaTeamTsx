@@ -1,0 +1,546 @@
+.sesion16___textbaikiemtra{
+    /* Quản lý bài kiểm tra */
+
+    width: 588px;
+    height: 60px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    /* LMS Student / H1 */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+}
+.sesion16___colbaikiemtra{
+    width: 1620px;
+    height: 800px;
+    margin-left: 0px;
+    margin-top: 15px;
+
+    background: #FFFFFF;
+    /* Tab */
+
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 16px;
+}
+.sesion16___textxemchitiet{
+    /* Xem chi tiết bài kiểm tra */
+
+    width: 368px;
+    height: 28px;
+    margin-left: 64px;
+    padding-top: 24px;
+
+    /* LMS Student / sub-head 1 */
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16___divselect{
+    float: left;
+    display: flex;
+}
+.sesion16___selectTT{
+ 
+    margin: auto;
+    color: #373839;
+}
+.sesion16___selectTT select{
+    margin-left: 0px;
+    margin-top: -20px;
+    padding: 0rem;
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius:0.5rem;
+    font-size: 1.6rem;
+    border: 0.016rem solid #373839;
+    -webkit-appearance: button;
+    outline: none;
+}
+.sesion16___selectTT::before{
+    content: url("/src/assets/avg/downArrowIcon.svg");
+
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-top: -3px;
+    margin-left: 110px;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border: 0.016rem solid #373839;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+}
+.sesion16___selectCL{
+ 
+    margin: auto;
+    color: #373839;
+}
+.sesion16___selectCL select{
+    margin-left: 30px;
+    margin-top: -20px;
+    padding: 0rem;
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius:0.5rem;
+    font-size: 1.6rem;
+    border: 0.016rem solid #373839;
+    -webkit-appearance: button;
+    outline: none;
+}
+.sesion16___selectCL::before{
+    content: url("/src/assets/avg/downArrowIcon.svg");
+
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-top: -3px;
+    margin-left: 140px;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border: 0.016rem solid #373839;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+}
+.sesion16___selectCK{
+ 
+    margin: auto;
+    color: #373839;
+}
+.sesion16___selectCK select{
+    margin-left: 30px;
+    margin-top: -20px;
+    padding: 0rem;
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius:0.5rem;
+    font-size: 1.6rem;
+    border: 0.016rem solid #373839;
+    -webkit-appearance: button;
+    outline: none;
+}
+.sesion16___selectCK::before{
+    content: url("/src/assets/avg/downArrowIcon.svg");
+
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-top: -3px;
+    margin-left: 140px;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border: 0.016rem solid #373839;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+}
+
+.sesion16___butttonadd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    width: 176px;
+    height: 52px;
+    margin-left: 1380px;
+    margin-top: 31px;
+
+    /* Orange/4 */
+
+    background: #FF7506;
+    border-radius: 8px;
+}
+.sesion16___textadd{
+    position: static;
+    width: 100px;
+    height: 23px;
+    left: calc(50% - 88px/2 + 17px);
+    top: calc(50% - 23px/2);
+    
+    /* LMS Student / Sub-header */
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    
+    letter-spacing: 0.015em;
+    
+    color: #FFFFFF;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.sesion16___iconplus{
+ 
+    color: #FFFFFF;
+
+    
+
+}
+.sesion16___col-search{
+    width: 100%;
+    height: 9rem;
+    margin-top: -50px;
+    float: right;
+}
+.sesion16___table-headers-search{
+    width: 38.8rem;
+    height: 4rem;
+    border-radius: 2.4rem;
+    position: relative;
+    display: inline-block;
+    padding: 4px 11px;
+    color: #c5c5c5;
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: #f0f3f6;
+    background-image: none;
+    border: 1px solid #f0f3f6;
+    border-radius: 4.2rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    float: right;
+    margin-top: 2.4rem;
+    margin-right: 6.4rem;
+}
+.sesion16___table-headers-search input {
+    font-family: "Source Sans Pro";
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 8.7rem;
+    letter-spacing: 0em;
+    text-align: left;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: #f0f3f6;
+    margin: 0em;
+    padding: 1px 2px;
+}
+.ant-input-prefix {
+    margin-right: 2rem;
+  }
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: #f0f3f6;
+    border-right-width: 1px !important;
+    z-index: 1;
+  }
+  .ant-input-affix-wrapper:hover {
+    border-color: #f0f3f6;
+    border-right-width: 1px !important;
+}
+.sesion16___body-table{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+.sesion16___body-table table> thead > tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+
+}
+.sesion16___body-table table > thead > tr:first-child th:first-child {
+  border-top-left-radius: 1rem;
+}
+
+.sesion16___table{
+    width: 95%;
+    height: 50rem;
+    border: 0.01rem solid #f0f3f6;
+    border-radius: 1rem;
+}
+.ant-table-thead > tr > th {
+    color: #ffffff;
+    
+    background: none;
+    border-bottom: 0em;
+    font-family: "Mulish";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    text-align: left;
+
+}
+.ant-table-thead {
+  background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+
+}
+.ant-table-tbody tr:nth-child(even) {
+    background-color: #f0f3f6;
+
+}
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+    padding: 1rem;
+    overflow-wrap: break-word;
+    
+}
+.ant-table-tbody > tr.ant-table-row:hover > td {
+    background: #f0f3f6;
+    text-align: left;
+
+}
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+    padding: 1rem;
+    overflow-wrap: normal;
+    text-align: left;
+    padding-left: 40px;
+}
+.ant-table-tbody > tr > td {
+    border-bottom: 1px solid #f0f0f0;
+}
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+    width: 90rem;
+    height: 2rem;
+    overflow-wrap: normal;
+}
+.sesion16___texttungay{
+    /* Từ ngày */
+    width: 62px;
+    height: 21px;
+    margin-left: 43px;
+    padding-top: 10px;
+
+    /* LMS Student / Content */
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* /Orange / 7 */
+
+    color: #373839;
+
+}
+.sesion16___textdenngay{
+  /* Den ngày */
+  width: 72px;
+  height: 21px;
+  margin-left: 23px;
+  padding-top: 10px;
+
+  /* LMS Student / Content */
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+
+  /* /Orange / 7 */
+
+  color: #373839
+}
+.sesion16___col-left {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #373839;
+    margin-top: -140px;
+  }
+  
+  .sesion16___col-left .ant-input-number {
+    width: 48px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #ff7506;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+  }
+  .sesion16___col-left-txt-view {
+    margin: 0.9rem 2rem 0 6.4rem;
+    
+   
+  }
+  .sesion16___col-left-txt-rol {
+    margin: 0.6rem 0 0 2rem;
+  
+  }
+  
+  .sesion16___footer-col-right {
+    width: 100%;
+    height: 5rem;
+    margin-top: -140px;
+  }
+  
+  .sesion16___footer-col-right-pagination{
+    float: right;
+    margin-right: 6.4rem;
+  }
+  .sesion16___footer-col-right-pagination .ant-pagination-item-active a{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FFF9F4;
+    border-radius: 50%;
+    background: #FF7506;
+  }
+  .sesion16___footer-col-right-pagination .ant-pagination a:hover{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FFF9F4;
+    border-radius: 50%;
+    background: #FF7506;
+  }
+  .sesion16___footer-col-right-pagination .ant-pagination-options{
+    display: none;
+  }
+  .sesion16___footer-col-right-pagination .ant-pagination li{
+    border: none;
+  }
+  .sesion16___footer-col-right-pagination .ant-pagination-prev button{
+    border: none;
+  }
+  .sesion16___footer-col-right-pagination .ant-pagination-prev button:hover{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FFF9F4;
+    border-radius: 50%;
+    background: #FF7506;
+  }
+  .sesion16___footer-col-right-pagination .ant-pagination-next button{
+    border: none;
+  }
+  .sesion16___footer-col-right-pagination .ant-pagination-next button:hover{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FFF9F4;
+    border-radius: 50%;
+    background: #FF7506;
+  }
+.sesion16___footer-col-right-pagination .ant-pagination-jump-prev a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.sesion16___datepicker{
+  margin-left: 0px;
+  margin-top: 5px;
+  padding: 0rem;
+  width: 140px;
+  height: 30px;
+  border: none;
+  border-radius:0.5rem;
+  font-size: 1.6rem;
+  border: 0.016rem solid #373839;
+  -webkit-appearance: button;
+  outline: none;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.sesion16___iconcalendar{
+  
+    padding: 0.2rem 0rem 0.5rem 0rem;
+    margin-top: 5px;
+    margin-left: 695px;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+    background: #ffffff;
+    border: 0.016rem solid #373839;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+} 
+.sesion16___iconcalendar1{
+   padding: 0.2rem 0rem 0.5rem 0rem;
+    margin-top: 5px;
+    margin-left: 930px;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+    background: #ffffff;
+    
+    border: 0.016rem solid #373839;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+} 
+
