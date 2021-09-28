@@ -1,0 +1,139 @@
+/* Kết quả học tập */
+.section-9-2 .ant-collapse-content-box .box {
+    width: 151.2rem;
+    min-height: 15.2rem;
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 8px;
+    margin-bottom: 1.6rem;
+}
+
+.ant-row {
+    border-radius: 0.8rem;
+}
+
+.section-9-2 .ant-card-head-title {
+    padding: 0.85rem 0;
+}
+
+.section-9-2 .ant-card-head {
+    padding: 0;
+    height: 5.1rem;
+}
+
+.section-9-2 .box .ant-card-head-wrapper {
+    background: #823B00;
+    text-align: center;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.2rem;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+}
+
+.section-9-2 .box .ant-card-body {
+    padding: 1.3rem 4rem;
+    border-right: 0.1rem solid #C9C4C0;
+}
+
+.section-9-2 .box .ant-card-body div:not(:last-child) {
+    float: left;
+    padding-right: 5.7rem;
+}
+
+.section-9-2 .box .ant-card-body div h3 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 0.015em;
+    color: #CC5C00;
+    margin: 0;
+}
+
+.section-9-2 .box .ant-card-body div p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #373839;
+    padding-top: 1.9rem;
+    margin: 0;
+}
+
+.section-9-2 .switch-semester  {
+    margin-bottom: 1rem;
+}
+
+.section-9-2 .switch-semester .switch-semester-left-tab-box {
+    margin-top: 0.8rem;
+    width: 30.8rem;
+    height: 4.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    /* Grey/5 */
+    background: #F2F2F2;
+    border-radius: 3.2rem;
+
+    position: relative;
+}
+
+.section-9-2 .switch-semester .switch-semester-left-tab-box-general-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 4rem 0.7rem;
+
+    width: 14.7rem;
+    height: 3.6rem;
+
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+
+ 
+
+    background: #373839;
+    border-radius: 2.4rem;
+}
+.section-9-2 .switch-semester .switch-semester-left-tab-box-general-information a {
+    /* LMS Student / Sub-header */
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    /* identical to box height */
+
+    color: #FFFFFF;
+    letter-spacing: 0.015em;
+    
+}
+
+.section-9-2 .switch-semester .switch-semester-left-tab-box-study-process {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3.6rem;
+
+    margin-left: 13.5rem;
+    /* /Orange / 7 */
+}
+
+.section-9-2 .switch-semester .switch-semester-left-tab-box-study-process a {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    /* identical to box height */
+    letter-spacing: 0.015em;
+    color: #373839;
+    opacity: 0.5;
+}
