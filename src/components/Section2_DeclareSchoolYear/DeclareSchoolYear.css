@@ -1,0 +1,636 @@
+.DeclareSchoolYear__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 3.2rem;
+}
+
+.DeclareSchoolYear__body {
+  display: flex;
+}
+
+.DeclareSchoolYear__menu {
+  width: 100%;
+  max-width: 278px;
+  margin-right: 2.4rem;
+  background: #ffffff;
+  box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.DeclareSchoolYear__data {
+  width: 100%;
+  max-width: 1337px;
+}
+
+.DeclareSchoolYear__menu-head {
+  padding: 2.4rem;
+  background: #373839;
+}
+
+.DeclareSchoolYear__menu-head > p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.DeclareSchoolYear__menu-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+.DeclareSchoolYear__menu-select > span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.DeclareSchoolYear__select {
+  border: 1px solid #373839;
+  border-radius: 4px;
+}
+
+.DeclareSchoolYear__select.ant-select {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.DeclareSchoolYear__select.ant-select:not(.ant-select-disabled):hover
+  .ant-select-selector {
+  border-color: transparent;
+}
+
+.DeclareSchoolYear__select.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.DeclareSchoolYear__select.ant-select-single.ant-select-show-arrow
+  .ant-select-selection-search {
+  right: 30px;
+  border-right: 1px solid #373839;
+}
+
+.DeclareSchoolYear__select .ant-select-arrow {
+  width: 24px;
+  height: 24px;
+  right: 4px;
+  top: 11px;
+}
+
+.DeclareSchoolYear__menu-btns {
+  padding: 6.1rem 2.4rem 6.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.DeclareSchoolYear__menu-btns > .ant-btn {
+  width: 230px;
+  height: 56px;
+  background: #fff9f4;
+  border: 1px solid #ff7506;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 2.4rem;
+  text-align: left;
+  padding-left: 2.4rem;
+}
+
+.DeclareSchoolYear__menu-btns > .ant-btn.btn-active {
+  background: #cc5c00;
+  color: #fff;
+  border-color: #cc5c00;
+}
+
+.DeclareSchoolYear__data-head {
+  display: flex;
+  justify-content: end;
+}
+
+.DeclareSchoolYear__btnAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 176px;
+  height: 52px;
+  background: #ff7506;
+  border-color: #ff7506;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.DeclareSchoolYear__btnAdd:hover,
+.DeclareSchoolYear__btnAdd:focus {
+  border-color: #ff7506;
+  background-color: #ff7506;
+  color: #ffffff;
+}
+
+.DeclareSchoolYear__btnAdd > img {
+  margin-right: 1.3rem;
+}
+
+.DeclareSchoolYear__data-body {
+  margin-top: 2.4rem;
+  padding: 2.5rem 6.4rem 2rem;
+  background: #ffffff;
+  box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+  border-radius: 16px;
+}
+
+.DeclareSchoolYear__data-body .body-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.DeclareSchoolYear__data-body .body-title > h4 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 0;
+}
+
+.DeclareSchoolYear__search {
+  width: 438px;
+  height: 40px;
+  background: #f0f3f6;
+  border-radius: 24px;
+  border-color: #f0f3f6;
+}
+
+.DeclareSchoolYear__search.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+.DeclareSchoolYear__search.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):focus {
+  border-color: #f0f3f6;
+}
+
+.DeclareSchoolYear__search.ant-input-affix-wrapper-focused {
+  box-shadow: none;
+}
+
+.DeclareSchoolYear__search .ant-input-prefix {
+  margin-right: 2.5rem;
+}
+
+.DeclareSchoolYear__search.ant-input-affix-wrapper > input.ant-input {
+  background: #f0f3f6;
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #373839;
+}
+
+.DeclareSchoolYear__table.ant-table-wrapper {
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 4.3rem;
+}
+
+.DeclareSchoolYear__table .ant-table-thead {
+  background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
+}
+
+.DeclareSchoolYear__table .ant-table-thead > tr > th {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background: transparent;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.DeclareSchoolYear__table .ant-table-thead > tr > th::before {
+  display: none;
+}
+
+.DeclareSchoolYear__table .ant-table-column-sorter {
+  color: #fff;
+}
+
+.DeclareSchoolYear__table .ant-table-tbody > tr > td {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  border-bottom: none;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.DeclareSchoolYear__table .ant-table-tbody > tr.ant-table-row:hover > td {
+  background: transparent;
+}
+
+.DeclareSchoolYear__table .ant-table-tbody > tr:nth-of-type(even) {
+  background: #f0f3f6;
+}
+
+.DeclareSchoolYear__table .btnEdit,
+.DeclareSchoolYear__table .btnTrash {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.DeclareSchoolYear__table .btnEdit {
+  margin-right: 2rem;
+}
+
+.body-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.body-pagination .showRow {
+  display: flex;
+  align-items: center;
+}
+
+.body-pagination .showRow > span {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #373839;
+}
+
+.DeclareSchoolYear__showRow.ant-input {
+  margin: 0 1rem;
+  width: 48px;
+  height: 32px;
+  border: 1px solid #ff7506;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+
+.DeclareSchoolYear__showRow.ant-input:hover {
+  border-color: #ff7506;
+}
+
+.DeclareSchoolYear__showRow.ant-input:focus {
+  box-shadow: none;
+}
+
+.DeclareSchoolYear__pagination .ant-pagination-item-link {
+  border: none;
+}
+
+.DeclareSchoolYear__pagination
+  .ant-pagination-prev:hover
+  .ant-pagination-item-link,
+.DeclareSchoolYear__pagination
+  .ant-pagination-next:hover
+  .ant-pagination-item-link {
+  color: #ff7506;
+}
+
+.DeclareSchoolYear__pagination .ant-pagination-item {
+  height: 26px;
+  min-width: 26px;
+  border: none;
+  border-radius: 50%;
+}
+
+.DeclareSchoolYear__pagination .ant-pagination-item > a {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #373839;
+}
+
+.DeclareSchoolYear__pagination .ant-pagination-item-active {
+  background: #ff7506;
+}
+
+.DeclareSchoolYear__pagination .ant-pagination-item-active > a {
+  color: #fff;
+}
+
+.DeclareSchoolYear-modal .ant-modal-close {
+  display: none;
+}
+
+.DeclareSchoolYear-modal .ant-modal-header {
+  text-align: center;
+  border-bottom: none;
+  padding: 0;
+}
+
+.DeclareSchoolYear-modal .ant-modal-header .ant-modal-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.DeclareSchoolYear-modal .ant-modal-body {
+  padding: 0;
+}
+
+.DeclareSchoolYear-modal .ant-modal-footer {
+  border-top: none;
+  text-align: center;
+  padding: 0;
+}
+
+.DeclareSchoolYear-modal .ant-modal-footer .ant-btn {
+  width: 160px;
+  height: 52px;
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.DeclareSchoolYear-modal .ant-modal-footer .ant-btn.ant-btn-primary {
+  background: #ff7506;
+  border-color: #ff7506;
+  color: #fff;
+  margin-left: 3.1rem;
+}
+
+.DeclareSchoolYear-modal-del.ant-modal {
+  width: 435px !important;
+}
+
+.DeclareSchoolYear-modal-del .ant-modal-content {
+  border-radius: 8px;
+  padding: 2.6rem 3.8rem 4rem;
+}
+
+.DeclareSchoolYear-modal-del .ant-modal-header {
+  margin-bottom: 1.6rem;
+}
+
+.DeclareSchoolYear-modal-del .DeclareSchoolYear-modal-del-desc {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+  margin-bottom: 3.2rem;
+}
+
+.DeclareSchoolYear-modal-add-edit.ant-modal {
+  width: 884px !important;
+}
+
+.DeclareSchoolYear-modal-add-edit .ant-modal-content {
+  border-radius: 16px;
+  padding: 2.4rem 5rem 3.9rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .ant-modal-header {
+  margin-bottom: 2.4rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #c9c4c0;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__left > p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 1.6rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__left-selects > span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #373839;
+  margin: 0 0.8rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__right-inherit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.DeclareSchoolYear__checkbox .ant-checkbox-inner {
+  border: 2px solid #0b80ec;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+.DeclareSchoolYear__checkbox > span:last-child {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__right-desc {
+  display: flex;
+  align-items: flex-start;
+}
+
+.DeclareSchoolYear-modal-add-edit .schoolYear__right-desc > p {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  color: #373839;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting {
+  margin: 2.4rem 0 4.8rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #cc5c00;
+  margin-bottom: 2.4rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control-btn > img {
+  border-radius: 50%;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control > h6 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  margin-bottom: 0;
+  margin-right: 0.8rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control-input {
+  width: 244px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid rgba(55, 56, 57, 0.5);
+  border-radius: 8px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+  margin-right: 1.4rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__control > span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #373839;
+  margin: 0 1.5rem 0 1rem;
+}
+
+.DeclareSchoolYear__datepicker.ant-picker {
+  padding: 0 0.4rem 0 0.8rem;
+  border-color: #373839;
+  border-radius: 4px;
+}
+
+.DeclareSchoolYear__datepicker.ant-picker.ant-picker-focused {
+  box-shadow: none;
+}
+
+.DeclareSchoolYear__datepicker .ant-picker-input > input {
+  height: 32px;
+  border-right: 1px solid #373839;
+  border-radius: 0;
+}
+
+.DeclareSchoolYear__datepicker .ant-picker-clear {
+  display: none;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__btnAdd {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__btnAdd > img {
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+
+.DeclareSchoolYear-modal-add-edit .timeSetting__btnAdd > span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #0b80ec;
+}

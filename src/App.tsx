@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import './App.css';
+import "./App.css";
 // css antd
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
@@ -40,6 +40,11 @@ import Caidathethong from './components/Sesion18_Caidathethong/Boxcaidat'
 import Cauhinh from './components/Sesion18_Cauhinh/Boxcauhinh'
 import Xemlichthi from './components/Sesion16_Chitietlichthi/Boxlichthi'
 import Quanlybaikiemtra from './components/Sesion16_Quanlybaikiemtra/Boxbaikiemtra'
+
+// Long
+import CourseSetting from "./components/Section22_CourseSetting/CourseSetting";
+import TrainingLevelsManage from "./components/Section23_TrainingLevelsManage/TrainingLevelsManage";
+import DeclareSchoolYear from "./components/Section2_DeclareSchoolYear/DeclareSchoolYear";
 
 export default class App extends Component {
     render() {
@@ -91,7 +96,17 @@ export default class App extends Component {
                                 <Route path="/edit-student-information" component={EditStudentInformation}></Route>
                                 {/* 9.2 kết quả học tập */}
                                 <Route path="/study-process" component={StudyProcess} />
-
+                              
+                                {/* Long */}
+                                <Route
+                                  path="/DeclareSchoolYear"
+                                  component={DeclareSchoolYear}
+                                />
+                                <Route path="/CourseSetting" component={CourseSetting} />
+                                <Route
+                                  path="/TrainingLevelsManage"
+                                  component={TrainingLevelsManage}
+                                />
                             </div>
                         </main>
                     </div>
