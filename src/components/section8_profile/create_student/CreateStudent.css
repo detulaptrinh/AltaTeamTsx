@@ -1,0 +1,188 @@
+.section-8-3 .title {
+    height: 6rem;
+    line-height: 6rem;
+    letter-spacing: 0.015em;
+    display: flex;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+}
+.section-8-3 .title span {
+    font-size: 1.8rem;
+    color: #C9C4C0;
+}
+.section-8-3 .title i {
+    font-size: 3rem;
+    color: #FF7506;
+    height: 6rem;
+    line-height: 6rem;
+    padding: 0 1rem;
+}
+.section-8-3 .title .title-create-student {
+    font-size: 4.8rem;
+    color: #373839;
+}
+/* card */
+.section-8-3 .site-card-border-less-wrapper {
+    margin-top: 2vh;
+    box-shadow: 4px 4px 25px 4px rgba(60, 79, 95, 0.25);
+}
+.section-8-3 .ant-card .ant-card-head {
+    background: #CC5C00;
+    padding: 0 62px;
+    color: #FFFFFF;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+}
+.section-8-3 .card-border .ant-card-head{
+    border-radius: 1.6rem 1.6rem 0 0;
+}
+.section-8-3 .ant-card .ant-card-body {
+    padding: 2.4rem 6.2rem;
+}
+/* avatar */
+.section-8-3 .ant-col img {
+    display: flex;
+    align-items: center;
+    width: 23.2rem;
+    height: 23.2rem;
+}
+.section-8-3 .ant-col .card-avatar {
+    width: 5.6rem;
+    height: 5.6rem;
+    margin: -3rem 0 0 8.5rem;
+}
+/* thông tin học viên */
+.section-8-3 .ant-col-title {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #CC5C00;
+    height: 4rem;
+    line-height: 4rem;
+}
+.section-8-3 .ant-row-text {
+    height: 4rem;
+    line-height: 4rem;
+    margin: 1.6rem 0;
+}
+.section-8-3 .text-left {
+    max-width: 12.8rem;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #373839;
+    opacity: 0.8;
+}
+.section-8-3 .text-right {
+    max-width: 36rem;
+    min-width: 36rem;
+}
+.section-8-3 .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 8px;
+    height: 40px;
+    align-items: center;
+    border: none;
+    background: #e4e4e4;
+    color: #373839;
+    opacity: 0.5;
+}
+.section-8-3 .ant-input {
+    color: #292B2E;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    letter-spacing: 0.015em;
+    width: 36rem;
+    height: 4rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: #F2F2F2;
+    border: none;
+}
+.section-8-3 .ant-input:focus,
+.section-8-3 .ant-select:not(.ant-select-customize-input) .ant-select-selector:hover,
+.section-8-3 .ant-picker:hover {
+    background: white;
+}
+.section-8-3 .text-right .checked-184 {
+    max-width: 18.4rem;
+}
+.section-8-3 .text-right .ant-checkbox-wrapper {
+    margin-left: 2.1rem;
+}
+/* select btn */
+.section-8-3 .text-right .anticon {
+    color: #FF7506;
+}
+/* date */
+.section-8-3 .ant-picker {
+    min-width: 36rem;
+    border-radius: 8px;
+    height: 40px;
+    align-items: center;
+    border: none;
+    background: #F2F2F2;
+    color: #373839;
+}
+.section-8-3 .ant-picker-suffix {
+    color: #FF7506;
+}
+/* Thông tin gia đình */
+.section-8-3 .site-card-border-less-wrapper-mt-0 {
+    margin-top: 0 !important;
+}
+.section-8-3 .w-104 {
+    max-width: 10.4rem;
+    min-width: 10.4rem;
+}
+.section-8-3 .ant-row-text .w-231 {
+    float: left;
+    max-width: 23.1rem;
+    min-width: 0;
+}
+.section-8-3 .pl-130 {
+    padding-left: 13rem;
+}
+/* button */
+.section-8-3 .card-button{
+    padding: 4.8rem 0 4.8rem 0;
+    text-align: center;
+}
+.section-8-3 .card-button-cancel{
+    width: 14.6rem;
+    height: 5.2rem;
+    background: #F2F2F2;
+    border-radius: 8px;
+    margin: 0px 32px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+    border: none;
+}
+.section-8-3 .card-button-save{
+    width: 16rem;
+    height: 5.2rem;
+    background: #C9C4C0;
+    border-radius: 8px;
+    margin: 0px 32px;
+    border: none;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #fff;
+}

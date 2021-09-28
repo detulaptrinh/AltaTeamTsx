@@ -2,7 +2,7 @@
     font-size: 1.6rem;
 }
 
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 
 main {
     width: calc(100% - 28.1rem);
