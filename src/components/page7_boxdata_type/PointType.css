@@ -115,6 +115,7 @@
 }
 /*  */
 .section-7 .box__btn-button_cre {
+    float: right;
     display: flex;
     flex-direction: row;
     justify-content: center;

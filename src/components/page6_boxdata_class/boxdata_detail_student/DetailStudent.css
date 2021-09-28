@@ -162,6 +162,7 @@
     color: #373839;
     opacity: 0.5;
 }
+/*  */
 .section-6-3 .table-list {
     margin: 2.4rem 6.4rem 0 6.4rem;
     height: auto;
@@ -202,7 +203,6 @@
     font-size: 1.6rem;
     line-height: 130%;
     color: #373839;
-    color: orange;
 }
 .section-6-3 .table-list .ant-table-tbody tr:nth-child(odd) {
     background: #ffffff;

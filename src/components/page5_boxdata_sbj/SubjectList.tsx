@@ -155,72 +155,73 @@ class SubjectList extends Component {
 
         return (
             <>
-                <div className="overview">
-                    {/* <User/> */}
-                    <div className="boxmain">
-                        <div className="box__title">
-                            <h1>Khai báo dữ liệu</h1>
-                        </div>
-                        <div className="box__chb">
-                            <div className="box__chb-slt">
-                                <p>Đang chọn xem:</p>
-                                <div className="box__chb-slt_sch">
-                                    <p>Trường:</p>
-                                    <Select className="box__chb-slt_sch_select" defaultValue="THCS">
-                                        <Option value="THCS">THCS</Option>
-                                        <Option value="THPT">THPT</Option>
-                                    </Select>
-                                </div>
-                                <div className="box__chb-slt_yr">
-                                    <p>Niên Khóa:</p>
-                                    <Select className="box__chb-slt_yr_select" defaultValue="2020 - 2021">
-                                        <Option value="2020 - 2021">2020 - 2021</Option>
-                                        <Option value="2015 - 2016">2015 - 2016</Option>
-                                        <Option value="2018 - 2019">2018 - 2019</Option>
-                                    </Select>
-                                </div>
-                            </div>
-                            <div className="box__chb-btn">
-                                <button className="box__chb-btn-clk">Niên Khóa</button>
-                                <button className="box__chb-btn-clk">Tổ - Bộ môn</button>
-                                <button className="box__chb-btn-clk">Khoa - Khối</button>
-                                <button className="box__chb-btn-clk">Môn học</button>
-                                <button className="box__chb-btn-clk">Lớp học</button>
-                                <button className="box__chb-btn-clk">Loại điểm</button>
-                            </div>
-                        </div>
-                        <div className="box__btn">
-                            <div className="box__btn-block">
-                                <p className="box__btn-block-title">Khối</p>
-                                <Select className="box__btn-block_select" defaultValue="6">
-                                    <Option value="6">6</Option>
-                                    <Option value="7">7</Option>
-                                    <Option value="8">8</Option>
+                {/* <User/> */}
+                <div className="section-5">
+                    <div className="box__title">
+                        <h1>Khai báo dữ liệu</h1>
+                    </div>
+                    <div className="box__chb">
+                        <div className="box__chb-slt">
+                            <p>Đang chọn xem:</p>
+                            <div className="box__chb-slt_sch">
+                                <p>Trường:</p>
+                                <Select className="box__chb-slt_sch_select" defaultValue="THCS">
+                                    <Option value="THCS">THCS</Option>
+                                    <Option value="THPT">THPT</Option>
                                 </Select>
                             </div>
-                            <div className="box__btn-class">
-                                <p className="box__btn-class-title">Lớp</p>
-                                <Select className="box__btn-class_select" defaultValue="6A1">
-                                    <Option value="6A1">6A1</Option>
-                                    <Option value="6A2">6A2</Option>
-                                    <Option value="6A3">6A3</Option>
+                            <div className="box__chb-slt_yr">
+                                <p>Niên Khóa:</p>
+                                <Select className="box__chb-slt_yr_select" defaultValue="2020 - 2021">
+                                    <Option value="2020 - 2021">2020 - 2021</Option>
+                                    <Option value="2015 - 2016">2015 - 2016</Option>
+                                    <Option value="2018 - 2019">2018 - 2019</Option>
                                 </Select>
                             </div>
-                            {/* <div className="box__btn-button">
-                                <button className="box__btn-button_del" onClick={showModal}>
-                                    <img className="box__btn-button_del-icon" src={unIcon} alt="" />
-                                </button>
-                                <Modal className="box__btn-del" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                        </div>
+                        <div className="box__chb-btn">
+                            <button className="box__chb-btn-clk">Niên Khóa</button>
+                            <button className="box__chb-btn-clk">Tổ - Bộ môn</button>
+                            <button className="box__chb-btn-clk">Khoa - Khối</button>
+                            <button className="box__chb-btn-clk">Môn học</button>
+                            <button className="box__chb-btn-clk">Lớp học</button>
+                            <button className="box__chb-btn-clk">Loại điểm</button>
+                        </div>
+                    </div>
+                    <div className="box__btn">
+                        <div className="box__btn-block">
+                            <p className="box__btn-block-title">Khối</p>
+                            <Select className="box__btn-block_select" defaultValue="6">
+                                <Option value="6">6</Option>
+                                <Option value="7">7</Option>
+                                <Option value="8">8</Option>
+                            </Select>
+                        </div>
+                        <div className="box__btn-class">
+                            <p className="box__btn-class-title">Lớp</p>
+                            <Select className="box__btn-class_select" defaultValue="6A1">
+                                <Option value="6A1">6A1</Option>
+                                <Option value="6A2">6A2</Option>
+                                <Option value="6A3">6A3</Option>
+                            </Select>
+                        </div>
+                        <div className="box__btn-button">
+                            <button className="box__btn-button_del" >
+                                <img className="box__btn-button_del-icon" src={unIcon} alt="" />
+                            </button>
+                            {/* onClick={showModal} */}
+                            {/*   <Modal className="box__btn-del" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                                     <h1>Xóa</h1>
                                     <p>Xác nhận muốn xóa những thông tin đã chọn? Sau khi xóa sẽ không thể hoàn tác.</p>
                                     <button className="box__btn-del-cancel" onClick={handleCancel}>Hủy</button>
                                     <button className="box__btn-del-acp" onClick={handleOk}>Lưu</button>
-                                </Modal>
-                                <button className="box__btn-button_cre" onClick={() => setVisible(true)}>
-                                    <img className="box__btn-button_cre-icon" src={plusIcon} alt="" />
-                                    Thêm mới
-                                </button>
-                                <Modal
+                                </Modal> */}
+                            <button className="box__btn-button_cre" >
+                                <img className="box__btn-button_cre-icon" src={plusIcon} alt="" />
+                                Thêm mới
+                            </button>
+                            {/* onClick={() => setVisible(true)} */}
+                            {/*   <Modal
                                     className="box__btn-cre"
                                     centered
                                     visible={visible}
@@ -258,36 +259,35 @@ class SubjectList extends Component {
                                         <button className="box__btn-button-cancel" onClick={() => setVisible(false)}>Hủy</button>
                                         <button className="box__btn-button-save" onClick={() => setVisible(false)}>Lưu</button>
                                     </Form>
-                                </Modal>
-                            </div> */}
+                                </Modal>*/}
                         </div>
-                        <div className="box__sbj">
-                            <div className="box__sbj-stu">
-                                <p>Môn học</p>
-                                <input className="box__sbj-search" type="search" placeholder="Tìm kiếm" />
+                    </div>
+                    <div className="box__sbj">
+                        <div className="box__sbj-stu">
+                            <p>Môn học</p>
+                            <input className="box__sbj-search" type="search" placeholder="Tìm kiếm" />
+                        </div>
+                        <div className="box__sbj-tbl">
+                            <Table
+                                // rowSelection={rowSelection}
+                                columns={columns}
+                                dataSource={data}
+                                pagination={false}
+                            />
+                        </div>
+                        <div className="box__sbj-pagtion">
+                            <div className="box__sbj-pagtion-txt">
+                                <p>Hiển thị</p>
+                                <InputNumber min={1} max={10} defaultValue={3} />
+                                <p> hàng trong mỗi trang</p>
                             </div>
-                            <div className="box__sbj-tbl">
-                                <Table
-                                    // rowSelection={rowSelection}
-                                    columns={columns}
-                                    dataSource={data}
-                                    pagination={false}
-                                />
-                            </div>
-                            <div className="box__sbj-pagtion">
-                                <div className="box__sbj-pagtion-txt">
-                                    <p>Hiển thị</p>
-                                    <InputNumber min={1} max={10} defaultValue={3} />
-                                    <p> hàng trong mỗi trang</p>
-                                </div>
-                            </div>
-                            <div className="box__sbj-pagin">
-                                <Pagination
-                                    showSizeChanger
-                                    defaultCurrent={8}
-                                    total={100}
-                                />
-                            </div>
+                        </div>
+                        <div className="box__sbj-pagin">
+                            <Pagination
+                                showSizeChanger
+                                defaultCurrent={8}
+                                total={100}
+                            />
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-.box__title h1 {
+.section-5 .box__title h1 {
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
@@ -8,7 +8,7 @@
     color: #373839;
 }
 /*  */
-.box__chb {
+.section-5 .box__chb {
     float: left;
     width: 27.8rem;
     height: 87.8rem;
@@ -17,13 +17,13 @@
     border-radius: 1.6rem;
 }
 /*  */
-.box__btn {
+.section-5 .box__btn {
     float: right;
     width: calc(100% - 30.2rem);
     height: 5.2rem;
 }
 /*  */
-.box__sbj {
+.section-5 .box__sbj {
     float: right;
     width: calc(100% - 30.2rem);
     height: 80.2rem;
@@ -33,13 +33,13 @@
     box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
 }
 /*  */
-.box__chb-slt {
+.section-5 .box__chb-slt {
     width: 27.8rem;
     height: 15rem;
     background: #373839;
     border-radius: 10px 10px 0 0;
 }
-.box__chb-slt p {
+.section-5 .box__chb-slt p {
     padding: 1.2rem 0 0 2rem;
     font-family: Source Sans Pro;
     font-style: normal;
@@ -48,7 +48,7 @@
     color: #ffffff;
     line-height: 130%;
 }
-.box__chb-slt_sch p {
+.section-5 .box__chb-slt_sch p {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -57,7 +57,7 @@
     letter-spacing: 0.015em;
     color: #ffffff;
 }
-.box__chb-slt_sch_select {
+.section-5 .box__chb-slt_sch_select {
     float: right;
     width: 14.4rem;
     height: 3.2rem;
@@ -67,7 +67,7 @@
     border: 1px solid #373839;
     border-radius: 4px;
 }
-.box__chb-slt_yr p {
+.section-5 .box__chb-slt_yr p {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -76,7 +76,7 @@
     letter-spacing: 0.015em;
     color: #ffffff;
 }
-.box__chb-slt_yr_select {
+.section-5 .box__chb-slt_yr_select {
     float: right;
     height: 3.2rem;
     right: 1.5rem;
@@ -86,10 +86,10 @@
     border: 1px solid #373839;
     border-radius: 4px;
 }
-.box__chb-btn {
+.section-5 .box__chb-btn {
     margin-top: 6rem;
 }
-.box__chb-btn-clk {
+.section-5 .box__chb-btn-clk {
     width: 23rem;
     height: 5.6rem;
     text-align: left;
@@ -109,24 +109,24 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
-.box__chb-btn-clk:hover {
+.section-5 .box__chb-btn-clk:hover {
     background: #cc5c00;
     color: #ffffff;
 }
 /*  */
 
 /*  */
-.box__btn-block {
+.section-5 .box__btn-block {
     display: inline-flex;
 }
-.box__btn-block-title {
+.section-5 .box__btn-block-title {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6rem;
     color: #373839;
 }
-.box__btn-block_select {
+.section-5 .box__btn-block_select {
     margin-top: -0.5rem;
     margin-left: 2rem;
     width: 7.6rem;
@@ -134,19 +134,19 @@
     background: #ffffff;
     border-radius: 4px;
 }
-.box__btn-class {
+.section-5 .box__btn-class {
     display: inline-flex;
     margin-left: 4rem;
     margin-top: 1rem;
 }
-.box__btn-class-title {
+.section-5 .box__btn-class-title {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6rem;
     color: #373839;
 }
-.box__btn-class_select {
+.section-5 .box__btn-class_select {
     margin-top: -0.5rem;
     margin-left: 2rem;
     width: 14.4rem;
@@ -154,19 +154,19 @@
     background: #ffffff;
     border-radius: 4px;
 }
-.box__btn .ant-select .ant-select-selector {
+.section-5 .box__btn .ant-select .ant-select-selector {
     border: none;
     border: 1px solid #373839;
     padding: 0px 4px 0px 8px;
-    border-radius: 8px;
+    border-radius: 4px;
 }
-.box__btn-button {
+.section-5 .box__btn-button {
     position: relative;
     display: flex;
     justify-content: flex-end;
     float: right;
 }
-.box__btn-button_cre {
+.section-5 .box__btn-button_cre {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -186,26 +186,26 @@
     margin: 0.2rem 0.8rem 0 1rem;
     border-radius: 8px;
 }
-.box__btn-button_del {
+.section-5 .box__btn-button_del {
     background: none;
     border: none;
     cursor: pointer;
 }
-.box__btn-button_del-icon {
+.section-5 .box__btn-button_del-icon {
     width: 4.5rem;
     height: 4.5rem;
     margin-top: 0.5rem;
     padding-right: 1rem;
     border-right: 1px solid #c9c4c0;
 }
-.box__btn-del .ant-modal-content {
+.section-5 .box__btn-del .ant-modal-content {
     width: 43.5rem;
     height: 26.4rem;
     background: #ffffff;
     border-radius: 8px;
     left: 10%;
 }
-.box__btn-del h1 {
+.section-5 .box__btn-del h1 {
     text-align: center;
     font-family: Mulish;
     font-style: normal;
@@ -215,7 +215,7 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
-.box__btn-del p {
+.section-5 .box__btn-del p {
     padding: 2.4rem 2rem 0 2rem;
     font-family: Source Sans Pro;
     font-style: normal;
@@ -224,7 +224,7 @@
     line-height: 130%;
     color: #373839;
 }
-.box__btn-del .box__btn-del-cancel {
+.section-5 .box__btn-del .box__btn-del-cancel {
     cursor: pointer;
     margin-top: 2rem;
     margin-left: 2rem;
@@ -242,7 +242,7 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
-.box__btn-del .box__btn-del-acp {
+.section-5 .box__btn-del .box__btn-del-acp {
     cursor: pointer;
     margin-top: 2rem;
     margin-left: 2rem;
@@ -259,13 +259,13 @@
     letter-spacing: 0.015em;
     color: #ffffff;
 }
-.box__btn-button_cre-icon {
+.section-5 .box__btn-button_cre-icon {
     width: 2.5rem;
     height: 2.5rem;
     line-height: 23px;
     margin: 0 0.5rem 0 0.5rem;
 }
-.box__btn-cre .ant-modal-content {
+.section-5 .box__btn-cre .ant-modal-content {
     width: 88.4rem;
     height: 60rem;
     background: #ffffff;
@@ -273,7 +273,7 @@
     padding: 1rem;
     right: 20%;
 }
-.ant-form h1 {
+.section-5 .ant-form h1 {
     font-weight: bold;
     text-align: center;
     font-family: Mulish;
@@ -285,7 +285,7 @@
     color: #373839;
     transform: translateY(-50%);
 }
-.ant-form p {
+.section-5 .ant-form p {
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
@@ -295,7 +295,7 @@
     letter-spacing: 0.015em;
     color: #cc5c00;
 }
-.ant-form-item-label label {
+.section-5 .ant-form-item-label label {
     font-style: normal;
     font-weight: bold;
     font-size: 1.6rem;
@@ -303,7 +303,7 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
-.ant-input {
+.section-5 .ant-input {
     padding: 0.4rem 1.2rem;
     float: right;
     width: 56.1rem;
@@ -311,7 +311,7 @@
     background: #f2f2f2;
     border-radius: 8px;
 }
-.ant-input-sbj {
+.section-5 .ant-input-sbj {
     left: 24%;
     padding: 0.4rem 1.2rem;
     float: left;
@@ -320,7 +320,7 @@
     background: #f2f2f2;
     border-radius: 8px;
 }
-.box__btn-cre .ant-modal-content .ant-select .ant-select-selector {
+.section-5 .box__btn-cre .ant-modal-content .ant-select .ant-select-selector {
     margin-bottom: 1rem;
     float: right;
     padding: 0.4rem 1.2rem;
@@ -330,51 +330,51 @@
     background: #f2f2f2;
     border-radius: 8px;
 }
-.box__btn-cre Select Option {
+.section-5 .box__btn-cre Select Option {
     width: 50%;
 }
-.box__btn-cre .ant-modal-content .ant-select-arrow span {
+.section-5 .box__btn-cre .ant-modal-content .ant-select-arrow span {
     height: 1rem;
     width: 1.8rem;
     margin-left: -50%;
     margin-top: -40%;
     color: #ff7506;
 }
-.ant-select-arrow span {
+.section-5 .ant-select-arrow span {
     color: #ff7506;
 }
-.ant-modal-close {
+.section-5 .ant-modal-close {
     display: none;
 }
-.ant-modal-footer {
+.section-5 .ant-modal-footer {
     display: none;
 }
-.ant-input-hk1 {
+.section-5 .ant-input-hk1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     float: left;
 }
-.ant-input-hk1 input {
+.section-5 .section-5 .ant-input-hk1 input {
     padding: 0.4rem 1.2rem;
     width: 17.1rem;
     height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
 }
-.ant-input-hk2 {
+.section-5 .ant-input-hk2 {
     float: right;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.ant-input-hk2 input {
+.section-5 .ant-input-hk2 input {
     padding: 0.4rem 1.2rem;
     width: 14rem;
     background: #f2f2f2;
     border-radius: 8px;
 }
-.box__btn-button-cancel {
+.section-5 .box__btn-button-cancel {
     cursor: pointer;
     margin-top: 8rem;
     height: 5.2rem;
@@ -391,7 +391,7 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
-.box__btn-button-save {
+.section-5 .box__btn-button-save {
     cursor: pointer;
     margin-top: 8rem;
     margin-left: 3.2rem;
@@ -411,7 +411,7 @@
 }
 /*  */
 /*  */
-.box__sbj p {
+.section-5 .box__sbj p {
     margin: 2.6rem 0 0 6.4rem;
     float: left;
     font-family: Mulish;
@@ -422,7 +422,7 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
-.box__sbj-search {
+.section-5 .box__sbj-search {
     margin: 2.6rem 6.5rem 0 0;
     float: right;
     width: 43.8rem;
@@ -433,22 +433,64 @@
     border-radius: 2.4rem;
     border: none;
 }
-.box__sbj-tbl {
+/*  */
+.section-5 .box__sbj-tbl {
     margin: 8.9rem 6.4rem 0 6.4rem;
     height: 40px;
-    border-radius: 8px 8px 0px 0px;
+    border: none;
 }
-/* .box__sbj-tbl .ant-table-wrapper{
-    border: 1px solid black;
-    border-radius: 8rem;
-} */
-/* .box__sbj-tbl thead{
+.section-5 .box__sbj-tbl .ant-table-thead .ant-table-cell:first-child {
+    border-top-left-radius: 0.8rem;
+}
+.section-5 .box__sbj-tbl .ant-table-thead .ant-table-cell:last-child {
+    border-top-right-radius: 0.8rem;
+}
+.section-5 .box__sbj-tbl .ant-table-tbody tr:nth-child(odd) {
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+}
+.section-5 .box__sbj-tbl .ant-table-tbody tr:nth-child(even) {
+    background: #f0f3f6;
+    border: 1px solid #f2f2f2;
+}
+.section-5 .box__sbj-tbl .ant-table-thead{
+    border: none;
     background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
-} */
-.box__sbj-pagtion {
+}
+.section-5 .box__sbj-tbl .ant-table-thead .ant-table-cell {
+    border: none;
+    background: #ff7506;
+}
+.section-5 .box__sbj-tbl .ant-table-thead > tr > th {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+    border: none;
+    padding: 0.85rem;
+}
+.section-5 .box__sbj-tbl .ant-table-tbody {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+}
+.section-5 .box__sbj-tbl .ant-table-cell:nth-child(7) {
+    width: 1rem;
+}
+.section-5 .box__sbj-tbl .ant-table-cell:nth-child(6) {
+    width: 1rem;
+}
+/*  */
+.section-5 .box__sbj-pagtion {
     margin-top: 60rem;
 }
-.box__sbj-pagtion-txt p {
+.section-5 .box__sbj-pagtion-txt p {
     font-family: Source Sans Pro;
     font-style: italic;
     font-weight: normal;
@@ -456,7 +498,7 @@
     line-height: 20px;
     color: #373839;
 }
-.box__sbj-pagtion .ant-input-number {
+.section-5 .box__sbj-pagtion .ant-input-number {
     right: 19.9rem;
     bottom: -2rem;
     width: 4.8rem;
@@ -466,12 +508,12 @@
     box-sizing: border-box;
     border-radius: 4px;
 }
-.box__sbj-pagin {
+.section-5 .box__sbj-pagin {
     float: right;
     margin-top: -1rem;
     margin-right: 6.4rem;
 }
-.box__sbj-pagin .ant-pagination-item-active a {
+.section-5 .box__sbj-pagin .ant-pagination-item-active a {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -480,7 +522,7 @@
     border-radius: 50%;
     background: #ff7506;
 }
-.box__sbj-pagin .ant-pagination a:hover {
+.section-5 .box__sbj-pagin .ant-pagination a:hover {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -489,16 +531,16 @@
     border-radius: 50%;
     background: #ff7506;
 }
-.box__sbj-pagin .ant-pagination-options {
+.section-5 .box__sbj-pagin .ant-pagination-options {
     display: none;
 }
-.box__sbj-pagin .ant-pagination li {
+.section-5 .box__sbj-pagin .ant-pagination li {
     border: none;
 }
-.box__sbj-pagin .ant-pagination-prev button {
+.section-5 .box__sbj-pagin .ant-pagination-prev button {
     border: none;
 }
-.box__sbj-pagin .ant-pagination-prev button:hover {
+.section-5 .box__sbj-pagin .ant-pagination-prev button:hover {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -507,10 +549,10 @@
     border-radius: 50%;
     background: #ff7506;
 }
-.box__sbj-pagin .ant-pagination-next button {
+.section-5 .box__sbj-pagin .ant-pagination-next button {
     border: none;
 }
-.box__sbj-pagin .ant-pagination-next button:hover {
+.section-5 .box__sbj-pagin .ant-pagination-next button:hover {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -519,6 +561,6 @@
     border-radius: 50%;
     background: #ff7506;
 }
-.box__sbj-pagin .ant-pagination-jump-prev a:hover {
+.section-5 .box__sbj-pagin .ant-pagination-jump-prev a:hover {
     color: rgba(0, 0, 0, 0.85);
 }

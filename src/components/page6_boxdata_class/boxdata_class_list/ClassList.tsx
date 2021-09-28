@@ -167,85 +167,89 @@ class ClassList extends Component {
         //     setImportModalVisible(false);
         // }
 
-        // const menu = (
-        //     <Menu className="box__btn-button_cre-open">
-        //         <Menu.Item key="0">
-        //             <button className="box__btn-button_cre-upload" onClick={showUploadModal}>Tải file lên</button>
-        //         </Menu.Item>
-        //         <Menu.Item key="1">
-        //             <button className="box__btn-button_cre-import" onClick={showImportModal}>Nhập thủ công</button>
-        //         </Menu.Item>
-        //     </Menu>
-        // );
+        const menu = (
+            <Menu className="box__btn-button_cre-open">
+                <Menu.Item key="0">
+                    <button className="box__btn-button_cre-upload" >Tải file lên</button>
+                    {/* onClick={showUploadModal} */}
+                </Menu.Item>
+                <Menu.Item key="1">
+                    <button className="box__btn-button_cre-import" >Nhập thủ công</button>
+                    {/*onClick={showImportModal}  */}
+                </Menu.Item>
+            </Menu>
+        );
 
 
         return (
             <>
-                <div className="overview">
-                    {/* <User/> */}
-                    <div className="boxmain">
-                        <div className="box__title">
-                            <h1>Khai báo dữ liệu</h1>
-                        </div>
-                        <div className="box__chb">
-                            <div className="box__chb-slt">
-                                <p>Đang chọn xem:</p>
-                                <div className="box__chb-slt_sch">
-                                    <p>Trường:</p>
-                                    <Select className="box__chb-slt_sch_select" defaultValue="THCS">
-                                        <Option value="THCS">THCS</Option>
-                                        <Option value="THPT">THPT</Option>
-                                    </Select>
-                                </div>
-                                <div className="box__chb-slt_yr">
-                                    <p>Niên Khóa:</p>
-                                    <Select className="box__chb-slt_yr_select" defaultValue="2020 - 2021">
-                                        <Option value="2020 - 2021">2020 - 2021</Option>
-                                        <Option value="2015 - 2016">2015 - 2016</Option>
-                                        <Option value="2018 - 2019">2018 - 2019</Option>
-                                    </Select>
-                                </div>
-                            </div>
-                            <div className="box__chb-btn">
-                                <button className="box__chb-btn-clk">Niên Khóa</button>
-                                <button className="box__chb-btn-clk">Tổ - Bộ môn</button>
-                                <button className="box__chb-btn-clk">Khoa - Khối</button>
-                                <button className="box__chb-btn-clk"><Link to="/page5">Môn học</Link></button>
-                                <button className="box__chb-btn-clk"><Link to="/page6">Lớp học</Link></button>
-                                <button className="box__chb-btn-clk"><Link to="/page7">Loại điểm</Link></button>
-                            </div>
-                        </div>
-                        <div className="box__btn">
-                            <div className="box__btn-block">
-                                <Select className="box__btn-block_select" defaultValue="all">
-                                    <Option value="all">Tất cả khối</Option>
-                                    <Option value="6">Khối 6</Option>
-                                    <Option value="7">Khối 7</Option>
-                                    <Option value="8">Khối 8</Option>
+                {/* <User/> */}
+                <div className="section-6">
+                    <div className="box__title">
+                        <h1>Khai báo dữ liệu</h1>
+                    </div>
+                    <div className="box__chb">
+                        <div className="box__chb-slt">
+                            <p>Đang chọn xem:</p>
+                            <div className="box__chb-slt_sch">
+                                <p>Trường:</p>
+                                <Select className="box__chb-slt_sch_select" defaultValue="THCS">
+                                    <Option value="THCS">THCS</Option>
+                                    <Option value="THPT">THPT</Option>
                                 </Select>
                             </div>
-                            {/* <div className="box__btn-button">
-                                <button className="box__btn-button_del" onClick={showModal}>
-                                    <img className="box__btn-button_del-icon" src={unIcon2} alt="" />
-                                </button>
-                                <Modal className="box__btn-del" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                            <div className="box__chb-slt_yr">
+                                <p>Niên Khóa:</p>
+                                <Select className="box__chb-slt_yr_select" defaultValue="2020 - 2021">
+                                    <Option value="2020 - 2021">2020 - 2021</Option>
+                                    <Option value="2015 - 2016">2015 - 2016</Option>
+                                    <Option value="2018 - 2019">2018 - 2019</Option>
+                                </Select>
+                            </div>
+                        </div>
+                        <div className="box__chb-btn">
+                            <button className="box__chb-btn-clk">Niên Khóa</button>
+                            <button className="box__chb-btn-clk">Tổ - Bộ môn</button>
+                            <button className="box__chb-btn-clk">Khoa - Khối</button>
+                            <button className="box__chb-btn-clk"><Link to="/page5">Môn học</Link></button>
+                            <button className="box__chb-btn-clk"><Link to="/page6">Lớp học</Link></button>
+                            <button className="box__chb-btn-clk"><Link to="/page7">Loại điểm</Link></button>
+                        </div>
+                    </div>
+                    <div className="box__btn">
+                        <div className="box__btn-block">
+                            <Select className="box__btn-block_select" defaultValue="all">
+                                <Option value="all">Tất cả khối</Option>
+                                <Option value="6">Khối 6</Option>
+                                <Option value="7">Khối 7</Option>
+                                <Option value="8">Khối 8</Option>
+                            </Select>
+                        </div>
+                        <div className="box__btn-button">
+                            <button className="box__btn-button_del">
+                                <img className="box__btn-button_del-icon" src={unIcon2} alt="" />
+                            </button>
+                            {/*  onClick={showModal} */}
+                            {/*  <Modal className="box__btn-del" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                                     <h1>Xóa</h1>
                                     <p>Xác nhận muốn xóa những thông tin đã chọn? Sau khi xóa sẽ không thể hoàn tác.</p>
                                     <button className="box__btn-del-cancel" onClick={handleCancel}>Hủy</button>
                                     <button className="box__btn-del-acp" onClick={handleOk}>Lưu</button>
-                                </Modal>
+                                </Modal>*/}
 
-                                <button className="box__btn-button_export">
-                                    Xuất File
-                                </button>
+                            <button className="box__btn-button_export">
+                                Xuất File
+                            </button>
 
-                                <Dropdown className="box__btn-button_cre" overlay={menu} trigger={['click']}>
-                                    <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-                                        <img className="box__btn-button_cre-icon" src={plusIcon} alt="" />
-                                        Thêm mới
-                                    </a>
-                                </Dropdown>
-                            
+                            <Dropdown className="box__btn-button_cre" overlay={menu}  >
+                                <a className="ant-dropdown-link" >
+                                    <img className="box__btn-button_cre-icon" src={plusIcon} alt="" />
+                                    Thêm mới
+                                </a>
+                            </Dropdown>
+                            {/* overlay={menu} trigger={['click']} */}
+                            {/* img: onClick={e => e.preventDefault()} */}
+                            {/* 
                                 <Modal className="box__btn-upload" visible={uploadModalVisible} onOk={handleUploadOk} onCancel={handleUploadCancel}>
                                     <h1>Tải lên file</h1>
                                     <div className="box__btn-upload-fileattach">
@@ -325,38 +329,37 @@ class ClassList extends Component {
                                         <button className="box__btn-button-cancel" onClick={handleImportCancel}>Hủy</button>
                                         <button className="box__btn-button-save" onClick={handleImportCancel}>Lưu</button>
                                     </div>
-                                </Modal>
-                       
-                            </div> */}
+                                </Modal>*/}
+
                         </div>
-                        <div className="box__sbj">
-                            <div className="box__sbj-stu">
-                                <p>Lớp học</p>
-                                {/* <img className="box__sbj-search__icon" src={searchIcon} alt="" /> */}
-                                <input className="box__sbj-search__input" type="search" placeholder="Tìm kiếm" />
+                    </div>
+                    <div className="box__sbj">
+                        <div className="box__sbj-stu">
+                            <p>Lớp học</p>
+                            {/* <img className="box__sbj-search__icon" src={searchIcon} alt="" /> */}
+                            <input className="box__sbj-search__input" type="search" placeholder="Tìm kiếm" />
+                        </div>
+                        <div className="box__sbj-tblclass">
+                            <Table
+                                // rowSelection={rowSelection}
+                                columns={columns}
+                                dataSource={data}
+                                pagination={false}
+                            />
+                        </div>
+                        <div className="box__sbj-pagtion">
+                            <div className="box__sbj-pagtion-txt">
+                                <p>Hiển thị</p>
+                                <InputNumber min={1} max={10} defaultValue={3} />
+                                <p> hàng trong mỗi trang</p>
                             </div>
-                            <div className="box__sbj-tblclass">
-                                <Table
-                                    // rowSelection={rowSelection}
-                                    columns={columns}
-                                    dataSource={data}
-                                    pagination={false}
-                                />
-                            </div>
-                            <div className="box__sbj-pagtion">
-                                <div className="box__sbj-pagtion-txt">
-                                    <p>Hiển thị</p>
-                                    <InputNumber min={1} max={10} defaultValue={3} />
-                                    <p> hàng trong mỗi trang</p>
-                                </div>
-                            </div>
-                            <div className="box__sbj-pagin">
-                                <Pagination
-                                    showSizeChanger
-                                    defaultCurrent={8}
-                                    total={100}
-                                />
-                            </div>
+                        </div>
+                        <div className="box__sbj-pagin">
+                            <Pagination
+                                showSizeChanger
+                                defaultCurrent={8}
+                                total={100}
+                            />
                         </div>
                     </div>
                 </div>

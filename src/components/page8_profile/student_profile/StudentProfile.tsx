@@ -187,12 +187,12 @@ class StudentProfile extends Component {
                                 </Select>
                             </div>
                         </Col>
-                        <Col className="box__btn-tag" span={10}>
+                        <Col className="box__btn-tag" span={12}>
                             <button className="box__btn-tag-active">Tất cả hồ sơ</button>
                             <button className="box__btn-tag-none">Khen thưởng</button>
                             <button className="box__btn-tag-none">Kỷ luật</button>
                         </Col>
-                        <Col className="box__btn-button" span={8}>
+                        <Col className="box__btn-button" span={6}>
                             <button className="box__btn-button_del">
                                 <img className="box__btn-button_del-icon" src={unIcon2} alt="" />
                             </button>

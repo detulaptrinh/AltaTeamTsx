@@ -23,6 +23,7 @@
 }
 /* button left */
 .section-8 .box__btn-block {
+    margin-top: 1.5rem;
     display: inline-flex;
 }
 .section-8 .box__btn-block_select {
@@ -40,6 +41,18 @@
     height: 3.2rem;
     background: #ffffff;
     border-radius: 4px;
+}
+.section-8 .box__btn .ant-select .ant-select-selector {
+    border: none;
+    color: black;
+    border: 1px solid #373839;
+    border-radius: 4px;
+}
+.section-8 .box__btn .box__btn-blk .ant-select-selection-placeholder{
+    color: #373839;
+}
+.section-8 .ant-select-arrow span {
+    color: #ff7506;
 }
 /* button center */
 .section-8 .box__btn-tag{
@@ -72,8 +85,11 @@
     line-height: 2.3rem;
     letter-spacing: 0.015em;
     color: #FFFFFF;
-}
+}   
 /* button right */
+.section-8  .box__btn-button{
+    display: flex;
+}
 .section-8 .box__btn-button_del {
     background: none;
     border: none;
@@ -106,7 +122,7 @@
     margin: 0rem 1rem;
     border-radius: 8px;
 }
-.section-8 .section-8 .box__btn-button_cre {
+.section-8 .box__btn-button_cre {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -126,7 +142,7 @@
     margin: 0.2rem 0.8rem 0 1rem;
     border-radius: 8px;
 }
-.section-8 .section-8 .box__btn-button_cre-icon {
+.section-8 .box__btn-button_cre-icon {
     width: 2.5rem;
     height: 2.5rem;
     line-height: 23px;
@@ -156,9 +172,12 @@
     border: none;
 }
 /*  */
-.section-8 .table-list {
-    margin: 8.9rem 6.4rem 0 6.4rem;
+.section-8 .box__sbj .table-list {
+    margin: 0rem 6.4rem 0 6.4rem;
     height: auto;
+}
+.section-8 .box__sbj .ant-table{
+    margin-top: 2.5rem;
 }
 .section-8 .ant-table-thead .ant-table-cell {
     background: #ff7506;
