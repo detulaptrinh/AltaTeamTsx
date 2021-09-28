@@ -131,8 +131,8 @@ export default function ProfileTeacherEdit() {
               <Row>
               <Col className="info__tab__box" span={7}>
                     <div className="left-tab-box">
-                            <div className="left-tab-box-general-information">
-                                <Link to="/profile-teacher">Thông tin chung</Link>
+                            <div className="left-tab-box-general-information active">
+                                <Link to="/profile-teacher" className="active">Thông tin chung</Link>
                             </div>
                             <div className="left-tab-box-study-process">
                                 <Link to="/profile-process">Quá trình học tập</Link>

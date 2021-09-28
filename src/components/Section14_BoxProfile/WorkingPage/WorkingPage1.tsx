@@ -81,6 +81,15 @@ const columns =  [
         datestart:"01/01/2021",
         dateend:"01/01/2025",
         icon: '',
+      },
+      {
+        key: '4',
+        unit:"THPT Campus",
+        object:"Toán - Văn",
+        position: 'Trưởng bộ môn',
+        datestart:"01/01/2021",
+        dateend:"01/01/2025",
+        icon: '',
       }
   ]; 
 

@@ -36,8 +36,8 @@ export default class WorkingProcess extends Component {
                             <div className="left-tab-box-general-information">
                                 <Link to="/profile-teacher">Thông tin chung</Link>
                             </div>
-                            <div className="left-tab-box-study-process">
-                                <Link to="/profile-process">Quá trình học tập</Link>
+                            <div className="left-tab-box-study-process active">
+                                <Link to="/profile-process" className="active">Quá trình học tập</Link>
                             </div>
                         </div>
                 </Col>

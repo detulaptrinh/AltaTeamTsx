@@ -927,7 +927,6 @@ input.ant-input.input__textr__profile {
     justify-content: center;
     align-items: center;
     padding: 0.6rem;
-    /* Grey/5 */
     background: #F2F2F2;
     border-radius: 3.2rem;
 
@@ -940,10 +939,8 @@ input.ant-input.input__textr__profile {
     justify-content: center;
     align-items: center;
     padding: 0.6rem 4rem 0.7rem;
-
     width: 22.7rem;
     height: 3.6rem;
-
     position: absolute;
     left: 0.6rem;
     top: 0.6rem;
@@ -959,6 +956,15 @@ input.ant-input.input__textr__profile {
     color: #373839;
     opacity: 0.5;
 }
+.left-tab-box-general-information.active{
+    background: #373839;
+    border-radius: 2.4rem ;
+}
+.left-tab-box-general-information a.active{
+    color: #ffffff;
+    background:none;
+    opacity: 1;
+}
 .left-tab-box-study-process {
     display: flex;
     flex-direction: row;
@@ -968,7 +974,6 @@ input.ant-input.input__textr__profile {
     height: 3.6rem;
     margin-left: 22.5rem;
     border-radius: 2.4rem;
-    background: #373839;
 }
 
 .left-tab-box-study-process a {
@@ -977,10 +982,18 @@ input.ant-input.input__textr__profile {
     font-weight: 800;
     font-size: 1.8rem;
     line-height: 2.3rem;
-
     letter-spacing: 0.015em;
-    color: #FFFFFF;
-
+    color: #373839;
+    opacity: 0.5;
+}
+.left-tab-box-study-process.active{
+    background: #373839;
+    border-radius: 2.4rem ;
+}
+.left-tab-box-study-process a.active{
+    color: #ffffff;
+    background:none;
+    opacity: 1;
 }
 .box__collapse .ant-space{
     width: 100%;

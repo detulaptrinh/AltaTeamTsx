@@ -50,3 +50,6 @@ input.ant-input.input__process{
 .table__process .ant-table-thead .ant-table-cell:last-child{
     border-top-right-radius: 1.6rem;
 }
+.ant-table-tbody tr:nth-child(even){
+    background: #F0F3F6;
+}
