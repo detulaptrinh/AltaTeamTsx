@@ -4,9 +4,13 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './App.css';
 // css antd
-import 'antd/dist/antd.css';
 import IndexMenu from './components/index_menu/IndexMenu';
 import TopBarUser from './components/top_bar_user/TopBarUser';
+import Tab from './components/Section19_Tab/Tab';
+import TabEdit from './components/Section19_Tab/TabEdit';
+import ListUser from './components/Section20_SystemUser/ListUser';
+import GroupUser from './components/Section20_SystemUser/GroupUser';
+import ClassroomSetting from './components/Section21_ClassroomSetting/ClassroomSetting';
 
 import Dashboard from './components/Section2_Dashboard/Dashboard';
 import Page2 from './components/Section2_Dashboard/Page2'
@@ -31,6 +35,13 @@ export default class App extends Component {
                     <main>
                         <TopBarUser />
                         <div className="content">
+
+                            <Route path="/tab" component={Tab}></Route>
+                            <Route path="/tabedit" component={TabEdit}></Route>
+                            <Route path="/groupuser" component={GroupUser}></Route>
+                            <Route path="/listuser" component={ListUser}></Route>
+                            <Route path="/classroomsetting" component={ClassroomSetting}></Route>
+
                             <Route exact path="/" component={Dashboard}/>
                             <Route path="/page2" component={Page2} />
                             <Route path="/page3" component={Page3} />
@@ -47,6 +58,7 @@ export default class App extends Component {
                             <Route path="/edit-student-information" component={EditStudentInformation}></Route>
                             {/* 9.2 kết quả học tập */}
                             <Route path="/study-process" component={StudyProcess} />
+
                         </div>
                     </main>
                 </div>
