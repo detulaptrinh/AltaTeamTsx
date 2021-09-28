@@ -14,6 +14,8 @@ import IconEdit from "./edit.svg";
 import IconShow from "./show.svg";
 import IconPlus from "./plus.svg";
 import IconList from "./listicon.svg";
+import IconEllipse2 from "./ellipsecauhinh2.svg";
+import IconEllipse3 from "./ellipsecauhinh3.svg";
 
 export {
     IconBag,
@@ -32,4 +34,6 @@ export {
     IconShow,
     IconPlus,
     IconList,
+    IconEllipse2,
+    IconEllipse3,
 }
