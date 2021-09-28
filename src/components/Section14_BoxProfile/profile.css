@@ -732,12 +732,17 @@ input.ant-input.input__textr__profile {
     background-color: #FFFFFF;
 } 
 
- .ant-select-single.ant-select-show-arrow .ant-select-selection-item{
+/* .ant-select-single.ant-select-show-arrow .ant-select-selection-item{
     font-size: 1.6rem;
     padding: 0.5rem;  
-    width:10rem;
+    width:11rem;
 }
-
+ */
+.arrow__fix .ant-select-arrow{
+    font-size: 1.6rem;
+    padding: 0.2rem;
+    width: -21rem !important;
+}
 .text__content{
     padding: 2rem;
     font-family: 'Source Sans Pro';
@@ -918,7 +923,7 @@ input.ant-input.input__textr__profile {
 .info__tab__box{
     display:flex;
 }
-.left-tab-box {
+.switch__tab__box {
     margin-top: 0.8rem;
     width: 47.1rem;
     height: 4.8rem;
@@ -933,7 +938,7 @@ input.ant-input.input__textr__profile {
     position: relative;
 }
 
-.left-tab-box-general-information {
+.switch__tab__box-general-information {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -946,7 +951,7 @@ input.ant-input.input__textr__profile {
     top: 0.6rem;
 }
 
-.left-tab-box-general-information a {
+.switch__tab__box-general-information a {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
@@ -956,16 +961,16 @@ input.ant-input.input__textr__profile {
     color: #373839;
     opacity: 0.5;
 }
-.left-tab-box-general-information.active{
+.switch__tab__box-general-information.active{
     background: #373839;
     border-radius: 2.4rem ;
 }
-.left-tab-box-general-information a.active{
+.switch__tab__box-general-information a.active{
     color: #ffffff;
     background:none;
     opacity: 1;
 }
-.left-tab-box-study-process {
+.switch__tab__box-study-process {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -976,7 +981,7 @@ input.ant-input.input__textr__profile {
     border-radius: 2.4rem;
 }
 
-.left-tab-box-study-process a {
+.switch__tab__box-study-process a {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
@@ -986,11 +991,11 @@ input.ant-input.input__textr__profile {
     color: #373839;
     opacity: 0.5;
 }
-.left-tab-box-study-process.active{
+.switch__tab__box-study-process.active{
     background: #373839;
     border-radius: 2.4rem ;
 }
-.left-tab-box-study-process a.active{
+.switch__tab__box-study-process a.active{
     color: #ffffff;
     background:none;
     opacity: 1;

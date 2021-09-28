@@ -32,11 +32,11 @@ export default class WorkingProcess extends Component {
               </Row>
               <Row>
                 <Col className="info__tab__box" span={7}>
-                    <div className="left-tab-box">
-                            <div className="left-tab-box-general-information">
+                    <div className="switch__tab__box">
+                            <div className="switch__tab__box-general-information">
                                 <Link to="/profile-teacher">Thông tin chung</Link>
                             </div>
-                            <div className="left-tab-box-study-process active">
+                            <div className="switch__tab__box-study-process active">
                                 <Link to="/profile-process" className="active">Quá trình học tập</Link>
                             </div>
                         </div>

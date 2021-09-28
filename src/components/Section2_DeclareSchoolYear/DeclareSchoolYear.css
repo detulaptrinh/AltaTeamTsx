@@ -446,6 +446,8 @@
 .DeclareSchoolYear-modal-add-edit .ant-modal-content {
   border-radius: 16px;
   padding: 2.4rem 5rem 3.9rem;
+  width: 90rem;
+  height:60rem;
 }
 
 .DeclareSchoolYear-modal-add-edit .ant-modal-header {

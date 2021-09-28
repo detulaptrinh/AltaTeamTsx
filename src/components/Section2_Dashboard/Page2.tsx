@@ -19,12 +19,18 @@ import {
   InputNumber,
   Pagination
 } from "antd";
-import {Avatar} from "../../assets/images"
 import {Link} from "react-router-dom"
 import {IconEdit, IconTrash} from "../../assets/svg";
 
 const { confirm } = Modal;
 const { Option } = Select;
+
+interface ISchoolYear {
+  index: number;
+  schoolYear: string;
+  timeStart: string;
+  timeEnd: string;
+}
 
 const columns =  [ 
     {

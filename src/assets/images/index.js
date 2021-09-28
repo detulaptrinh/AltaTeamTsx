@@ -1,6 +1,7 @@
-import Avatar from './frame19.png';
+import AvatarSchool from './frame19.png';
+import AvatarTeacher from './frame20.png';
 
 export {
-    Avatar,
-    
+    AvatarSchool,
+    AvatarTeacher,
 }

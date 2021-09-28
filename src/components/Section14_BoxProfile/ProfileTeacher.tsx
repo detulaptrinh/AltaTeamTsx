@@ -13,7 +13,7 @@ import {
   Button,
   Checkbox
 } from 'antd';
-import {Avatar} from '../../assets/images';
+import {AvatarTeacher} from '../../assets/images';
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -32,11 +32,11 @@ export default class ProfileTeacher extends Component {
               </Row>
               <Row>
               <Col className="info__tab__box" span={7}>
-                    <div className="left-tab-box">
-                            <div className="left-tab-box-general-information active">
+                    <div className="switch__tab__box">
+                            <div className="switch__tab__box-general-information active">
                                 <Link to="/profile-teacher" className="active">Thông tin chung</Link>
                             </div>
-                            <div className="left-tab-box-study-process">
+                            <div className="switch__tab__box-study-process">
                                 <Link to="/profile-process">Quá trình học tập</Link>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ export default class ProfileTeacher extends Component {
                         <Card title="Thông tin chung" bordered={false}>
                             <Row>
                                 <Col span={4}>
-                                    <img src={Avatar} alt="" />
+                                    <img src={AvatarTeacher} alt="" />
                                 </Col>
                                 <Col className="mleft" span={18}>
                                     <div className="ant-col-title">Thông tin học viên</div>
