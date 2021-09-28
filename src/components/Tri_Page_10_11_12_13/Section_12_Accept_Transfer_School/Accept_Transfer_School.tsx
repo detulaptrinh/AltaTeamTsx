@@ -11,7 +11,7 @@ import Searchs from '../Categories/Searchs';
 
 
 
-const dataBonus = [
+const dataTransferSchool = [
     {
         key: '1',
         id: '1235A',
@@ -125,7 +125,7 @@ export default class TransferSchool extends Component {
                         </div>
                         <div className="transfer_school_body_group_table">
                             <div className="transfer_school_body_group_table_table">
-                                <Table dataSource={dataBonus} columns={columns} pagination={false} />
+                                <Table dataSource={dataTransferSchool} columns={columns} pagination={false} />
                             </div>
                         </div>
                         <div className="transfer_school_footer_group">
