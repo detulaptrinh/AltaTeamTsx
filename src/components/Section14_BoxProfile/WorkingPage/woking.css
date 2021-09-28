@@ -1,0 +1,52 @@
+input.ant-input.input__process{
+    height:4rem;
+    border-radius:2.4rem;
+    background-color: #F0F3F6;
+
+}
+.btn__process__add{
+    margin-left: 13rem;
+    display: flex;
+    width:11.8rem;
+    height:3.2rem;
+    justify-content: center;
+    align-items: center;
+    background: #FF7506;
+    border-radius: 0.4rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    border: none;
+    letter-spacing: 0.015em;
+}
+.ant-row__fix{
+    margin-bottom: 3rem;
+}
+
+.table__process .ant-table-thead tr th{
+    background: black;
+    color: white;
+    font-weight: 800;
+    font-family: "Mulish";
+    font-size: 1.8rem;
+    letter-spacing: 0.015em;
+    padding: 8px 8px !important;
+    text-align: center;
+}
+.table__process .ant-table-tbody tr td {
+    text-align: center;
+    padding: 4px 8px !important;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    color: #373839;
+}
+.icon__img_fix{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.table__process .ant-table-thead .ant-table-cell:first-child{
+    border-top-left-radius: 1.6rem;
+}
+.table__process .ant-table-thead .ant-table-cell:last-child{
+    border-top-right-radius: 1.6rem;
+}

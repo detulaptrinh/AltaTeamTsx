@@ -22,33 +22,34 @@ import {
   InputNumber,
   Pagination
 } from "antd";
-import AvatarTeacher from "../../assets/images/Frame19.png";
 import {Link} from "react-router-dom"
+import {
+  IconEdit, 
+  IconTrash,
+  IconShow,
+} from "../../assets/svg";
 
 const { confirm } = Modal;
 const { Option } = Select;
 
 const columns =  [ 
     {
-      title: 'STT',
-      dataIndex: 'id',
+      title: 'Tên Tổ - bộ môn',
+      dataIndex: 'nameobject',
       
     },
     {
-      title: 'Thời gian bắt đầu',
-      dataIndex: 'datestart',
-    },
-    {
-      title: 'Thời gian kết thúc',
-      dataIndex: 'dateend',
+      title: 'Trưởng bộ môn',
+      dataIndex: 'leader',
     },
     {
     title: '',
     dataIndex: 'icon',
     render: () => (
-      <Space >
-        <DeleteOutlined style={{ fontSize: '30px' , color: '#FF7506' }}/>
-        <DeleteOutlined style={{ fontSize: '30px' , color: '#FF7506' }}/>
+      <Space>
+        <img src={IconShow}/>
+        <img src={IconEdit}/>
+        <img src={IconTrash}/>
       </Space>
     ),
     },
@@ -57,67 +58,25 @@ const columns =  [
   const data = [
     {
       key: '1',
-      id: '1',
+      nameobject: 'Văn hóa xã hội',
       year: '2020-2021',
-      datestart: '05/10/2020',
-      dateend: '05/10/2020',
-      edit: 'Sửa',
-      delete: 'Xóa',
+      leader:'Nguyễn Văn A',
+      
     },
     {
       key: '2',
-      id: '2',
+      nameobject: 'Khoa học tự nhiên',
       year: '2020-2021',
-      datestart: '05/10/2020',
-      dateend: '05/10/2020',
-      edit: 'Sửa',
-      delete: 'Xóa',
+      leader:'Nguyễn Văn A',
+      
     },
     {
       key: '3',
-      id: '3',
+      nameobject: 'Anh Văn',
       year: '2020-2021',
-      datestart: '05/10/2020',
-      dateend: '05/10/2020',
-      edit: 'Sửa',
-      delete: 'Xóa',
-    },
-    {
-      key: '4',
-      id: '4',
-      year: '2020-2021',
-      datestart: '05/10/2020',
-      dateend: '05/10/2020',
-      edit: 'Sửa',
-      delete: 'Xóa',
-    },
-    {
-      key: '5',
-      id: '5',
-      year: '2020-2021',
-      datestart: '05/10/2020',
-      dateend: '05/10/2020',
-      edit: 'Sửa',
-      delete: 'Xóa',
-    },
-    {
-      key: '6',
-      id: '6',
-      year: '2020-2021',
-      datestart: '05/10/2020',
-      dateend: '05/10/2020',
-      edit: 'Sửa',
-      delete: 'Xóa',
-    },
-    {
-      key: '7',
-      id: '7',
-      year: 'Hóa học',
-      datestart: '05/10/2020',
-      dateend: '05/10/2020',
-      edit: 'Sửa',
-      delete: 'Xóa',
-    },
+      leader:'Nguyễn Văn A',
+      
+    }
   ];
 
 export default function Page3() {
@@ -203,7 +162,7 @@ export default function Page3() {
                           Thêm mới
                       </button>
                       <Modal
-                          className="box__btn-cre"
+                          className="box__btn-page3"
                           centered
                           visible={visible}
                           onOk={() => setVisible(false)}
@@ -224,8 +183,8 @@ export default function Page3() {
                               <hr />
                               <p>Danh sách môn học</p>
                               
-                              <button className="box__btn-button-cancel" onClick={() => setVisible(false)}>Hủy</button>
-                              <button className="box__btn-button-save" onClick={() => setVisible(false)}>Lưu</button>
+                              <button className="box__btn-button-cancel-page3" onClick={() => setVisible(false)}>Hủy</button>
+                              <button className="box__btn-button-save-page3" onClick={() => setVisible(false)}>Lưu</button>
                           </Form>
                       </Modal>
                   </div>

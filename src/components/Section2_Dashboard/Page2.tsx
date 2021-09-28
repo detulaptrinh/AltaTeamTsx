@@ -2,9 +2,6 @@ import React, {useState} from 'react'
 import "./dash.css";
 import {
   DeleteOutlined,
-  PicCenterOutlined,
-  FormOutlined,
-  ExclamationCircleOutlined,
 } from "@ant-design/icons";
 import {
   Form,
@@ -22,8 +19,9 @@ import {
   InputNumber,
   Pagination
 } from "antd";
-import AvatarTeacher from "../../assets/images/Frame19.png";
+import {Avatar} from "../../assets/images"
 import {Link} from "react-router-dom"
+import {IconEdit, IconTrash} from "../../assets/svg";
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -47,8 +45,8 @@ const columns =  [
     dataIndex: 'icon',
     render: () => (
       <Space >
-        <DeleteOutlined style={{ fontSize: '30px' , color: '#FF7506' }}/>
-        <DeleteOutlined style={{ fontSize: '30px' , color: '#FF7506' }}/>
+        <img src={IconEdit}/>
+        <img src={IconTrash}/>
       </Space>
     ),
     },
@@ -198,7 +196,7 @@ export default function Page2() {
                   <div className="box__btn-button">
                       
                       <button className="box__btn-button_cre" onClick={() => setVisible(true)}>
-                          <img className="box__btn-button_cre-icon" src="{plusIcon}" alt=""/>
+                      <i className="bx bx-plus"/>
                           Thêm mới
                       </button>
                       <Modal

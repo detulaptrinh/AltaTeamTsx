@@ -20,7 +20,7 @@ import {
   Table,
   Space
 } from "antd";
-import AvatarTeacher from "../../assets/images/Frame19.png";
+import {Avatar} from '../../assets/images';
 import {Link} from "react-router-dom"
 
 const { confirm } = Modal;
@@ -190,7 +190,7 @@ export default function ProfileTeacherEdit() {
                 <Card title="Thông tin chung" bordered={false}>
                   <Row>
                     <Col span={4}>
-                      <img src={AvatarTeacher} alt="" />
+                      <img src={Avatar} alt="" />
                     </Col>
                     <Col className="mleft1" span={18}>
                       <div className="ant-col-title">Thông tin học viên</div>

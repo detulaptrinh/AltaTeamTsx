@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
-import './profile.css'
-import { 
-  DeleteOutlined, 
-  PicCenterOutlined,
-  FormOutlined,
-  ExclamationCircleOutlined
-} from '@ant-design/icons';
+import './profile.css'  
 import {
   Form,
   Input,
@@ -19,7 +13,7 @@ import {
   Button,
   Checkbox
 } from 'antd';
-import AvatarTeacher from '../../assets/images/Frame19.png'
+import {Avatar} from '../../assets/images';
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -85,7 +79,7 @@ export default class ProfileTeacher extends Component {
                         <Card title="Thông tin chung" bordered={false}>
                             <Row>
                                 <Col span={4}>
-                                    <img src={AvatarTeacher} alt="" />
+                                    <img src={Avatar} alt="" />
                                 </Col>
                                 <Col className="mleft" span={18}>
                                     <div className="ant-col-title">Thông tin học viên</div>

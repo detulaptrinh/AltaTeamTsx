@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import { 
   Row,
   Col,
@@ -18,9 +18,11 @@ import {
 } from '@ant-design/icons';
 import {Link} from "react-router-dom"
 import './profile.css'
-import IconEyes from '../../assets/avg/eyeIcon.svg'
-import IconReload from '../../assets/avg/reload.svg'
-import IconTrash from '../../assets/avg/trashicon.svg'
+import {
+  IconEyes,
+  IconReload,
+  IconTrash
+} from "../../assets/svg";
 
 const { Option } = Select;
 
@@ -113,9 +115,6 @@ const columns = [
       object: 'Toán',
       position: 'Giáo viên',
       status: 'Đang hoạt động',
-      buttonview: 'Xem',
-      buttonreload: 'Load',
-      buttondelete: 'Xóa'
   
     },
     {
@@ -160,9 +159,32 @@ const columns = [
     }
   ];
 
-  export default class Profile extends Component {
-    render() {
-
+  export default function Profile(){
+    const [visible, setVisible] = useState(false);
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [isModalVisibles, setIsModalVisibles] = useState(false);
+    const [isModalVisibless, setIsModalVisibless] = useState(false);
+  
+    const showModal = () => {
+      setIsModalVisible(true);
+    };
+    const showModals = () => {
+      setIsModalVisibles(true);
+    }  
+    const handleOk = () => {
+      setIsModalVisible(false);
+    };
+  
+    const handleCancel = () => {
+      setIsModalVisible(false);
+    }
+    const handleOks = () => {
+      setIsModalVisibles(false);
+    };
+  
+    const handleCancels = () => {
+      setIsModalVisibles(false);
+    }
       return (
         <>
           <Row>
@@ -187,29 +209,29 @@ const columns = [
             <Col className="right-btn" span={8} offset={8}>
               <div className="box">
                 <div className="btn-delete">
-                  <button /* onClick={showModal} */>
+                  <button onClick={showModal}>
                     <i className='bx bx-trash' />
                   </button>
                   <Modal 
                   className="box__btn-del" 
-                  /* visible={isModalVisible} 
+                  visible={isModalVisible} 
                   onOk={handleOk} 
-                  onCancel={handleCancel} */>
+                  onCancel={handleCancel}>
                     <h1>Xóa</h1>
                     <p>Xác nhận muốn xóa những thông tin đã chọn? Sau khi xóa sẽ không thể hoàn tác.</p>
                     
-                    <button className="box__btn-del-cancel" /* onClick={handleCancel} */>Hủy</button>
-                    <button className="box__btn-del-acp" /* onClick={handleOk} */>Lưu</button>
+                    <button className="box__btn-del-cancel" onClick={handleCancel}>Hủy</button>
+                    <button className="box__btn-del-acp" onClick={handleOk}>Lưu</button>
                   </Modal>
                 </div>
     
                 <div className="btn-excel">
-                  <button className="btn-bk-ffffff" /* onClick={showModals} */>Xuất file</button>
+                  <button className="btn-bk-ffffff" onClick={showModals}>Xuất file</button>
                   <Modal 
                     className="box__excel" 
-                   /*  visible={isModalVisibles} 
+                    visible={isModalVisibles} 
                     onOk={handleOks} 
-                    onCancel={handleCancels} */>
+                    onCancel={handleCancels}>
                     <form>
                       <h1>Tải lên file</h1>
                       <label>Tệp đính kèm: </label>
@@ -222,8 +244,8 @@ const columns = [
                       <p>[tải xuống file mẫu]</p>
                       <br/>
                       <div className="mlist_btn">
-                        <button className="box__btn-del-cancel" /* onClick={handleCancels} */>Hủy</button>
-                        <button className="box__btn-del-acp" /* onClick={handleOks} */>Lưu</button>
+                        <button className="box__btn-del-cancel" onClick={handleCancels}>Hủy</button>
+                        <button className="box__btn-del-acp" onClick={handleOks}>Lưu</button>
                       </div>
                     </form>
                   </Modal>
@@ -282,4 +304,3 @@ const columns = [
       )
 }
 
-}

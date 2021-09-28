@@ -266,11 +266,12 @@
     float: right;
     width: 14.4rem;
     height: 3.2rem;
-    top: 5rem;
+    top: -5rem;
     right: 1.5rem;
     background: #FFFFFF;
     border: 1px solid #373839;
     border-radius: 4px;
+
 }
 .box__chb-slt_yr p{
     font-family: Source Sans Pro;
@@ -288,8 +289,7 @@
     bottom: 4.5rem;
     width: 14.4rem;
     background: #FFFFFF;
-    border: 1px solid #373839;
-    border-radius: 4px;
+
 }
 .box__chb-btn{
     margin-top: 6rem;
@@ -492,7 +492,7 @@
 }
 .box__btn-page4 .ant-modal-content{
     width: 88.4rem;
-    height: 35rem;
+    height: 38rem;
     background: #FFFFFF;
     border-radius: 16px;
     padding: 1rem;
@@ -577,10 +577,11 @@
     background: #F2F2F2;
     border-radius: 8px;
 }
-.box__btn-page4 .ant-modal-content .input__page4-kk{
+.box__btn-page4 .ant-modal-content .custom-input {
     width:29rem;
-    margin-right: 27rem;
+    margin-right: 27.1rem;
 }
+
 .box__btn-page3 Select Option{
     width: 50%;
 }.box__btn-page4 Select Option{
@@ -672,7 +673,7 @@
 }
 .box__btn-button-cancel-page4{
     cursor: pointer;
-    margin-left: 20rem;
+    margin-left: 23rem;
     height: 5.2rem;
     width: 16rem;
     border: none;
@@ -686,7 +687,6 @@
     line-height: 23px;
     letter-spacing: 0.015em;
     color: #373839;
-    margin-top: -20rem;
 }
 .box__btn-button-save-page4{
     cursor: pointer;
@@ -704,8 +704,7 @@
     letter-spacing: 0.015em;
     color: #FFFFFF;
 }
-/*  */
-/*  */
+
 .box__sbj p{
     margin: 2.6rem 0 0 6.4rem;
     float: left;
@@ -820,3 +819,6 @@
 }
 
 
+.table__page3 .ant-table-thead{
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+}

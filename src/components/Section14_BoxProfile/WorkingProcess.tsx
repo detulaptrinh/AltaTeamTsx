@@ -13,6 +13,8 @@ import {Link} from "react-router-dom";
 import {UploadOutlined,
     DownloadOutlined,
   } from '@ant-design/icons';
+import WokingPage1 from './WorkingPage/WorkingPage1';
+import WokingPage2 from './WorkingPage/WorkingPage2';
 
 const { Panel } = Collapse;
 const { Option } = Select;
@@ -89,10 +91,12 @@ export default class WorkingProcess extends Component {
               <Space direction="vertical">
                     <Collapse collapsible="header">
                         <Panel header="Quá trình công tác" key="1">
+                          <WokingPage1/>
                         </Panel>
                     </Collapse>
                     <Collapse collapsible="header">
                         <Panel header="Thông tin đào tạo" key="2">
+                          <WokingPage2/>
                         </Panel>
                     </Collapse>
                 </Space>

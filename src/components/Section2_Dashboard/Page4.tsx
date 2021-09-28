@@ -1,82 +1,93 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import './dash.css'
-import { Select, Table, Modal, Form, Input, Pagination, InputNumber } from 'antd';
-/* import unIcon from '../../assets/boxdata/unIcon.svg'
-import plusIcon from '../../assets/boxdata/plusIcon.svg'
-import listIcon from '../../assets/boxdata/listIcon.svg'
-import editIcon from '../../assets/boxdata/editIcon.svg'
-import trashIcon from '../../assets/boxdata/trashIcon.svg'
- */
+import React, {useState} from 'react'
+import "./dash.css";
+import {
+  DeleteOutlined,
+  PicCenterOutlined,
+  FormOutlined,
+  ExclamationCircleOutlined,
+} from "@ant-design/icons";
+import {
+  Form,
+  Input,
+  Select,
+  DatePicker,
+  Modal,
+  Card,
+  Row,
+  Col,
+  Button,
+  Checkbox,
+  Table,
+  Space,
+  InputNumber,
+  Pagination
+} from "antd";
+import {Link} from "react-router-dom"
+import {
+  IconEdit, 
+  IconTrash,
+  IconShow,
+} from "../../assets/svg";
+
+const { confirm } = Modal;
 const { Option } = Select;
 
 const columns = [
-    {
-      title: 'Mã khoa - khối',
-      dataIndex: 'id',
-      sorter: (a, b) => a.id - b.id,
-    },
-    {
-      title: 'Tên khoa - khối',
-      dataIndex: 'name',
-      sorter: (a, b) => a.name - b.name,
-    },
-    
-    {
-      title: '',
-      dataIndex:"showlist"
-    },
-    {
-        title:"",
-        dataIndex:"edit",
-    },
-    {
-        title:"",
-        dataIndex:"delete"
-    }
-  ];
+  {
+    title: 'Mã khoa - khối',
+    dataIndex: 'id',
+  },
+  {
+    title: 'Tên khoa - khối',
+    dataIndex: 'name',
+  },
+  
+  {
+    title: '',
+    dataIndex:"icon",
+    render: () => (
+      <Space>
+        <img src={IconShow}/>
+        <img src={IconEdit}/>
+        <img src={IconTrash}/>
+      </Space>
+    ),
+  },
+];
 
 const data = [
-    {
-      key: '1',
-      id: 'K09',
-      name: 'Khối 9',
-      showlist: 'Show',
-      edit: 'Sửa',
-      delete: 'Xóa',
-    },
-    {
-      key: '2',
-      id: 'K10',
-      name: 'Khối 10',
-      showlist: 'Show',
-      edit: 'Sửa',
-      delete: 'Xóa',
-    },
-    {
-      key: '3',
-      id: 'K11',
-      name: 'Khối 11',
-      showlist: 'Show',
-      edit: 'Sửa',
-      delete: 'Xóa',
-    }
-  ]; // rowSelection object indicates the need for row selection
-  
-const rowSelection = {
-  onChange: (selectedRowKeys, selectedRows) => {
-    console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+  {
+    key: '1',
+    id: 'K09',
+    name: 'Khối 9',
   },
-};
-  
-function Page3() {
+  {
+    key: '2',
+    id: 'K10',
+    name: 'Khối 10',
+  },
+  {
+    key: '3',
+    id: 'K11',
+    name: 'Khối 11',
+  }
+];
+
+export default function Page4() {
     const [visible, setVisible] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
-
+    const [isModalVisibles, setIsModalVisibles] = useState(false);
+    const [isModalVisibless, setIsModalVisibless] = useState(false);
+  
     const showModal = () => {
       setIsModalVisible(true);
     };
+    const showModals = () => {
+      setIsModalVisibles(true);
+    }
+    const showModalss = () => {
+      setIsModalVisibless(true);
+    }
   
     const handleOk = () => {
       setIsModalVisible(false);
@@ -85,10 +96,24 @@ function Page3() {
     const handleCancel = () => {
       setIsModalVisible(false);
     }
-
-    return (
-        <>  
-          <div className="overview">
+    const handleOks = () => {
+      setIsModalVisibles(false);
+    };
+  
+    const handleCancels = () => {
+      setIsModalVisibles(false);
+    }
+  
+    const handleOkss = () => {
+      setIsModalVisibless(false);
+    };
+  
+    const handleCancelss = () => {
+      setIsModalVisibless(false);
+    }
+            return (
+            <>
+              <div className="overview">
             {/* <User/> */}
             <div className="boxmain">
               <div className="box__title">
@@ -114,8 +139,8 @@ function Page3() {
                     </div>
                 </div>
                 <div className="box__chb-btn">
-                    <button className="box__chb-btn-clk"><Link className="text__box_black" to="/page2">Niên Khóa</Link></button>
-                    <button className="box__chb-btn-clk"><Link className="text__box_black" to="/page3">Tổ - Bộ môn</Link></button>
+                    <button className="box__chb-btn-clk "><Link className="text__box_black" to="/page2">Niên Khóa</Link></button>
+                    <button className="box__chb-btn-clk "><Link className="text__box_black" to="/page3">Tổ - Bộ môn</Link></button>
                     <button className="box__chb-btn-clk active"><Link className="text__box_white" to="/page4">Khoa - Khối</Link></button>
                     <button className="box__chb-btn-clk">Môn học</button>
                     <button className="box__chb-btn-clk">Lớp học</button>
@@ -131,29 +156,28 @@ function Page3() {
                           Thêm mới
                       </button>
                       <Modal
-                          className="box__btn-cres"
+                          className="box__btn-page4"
                           centered
                           visible={visible}
                           onOk={() => setVisible(false)}
                           onCancel={() => setVisible(false)}  
                       >
                           <Form>
-                              <h1>Thêm Khoa - khối mới</h1>
-                              <Form.Item label="Mã khoa - khối:">
-                                  <Input></Input>
+                              <h1>Thêm Khoa - Khối mới</h1>
+                              <Form.Item label="Mã - Khoa khối:">
+                                  <Input className="custom-input"></Input>
                               </Form.Item>
                               <Form.Item label="Khoa - khối:">
                                   <Input></Input>
                               </Form.Item>
-                              <Form.Item label="Trưởng khoa - khối:">
+                              <Form.Item label="Trưởng tổ - Bộ môn:">
                                   <Select className="ant-select-opt">
                                       <Select.Option value="khtn">Lê Văn B</Select.Option>
                                       <Select.Option value="khxh">Nguyễn Kim E</Select.Option>
                                   </Select>
                               </Form.Item>
-                              
-                              <button className="box__btn-button-cancel" onClick={() => setVisible(false)}>Hủy</button>
-                              <button className="box__btn-button-save" onClick={() => setVisible(false)}>Lưu</button>
+                              <button className="box__btn-button-cancel-page4" onClick={() => setVisible(false)}>Hủy</button>
+                              <button className="box__btn-button-save-page4" onClick={() => setVisible(false)}>Lưu</button>
                           </Form>
                       </Modal>
                   </div>
@@ -165,7 +189,6 @@ function Page3() {
                   </div>
                   <div className="box__sbj-tbl">
                       <Table
-                          rowSelection={rowSelection}
                           columns={columns}
                           dataSource={data}
                           pagination={false}
@@ -188,8 +211,7 @@ function Page3() {
               </div>
             </div>
           </div>
-        </>
-    );
-}
+            </>
+          );
+    }
 
-export default Page3;
