@@ -47,9 +47,11 @@
 
 .transfer_school_header_select {
   height: 9rem;
+  width: 100%;
 }
 .transfer_school_header_button_add {
   height: 9rem;
+  width: 100%;
 }
 
 .select-year-transfer-school {
