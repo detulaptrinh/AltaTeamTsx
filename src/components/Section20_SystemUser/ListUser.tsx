@@ -7,8 +7,8 @@ import { Row, Col } from 'antd';
 import { Table, Tag, Radio, Space } from 'antd';
 import { Card } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import { IconEdit } from '../../assets/svg';
-import { IconTrash } from '../../assets/svg';
+import { IconEdit, IconTrash, IconPlus, IconShow} from '../../assets/svg';
+
 import {
     Form,
     Input,
@@ -41,7 +41,7 @@ const columns = [
     {
         title: 'Tên',
         dataIndex: 'name',
-        width: '15%'
+        width: '20%'
     },
     {
         title: 'Email',
@@ -51,12 +51,12 @@ const columns = [
     {
         title: 'Nhóm người dùng',
         dataIndex: 'groupuser', 
-        width: '25%'
+        width: '20%'
     },
     {
         title: 'Trạng thái',
         dataIndex: 'ghichu',
-        width: '25%'
+        width: '30%'
     },
    
     {       
@@ -74,48 +74,48 @@ const dataSource = [
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
         groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động',
+        ghichu: 'Đã vô hiệu hóa',
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Học sinh tiểu học',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Phòng hành chính',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động' 
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động'
     },
 
@@ -175,7 +175,7 @@ class ListUser extends Component {
 
                         <Col span={10}>
                             <div className="box__btn-group">                             
-                                <Button className="box__btn-group__add" ><PlusOutlined />Thêm mới</Button>
+                                <Button className="box__btn-group__add" ><img style={{padding:10}} src={IconPlus}/>Thêm mới</Button>
                             </div>
                         </Col>
                     </Col>
@@ -193,13 +193,13 @@ class ListUser extends Component {
                 </Col>
 
                 <Col span={12}>
-                    <div className="tab__search__right"> 
-                        <Input className="tab-search-right__input" placeholder="Tìm kiếm" />
+                    <div className="tab-search-right"> 
+                        <Input className="tab-search-right__input"  placeholder="Tìm kiếm" />
                     </div>
                 </Col>
             </Col> 
 
-                <div className="tab__table">
+                <div className="tab-table">
                     <Table
                         columns={columns}
                         dataSource={dataSource}
