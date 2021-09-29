@@ -9,7 +9,7 @@
     height:5rem;
 }
 /*title  */
-.title {
+.titles {
     height: 6rem;
     line-height: 6rem;
     letter-spacing: 0.015em;
@@ -20,11 +20,11 @@
     font-weight: 800;
 }
 
-.title span {
+.titles span {
     font-size: 1.8rem;
     color: #C9C4C0;
 }
-.title i {
+.titles i {
     font-size: 3rem;
     color: #FF7506;
     height: 6rem;
@@ -32,7 +32,7 @@
     padding: 0 1rem;
 }
 
-.title .title-info-student {
+.titles .title-info-student {
     font-size: 4.8rem;
     /* /Orange / 7 */
     color: #373839;

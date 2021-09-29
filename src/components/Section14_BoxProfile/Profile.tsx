@@ -189,7 +189,7 @@ const columns = [
         <>
           <Row>
             <Col span={24}>
-              <div className="title">
+              <div className="titles">
                 <span>Hồ sơ giảng viên</span>
                 <i className="bx bx-chevron-right" />
                 <div className="title-info-student">Tất cả hồ sơ</div>
