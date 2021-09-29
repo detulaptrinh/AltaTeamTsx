@@ -170,6 +170,14 @@
     border:none;
     font-size:2rem;
 }
+.box__btn-del .ant-modal-body{
+    padding:0;
+}
+.box__btn-del .ant-modal-content{
+    border-radius: 8px;
+    width: 43.5rem;
+    height: 24.3rem;
+}
 .box__btn-del h1{
     text-align: center;
     font-family: Mulish;
@@ -655,11 +663,7 @@
     color: #373839;
 }
 
-.ant-modal-content{
-    border-radius: 8px;
-    width: 43.5rem;
-    height: 24.3rem;
-}
+
 
 .ant-btn.ant-btn-dangerous{
     color: #FFFFFF;

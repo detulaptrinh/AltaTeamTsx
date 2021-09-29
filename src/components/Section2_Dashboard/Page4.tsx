@@ -77,7 +77,6 @@ export default function Page4() {
     const [visible, setVisible] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [isModalVisibles, setIsModalVisibles] = useState(false);
-    const [isModalVisibless, setIsModalVisibless] = useState(false);
   
     const showModal = () => {
       setIsModalVisible(true);
@@ -85,9 +84,7 @@ export default function Page4() {
     const showModals = () => {
       setIsModalVisibles(true);
     }
-    const showModalss = () => {
-      setIsModalVisibless(true);
-    }
+
   
     const handleOk = () => {
       setIsModalVisible(false);
@@ -103,14 +100,6 @@ export default function Page4() {
     const handleCancels = () => {
       setIsModalVisibles(false);
     }
-  
-    const handleOkss = () => {
-      setIsModalVisibless(false);
-    };
-  
-    const handleCancelss = () => {
-      setIsModalVisibless(false);
-    }
             return (
             <>
               <div className="overview">
@@ -124,14 +113,14 @@ export default function Page4() {
                     <p>Đang chọn xem:</p>
                     <div className="box__chb-slt_sch">
                           <p>Trường:</p>
-                          <Select className="box__chb-slt_sch_select" defaultValue="THCS">
+                          <Select className="box__chb-slt_sch_selects" defaultValue="THCS">
                               <Option value="THCS">THCS</Option>
                               <Option value="THPT">THPT</Option>
                           </Select>
                     </div>
                     <div className="box__chb-slt_yr">
                           <p>Niên Khóa:</p>
-                          <Select className="box__chb-slt_yr_select" defaultValue="2020 - 2021">
+                          <Select className="box__chb-slt_yr_selects" defaultValue="2020 - 2021">
                               <Option value="2020 - 2021">2020 - 2021</Option>
                               <Option value="2015 - 2016">2015 - 2016</Option>
                               <Option value="2018 - 2019">2018 - 2019</Option>

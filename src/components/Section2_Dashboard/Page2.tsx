@@ -17,10 +17,13 @@ import {
   Table,
   Space,
   InputNumber,
-  Pagination
+  Pagination,
+  ConfigProvider
 } from "antd";
 import {Link} from "react-router-dom"
 import {IconEdit, IconTrash} from "../../assets/svg";
+import locale from "antd/lib/locale/vi_VN";
+import moment from 'moment';
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -125,42 +128,19 @@ const columns =  [
   ];
 
 export default function Page2() {
-    const [visible, setVisible] = useState(false);
+    const [ModalAdd, setModalAdd] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
-    const [isModalVisibles, setIsModalVisibles] = useState(false);
-    const [isModalVisibless, setIsModalVisibless] = useState(false);
-  
+
     const showModal = () => {
       setIsModalVisible(true);
     };
-    const showModals = () => {
-      setIsModalVisibles(true);
-    }
-    const showModalss = () => {
-      setIsModalVisibless(true);
-    }
   
     const handleOk = () => {
-      setIsModalVisible(false);
+      setModalAdd(false);
     };
   
-    const handleCancel = () => {
-      setIsModalVisible(false);
-    }
-    const handleOks = () => {
-      setIsModalVisibles(false);
-    };
-  
-    const handleCancels = () => {
-      setIsModalVisibles(false);
-    }
-  
-    const handleOkss = () => {
-      setIsModalVisibless(false);
-    };
-  
-    const handleCancelss = () => {
-      setIsModalVisibless(false);
+    const handleCancelAdd = (): void => {
+      setModalAdd(false);
     }
             return (
             <>
@@ -174,14 +154,14 @@ export default function Page2() {
                     <p>Đang chọn xem:</p>
                     <div className="box__chb-slt_sch">
                           <p>Trường:</p>
-                          <Select className="box__chb-slt_sch_select" defaultValue="THCS">
+                          <Select className="box__chb-slt_sch_selects" defaultValue="THCS">
                               <Option value="THCS">THCS</Option>
                               <Option value="THPT">THPT</Option>
                           </Select>
                     </div>
                     <div className="box__chb-slt_yr">
                           <p>Niên Khóa:</p>
-                          <Select className="box__chb-slt_yr_select" defaultValue="2020 - 2021">
+                          <Select className="box__chb-slt_yr_selects" defaultValue="2020 - 2021">
                               <Option value="2020 - 2021">2020 - 2021</Option>
                               <Option value="2015 - 2016">2015 - 2016</Option>
                               <Option value="2018 - 2019">2018 - 2019</Option>
@@ -197,42 +177,131 @@ export default function Page2() {
                     <button className="box__chb-btn-clk">Loại điểm</button>
                 </div>
               </div>
-              <div className="box__btn">
-                  
-                  <div className="box__btn-button">
-                      
-                      <button className="box__btn-button_cre" onClick={() => setVisible(true)}>
+              <div className="box__btn__page">
+                  <div className="box__btn-button__page">
+                      <button className="box__btn-button_cre" onClick={() => setModalAdd(true)}>
                       <i className="bx bx-plus"/>
                           Thêm mới
                       </button>
                       <Modal
-                          className="box__btn-cre"
-                          centered
-                          visible={visible}
-                          onOk={() => setVisible(false)}
-                          onCancel={() => setVisible(false)}  
-                      >
-                          <Form>
-                              <h1>Thêm niên khóa mới</h1>
-                              <Form.Item label="Niên khóa:">
-                                  <Select className="ant-select-opt">
-                                      <Select.Option value="khtn">Khoa học tự nhiên</Select.Option>
-                                      <Select.Option value="khxh">Văn hóa xã hội</Select.Option>
-                                  </Select>
-                              </Form.Item>
-                              
-                              <hr />
-                              <p>Số tiết/Học kì</p>
-                              <Form.Item className="ant-input-hk1" label="Học kì I:">
-                                  <Input />
-                              </Form.Item>
-                              <Form.Item className="ant-input-hk2" label="Học kì II:">
-                                  <Input />
-                              </Form.Item>
-                              <button className="box__btn-button-cancel" onClick={() => setVisible(false)}>Hủy</button>
-                              <button className="box__btn-button-save" onClick={() => setVisible(false)}>Lưu</button>
-                          </Form>
-                      </Modal>
+        className="DeclareSchoolYear-modal DeclareSchoolYear-modal-add-edit"
+        title="Thiết lập niên khoá"
+        visible={ModalAdd}
+        onCancel={handleCancelAdd}
+        okText="Lưu"
+        cancelText="Huỷ"
+        centered
+      >
+        <div className="schoolYear">
+          <div className="schoolYear__left">
+            <p>Niên khoá:</p>
+            <div className="schoolYear__left-selects">
+              <Select
+                className="DeclareSchoolYear__select"
+                defaultValue="2020"
+                style={{ width: 144 }}
+                suffixIcon={<img src="{caret_down}" alt="caret_down" />}
+              >
+                <Option value="2019">2019</Option>
+                <Option value="2018">2018</Option>
+              </Select>
+              <span>đến</span>
+              <Select
+                className="DeclareSchoolYear__select"
+                defaultValue="2021"
+                style={{ width: 144 }}
+                suffixIcon={<img src="{caret_down}" alt="caret_down" />}
+              >
+                <Option value="2020">2020</Option>
+                <Option value="2019">2019</Option>
+              </Select>
+            </div>
+          </div>
+          <div className="schoolYear__right">
+            <div className="schoolYear__right-inherit">
+              <Checkbox className="DeclareSchoolYear__checkbox">
+                Kế thừa dữ liệu:
+              </Checkbox>
+              <Select
+                className="DeclareSchoolYear__select"
+                placeholder="Niên khoá"
+                style={{ width: 144 }}
+                suffixIcon={<img src="{caret_down}" alt="caret_down" />}
+              >
+                <Option value="2015-2016">2015-2016</Option>
+                <Option value="2018-2019">2018-2019</Option>
+              </Select>
+            </div>
+            <div className="schoolYear__right-desc">
+              <img src="{fi_info}" alt="fi_info" />
+              <p>
+                Dữ liệu được kế thừa bao gồm các thông tin:
+                <br />- Thông tin học viên và Danh sách lớp học
+                <br />- Thông tin môn học
+                <br />- Phân công giảng dạy
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="timeSetting">
+          <h4 className="timeSetting__title">Cài đặt thời gian</h4>
+          <div className="timeSetting__control">
+            <button className="timeSetting__control-btn">
+              <img src="{minus_primary}" alt="minus_primary" />
+            </button>
+            <h6>Tên học kì:</h6>
+            <Input
+              className="timeSetting__control-input"
+              defaultValue="Học kỳ I"
+            />
+            <span>Từ</span>
+            <ConfigProvider locale={locale}>
+              <DatePicker
+                className="DeclareSchoolYear__datepicker"
+                defaultValue={moment("05/09/2020", "DD/MM/YYYY")}
+                format={"DD/MM/YYYY"}
+                suffixIcon={<img src="{calendar_alt}" alt="calendar_alt" />}
+              />
+            </ConfigProvider>
+            <span>đến</span>
+            <DatePicker
+              className="DeclareSchoolYear__datepicker"
+              defaultValue={moment("02/01/2021", "DD/MM/YYYY")}
+              format={"DD/MM/YYYY"}
+              suffixIcon={<img src="{calendar_alt}" alt="calendar_alt" />}
+            />
+          </div>
+          <div className="timeSetting__control">
+            <button className="timeSetting__control-btn">
+              <img src="{minus_primary}" alt="minus_primary" />
+            </button>
+            <h6>Tên học kì:</h6>
+            <Input
+              className="timeSetting__control-input"
+              defaultValue="Học kỳ II"
+            />
+            <span>Từ</span>
+            <DatePicker
+              className="DeclareSchoolYear__datepicker"
+              defaultValue={moment("05/09/2020", "DD/MM/YYYY")}
+              format={"DD/MM/YYYY"}
+              suffixIcon={<img src="{calendar_alt}" alt="calendar_alt" />}
+            />
+            <span>đến</span>
+            <DatePicker
+              className="DeclareSchoolYear__datepicker"
+              defaultValue={moment("02/01/2021", "DD/MM/YYYY")}
+              format={"DD/MM/YYYY"}
+              suffixIcon={<img src="{calendar_alt}" alt="calendar_alt" />}
+            />
+          </div>
+          <button className="timeSetting__btnAdd">
+            <img src="{plus_primary}" alt="plus_primary" />
+            <span>Thêm học kì mới</span>
+          </button>
+        </div>
+      </Modal>
+
                   </div>
               </div>
               <div className="box__sbj">
