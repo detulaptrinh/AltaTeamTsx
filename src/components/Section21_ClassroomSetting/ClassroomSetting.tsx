@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, Component } from 'react'
 import './ClassroomSetting.css'
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { PlusOutlined, FormOutlined} from '@ant-design/icons';
@@ -116,24 +116,10 @@ const dataSource = [
 
 ];
 
-function ClassroomSetting() {
-    const [isModalVisible, setIsModalVisible] = useState(false);
-  
-    const showModal = () => {
-      setIsModalVisible(true);
-    };
-  
-    const handleOk = () => {
-      setIsModalVisible(false);
-    };
-  
-    const handleCancel = () => {
-      setIsModalVisible(false);
-    };
-    return (
-        <>
-        
-
+class ClassroomSetting extends Component {
+    render(){
+        return (
+            <>
             <div className="Section20__Title">
                 <Row>
                     <Col span={24}>
@@ -145,7 +131,6 @@ function ClassroomSetting() {
                         </div>
                     </Col>
                 </Row>
-
 
 
                 <Row className="row1">
@@ -161,33 +146,30 @@ function ClassroomSetting() {
                         </div>
                         </Col>
 
-
                         <Col span={9}>
-
                             <div className="left-tab-box">
                                 <div className="left-tab-box-general-information">
                                     <a href="">Nhóm người dùng</a>
                                 </div>
+
                                 <div className="left-tab-box-study-process">
                                     <a href="">Danh sách người dùng</a>
                                 </div>
                             </div>
 
-
                         </Col>
 
                         <Col span={10}>
                             <div className="box__btn-group">
-                                
-                                <Button className="box__btn-group__add" onClick={showModal} ><PlusOutlined />Thêm mới</Button>
-
-                                <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                                <Button className="box__btn-group__add"><PlusOutlined />Thêm mới</Button>
+                                {/* <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                                 <p>Some contents...</p>
                                 <p>Some contents...</p>
                                  <p>Some contents...</p>
-                                </Modal>
+                                </Modal> */}
                             </div>
                         </Col>
+
                     </Col>
                 </Row>
 
@@ -197,17 +179,18 @@ function ClassroomSetting() {
             <div className="tab">
 
             <Col className="tab__title">   
-            <Col span={12}>
-            <div className="tab__title__left">
-                <p>Danh sách người dùng trên hệ thống</p>
+                <Col span={12}>
+                <div className="tab__title__left">
+                    <p>Danh sách người dùng trên hệ thống</p>
                 </div>
                 </Col>
 
                 <Col span={12}>
-                <div className="tab__search__right"> 
-                <Input className="box__sbj-search" placeholder="Tìm kiếm" />
-            </div>
+                <div className="tab-search-right"> 
+                    <Input className="tab-search-right__input" placeholder="Tìm kiếm" />
+                </div>
             </Col>
+
             </Col> 
                 <div className="tab__table">
                     <Table
@@ -215,7 +198,6 @@ function ClassroomSetting() {
                         dataSource={dataSource}
                     />
                 </div>
-
 
                 <Col span={24} className="pagination">
                     <Col span={12} className="pagination__left">
@@ -225,6 +207,7 @@ function ClassroomSetting() {
                             <p> hàng trong mỗi trang</p>
                         </div>
                     </Col>
+
                     <Col span={12}>
                         <div className="box__sbj-pagin">
                             <Pagination
@@ -234,7 +217,6 @@ function ClassroomSetting() {
                             />
                         </div>
                     </Col>
-
                 </Col>
             </div>
 
@@ -245,5 +227,5 @@ function ClassroomSetting() {
     /* Modal */
 
     }
-
-export default ClassroomSetting
+}
+export default ClassroomSetting;

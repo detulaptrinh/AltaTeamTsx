@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './TabEdit.css'
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { FormOutlined } from '@ant-design/icons';
@@ -21,10 +21,10 @@ const { confirm } = Modal;
 const { Option } = Select;
 
 
-function TabEdit() {
-  return (
-    <>
-
+class TabEdit extends Component {
+  render(){
+      return (
+          <>
             <div className="section19__title">
                 <Row>
                     <Col span={24}>
@@ -33,9 +33,11 @@ function TabEdit() {
                         </div>
                     </Col>
                 </Row>
+
                 <Row className="row1">
                     <Col span={24} className="switch__tab">
-                        <Col span={5}><div className="box__select">
+                        <Col span={5}>
+                        <div className="box__select">
                             <Col span={12}>
                                 <Select defaultValue="1" className="box__select__year">
                                     <Option value="1">2020-2021</Option>
@@ -43,23 +45,21 @@ function TabEdit() {
                                     <Option value="3">2018-2019</Option>
                                   
                                 </Select>
-                            </Col>
-                          
-                        </div>
+                            </Col>      
+                        </div>                     
                         </Col>
-                        <Col span={9}>
 
+                        <Col span={9}>
                         </Col>
 
                         <Col span={10}>
-                        <div className="box__btn">
-                          <Button className="box__btn-group__cancel">Hủy</Button>
-                          <Button className="box__btn-group__save" >Lưu</Button>
-                       </div>
+                            <div className="box__btn-group">
+                              <Button className="box__btn-group__cancel">Hủy</Button>
+                              <Button className="box__btn-group__save" >Lưu</Button>
+                          </div>
                         </Col>
                     </Col>
                 </Row>
-
             </div>
 
 
@@ -124,10 +124,10 @@ function TabEdit() {
               <Col span={9}>
                 <div className="tabedit__content__form-right">
                   <Form>
-                    <Form.Item label="Fax" name="size">
+                    <Form.Item label="Fax">
                       <Input defaultValue="04941884194" />
                     </Form.Item>
-                    <Form.Item label="Email" name="size">
+                    <Form.Item label="Email" name="email">
                       <Input defaultValue="nguyenxasjke@gmail.com" />
                     </Form.Item>
                     <Form.Item label="Ngày thành lập">
@@ -140,13 +140,13 @@ function TabEdit() {
                         <Select.Option value="demo">Demo</Select.Option>
                       </Select>
                     </Form.Item>
-                    <Form.Item label="Website" name="size">
+                    <Form.Item label="Website" name="website">
                       <Input defaultValue="https://truongabc.com.vn" />
                     </Form.Item>
-                    <Form.Item label="Hiệu trưởng" name="size">
+                    <Form.Item label="Hiệu trưởng" name="hieutruong">
                       <Input defaultValue="Bùi văn Phát" />
                     </Form.Item>
-                    <Form.Item label="SĐT hiệu trưởng" name="size">
+                    <Form.Item label="SĐT hiệu trưởng">
                       <Input defaultValue="04941884194" />
                     </Form.Item>
 
@@ -171,10 +171,10 @@ function TabEdit() {
               <Col span={10}>
                 <div className="tabedit__content2__form-left__top">
                   <Form >
-                    <Form.Item label="Tên cơ sở" name="size">
+                    <Form.Item label="Tên cơ sở" name="tencoso">
                       <Input defaultValue="Cơ sở A" />
                     </Form.Item>
-                    <Form.Item label="Địa chỉ" name="size">
+                    <Form.Item label="Địa chỉ" name="diachi">
                       <Input defaultValue="233 Nguyễn Thị C Quận Bình Thạnh, TP HCM" />
                     </Form.Item>
                     <Form.Item label="SĐT trường">
@@ -267,5 +267,6 @@ function TabEdit() {
   )
   /* Modal */
   }
+}
 
-export default TabEdit
+export default TabEdit;

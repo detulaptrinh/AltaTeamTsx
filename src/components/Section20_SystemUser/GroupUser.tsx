@@ -3,10 +3,11 @@ import './GroupUser.css'
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { PlusOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
-import { Row, Col } from 'antd';
+import { Row, Col, Space } from 'antd';
 import { Table } from 'antd';
 import { Card } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
+import { IconEdit, IconTrash, IconPlus} from '../../assets/svg';
 import {
     Form,
     Input,
@@ -16,6 +17,24 @@ import {
 
 import { Modal } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
+
+
+
+function showDeleteConfirm() {
+    confirm({
+      title: 'Xóa thông tin',
+      content: 'Xác nhận muốn xoá thông tin này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
+      okText: 'Xác nhận',
+      okType: 'danger',
+      cancelText: 'Hủy',
+      onOk() {
+        console.log('OK');
+      },
+      onCancel() {
+        console.log('Cancel');
+      },
+    });
+}
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -38,9 +57,13 @@ const columns = [
         dataIndex: 'ghichu',
         width: '50%'
     },
-    {
-        title: 'Action',
-        width: '10%'
+    {       
+        render: () => (
+            <Space size="middle">
+              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
+              <a onClick={showDeleteConfirm}><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
+            </Space>
+          ),
     },
 ];
 
@@ -106,10 +129,10 @@ class GroupUser extends Component {
                 </Row>
 
 
-
                 <Row className="row1">
                     <Col span={24} className="switch__tab">
-                        <Col span={5}><div className="box__select">
+                        <Col span={5}>
+                        <div className="box__select">
                             <Col span={12}>
                                 <Select defaultValue="1" className="box__select__year">
                                     <Option value="1">Chọn kỳ</Option>
@@ -118,6 +141,7 @@ class GroupUser extends Component {
                                     <Option value="3">HKIII</Option>
                                 </Select>
                             </Col>
+
                             <Col span={12}>
                                 <Select defaultValue="1" className="box__select__year">
                                     <Option value="1">Chọn khối</Option>
@@ -129,50 +153,42 @@ class GroupUser extends Component {
                         </div>
                         </Col>
 
-
                         <Col span={9}>
-
                             <div className="switch-group">
                                 <div className="switch-group__tab-left">
                                     <a href="">Nhóm người dùng</a>
                                 </div>
+
                                 <div className="switch-group__tab-right">
                                     <a href="">Danh sách người dùng</a>
                                 </div>
                             </div>
-
-
                         </Col>
 
                         <Col span={10}>
-                            <div className="box__btn-group">
-                                
-                                <Button className="box__btn-group__add" ><PlusOutlined />Thêm mới</Button>
+                            <div className="box__btn-group">                             
+                                <Button className="box__btn-group__add" ><img style={{padding:10}} src={IconPlus} />Thêm mới</Button>
                             </div>
                         </Col>
                     </Col>
                 </Row>
-
             </div>
 
-
-
-            
 
             <div className="tab">
-
-            <Col className="tab__title">   
-            <Col span={12}>
-            <div className="tab__title__left">
-                <p>Danh sách các nhóm người dùng</p>
-                </div>
-                </Col>
+                <Col className="tab__title">   
+                    <Col span={12}>
+                        <div className="tab__title__left">
+                            <p>Danh sách các nhóm người dùng</p>
+                        </div>
+                    </Col>
 
                 <Col span={12}>
-                <div className="tab__search__right"> 
-                <Input className="box__sbj-search" placeholder="Tìm kiếm" />
-            </div>
-            </Col>
+                        <div className="tab-search-right"> 
+                            <Input className="tab-search-right__input"  placeholder="Tìm kiếm" />
+                        </div>
+                </Col>
+
             </Col> 
                 <div className="tab__table">
                     <Table
@@ -183,15 +199,16 @@ class GroupUser extends Component {
 
 
                 <Col span={24} className="pagination">
-                    <Col span={12} className="pagination__left">
-                        <div className="box__sbj-pagtion">
+                    <Col span={12} className="pagination-left">
+                        <div className="box-sbj-pagtion">
                             <p>Hiển thị</p>
                             <InputNumber min={1} max={10} defaultValue={3} />
                             <p> hàng trong mỗi trang</p>
                         </div>
                     </Col>
+
                     <Col span={12}>
-                        <div className="box__sbj-pagin">
+                        <div className="box-sbj-pagin">
                             <Pagination
                                 showSizeChanger
                                 defaultCurrent={3}
@@ -202,9 +219,6 @@ class GroupUser extends Component {
 
                 </Col>
             </div>
-
-
-
         </>
     )
     /* Modal */

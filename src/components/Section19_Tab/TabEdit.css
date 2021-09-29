@@ -261,7 +261,7 @@ box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
 background: #F2F2F2;
 border-radius: 8px;
 }
-.box__btn-group__save{
+.box__btn-group__save.ant-btn{
     display: flex;
     flex-direction: column;
     justify-content: center;
