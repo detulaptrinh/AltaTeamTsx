@@ -211,7 +211,7 @@ class ListUser extends Component {
                     <Col span={12} className="pagination-left">
                         <div className="box-sbj-pagtion">
                             <p>Hiển thị</p>
-                            <InputNumber min={1} max={10} defaultValue={3} />
+                            <InputNumber min={1} max={10} defaultValue={8} />
                             <p> hàng trong mỗi trang</p>
                         </div>
                     </Col>

@@ -7,8 +7,7 @@ import { Row, Col } from 'antd';
 import { Table, Tag, Radio, Space } from 'antd';
 import { Card } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import editIcon from '../../assets/avg/edit.svg'
-import deleteIcon from '../../assets/avg/delete.svg'
+import { IconEdit, IconTrash, IconPlus, IconShow} from '../../assets/svg';
 import {
     Form,
     Input,
@@ -65,8 +64,8 @@ const columns = [
     {       
         render: () => (
             <Space size="middle">
-              <a><img src={editIcon} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
-              <a onClick={showDeleteConfirm}><img src={deleteIcon} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
+              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
+              <a onClick={showDeleteConfirm}><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
             </Space>
           ),
     },
@@ -147,21 +146,11 @@ class ClassroomSetting extends Component {
                         </Col>
 
                         <Col span={9}>
-                            <div className="left-tab-box">
-                                <div className="left-tab-box-general-information">
-                                    <a href="">Nhóm người dùng</a>
-                                </div>
-
-                                <div className="left-tab-box-study-process">
-                                    <a href="">Danh sách người dùng</a>
-                                </div>
-                            </div>
-
                         </Col>
 
                         <Col span={10}>
                             <div className="box__btn-group">
-                                <Button className="box__btn-group__add"><PlusOutlined />Thêm mới</Button>
+                                <Button className="box__btn-group__add"><img style={{padding:10}} src={IconPlus}/>Thêm mới</Button>
                                 {/* <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                                 <p>Some contents...</p>
                                 <p>Some contents...</p>
@@ -181,7 +170,7 @@ class ClassroomSetting extends Component {
             <Col className="tab__title">   
                 <Col span={12}>
                 <div className="tab__title__left">
-                    <p>Danh sách người dùng trên hệ thống</p>
+                    <p>Danh sách các loại lớp học</p>
                 </div>
                 </Col>
 
@@ -192,7 +181,7 @@ class ClassroomSetting extends Component {
             </Col>
 
             </Col> 
-                <div className="tab__table">
+                <div className="tab-table">
                     <Table
                         columns={columns}
                         dataSource={dataSource}
@@ -200,8 +189,8 @@ class ClassroomSetting extends Component {
                 </div>
 
                 <Col span={24} className="pagination">
-                    <Col span={12} className="pagination__left">
-                        <div className="box__sbj-pagtion">
+                    <Col span={12} className="pagination-left">
+                        <div className="box-sbj-pagtion">
                             <p>Hiển thị</p>
                             <InputNumber min={1} max={10} defaultValue={3} />
                             <p> hàng trong mỗi trang</p>
@@ -209,7 +198,7 @@ class ClassroomSetting extends Component {
                     </Col>
 
                     <Col span={12}>
-                        <div className="box__sbj-pagin">
+                        <div className="box-sbj-pagin">
                             <Pagination
                                 showSizeChanger
                                 defaultCurrent={3}

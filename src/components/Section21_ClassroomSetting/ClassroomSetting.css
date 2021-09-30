@@ -46,9 +46,9 @@ border-radius: 16px;
 
 
 }
-.tab__table{
-   margin-left: 6.4rem;
-margin-right: 6.4rem;
+.tab-table{
+    margin-left: 6.4rem;
+    margin-right: 6.4rem;
 }
 .title {
     height: 6rem;
@@ -72,6 +72,10 @@ color: #C9C4C0;
 }
 
 .title .ant-breadcrumb-separator{
+    margin-right: 3rem;
+    margin-left: 3rem;
+    font-weight: 650;
+    font-size: 2.5rem;
     color: #FF7506;
     transform: rotate(-180deg);
     width :9.57px;
@@ -539,26 +543,21 @@ margin-top: 4.1rem;
     font-weight: 800;
     font-size: 1.8rem;
     line-height: 2.3rem;
-    /* identical to box height */
-    
     letter-spacing: 0.015em;
-
-
-
-/* Orange/4 */
-
     background: #FF7506;
     border-radius: 0.8rem;
 
 }
 
 /* Customize CSS form Antd*/
+
 .tab__content__form{
     width: 51rem;
     height: 50rem;
     margin-left: 44.8rem;
     
 }
+
 /* .ant-input{
     display: flex;
     flex-direction: row;
@@ -569,14 +568,17 @@ margin-top: 4.1rem;
     width: 360px;
     height: 40px;
 } */
+
 .ant-form-item .ant-select{
     width: 360px;
     height: 40px;
     border-radius: 8px;
 }
+
 .ant-form-item{
     margin-bottom: 16px;
 }
+
 .ant-table-tbody tr:nth-child(even){
     background-color: #F0F3F6;
 }
@@ -584,6 +586,7 @@ margin-top: 4.1rem;
 .tab__table .ant-table-thead > tr > th:nth-child(2){
     text-align: center;
 }
+
 .tab__table .ant-table-tbody > tr > td:nth-child(2){
     text-align: center;
     font-family: Source Sans Pro;
