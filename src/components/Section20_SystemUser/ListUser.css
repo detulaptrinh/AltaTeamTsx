@@ -217,6 +217,8 @@
 }
 
 .box-sbj-pagtion .ant-input-number {
+    margin-right: 1rem;
+    margin-left: 1rem;
     width: 4.8rem;
     height: 3.2rem;
     background-color: transparent;
@@ -334,9 +336,18 @@
     color: #373839;
 }
 
-.table > thead > tr:first-child th:last-child {
-    border-top-right-radius: 2rem;
-  }
-.table > thead > tr:first-child th:first-child {
-    border-top-left-radius: 2rem;
+/* .tab-table .ant-table-tbody > tr > td:nth-child(2){
+    text-align: center;
+}
+
+.tab-table .ant-table-tbody > tr > td:hover:nth-child(2){
+    text-align: center;
+} */
+
+.tab-table .ant-table-thead .ant-table-cell:first-child{
+    border-top-left-radius: 0.8rem;
+}
+
+.tab-table .ant-table-thead .ant-table-cell:last-child{
+    border-top-right-radius: 0.8rem;
 }

@@ -139,6 +139,7 @@
     margin-top: 0.7rem;
 }
 .box__select__year{
+    margin: 0 5px;
     width: 133px;
     height: 32px;
 }
@@ -189,10 +190,17 @@
     color: #FFFFFF;
 }
 
+/* .tab-table .ant-table-tbody > tr > td:nth-child(2){
+    text-align: center;
+} */
+
 .tab .ant-pagination.ant-table-pagination.ant-table-pagination-right{
     display: none;
 }
 
+.box__select__year.ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+    height: 100%;
+}
 
 
 

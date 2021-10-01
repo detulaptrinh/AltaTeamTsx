@@ -191,11 +191,11 @@ class TabEdit extends Component {
               <Col span={9}>
                 <div className="tabedit__content2__form-right__top">
                   <Form>
-                    <Form.Item label="Người phụ trách" name="size">
+                    <Form.Item label="Người phụ trách">
                       <Input defaultValue="Nguyễn Văn D" />
                     </Form.Item>
 
-                    <Form.Item label="Di động" name="size">
+                    <Form.Item label="Di động">
                       <Input defaultValue="41984291895" />
                     </Form.Item>
 
@@ -227,11 +227,11 @@ class TabEdit extends Component {
               <Col span={10}>
                 <div className="tabedit__content2__form-left__bottom">
                   <Form>
-                    <Form.Item label="Tên cơ sở" name="size">
+                    <Form.Item label="Tên cơ sở">
                       <Input defaultValue="Cơ sở A" />
                     </Form.Item>
 
-                    <Form.Item label="Địa chỉ" name="size">
+                    <Form.Item label="Địa chỉ">
                       <Input defaultValue="233 Nguyễn Thị C Quận Bình Thạnh, TP HCM" />
                     </Form.Item>
 
@@ -245,11 +245,11 @@ class TabEdit extends Component {
               <Col span={9}>
                 <div className="tabedit__content2__form-right__bottom">
                   <Form>
-                    <Form.Item label="Người phụ trách" name="size">
+                    <Form.Item label="Người phụ trách">
                       <Input defaultValue="Nguyễn Văn D" />
                     </Form.Item>
 
-                    <Form.Item label="Di động" name="size">
+                    <Form.Item label="Di động">
                       <Input defaultValue="30194915951" />
                     </Form.Item>
                     
