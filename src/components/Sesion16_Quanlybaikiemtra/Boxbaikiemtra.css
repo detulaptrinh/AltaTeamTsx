@@ -231,7 +231,7 @@
     height: 4rem;
     border-radius: 2.4rem;
     position: relative;
-    display: inline-block;
+
     padding: 4px 11px;
     color: #c5c5c5;
     font-size: 14px;
@@ -270,15 +270,15 @@
     margin: 0em;
     padding: 1px 2px;
 }
-.ant-input-prefix {
+.sesion16___table-headers-search .ant-input-prefix {
     margin-right: 2rem;
   }
-  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  .sesion16___table-headers-search  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
     border-color: #f0f3f6;
     border-right-width: 1px !important;
     z-index: 1;
   }
-  .ant-input-affix-wrapper:hover {
+  .sesion16___table-headers-search  .ant-input-affix-wrapper:hover {
     border-color: #f0f3f6;
     border-right-width: 1px !important;
 }
@@ -290,7 +290,7 @@
     justify-content: center;
 }
 .sesion16___body-table table> thead > tr:first-child th:last-child {
-    border-top-right-radius: 10px;
+    border-top-right-radius: 1rem;
 
 }
 .sesion16___body-table table > thead > tr:first-child th:first-child {
@@ -303,7 +303,7 @@
     border: 0.01rem solid #f0f3f6;
     border-radius: 1rem;
 }
-.ant-table-thead > tr > th {
+.sesion16___body-table .ant-table-thead > tr > th {
     color: #ffffff;
     
     background: none;
@@ -317,43 +317,43 @@
     text-align: left;
 
 }
-.ant-table-thead {
+.sesion16___body-table .ant-table-thead {
   background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
 
 }
-.ant-table-tbody tr:nth-child(even) {
+.sesion16___body-table .ant-table-tbody tr:nth-child(even) {
     background-color: #f0f3f6;
 
 }
-.ant-table-thead > tr > th,
-.ant-table-tbody > tr > td,
-.ant-table tfoot > tr > th,
-.ant-table tfoot > tr > td {
+.sesion16___body-table .ant-table-thead > tr > th,
+.sesion16___body-table .ant-table-tbody > tr > td,
+.sesion16___body-table .ant-table tfoot > tr > th,
+.sesion16___body-table .ant-table tfoot > tr > td {
     padding: 1rem;
     overflow-wrap: break-word;
     
 }
-.ant-table-tbody > tr.ant-table-row:hover > td {
+.sesion16___body-table .ant-table-tbody > tr.ant-table-row:hover > td {
     background: #f0f3f6;
     text-align: left;
 
 }
-.ant-table-thead > tr > th,
-.ant-table-tbody > tr > td,
-.ant-table tfoot > tr > th,
-.ant-table tfoot > tr > td {
+.sesion16___body-table .ant-table-thead > tr > th,
+.sesion16___body-table .ant-table-tbody > tr > td,
+.sesion16___body-table .ant-table tfoot > tr > th,
+.sesion16___body-table .ant-table tfoot > tr > td {
     padding: 1rem;
     overflow-wrap: normal;
     text-align: left;
     padding-left: 40px;
 }
-.ant-table-tbody > tr > td {
+.sesion16___body-table .ant-table-tbody > tr > td {
     border-bottom: 1px solid #f0f0f0;
 }
-.ant-table-thead > tr > th,
-.ant-table-tbody > tr > td,
-.ant-table tfoot > tr > th,
-.ant-table tfoot > tr > td {
+.sesion16___body-table .ant-table-thead > tr > th,
+.sesion16___body-table .ant-table-tbody > tr > td,
+.sesion16___body-table .ant-table tfoot > tr > th,
+.sesion16___body-table .ant-table tfoot > tr > td {
     width: 90rem;
     height: 2rem;
     overflow-wrap: normal;

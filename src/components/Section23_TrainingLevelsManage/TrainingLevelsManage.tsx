@@ -1,11 +1,5 @@
 import React, { Fragment, useState } from "react";
 import "./TrainingLevelsManage.css";
-import chevron_big_right from "../../assets/avg/chevron_big_right.svg";
-import caret_down from "../../assets/avg/caret_down.svg";
-import fi_plus from "../../assets/avg/fi_plus.svg";
-import fi_search from "../../assets/avg/fi_search.svg";
-import fi_edit from "../../assets/avg/fi_edit-monhoc.svg";
-import fi_trash from "../../assets/avg/fi_trash-xoamonhoc.svg";
 import {
   Button,
   Input,
@@ -16,6 +10,14 @@ import {
   Form,
   Checkbox,
 } from "antd";
+import {
+  IconSelect,
+  IconPlus,
+  IconSearch,
+  IconEdit,
+  IconTrash,
+  IconChevronRight,
+} from "../../assets/svg/index";
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -108,10 +110,10 @@ const TrainingLevelsManage = (): JSX.Element => {
       render: () => (
         <Fragment>
           <button className="btnEdit" onClick={showModalAdd}>
-            <img src={fi_edit} alt="fi_edit" />
+            <img src={IconEdit} alt="IconEdit" />
           </button>
           <button className="btnTrash" onClick={showModalDel}>
-            <img src={fi_trash} alt="fi_trash" />
+            <img src={IconTrash} alt="IconTrash" />
           </button>
         </Fragment>
       ),
@@ -146,7 +148,7 @@ const TrainingLevelsManage = (): JSX.Element => {
     <Fragment>
       <div className="TrainingLevelsManage__title">
         <span>Cài đặt hệ thống</span>
-        <img src={chevron_big_right} alt="chevron_big_right" />
+        <img src={IconChevronRight} alt="IconChevronRight" />
         <h1>Quản lý các bậc đào tạo</h1>
       </div>
       <div className="TrainingLevelsManage__control">
@@ -154,7 +156,7 @@ const TrainingLevelsManage = (): JSX.Element => {
           className="TrainingLevelsManage__select"
           defaultValue="2020-2021"
           style={{ width: 136 }}
-          suffixIcon={<img src={caret_down} alt="caret_down" />}
+          suffixIcon={<img src={IconSelect} alt="IconSelect" />}
         >
           <Option value="2019-2020">2019-2020</Option>
           <Option value="2018-2019">2018-2019</Option>
@@ -163,7 +165,7 @@ const TrainingLevelsManage = (): JSX.Element => {
         <Button
           onClick={showModalAdd}
           className="TrainingLevelsManage__btnAdd"
-          icon={<img src={fi_plus} alt="fi_plus" />}
+          icon={<img src={IconPlus} alt="IconPlus" />}
         >
           Thêm mới
         </Button>
@@ -174,7 +176,7 @@ const TrainingLevelsManage = (): JSX.Element => {
           <Input
             className="TrainingLevelsManage__search"
             placeholder="Tìm kiếm"
-            prefix={<img src={fi_search} alt="fi_search" />}
+            prefix={<img src={IconSearch} alt="IconSearch" />}
           />
         </div>
         <Table

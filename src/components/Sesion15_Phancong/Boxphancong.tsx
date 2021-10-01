@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import './Boxphancong.css'
 import { Row, Col, Button,Select,Table, Space ,Divider, Checkbox,Pagination, InputNumber   } from 'antd';
-import { FormOutlined,DeleteOutlined, ContainerOutlined } from '@ant-design/icons';
 import Title from './Title/Title'
 import Buttonn from './Button/Button'
+import {
+  IconList,
+  IconEdit,
+  IconTrash,
+
+} from "../../assets/svg";
 
 
 //   tao bang
@@ -37,7 +42,7 @@ import Buttonn from './Button/Button'
     {
     title: 'Danh sách chủ đề',
     dataIndex: 'danhsach',
-    render: () => <ContainerOutlined style={{ fontSize: '32px' , color: '#FF7506' }}/>,
+    render: () =>  <img src={IconList}/>,
   
     },
     {
@@ -45,8 +50,8 @@ import Buttonn from './Button/Button'
     dataIndex: 'icon',
     render: () => (
       <Space >
-        <FormOutlined style={{ fontSize: '32px' , color: '#FF7506' }}/>
-        <DeleteOutlined style={{ fontSize: '32px' , color: '#FF7506' }}/>
+        <img src={IconEdit}/>
+        <img src={IconTrash}/>
       </Space>
     ),
     },

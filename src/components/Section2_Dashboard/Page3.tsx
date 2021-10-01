@@ -130,14 +130,14 @@ export default function Page3() {
                     <p>Đang chọn xem:</p>
                     <div className="box__chb-slt_sch">
                           <p>Trường:</p>
-                          <Select className="box__chb-slt_sch_select" defaultValue="THCS">
+                          <Select className="box__chb-slt_sch_selects" defaultValue="THCS">
                               <Option value="THCS">THCS</Option>
                               <Option value="THPT">THPT</Option>
                           </Select>
                     </div>
                     <div className="box__chb-slt_yr">
                           <p>Niên Khóa:</p>
-                          <Select className="box__chb-slt_yr_select" defaultValue="2020 - 2021">
+                          <Select className="box__chb-slt_yr_selects" defaultValue="2020 - 2021">
                               <Option value="2020 - 2021">2020 - 2021</Option>
                               <Option value="2015 - 2016">2015 - 2016</Option>
                               <Option value="2018 - 2019">2018 - 2019</Option>
@@ -153,10 +153,8 @@ export default function Page3() {
                     <button className="box__chb-btn-clk">Loại điểm</button>
                 </div>
               </div>
-              <div className="box__btn">
-                  
-                  <div className="box__btn-button">
-                      
+              <div className="box__btn__page">
+                  <div className="box__btn-button__page">
                       <button className="box__btn-button_cre" onClick={() => setVisible(true)}>
                           <i className="bx bx-plus"/>
                           Thêm mới
@@ -196,6 +194,7 @@ export default function Page3() {
                   </div>
                   <div className="box__sbj-tbl">
                       <Table
+                          className="table__page"
                           columns={columns}
                           dataSource={data}
                           pagination={false}

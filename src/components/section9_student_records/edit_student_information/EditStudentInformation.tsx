@@ -7,7 +7,7 @@ import './EditStudentInformation.css';
 import { Row, Col, Card, Input, Checkbox, Select, DatePicker } from 'antd';
 
 // avatar
-import {Avatar} from '../../../assets/images';
+import {AvatarTeacher} from '../../../assets/images';
 import ModalDelete from '../ModalDelete';
 
 const style = { height: '16px', background: '#F2F2F2' };
@@ -63,7 +63,7 @@ export default class EditStudentInformation extends Component {
                     <Card title="Thông tin chung" bordered={false}>
                         <Row>
                             <Col span={6}>
-                                <img src={Avatar} alt="" />
+                                <img src={AvatarTeacher} alt="" />
                             </Col>
                             <Col span={18}>
                                 <div className="ant-col-title">Thông tin học viên</div>

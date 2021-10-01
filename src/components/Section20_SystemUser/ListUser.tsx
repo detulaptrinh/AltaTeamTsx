@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './ListUser.css'
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { PlusOutlined, FormOutlined} from '@ant-design/icons';
@@ -7,8 +7,8 @@ import { Row, Col } from 'antd';
 import { Table, Tag, Radio, Space } from 'antd';
 import { Card } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import editIcon from '../../assets/avg/edit.svg'
-import deleteIcon from '../../assets/avg/delete.svg'
+import { IconEdit, IconTrash, IconPlus, IconShow} from '../../assets/svg';
+
 import {
     Form,
     Input,
@@ -41,7 +41,7 @@ const columns = [
     {
         title: 'Tên',
         dataIndex: 'name',
-        width: '15%'
+        width: '20%'
     },
     {
         title: 'Email',
@@ -51,19 +51,19 @@ const columns = [
     {
         title: 'Nhóm người dùng',
         dataIndex: 'groupuser', 
-        width: '25%'
+        width: '20%'
     },
     {
         title: 'Trạng thái',
         dataIndex: 'ghichu',
-        width: '25%'
+        width: '30%'
     },
    
     {       
         render: () => (
             <Space size="middle">
-              <a><img src={editIcon} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
-              <a onClick={showDeleteConfirm}><img src={deleteIcon} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
+              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
+              <a onClick={showDeleteConfirm}><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
             </Space>
           ),
     },
@@ -74,58 +74,59 @@ const dataSource = [
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
         groupuser: 'Quản trị viên',
-        ghichu: 'Đang hoạt động',
+        ghichu: 'Đã vô hiệu hóa',
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Học sinh tiểu học',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Phòng hành chính',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động' 
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động'
     },
     {
         name: 'Nguyễn Văn C',
         email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
+        groupuser: 'Nhân viên',
         ghichu: 'Đang hoạt động'
     },
 
 ];
 
 
-function ListUser() {
-    return (
-        <>
 
+class ListUser extends Component {
+    render(){
+        return(
+        <>
             <div className="Section20__Title">
                 <Row>
                     <Col span={24}>
@@ -137,8 +138,6 @@ function ListUser() {
                         </div>
                     </Col>
                 </Row>
-
-
 
                 <Row className="row1">
                     <Col span={24} className="switch__tab">
@@ -167,45 +166,40 @@ function ListUser() {
                                 <div className="switch-list__tab-left">
                                     <a href="">Nhóm người dùng</a>
                                 </div>
+
                                 <div className="switch-list__tab-right">
                                     <a href="">Danh sách người dùng</a>
                                 </div>
                             </div>
-
-
                         </Col>
 
                         <Col span={10}>
-                            <div className="box__btn">
-                                
-                                <Button className="box__btn-group__add" ><PlusOutlined />Thêm mới</Button>
+                            <div className="box__btn-group">                             
+                                <Button className="box__btn-group__add" ><img style={{padding:10}} src={IconPlus}/>Thêm mới</Button>
                             </div>
                         </Col>
                     </Col>
                 </Row>
-
             </div>
 
 
 
-            
-
             <div className="tab">
-
             <Col className="tab__title">   
-            <Col span={12}>
-            <div className="tab__title__left">
-                <p>Danh sách người dùng trên hệ thống</p>
-                </div>
+                <Col span={12}>
+                    <div className="tab__title__left">
+                        <p>Danh sách người dùng trên hệ thống</p>
+                    </div>
                 </Col>
 
                 <Col span={12}>
-                <div className="tab__search__right"> 
-                <Input className="box__sbj-search" placeholder="Tìm kiếm" />
-            </div>
-            </Col>
+                    <div className="tab-search-right"> 
+                        <Input className="tab-search-right__input"  placeholder="Tìm kiếm" />
+                    </div>
+                </Col>
             </Col> 
-                <div className="tab__table">
+
+                <div className="tab-table">
                     <Table
                         columns={columns}
                         dataSource={dataSource}
@@ -214,15 +208,16 @@ function ListUser() {
 
 
                 <Col span={24} className="pagination">
-                    <Col span={12} className="pagination__left">
-                        <div className="box__sbj-pagtion">
+                    <Col span={12} className="pagination-left">
+                        <div className="box-sbj-pagtion">
                             <p>Hiển thị</p>
-                            <InputNumber min={1} max={10} defaultValue={3} />
+                            <InputNumber min={1} max={10} defaultValue={8} />
                             <p> hàng trong mỗi trang</p>
                         </div>
                     </Col>
+
                     <Col span={12}>
-                        <div className="box__sbj-pagin">
+                        <div className="box-sbj-pagin">
                             <Pagination
                                 showSizeChanger
                                 defaultCurrent={3}
@@ -230,18 +225,13 @@ function ListUser() {
                             />
                         </div>
                     </Col>
-
                 </Col>
             </div>
-
-
-
         </>
     )
     /* Modal */
-     /* Modal */
   
   }
+}
 
-
-export default ListUser
+export default ListUser;

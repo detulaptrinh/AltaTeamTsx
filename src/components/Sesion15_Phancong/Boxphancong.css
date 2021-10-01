@@ -149,8 +149,9 @@
  
     width: 52px;
     height: 23px;
-    margin-left: 16px;
-    margin-top: 16px;
+
+    margin-right: 120px;
+    margin-top: 23px;
     /* LMS Student / Sub-header */
     font-family: Mulish;
     font-style: normal;
@@ -258,10 +259,10 @@
     content: url("/src/assets/avg/downArrowIcon.svg");
 
     padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-top: -10px;
+    margin-top: -9px;
     margin-left: 170px;
     width: 3rem;
-    height: 3.1rem;
+    height: 3rem;
     background: white;
     border: 0.016rem solid #373839;
     border-radius: 0rem 0.5rem 0.5rem 0rem;
@@ -317,7 +318,11 @@
    
 }
 .sesion15_body-table table> thead > tr:first-child th:last-child {
-  border-top-right-radius: 10px;
+  border-top-right-radius: 1rem;
+
+}
+.sesion15_body-table .ant-table-thead {
+  background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
 
 }
 .sesion15_body-table table > thead > tr:first-child th:first-child {
@@ -330,7 +335,7 @@ border-top-left-radius: 1rem;
     border-radius: 1rem;
     
 }
-.ant-table-thead > tr > th {
+.sesion15_body-table .ant-table-thead > tr > th {
     color: #ffffff;
   
     background: none;
@@ -345,32 +350,32 @@ border-top-left-radius: 1rem;
 
   }
   
-  .ant-table-thead > tr > th,
-  .ant-table-tbody > tr > td,
-  .ant-table tfoot > tr > th,
-  .ant-table tfoot > tr > td {
+  .sesion15_body-table .ant-table-thead > tr > th,
+  .sesion15_body-table .ant-table-tbody > tr > td,
+  .sesion15_body-table  .ant-table tfoot > tr > th,
+  .sesion15_body-table  .ant-table tfoot > tr > td {
     padding: 1rem;
     overflow-wrap: break-word;
   }
-  .ant-table-tbody > tr.ant-table-row:hover > td {
+  .sesion15_body-table  .ant-table-tbody > tr.ant-table-row:hover > td {
     background: #f0f3f6;
     text-align: center;
   }
-  .ant-table-thead > tr > th,
-  .ant-table-tbody > tr > td,
-  .ant-table tfoot > tr > th,
-  .ant-table tfoot > tr > td {
+  .sesion15_body-table  .ant-table-thead > tr > th,
+  .sesion15_body-table  .ant-table-tbody > tr > td,
+  .sesion15_body-table  .ant-table tfoot > tr > th,
+  .sesion15_body-table  .ant-table tfoot > tr > td {
     padding: 1rem;
     overflow-wrap: normal;
     text-align: center;
   }
-  .ant-table-tbody > tr > td {
+  .sesion15_body-table  .ant-table-tbody > tr > td {
     border-bottom: 1px solid #f0f0f0;
   }
-  .ant-table-thead > tr > th,
-  .ant-table-tbody > tr > td,
-  .ant-table tfoot > tr > th,
-  .ant-table tfoot > tr > td {
+  .sesion15_body-table .ant-table-thead > tr > th,
+  .sesion15_body-table  .ant-table-tbody > tr > td,
+  .sesion15_body-table  .ant-table tfoot > tr > th,
+  .sesion15_body-table .ant-table tfoot > tr > td {
     width: 90rem;
     height: 2rem;
     overflow-wrap: normal;

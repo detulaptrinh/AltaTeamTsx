@@ -13,7 +13,7 @@ import {
   Button,
   Checkbox
 } from 'antd';
-import {Avatar} from '../../assets/images';
+import {AvatarTeacher} from '../../assets/images';
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -23,26 +23,27 @@ export default class ProfileTeacher extends Component {
     render() {
         return (
             <>
+            <div className="section14 section14-pf">
              <Row>
                 <Col span={24}>
-                  <div className="title">
+                  <div className="titles">
                     <div className="title-info-student">Hồ sơ giảng viên</div>
                   </div>
                 </Col>
               </Row>
               <Row>
               <Col className="info__tab__box" span={7}>
-                    <div className="left-tab-box">
-                            <div className="left-tab-box-general-information active">
+                    <div className="switch__tab__box">
+                            <div className="switch__tab__box-general-information active">
                                 <Link to="/profile-teacher" className="active">Thông tin chung</Link>
                             </div>
-                            <div className="left-tab-box-study-process">
+                            <div className="switch__tab__box-study-process">
                                 <Link to="/profile-process">Quá trình học tập</Link>
                             </div>
                         </div>
                 </Col>
                 <Col span={8}>
-                  <Select id="school_year" defaultValue="2020-2021">
+                  <Select className="select__dash" id="school_year" defaultValue="2020-2021">
                     <Option value="2017-2018">2017-2018</Option>
                     <Option value="2017-2018">2018-2019</Option>
                     <Option value="2017-2018">2019-2020</Option>
@@ -79,7 +80,7 @@ export default class ProfileTeacher extends Component {
                         <Card title="Thông tin chung" bordered={false}>
                             <Row>
                                 <Col span={4}>
-                                    <img src={Avatar} alt="" />
+                                    <img src={AvatarTeacher} alt="" />
                                 </Col>
                                 <Col className="mleft" span={18}>
                                     <div className="ant-col-title">Thông tin học viên</div>
@@ -277,8 +278,7 @@ export default class ProfileTeacher extends Component {
                             </Row>
                         </Card>
                     </div>
-        
-        
+                </div>
             </>
           )
     }

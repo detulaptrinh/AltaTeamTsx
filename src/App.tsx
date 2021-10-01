@@ -107,7 +107,7 @@ export default class App extends Component {
                                 <Route path="/boxdatastudent" component={DetailStudent} />
                                 <Route path="/boxdatasubject" component={DetailSubject} />
                                 <Route path="/boxdatatype" component={PointType} />
-                                <Route path="/studentprofile" component={StudentProfile} />
+                                <Route path="/studentprofile" component={ProfileStudent} />
                                 <Route path="/studentcreate" component={CreateStudent} />
                                 {/* 9.1 hồ sơ sinh viên - thông tin sinh viên */}
                                 {/* 9.1 thông tin sinh viên */}

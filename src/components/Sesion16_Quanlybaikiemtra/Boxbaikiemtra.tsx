@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import './Boxbaikiemtra.css'
 import { Row, Col, Button,Table,DatePicker,Input,Pagination, InputNumber   } from 'antd';
 import { PlusOutlined,SearchOutlined, CalendarOutlined,EyeOutlined } from '@ant-design/icons';
+import {
+  IconDate,
+
+} from "../../assets/svg";
 
 //   tao bang
 const columns =  [ 
@@ -166,11 +170,11 @@ const columns =  [
             </div>
             <p className="sesion16___texttungay">Từ ngày</p>
                 <DatePicker className="sesion16___datepicker"/>
-                <CalendarOutlined style={{ fontSize: '24px' , color: '#FF7506' }} className="sesion16___iconcalendar"/>
+                <img className="sesion16___iconcalendar" src={IconDate}/>
               
             <p className="sesion16___textdenngay">Đến ngày</p>
                 <DatePicker className="sesion16___datepicker"/>
-                <CalendarOutlined style={{ fontSize: '24px' , color: '#FF7506' }} className="sesion16___iconcalendar1"/>
+                <img className="sesion16___iconcalendar1" src={IconDate}/>
         </div>
        
     

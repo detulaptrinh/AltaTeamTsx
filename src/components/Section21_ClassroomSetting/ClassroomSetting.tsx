@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, Component } from 'react'
 import './ClassroomSetting.css'
 import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
 import { PlusOutlined, FormOutlined} from '@ant-design/icons';
@@ -7,8 +7,7 @@ import { Row, Col } from 'antd';
 import { Table, Tag, Radio, Space } from 'antd';
 import { Card } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import editIcon from '../../assets/avg/edit.svg'
-import deleteIcon from '../../assets/avg/delete.svg'
+import { IconEdit, IconTrash, IconPlus, IconShow} from '../../assets/svg';
 import {
     Form,
     Input,
@@ -65,8 +64,8 @@ const columns = [
     {       
         render: () => (
             <Space size="middle">
-              <a><img src={editIcon} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
-              <a onClick={showDeleteConfirm}><img src={deleteIcon} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
+              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
+              <a onClick={showDeleteConfirm}><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
             </Space>
           ),
     },
@@ -116,24 +115,10 @@ const dataSource = [
 
 ];
 
-function ClassroomSetting() {
-    const [isModalVisible, setIsModalVisible] = useState(false);
-  
-    const showModal = () => {
-      setIsModalVisible(true);
-    };
-  
-    const handleOk = () => {
-      setIsModalVisible(false);
-    };
-  
-    const handleCancel = () => {
-      setIsModalVisible(false);
-    };
-    return (
-        <>
-        
-
+class ClassroomSetting extends Component {
+    render(){
+        return (
+            <>
             <div className="Section20__Title">
                 <Row>
                     <Col span={24}>
@@ -145,7 +130,6 @@ function ClassroomSetting() {
                         </div>
                     </Col>
                 </Row>
-
 
 
                 <Row className="row1">
@@ -161,33 +145,20 @@ function ClassroomSetting() {
                         </div>
                         </Col>
 
-
                         <Col span={9}>
-
-                            <div className="left-tab-box">
-                                <div className="left-tab-box-general-information">
-                                    <a href="">Nhóm người dùng</a>
-                                </div>
-                                <div className="left-tab-box-study-process">
-                                    <a href="">Danh sách người dùng</a>
-                                </div>
-                            </div>
-
-
                         </Col>
 
                         <Col span={10}>
                             <div className="box__btn-group">
-                                
-                                <Button className="box__btn-group__add" onClick={showModal} ><PlusOutlined />Thêm mới</Button>
-
-                                <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                                <Button className="box__btn-group__add"><img style={{padding:10}} src={IconPlus}/>Thêm mới</Button>
+                                {/* <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                                 <p>Some contents...</p>
                                 <p>Some contents...</p>
                                  <p>Some contents...</p>
-                                </Modal>
+                                </Modal> */}
                             </div>
                         </Col>
+
                     </Col>
                 </Row>
 
@@ -197,36 +168,37 @@ function ClassroomSetting() {
             <div className="tab">
 
             <Col className="tab__title">   
-            <Col span={12}>
-            <div className="tab__title__left">
-                <p>Danh sách người dùng trên hệ thống</p>
+                <Col span={12}>
+                <div className="tab__title__left">
+                    <p>Danh sách các loại lớp học</p>
                 </div>
                 </Col>
 
                 <Col span={12}>
-                <div className="tab__search__right"> 
-                <Input className="box__sbj-search" placeholder="Tìm kiếm" />
-            </div>
+                <div className="tab-search-right"> 
+                    <Input className="tab-search-right__input" placeholder="Tìm kiếm" />
+                </div>
             </Col>
+
             </Col> 
-                <div className="tab__table">
+                <div className="tab-table">
                     <Table
                         columns={columns}
                         dataSource={dataSource}
                     />
                 </div>
 
-
                 <Col span={24} className="pagination">
-                    <Col span={12} className="pagination__left">
-                        <div className="box__sbj-pagtion">
+                    <Col span={12} className="pagination-left">
+                        <div className="box-sbj-pagtion">
                             <p>Hiển thị</p>
                             <InputNumber min={1} max={10} defaultValue={3} />
                             <p> hàng trong mỗi trang</p>
                         </div>
                     </Col>
+
                     <Col span={12}>
-                        <div className="box__sbj-pagin">
+                        <div className="box-sbj-pagin">
                             <Pagination
                                 showSizeChanger
                                 defaultCurrent={3}
@@ -234,7 +206,6 @@ function ClassroomSetting() {
                             />
                         </div>
                     </Col>
-
                 </Col>
             </div>
 
@@ -245,5 +216,5 @@ function ClassroomSetting() {
     /* Modal */
 
     }
-
-export default ClassroomSetting
+}
+export default ClassroomSetting;
