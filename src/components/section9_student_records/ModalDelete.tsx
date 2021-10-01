@@ -19,7 +19,7 @@ const ModalDelete = () => {
     };
 
     return (
-        <div>
+        <div className="section-9-modal-delete">
             <i className='bx bx-trash' onClick={showModal}></i>
             <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                 <h3>Xóa</h3>

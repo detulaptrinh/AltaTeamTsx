@@ -7,8 +7,9 @@ import './EditStudentInformation.css';
 import { Row, Col, Card, Input, Checkbox, Select, DatePicker } from 'antd';
 
 // avatar
-import {AvatarTeacher} from '../../../assets/images';
+import { AvatarTeacher } from '../../../assets/images';
 import ModalDelete from '../ModalDelete';
+import { Link } from 'react-router-dom';
 
 const style = { height: '16px', background: '#F2F2F2' };
 
@@ -21,7 +22,7 @@ export default class EditStudentInformation extends Component {
                 {/* Breadcrumb */}
                 <Row>
                     <Col span={24}>
-                        <div className="title">
+                        <div className="section-9-1-1-title">
                             <div><span>Hồ sơ học viên</span></div>
                             <i className='bx bx-chevron-right'></i>
                             <div className="title-edit-info-student">Chỉnh sửa thông tin học viên</div>
@@ -30,18 +31,18 @@ export default class EditStudentInformation extends Component {
                 </Row>
 
                 {/* switch tab */}
-                <Row className="switch-tab">
-                    <Col className="left-tab" span={12}>
-                        <div className="left-tab-box">
-                            <div className="left-tab-box-general-information">
-                                <a href="">Thông tin chung</a>
+                <Row className="section-9-1-1-switch-tab">
+                    <Col className="section-9-1-1-left" span={12}>
+                        <div className="switch__tab__box">
+                            <div className="switch__tab__box-general-information active">
+                                <Link to="" className="active">Thông tin chung</Link>
                             </div>
-                            <div className="left-tab-box-study-process">
-                                <a href="">Quá trình học tập</a>
+                            <div className="switch__tab__box-study-process">
+                                <Link to="">Quá trình học tập</Link>
                             </div>
                         </div>
                     </Col>
-                    <Col className="right-btn" span={12}>
+                    <Col className="section-9-1-1-right-btn" span={12}>
                         <div className="right-btn-box">
                             <div className="btn-delete">
                                 <ModalDelete />
@@ -59,7 +60,7 @@ export default class EditStudentInformation extends Component {
                 </Row>
 
                 {/* card */}
-                <div className="site-card-border-less-wrapper">
+                <div className="section-9-1-1-site-card-border-less-wrapper">
                     <Card title="Thông tin chung" bordered={false}>
                         <Row>
                             <Col span={6}>
@@ -148,7 +149,7 @@ export default class EditStudentInformation extends Component {
                                         <Row className="ant-row-text">
                                             <Col className="text-left" span={8}>Hình thức:</Col>
                                             <Col className="text-right" span={16}>
-                                                <Select defaultValue="lucy" style={{ width: 360}} onChange={handleChange}>
+                                                <Select defaultValue="lucy" style={{ width: 360 }} onChange={handleChange}>
                                                     <Option value="jack">Jack</Option>
                                                     <Option value="lucy">Lucy</Option>
                                                     <Option value="Yiminghe">yiminghe</Option>
