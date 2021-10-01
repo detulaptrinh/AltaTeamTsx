@@ -119,7 +119,8 @@ class ClassroomSetting extends Component {
     render(){
         return (
             <>
-            <div className="Section20__Title">
+            <div className="section21">
+            <div className="Section21__Title">
                 <Row>
                     <Col span={24}>
                         <div className="title">
@@ -158,10 +159,8 @@ class ClassroomSetting extends Component {
                                 </Modal> */}
                             </div>
                         </Col>
-
                     </Col>
                 </Row>
-
             </div>
 
 
@@ -208,9 +207,7 @@ class ClassroomSetting extends Component {
                     </Col>
                 </Col>
             </div>
-
-
-
+            </div>
         </>
     )
     /* Modal */

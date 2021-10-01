@@ -39,7 +39,8 @@ function showExportFileConfirm() {
 
 function Box() {
   return (
-    <>
+    <> 
+    <div className="section19">
           <div className="section19__title">
                 <Row>
                     <Col span={24}>
@@ -228,6 +229,7 @@ function Box() {
             </Col>
           </Row>
         </Card>
+      </div>
       </div>
     </>
   )

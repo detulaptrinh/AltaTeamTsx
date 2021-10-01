@@ -1,21 +1,21 @@
-.tab{
+.section19 .tab{
     border-radius: 1.6rem;
     background: #FFFFFF;
     box-shadow: 0.4rem 0.4rem 2.5rem 0.4rem rgba(154, 202, 245, 0.25);
 }
 
-.ant-card.ant-card-bordered.card1{
+.section19 .ant-card.ant-card-bordered.card1{
     height: auto;
 }
-.ant-card.ant-card-bordered.card2{
+.section19 .ant-card.ant-card-bordered.card2{
     height: auto;
 }
-.card1 .ant-card-head,
-.card2 .ant-card-head {
+.section19 .card1 .ant-card-head,
+.section19 .card2 .ant-card-head {
     padding: 0;
     background-color: #CC5C00;
 }
-.title__content__form-left{
+.section19 .title__content__form-left{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: bold;
@@ -26,8 +26,8 @@
     color: #CC5C00;
 }
 
-.card1 .ant-card-head-title,
-.card2 .ant-card-head-title{
+.section19 .card1 .ant-card-head-title,
+.section19 .card2 .ant-card-head-title{
     margin-left: 6.3rem;
     font-family: 'Mulish';
     font-style: normal;
@@ -38,40 +38,32 @@
     color: #FFFFFF;
 
 }
-.card1 .ant-card-body,
-.card2 .ant-card-body{
+.section19 .card1 .ant-card-body,
+.section19 .card2 .ant-card-body{
     padding: 0;
 }
 
-.row1.ant-row{
-    width: auto;
-    
-}
 
-.row2.ant-row{
-    width: auto;
-}
-
-.tab__tittle{
+.section19 .tab__tittle{
     width: 100%;
     height: 5.6rem;
     border-radius: 16px 16px 0 0;
     background: #CC5C00;
 }
 
-.tab__tittle__text{
+.section19 .tab__tittle__text{
     width: 100%;
     height: 5.6rem;
     background: #CC5C00;    
 }
 
-.tab > .tab__tittle2{
+.section19 .tab > .tab__tittle2{
     width: 100%;
     height: 5.6rem;
     background: #CC5C00;
 }
 
-.tabedit__tittle__icon__edit{
+.section19 .tabedit__tittle__icon__edit{
     position: relative;
     width: 2.4rem;
     height: 2.4rem;
@@ -80,7 +72,7 @@
     color: #FFFFFF;
 }
 
-.tabedit__tittle__icon__delete{
+.section19 .tabedit__tittle__icon__delete{
     position: relative;
     width: 2.4rem;
     height: 2.4rem;
@@ -89,28 +81,28 @@
     color: #FFFFFF;
 }
 
-.tabedit__content{
+.section19 .tabedit__content{
     display: flex;
     height: 100%;
 }
 
-.tabedit__content2{
+.section19 .tabedit__content2{
     display: flex;
 }
 
-.tabedit__content__form-left{
+.section19 .tabedit__content__form-left{
     margin-left: 6.5rem;
     margin-top: 3.2rem;
     margin-right: 11.2rem;
 }
 
-.tabedit__content__form-right{
+.section19 .tabedit__content__form-right{
     margin-left: 3rem;
     margin-top: 7.6rem;
     margin-right: 6.4rem;
     
 }
-.tabedit__content2__form-left__top{
+.section19 .tabedit__content2__form-left__top{
     margin-top: 3.2rem;
     margin-left: 6.5rem;
     margin-right: 11.2rem;
@@ -118,44 +110,44 @@
    
   
 }
-.tabedit__content2__form-right__top{
+.section19 .tabedit__content2__form-right__top{
     margin-top: 3.2rem;
     margin-left: 3rem;
     margin-right: 6.4rem;
    
 }
-.tabedit__content2__form-left__bottom{
+.section19 .tabedit__content2__form-left__bottom{
     margin-top: 3.2rem;
     margin-left: 6.5rem;
     margin-right: 11.2rem;
 }
-.tabedit__content2__form-right__bottom{
+.section19 .tabedit__content2__form-right__bottom{
     margin-top: 3.2rem;
     margin-left: 3rem;
     margin-right: 6.4rem;
    
    
 }
-.br__box{
+.section19 .br__box{
     margin-top: 1.3rem;
     background: #F2F2F2;
     box-shadow: inset 0rem 0.4rem 0.8rem rgba(154, 202, 245, 0.15);
 }
 
-.br__box-image{
+.section19 .br__box-image{
     margin-top: 1rem;
     background: #F2F2F2;
     box-shadow: inset 0rem 0.4rem 0.8rem rgba(154, 202, 245, 0.15);
 }
 
-.tabedit__content__rec{
+.section19 .tabedit__content__rec{
     width: 164rem;
     height: 1.6rem;
     background: #F2F2F2;
     box-shadow: inset 0px 4px 8px rgba(154, 202, 245, 0.15);
 }
 
-.tabedit__content__image{
+.section19 .tabedit__content__image{
     width: 23.2rem;
     height: 23.2rem;
     border-radius: 22rem;
@@ -165,14 +157,14 @@
     margin-right: auto;
 }
 
-.tabedit__content__image2{
+.section19 .tabedit__content__image2{
     margin-top: 3.2rem;
     text-align: center;
     width: 33.2rem;
     height: 18.7rem;
 }
 
-.tabedit__content__image3{
+.section19 .tabedit__content__image3{
     margin-top: 3.2rem;
     text-align: center;
     width: 33.2rem;
@@ -181,7 +173,7 @@
     border-radius: 0.8rem;
 }
 
-.tabedit__content__text__tittle1{
+.section19 .tabedit__content__text__tittle1{
     height: 2rem;
     width: 16.3rem;
     top: 8.8rem;
@@ -195,7 +187,7 @@
     font-weight: bold;
 }
 
-.tabedit__content__text__tittle2{
+.section19 .tabedit__content__text__tittle2{
     height: 2rem;
     left: 45rem;
     top: 53.1rem;
@@ -208,7 +200,7 @@
     font-style: normal;
 }
 
-.tabedit__content__icon__camera{
+.section19 .tabedit__content__icon__camera{
     width: 5.6rem;
     height: 5.6rem;
     left: 15.2rem;
@@ -218,18 +210,23 @@
     border-radius: 50%;
 }
 
-.tabedit__content__icon__camera2{
+.section19 .tabedit__content__icon__camera2{
     width: 5.6rem;
     height: 5.6rem;
     left: 15.6rem;
     top: 65rem;
 }
 
-.box__btn{
+.section19 .switch__tab{
+    display: flex;
+    margin-top: 3.2rem;
+}
+
+.section19 .box__btn{
     display: flex;
     float: right;
 }
-.box__btn-group__cancel.ant-btn{
+.section19 .box__btn-group__cancel.ant-btn{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,7 +238,7 @@
     border-radius: 0.8rem;
 }
 
-.box__btn-group__save.ant-btn{
+.section19 .box__btn-group__save.ant-btn{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,14 +252,14 @@
     border-radius: 0.8rem;
 }
 
-.ant-modal-confirm-btns{
+.section19 .ant-modal-confirm-btns{
     display: flex;
     justify-content: space-between;
     width: 34.8rem;
     height: 5.2rem;
  }
 
-.ant-modal-confirm-title{
+.section19 .ant-modal-confirm-title{
     text-align: center;
     width: 19.1rem;
     height: 3.5rem;
@@ -277,22 +274,22 @@
     color: #373839;
  }
 
- .ant-modal-confirm-body .ant-modal-confirm-content{
+ .section19 .ant-modal-confirm-body .ant-modal-confirm-content{
     margin-top: 3rem;
     text-align: center;
  }
 
-.anticon.anticon-exclamation-circle{
+.section19 .anticon.anticon-exclamation-circle{
      visibility: hidden;
  }
 
-.ant-modal-content{
+.section19 .ant-modal-content{
     border-radius: 0.8rem;
     width: 43.5rem;
     height: 24.3rem;
 }
 
-.ant-btn.ant-btn-dangerous{
+.section19 .ant-btn.ant-btn-dangerous{
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -313,8 +310,8 @@
 
 /* Customize CSS form Antd*/
 
-.card1 .ant-form-item-label > label,
-.card2 .ant-form-item-label > label{
+.section19 .card1 .ant-form-item-label > label,
+.section19 .card2 .ant-form-item-label > label{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: bold;
@@ -325,7 +322,7 @@
     opacity: 0.8;
 }
 
-.tab .ant-input {
+.section19 .tab .ant-input {
     width: 36rem;
     height: 4rem;
     background-color: #FFFFFF;
@@ -339,7 +336,7 @@
     color: #373839;
 }
 
-.tab .ant-form-item .ant-select{
+.section19 .tab .ant-form-item .ant-select{
     width: 36rem;
     height: 4rem;
     float: right;
@@ -351,19 +348,18 @@
     color: #373839;
     
 }
-
-.ant-form-item{
+.section19 .ant-form-item{
     border-radius: 1.6rem ;
     margin-bottom: 1.5rem;
 }
 
-.tab .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+.section19 .tab .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
     height: 4rem;
     border-radius: 0.8rem;
     background-color: #FFFFFF;
 }
 
-.tab .ant-select-arrow{
+.section19 .tab .ant-select-arrow{
     font-size: 1.8rem;
     color: #FF7506;
     width: 4.1rem;

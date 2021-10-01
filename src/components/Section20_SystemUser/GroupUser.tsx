@@ -116,6 +116,7 @@ class GroupUser extends Component {
     render(){
         return(
         <>
+        <div className="section20">
             <div className="Section20__Title">
                 <Row>
                     <Col span={24}>
@@ -217,6 +218,7 @@ class GroupUser extends Component {
                         </div>
                     </Col>
                 </Col>
+            </div>
             </div>
         </>
     )
