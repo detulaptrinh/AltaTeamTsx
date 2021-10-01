@@ -23,9 +23,10 @@ export default class ProfileTeacher extends Component {
     render() {
         return (
             <>
+            <div className="section14 section14-pf">
              <Row>
                 <Col span={24}>
-                  <div className="title">
+                  <div className="titles">
                     <div className="title-info-student">Hồ sơ giảng viên</div>
                   </div>
                 </Col>
@@ -42,7 +43,7 @@ export default class ProfileTeacher extends Component {
                         </div>
                 </Col>
                 <Col span={8}>
-                  <Select id="school_year" defaultValue="2020-2021">
+                  <Select className="select__dash" id="school_year" defaultValue="2020-2021">
                     <Option value="2017-2018">2017-2018</Option>
                     <Option value="2017-2018">2018-2019</Option>
                     <Option value="2017-2018">2019-2020</Option>
@@ -277,8 +278,7 @@ export default class ProfileTeacher extends Component {
                             </Row>
                         </Card>
                     </div>
-        
-        
+                </div>
             </>
           )
     }

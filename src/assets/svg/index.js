@@ -3,6 +3,7 @@ import IconBook from "./bookopenIcon.svg";
 import IconChart from "./chartIcon.svg";
 import IconEllipse from "./ellipse.svg";
 import IconEyes from "./eyeIcon.svg";
+import IconEyesOr from "./eyesorgane.svg";
 import IconLogo from "./logo.svg";
 import IconReload from "./reload.svg";
 import IconSelect from "./selectIcon.svg";
@@ -24,6 +25,7 @@ export {
     IconChart,
     IconEllipse,
     IconEyes,
+    IconEyesOr,
     IconLogo,
     IconReload,
     IconSelect,

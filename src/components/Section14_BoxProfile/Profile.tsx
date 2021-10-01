@@ -15,11 +15,12 @@ import {
 import { 
   UploadOutlined,
   DownloadOutlined,
+  SearchOutlined,
 } from '@ant-design/icons';
 import {Link} from "react-router-dom"
 import './profile.css'
 import {
-  IconEyes,
+  IconEyesOr,
   IconReload,
   IconTrash
 } from "../../assets/svg";
@@ -97,7 +98,7 @@ const columns = [
     dataIndex: 'icon',
     render: () => (
       <Space >
-        <img src={IconEyes} alt=""/>
+        <img src={IconEyesOr} alt=""/>
         <img src={IconReload} alt=""/>
         <img src={IconTrash} alt=""/>
       </Space>
@@ -199,7 +200,7 @@ const columns = [
           <Row>
             
             <Col span={8}>
-              <Select id="school_year" defaultValue="2020-2021">
+              <Select className="select__dash" id="school_year" defaultValue="2020-2021">
                 <Option value="2017-2018">2017-2018</Option>
                 <Option value="2017-2018">2018-2019</Option>
                 <Option value="2017-2018">2019-2020</Option>
@@ -213,7 +214,7 @@ const columns = [
                     <i className='bx bx-trash' />
                   </button>
                   <Modal 
-                  className="box__btn-del" 
+                  className="box__btn__profile" 
                   visible={isModalVisible} 
                   onOk={handleOk} 
                   onCancel={handleCancel}>
@@ -265,11 +266,11 @@ const columns = [
                 <span className="list_title">Danh sách giảng viên</span>
               </Col>
               <Col className="mlist" span={9} offset={12}>
-                <Input className="input__search" defaultValue="Tìm kiếm"></Input>
+                <Input className="search__profile_fix"  placeholder="Tìm Kiếm" prefix={<SearchOutlined />} />
               </Col>
             </Row>
             <Row>
-              <Col className="mlist" span={22}>
+              <Col className="mlist1" span={22}>
                 <Table
                   className="table__page"
                  /*  rowSelection={rowSelection} */

@@ -46,8 +46,8 @@ const columns =  [
     render: () => (
       <Space>
         <div className="icon__img_fix">
-            <img className="iconedit" src={IconEdit}/>
-            <img src={IconTrash} />
+          <img className="iconedit" src={IconEdit}/>
+          <img src={IconTrash} />
         </div>
       </Space>
     ),

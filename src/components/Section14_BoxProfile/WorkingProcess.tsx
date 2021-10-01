@@ -23,6 +23,7 @@ export default class WorkingProcess extends Component {
     render() {
         return (
             <>
+            <div className="section14">
             <Row>
                 <Col span={24}>
                   <div className="title">
@@ -101,7 +102,7 @@ export default class WorkingProcess extends Component {
                     </Collapse>
                 </Space>
               </div>
-                
+              </div>
             </>
         )
     }
