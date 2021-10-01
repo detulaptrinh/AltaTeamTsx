@@ -13,8 +13,6 @@ import {
 import locale from "antd/lib/locale/vi_VN";
 import moment from "moment";
 import "./DeclareSchoolYear.css";
-import minus_primary from "../../assets/avg/MinusPrimary.svg";
-import plus_primary from "../../assets/avg/PlusPrimary.svg";
 import {
   IconPlus,
   IconSelect,
@@ -23,7 +21,9 @@ import {
   IconSearch,
   IconInfo,
   IconCalendar,
-} from "../../assets/svg/index";
+  IconPlusBlue,
+  IconMinusBlue,
+} from "../../assets/svg";
 
 const { Option } = Select;
 
@@ -314,7 +314,7 @@ const DeclareSchoolYear = (): JSX.Element => {
           <h4 className="timeSetting__title">Cài đặt thời gian</h4>
           <div className="timeSetting__control">
             <button className="timeSetting__control-btn">
-              <img src={minus_primary} alt="minus_primary" />
+              <img src={IconMinusBlue} alt="IconMinusBlue" />
             </button>
             <h6>Tên học kì:</h6>
             <Input
@@ -340,7 +340,7 @@ const DeclareSchoolYear = (): JSX.Element => {
           </div>
           <div className="timeSetting__control">
             <button className="timeSetting__control-btn">
-              <img src={minus_primary} alt="minus_primary" />
+              <img src={IconMinusBlue} alt="IconMinusBlue" />
             </button>
             <h6>Tên học kì:</h6>
             <Input
@@ -363,7 +363,7 @@ const DeclareSchoolYear = (): JSX.Element => {
             />
           </div>
           <button className="timeSetting__btnAdd">
-            <img src={plus_primary} alt="plus_primary" />
+            <img src={IconPlusBlue} alt="IconPlusBlue" />
             <span>Thêm học kì mới</span>
           </button>
         </div>

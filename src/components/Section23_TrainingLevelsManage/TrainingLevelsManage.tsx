@@ -17,7 +17,7 @@ import {
   IconEdit,
   IconTrash,
   IconChevronRight,
-} from "../../assets/svg/index";
+} from "../../assets/svg";
 
 const { Option } = Select;
 const { TextArea } = Input;
