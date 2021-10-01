@@ -17,6 +17,7 @@ import IconPlus from "./plus.svg";
 import IconList from "./listicon.svg";
 import IconEllipse2 from "./ellipsecauhinh2.svg";
 import IconEllipse3 from "./ellipsecauhinh3.svg";
+<<<<<<< Updated upstream
 import IconDate from "./icondate.svg";
 
 export {
@@ -41,3 +42,34 @@ export {
     IconEllipse3,
     IconDate,
 }
+=======
+import IconSearch from "./searchIcon.svg";
+import IconInfo from "./infoIcon.svg";
+import IconCalendar from "./calendarIcon.svg";
+import IconChevronRight from "./chevronRightIcon.svg";
+
+export {
+  IconBag,
+  IconBook,
+  IconChart,
+  IconEllipse,
+  IconEyes,
+  IconLogo,
+  IconReload,
+  IconSelect,
+  IconSettings,
+  IconTrash,
+  IconUserCircle,
+  IconUser,
+  IconEdit,
+  IconShow,
+  IconPlus,
+  IconList,
+  IconEllipse2,
+  IconEllipse3,
+  IconSearch,
+  IconInfo,
+  IconCalendar,
+  IconChevronRight,
+};
+>>>>>>> Stashed changes

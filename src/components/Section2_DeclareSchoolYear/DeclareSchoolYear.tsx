@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import "./DeclareSchoolYear.css";
 import {
   Button,
   Checkbox,
@@ -11,17 +10,20 @@ import {
   Select,
   Table,
 } from "antd";
-import caret_down from "../../assets/avg/caret_down.svg";
-import fi_plus from "../../assets/avg/fi_plus.svg";
-import fi_search from "../../assets/avg/fi_search.svg";
-import fi_edit from "../../assets/avg/fi_edit-monhoc.svg";
-import fi_trash from "../../assets/avg/fi_trash-xoamonhoc.svg";
-import fi_info from "../../assets/avg/fi_info.svg";
+import locale from "antd/lib/locale/vi_VN";
+import moment from "moment";
+import "./DeclareSchoolYear.css";
 import minus_primary from "../../assets/avg/MinusPrimary.svg";
 import plus_primary from "../../assets/avg/PlusPrimary.svg";
-import calendar_alt from "../../assets/avg/u_calendar-alt.svg";
-import moment from "moment";
-import locale from "antd/lib/locale/vi_VN";
+import {
+  IconPlus,
+  IconSelect,
+  IconEdit,
+  IconTrash,
+  IconSearch,
+  IconInfo,
+  IconCalendar,
+} from "../../assets/svg/index";
 
 const { Option } = Select;
 
@@ -115,10 +117,10 @@ const DeclareSchoolYear = (): JSX.Element => {
       render: () => (
         <Fragment>
           <button className="btnEdit" onClick={showModalAdd}>
-            <img src={fi_edit} alt="fi_edit" />
+            <img src={IconEdit} alt="IconEdit" />
           </button>
           <button className="btnTrash" onClick={showModalDel}>
-            <img src={fi_trash} alt="fi_trash" />
+            <img src={IconTrash} alt="IconTrash" />
           </button>
         </Fragment>
       ),
@@ -158,7 +160,7 @@ const DeclareSchoolYear = (): JSX.Element => {
                 className="DeclareSchoolYear__select"
                 defaultValue="THCS"
                 style={{ width: 144 }}
-                suffixIcon={<img src={caret_down} alt="caret_down" />}
+                suffixIcon={<img src={IconSelect} alt="IconSelect" />}
               >
                 <Option value="THCS">THCS</Option>
                 <Option value="THPT">THPT</Option>
@@ -170,7 +172,7 @@ const DeclareSchoolYear = (): JSX.Element => {
                 className="DeclareSchoolYear__select"
                 defaultValue="2020-2021"
                 style={{ width: 144 }}
-                suffixIcon={<img src={caret_down} alt="caret_down" />}
+                suffixIcon={<img src={IconSelect} alt="IconSelect" />}
               >
                 <Option value="2015-2016">2015-2016</Option>
                 <Option value="2018-2019">2018-2019</Option>
@@ -191,7 +193,7 @@ const DeclareSchoolYear = (): JSX.Element => {
             <Button
               onClick={showModalAdd}
               className="DeclareSchoolYear__btnAdd"
-              icon={<img src={fi_plus} alt="fi_plus" />}
+              icon={<img src={IconPlus} alt="IconPlus" />}
             >
               Thêm mới
             </Button>
@@ -202,7 +204,7 @@ const DeclareSchoolYear = (): JSX.Element => {
               <Input
                 className="DeclareSchoolYear__search"
                 placeholder="Tìm kiếm"
-                prefix={<img src={fi_search} alt="fi_search" />}
+                prefix={<img src={IconSearch} alt="IconSearch" />}
               />
             </div>
             <Table
@@ -265,7 +267,7 @@ const DeclareSchoolYear = (): JSX.Element => {
                 className="DeclareSchoolYear__select"
                 defaultValue="2020"
                 style={{ width: 144 }}
-                suffixIcon={<img src={caret_down} alt="caret_down" />}
+                suffixIcon={<img src={IconSelect} alt="IconSelect" />}
               >
                 <Option value="2019">2019</Option>
                 <Option value="2018">2018</Option>
@@ -275,7 +277,7 @@ const DeclareSchoolYear = (): JSX.Element => {
                 className="DeclareSchoolYear__select"
                 defaultValue="2021"
                 style={{ width: 144 }}
-                suffixIcon={<img src={caret_down} alt="caret_down" />}
+                suffixIcon={<img src={IconSelect} alt="IconSelect" />}
               >
                 <Option value="2020">2020</Option>
                 <Option value="2019">2019</Option>
@@ -291,14 +293,14 @@ const DeclareSchoolYear = (): JSX.Element => {
                 className="DeclareSchoolYear__select"
                 placeholder="Niên khoá"
                 style={{ width: 144 }}
-                suffixIcon={<img src={caret_down} alt="caret_down" />}
+                suffixIcon={<img src={IconSelect} alt="IconSelect" />}
               >
                 <Option value="2015-2016">2015-2016</Option>
                 <Option value="2018-2019">2018-2019</Option>
               </Select>
             </div>
             <div className="schoolYear__right-desc">
-              <img src={fi_info} alt="fi_info" />
+              <img src={IconInfo} alt="IconInfo" />
               <p>
                 Dữ liệu được kế thừa bao gồm các thông tin:
                 <br />- Thông tin học viên và Danh sách lớp học
@@ -325,7 +327,7 @@ const DeclareSchoolYear = (): JSX.Element => {
                 className="DeclareSchoolYear__datepicker"
                 defaultValue={moment("05/09/2020", "DD/MM/YYYY")}
                 format={"DD/MM/YYYY"}
-                suffixIcon={<img src={calendar_alt} alt="calendar_alt" />}
+                suffixIcon={<img src={IconCalendar} alt="IconCalendar" />}
               />
             </ConfigProvider>
             <span>đến</span>
@@ -333,7 +335,7 @@ const DeclareSchoolYear = (): JSX.Element => {
               className="DeclareSchoolYear__datepicker"
               defaultValue={moment("02/01/2021", "DD/MM/YYYY")}
               format={"DD/MM/YYYY"}
-              suffixIcon={<img src={calendar_alt} alt="calendar_alt" />}
+              suffixIcon={<img src={IconCalendar} alt="IconCalendar" />}
             />
           </div>
           <div className="timeSetting__control">
@@ -350,14 +352,14 @@ const DeclareSchoolYear = (): JSX.Element => {
               className="DeclareSchoolYear__datepicker"
               defaultValue={moment("05/09/2020", "DD/MM/YYYY")}
               format={"DD/MM/YYYY"}
-              suffixIcon={<img src={calendar_alt} alt="calendar_alt" />}
+              suffixIcon={<img src={IconCalendar} alt="IconCalendar" />}
             />
             <span>đến</span>
             <DatePicker
               className="DeclareSchoolYear__datepicker"
               defaultValue={moment("02/01/2021", "DD/MM/YYYY")}
               format={"DD/MM/YYYY"}
-              suffixIcon={<img src={calendar_alt} alt="calendar_alt" />}
+              suffixIcon={<img src={IconCalendar} alt="IconCalendar" />}
             />
           </div>
           <button className="timeSetting__btnAdd">
