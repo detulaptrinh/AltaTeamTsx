@@ -270,6 +270,11 @@
     border: 1px solid #373839;
     border-radius: 4px;
 }
+.box__chb-slt_sch_selects span.ant-select-selection-item {
+    font-size: 1.6rem;
+    top:0.5rem;
+}
+
 .box__chb-slt_yr p{
     font-family: Source Sans Pro;
     font-style: normal;
@@ -286,11 +291,9 @@
     bottom: 4.5rem;
     width: 14.4rem;
 }
-.box__chb-slt_sch_selects .ant-select-arrow{
-    right: -0.2rem;
-}
-.box__chb-slt_yr_selects .ant-select-arrow{
-    right: -0.2rem;
+.box__chb-slt_yr_selects span.ant-select-selection-item {
+    font-size: 1.6rem;
+    top:0.5rem;
 }
 .box__chb-btn{
     margin-top: 6rem;
@@ -823,3 +826,52 @@
 .table__page3 .ant-table-thead{
     background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
 }
+.form__dash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select__dash {
+
+}
+  
+  .select__dash.ant-select {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+    width: 13rem;
+  }
+  .select__dash .ant-select .ant-select-selector {
+    border-color: #373839;
+    
+  }
+  .select__dash.ant-select:not(.ant-select-disabled):hover
+    .ant-select-selector {
+    border-color: #373839;
+  }
+  
+  .select__dash.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+    .ant-select-selector {
+    border-color: #373839;
+    box-shadow: none;
+  }
+  
+  .select__dash.ant-select-single.ant-select-show-arrow
+    .ant-select-selection-search {
+    right: 30px;
+    border-right: 1px solid #373839;
+  }
+  
+  .select__dash .ant-select-arrow {
+    width: 24px;
+    height: 24px;
+    right: 4px;
+    font-size: 1.6rem;
+  }
+  .select__dash .ant-select-selector span.ant-select-selection-item{
+      top: 0.5rem;
+      font-size: 1.8rem;
+  }

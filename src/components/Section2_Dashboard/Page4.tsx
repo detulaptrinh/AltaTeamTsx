@@ -178,6 +178,7 @@ export default function Page4() {
                   </div>
                   <div className="box__sbj-tbl">
                       <Table
+                          className="table__page"
                           columns={columns}
                           dataSource={data}
                           pagination={false}
