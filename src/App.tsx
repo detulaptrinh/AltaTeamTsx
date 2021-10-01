@@ -43,13 +43,13 @@ import Xemlichthi from './components/Sesion16_Chitietlichthi/Boxlichthi'
 import Quanlybaikiemtra from './components/Sesion16_Quanlybaikiemtra/Boxbaikiemtra'
 
 // Tri
-import StudentProfile from './components/Tri_Page_10_11_12_13/Section_10_Student_Profile/StudentProfile';
+import StudentProfiles from "./components/Tri_Page_10_11_12_13/Section_10_Student_Profile/StudentProfiles";
 import TransferSchool from './components/Tri_Page_10_11_12_13/Section_12_Accept_Transfer_School/Accept_Transfer_School';
 import SelectsYear from './components/Tri_Page_10_11_12_13/Categories/SelectsYear';
 import Searchs from './components/Tri_Page_10_11_12_13/Categories/Searchs';
 import PaginationText from './components/Tri_Page_10_11_12_13/Categories/PaginationText';
 import PaginationNumber from './components/Tri_Page_10_11_12_13/Categories/PaginationsNumber';
-import ReservationRecords from "./components/Tri_Page_10_11_12_13/Section_13_Reservation_Records/Reservation_Records";
+import ReservationRecords from "./components/Tri_Page_10_11_12_13/Section_13_Reservation_Records/Reservation_Record";
 import BtnAdd from "./components/Tri_Page_10_11_12_13/Categories/ButtonAdd";
 // Long
 import CourseSetting from "./components/Section22_CourseSetting/CourseSetting";
@@ -92,7 +92,7 @@ export default class App extends Component {
                                 <Route path="/kiemtra" component={Quanlybaikiemtra} />
 
                                 {/* tri */}
-                                <Route path="/studentprofile" component={StudentProfile} />
+                                <Route path="/studentprofiles" component={StudentProfiles} />
                                 <Route path="/transferschool" component={TransferSchool} />
                                 <Route path="/reservationrecords" component={ReservationRecords} />
                                 <Route path="/selectsyear" component={SelectsYear} />

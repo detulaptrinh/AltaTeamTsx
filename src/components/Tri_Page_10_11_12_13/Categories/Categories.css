@@ -86,7 +86,7 @@
 }
 
 /* SEARCH */
-.box-search-my-search {
+.box-search-my-searchs {
   width: 43.8rem;
   height: 4rem;
   border-radius: 2.4rem;
@@ -105,7 +105,7 @@
   line-height: 3.2rem;
 }
 
-.box-search-my-search input {
+.box-search-my-searchs input {
   font-family: "Source Sans Pro";
   font-size: 1.4rem;
   font-style: italic;

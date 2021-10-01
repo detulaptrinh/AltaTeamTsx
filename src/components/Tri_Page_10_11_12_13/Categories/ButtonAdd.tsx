@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import './Categories.css'
 
-export default class BtnAdd extends Component {
+export default class BtnAddSection10 extends Component {
     render() {
         return (
             <div className="button-add-box">

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import "./Accept_Transfer_School.css"
 import { EyeOutlined } from '@ant-design/icons';
 import SelectsYear from '../Categories/SelectsYear';
-import BtnAdd from '../Categories/ButtonAdd';
+import BtnAddSection10 from '../Categories/ButtonAdd';
 import PaginationText from '../Categories/PaginationText';
 import PaginationNumber from '../Categories/PaginationsNumber';
 import Searchs from '../Categories/Searchs';
@@ -102,7 +102,7 @@ export default class TransferSchool extends Component {
                             </Col>
                             <Col span={12} className="transfer_school_header_button_add">
                                 <div className="button-add-transfer-school">
-                                    <BtnAdd />
+                                    <BtnAddSection10 />
                                 </div>
                             </Col>
                         </Row>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./Reservation_Records.css"
+import "./Reservation_Record.css"
 import { Breadcrumb, Row, Col, Table,Space } from 'antd';
 import SelectsYear from '../Categories/SelectsYear';
 import BtnAdd from '../Categories/ButtonAdd';
@@ -97,13 +97,13 @@ export default class ReservationRecords extends Component {
                                 </div>
                             </Col>
                             <Col span={12} className="reservation-records-header-button-add">
-                                <div className="button-add-transfer-school">
+                                <div className="button-add-reservation-records">
                                     <BtnAdd />
                                 </div>
                             </Col>
                         </Row>
                     </div>
-                    {/* <div className="reservation-records-body-group">
+                    <div className="reservation-records-body-group">
                         <div className="reservation-records-body-group-header">
                             <Row>
                                 <Col span={12} className="reservation-records-body-group-header-left">
@@ -139,7 +139,7 @@ export default class ReservationRecords extends Component {
                             </Row>
 
                         </div>
-                    </div> */}
+                    </div>
 
                 </div>
             </>

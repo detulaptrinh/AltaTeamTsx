@@ -1,13 +1,13 @@
-.transfer_school_header {
+.reservation-records-header {
   width: 100%;
   height: 15rem;
 }
-.transfer_school_header_breadcrumb_container {
+.reservation-records-header-breadcrumb-container {
   width: 100%;
   height: 6rem;
 }
 
-.transfer_school_header_breadcrumb {
+.reservation-records-header-breadcrumb {
   /* LMS Student / Sub-header */
   font-family: "Mulish";
   font-style: normal;
@@ -23,7 +23,7 @@
   order: 0;
   flex-grow: 0;
 }
-.transfer_school_header_breadcrumb .ant-breadcrumb-separator {
+.reservation-records-header-breadcrumb .ant-breadcrumb-separator {
   width: 0.957rem;
   height: 1.664rem;
   margin-left: 1rem;
@@ -31,7 +31,7 @@
   font-size: 2rem;
   transform: rotate(-180deg);
 }
-.transfer_school_header_breadcrumb_transfer_school {
+.reservation-records-header-breadcrumb-reservation {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 800;
@@ -45,34 +45,34 @@
   margin: 0rem 2.4rem;
 }
 
-.transfer_school_header_select {
-  height: 9rem;
-  width: 100%;
+.reservation-records-header-select {
+  height: 8.3rem;
 }
-.transfer_school_header_button_add {
-  height: 9rem;
-  width: 100%;
+.reservation-records-header-button-add {
+  height: 8.3rem;
 }
 
-.select-year-transfer-school {
+.select-year-reservation-records {
   margin-top: 4.2rem;
 }
-.button-add-transfer-school {
+.button-add-reservation-records {
   float: right;
-  margin-top: 3.2rem;
 }
-.transfer_school_body_group {
+
+/* BODY */
+.reservation-records-body-group {
   width: 100%;
   height: 80.9rem;
   box-shadow: 0.4rem 0.4rem 2.5rem 0.4rem rgba(154, 202, 245, 0.25);
   border-radius: 1.6rem;
   background: #ffffff;
+  margin-top: 3.4rem;
 }
-/* BODY TABLE */
-.transfer_school_body_group_header_left {
+
+.reservation-records-body-group-header-left {
   height: 6.5rem;
 }
-.transfer_school_body_group_header_left_name {
+.reservation-records-body-group-header-left-name {
   font-family: "Mulish";
   font-size: 22px;
   font-style: normal;
@@ -85,30 +85,30 @@
   margin-left: 6.4rem;
 }
 
-.transfer_school_body_group_header_right {
+.reservation-records-body-group-header-right {
   height: 6.5rem;
 }
 
-.transfer_school_body_group_header_search {
+.reservation-records-body-group-header-search {
   float: right;
   margin-top: 2.4rem;
   margin-right: 6.4rem;
 }
 
-.transfer_school_body_group_table {
+.reservation-records-body-group-table {
   width: 100%;
   height: 60rem;
   display: flex;
   margin-top: 2.4rem;
   justify-content: center;
 }
-.transfer_school_body_group_table_table {
+.reservation-records-body-group-table-table {
   width: 92%;
   height: 60rem;
   border: 0.01rem solid #f0f3f6;
   border-radius: 1rem;
 }
-.transfer_school_body_group_table_table .ant-table-thead > tr > th {
+.reservation-records-body-group-table-table .ant-table-thead > tr > th {
   color: #ffffff;
   text-align: center;
   background: none;
@@ -120,36 +120,28 @@
   line-height: 2.3rem;
   letter-spacing: 0.015em;
 }
-.transfer_school_body_group_table_table .ant-table-thead {
+.reservation-records-body-group-table-table .ant-table-thead {
   background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
 }
 
-.transfer_school_body_group_table_table .ant-table-thead > tr > th,
-.transfer_school_body_group_table_table .ant-table-tbody > tr > td,
-.transfer_school_body_group_table_table .ant-table tfoot > tr > th,
-.transfer_school_body_group_table_table .ant-table tfoot > tr > td {
-  padding: 1rem;
-  overflow-wrap: break-word;
-}
-.transfer_school_body_group_table_table
+.reservation-records-body-group-table-table
   .ant-table-tbody
   > tr
-  .transfer_school_body_group_table_table
-  .ant-table-row:hover
+  .reservation-records-body-group-table-table.ant-table-row:hover
   > td {
   background: #f0f3f6;
 }
-.transfer_school_body_group_table_table .ant-table-thead > tr > th,
-.transfer_school_body_group_table_table .ant-table-tbody > tr > td,
-.transfer_school_body_group_table_table .ant-table tfoot > tr > th,
-.transfer_school_body_group_table_table .ant-table tfoot > tr > td {
+.reservation-records-body-group-table-table .ant-table-thead > tr > th,
+.reservation-records-body-group-table-table .ant-table-tbody > tr > td,
+.reservation-records-body-group-table-table .ant-table tfoot > tr > th,
+.reservation-records-body-group-table-table .ant-table tfoot > tr > td {
   padding: 1rem;
   overflow-wrap: normal;
   text-align: center;
   width: 20rem;
   height: 4rem;
 }
-.transfer_school_body_group_table_table .ant-table-tbody > tr > td {
+.reservation-records-body-group-table-table .ant-table-tbody > tr > td {
   border-bottom: 1px solid #f0f0f0;
   font-family: "Source Sans Pro";
   font-size: 1.6rem;
@@ -160,14 +152,14 @@
   text-align: center;
   background: none;
 }
-.transfer_school_body_group_table_table
+.reservation-records-body-group-table-table
   table
   > thead
   > tr:first-child
   th:last-child {
   border-top-right-radius: 1rem;
 }
-.transfer_school_body_group_table_table
+.reservation-records-body-group-table-table
   table
   > thead
   > tr:first-child
@@ -175,20 +167,20 @@
   border-top-left-radius: 1rem;
 }
 
-.transfer_school_footer_group_pagination_right {
+.reservation-records-footer-group-pagination-right {
   width: 100%;
   height: 7rem;
 }
-.transfer_school_footer_group_pagination_left {
+.reservation-records-footer-group-pagination-left {
   width: 100%;
   height: 7rem;
 }
 
-.transfer_school_footer_group_pagination_txt {
+.reservation-records-footer-group-pagination-txt {
   float: left;
   padding: 5rem 0rem 0rem 6.4rem;
 }
-.transfer_school_footer_group_pagination_numb {
+.reservation-records-footer-group-pagination-numb {
   float: right;
   padding: 5rem 6.4rem 0rem 0rem;
 }
