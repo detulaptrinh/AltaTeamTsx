@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./StudentProfile.css"
+import "./StudentProfiles.css"
 import {
     Row, Col, Button, Form, Space, Input, DatePicker, InputNumber, Upload, Pagination, Table, Modal
 } from 'antd';
@@ -67,7 +67,7 @@ const columns = [
 
 
 
-function  StudentProfile() {
+function  StudentProfiles() {
 
     
         const [visible, setVisible] = useState(false);
@@ -197,4 +197,4 @@ function  StudentProfile() {
         )
     
 }
-export default StudentProfile;
+export default StudentProfiles;

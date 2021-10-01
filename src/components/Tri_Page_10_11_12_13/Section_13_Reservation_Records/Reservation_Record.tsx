@@ -1,16 +1,14 @@
-import { Breadcrumb, Row, Col, Space, Table } from 'antd';
 import React, { Component } from 'react';
-import "./Accept_Transfer_School.css"
-import { EyeOutlined } from '@ant-design/icons';
+import "./Reservation_Record.css"
+import { Breadcrumb, Row, Col, Table,Space } from 'antd';
 import SelectsYear from '../Categories/SelectsYear';
-import BtnAddSection10 from '../Categories/ButtonAdd';
+import BtnAdd from '../Categories/ButtonAdd';
+import Searchs from '../Categories/Searchs';
 import PaginationText from '../Categories/PaginationText';
 import PaginationNumber from '../Categories/PaginationsNumber';
-import Searchs from '../Categories/Searchs';
+import { EyeOutlined } from '@ant-design/icons';
 
-
-
-const dataTransferSchool = [
+const dataReservationRecords = [
     {
         key: '1',
         id: '1235A',
@@ -80,62 +78,60 @@ const columns = [
         ),
     },
 ];
-
-
-export default class TransferSchool extends Component {
+export default class ReservationRecords extends Component {
     render() {
         return (
             <>
-                <div className="transfer_school_header">
-                    <div className="transfer_school_header_breadcrumb_container">
-                        <Breadcrumb separator=">" className="transfer_school_header_breadcrumb">
+                <div className="reservation-records-header">
+                    <div className="reservation-records-header-breadcrumb-container">
+                        <Breadcrumb separator=">" className="reservation-records-header-breadcrumb">
                             <Breadcrumb.Item>Hồ sơ học viên</Breadcrumb.Item>
-                            <Breadcrumb.Item className="transfer_school_header_breadcrumb_transfer_school">Tiếp chận chuyển trường</Breadcrumb.Item>
+                            <Breadcrumb.Item className="reservation-records-header-breadcrumb-reservation">Hồ sơ bảo lưu</Breadcrumb.Item>
                         </Breadcrumb>
                     </div>
-                    <div className="transfer_school_header_select_btn_container">
+                    <div className="reservation-records-header-select-btn-container">
                         <Row>
-                            <Col span={12} className="transfer_school_header_select">
-                                <div className="select-year-transfer-school">
+                            <Col span={12} className="reservation-records-header-select">
+                                <div className="select-year-reservation-records">
                                     <SelectsYear />
                                 </div>
                             </Col>
-                            <Col span={12} className="transfer_school_header_button_add">
-                                <div className="button-add-transfer-school">
-                                    <BtnAddSection10 />
+                            <Col span={12} className="reservation-records-header-button-add">
+                                <div className="button-add-reservation-records">
+                                    <BtnAdd />
                                 </div>
                             </Col>
                         </Row>
                     </div>
-                    <div className="transfer_school_body_group">
-                        <div className="transfer_school_body_group_header">
+                    <div className="reservation-records-body-group">
+                        <div className="reservation-records-body-group-header">
                             <Row>
-                                <Col span={12} className="transfer_school_body_group_header_left">
-                                    <p className="transfer_school_body_group_header_left_name">
+                                <Col span={12} className="reservation-records-body-group-header-left">
+                                    <p className="reservation-records-body-group-header-left-name">
                                         Danh sách mã khen thưởng
                                     </p>
                                 </Col>
-                                <Col span={12} className="transfer_school_body_group_header_right">
-                                    <div className="transfer_school_body_group_header_search">
+                                <Col span={12} className="reservation-records-body-group-header-right">
+                                    <div className="reservation-records-body-group-header-search">
                                         <Searchs />
                                     </div>
                                 </Col>
                             </Row>
                         </div>
-                        <div className="transfer_school_body_group_table">
-                            <div className="transfer_school_body_group_table_table">
-                                <Table dataSource={dataTransferSchool} columns={columns} pagination={false} />
+                        <div className="reservation-records-body-group-table">
+                            <div className="reservation-records-body-group-table-table">
+                                <Table dataSource={dataReservationRecords} columns={columns} pagination={false} />
                             </div>
                         </div>
-                        <div className="transfer_school_footer_group">
+                        <div className="reservation-records-footer-group">
                             <Row>
-                                <Col span={12} className="transfer_school_footer_group_pagination_left">
-                                    <div className="transfer_school_footer_group_pagination_txt">
+                                <Col span={12} className="reservation-records-footer-group-pagination-left">
+                                    <div className="reservation-records-footer-group-pagination-txt">
                                     <PaginationText />
                                     </div>
                                 </Col>
-                                <Col span={12} className="transfer_school_footer_group_pagination_right">
-                                    <div className="transfer_school_footer_group_pagination_numb">
+                                <Col span={12} className="reservation-records-footer-group-pagination-right">
+                                    <div className="reservation-records-footer-group-pagination-numb">
                                     <PaginationNumber />
                                     </div>
                                 </Col>

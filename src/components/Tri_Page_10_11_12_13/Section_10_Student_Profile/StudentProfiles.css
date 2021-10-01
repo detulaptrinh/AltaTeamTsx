@@ -237,7 +237,7 @@
 .studentProfile-body-table-group-table-body-table .ant-table-thead > tr > th {
   color: #ffffff;
   text-align: center;
-  background: #f17f21;
+  background: none;
   border-bottom: 0em;
   font-family: "Mulish";
   font-size: 1.8rem;
@@ -247,13 +247,8 @@
   letter-spacing: 0.015em;
   text-align: left;
 }
-
-.studentProfile-body-table-group-table-body-table .ant-table-thead > tr > th,
-.studentProfile-body-table-group-table-body-table .ant-table-tbody > tr > td,
-.studentProfile-body-table-group-table-body-table .ant-table tfoot > tr > th,
-.studentProfile-body-table-group-table-body-table .ant-table tfoot > tr > td {
-  padding: 1rem;
-  overflow-wrap: break-word;
+.studentProfile-body-table-group-table-body-table .ant-table-thead{
+  background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
 }
 .studentProfile-body-table-group-table-body-table
   .ant-table-tbody
@@ -289,10 +284,18 @@
   height: 4rem;
   overflow-wrap: normal;
 }
-.studentProfile-body-table-group-table-body-table table > thead > tr:first-child th:last-child {
+.studentProfile-body-table-group-table-body-table
+  table
+  > thead
+  > tr:first-child
+  th:last-child {
   border-top-right-radius: 2rem;
 }
-.studentProfile-body-table-group-table-body-table table > thead > tr:first-child th:first-child {
+.studentProfile-body-table-group-table-body-table
+  table
+  > thead
+  > tr:first-child
+  th:first-child {
   border-top-left-radius: 2rem;
 }
 /* FOOTER BODY */
@@ -407,7 +410,7 @@
 
 /* MODEL UPDATE BONUS */
 
-.ant-modal-close-x {
+.bg-modal-update-bonus-modal-content .ant-modal-close-x {
   display: none;
   width: 56px;
   height: 56px;
@@ -637,7 +640,7 @@
   color: #ffffff;
 }
 
-.ant-modal-footer {
+.bg-modal-update-bonus .ant-modal-footer {
   padding: 10px 16px;
   text-align: right;
   background: transparent;

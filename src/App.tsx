@@ -43,13 +43,14 @@ import Xemlichthi from './components/Sesion16_Chitietlichthi/Boxlichthi'
 import Quanlybaikiemtra from './components/Sesion16_Quanlybaikiemtra/Boxbaikiemtra'
 
 // Tri
-import StudentProfile from './components/Tri_Page_10_11_12_13/Section_10_Student_Profile/StudentProfile';
+import StudentProfiles from "./components/Tri_Page_10_11_12_13/Section_10_Student_Profile/StudentProfiles";
 import TransferSchool from './components/Tri_Page_10_11_12_13/Section_12_Accept_Transfer_School/Accept_Transfer_School';
 import SelectsYear from './components/Tri_Page_10_11_12_13/Categories/SelectsYear';
 import Searchs from './components/Tri_Page_10_11_12_13/Categories/Searchs';
 import PaginationText from './components/Tri_Page_10_11_12_13/Categories/PaginationText';
 import PaginationNumber from './components/Tri_Page_10_11_12_13/Categories/PaginationsNumber';
-        
+import ReservationRecords from "./components/Tri_Page_10_11_12_13/Section_13_Reservation_Records/Reservation_Record";
+import BtnAdd from "./components/Tri_Page_10_11_12_13/Categories/ButtonAdd";
 // Long
 import CourseSetting from "./components/Section22_CourseSetting/CourseSetting";
 import TrainingLevelsManage from "./components/Section23_TrainingLevelsManage/TrainingLevelsManage";
@@ -82,22 +83,24 @@ export default class App extends Component {
                                 <Route path="/profile-process" component={WorkingProcess} />
 
                                 {/* kien */}
-                                <Route path="/danhsach" component={Danhsachchude}/>
-                                <Route path="/phancong" component={Phancong}/>
-                                <Route path="/chitiet" component={Chitietbaikiemtra}/>
-                                <Route path="/caidat" component={Caidathethong}/>
-                                <Route path="/cauhinh" component={Cauhinh}/>
-                                <Route path="/lichthi" component={Xemlichthi}/>
-                                <Route path="/kiemtra" component={Quanlybaikiemtra}/>
-                              
+                                <Route path="/danhsach" component={Danhsachchude} />
+                                <Route path="/phancong" component={Phancong} />
+                                <Route path="/chitiet" component={Chitietbaikiemtra} />
+                                <Route path="/caidat" component={Caidathethong} />
+                                <Route path="/cauhinh" component={Cauhinh} />
+                                <Route path="/lichthi" component={Xemlichthi} />
+                                <Route path="/kiemtra" component={Quanlybaikiemtra} />
+
                                 {/* tri */}
-                                <Route path="/studentProfile" component={StudentProfile} />
-                                <Route path="/transferSchool" component={TransferSchool} />
-                                <Route path="/SelectsYear" component={SelectsYear} />
+                                <Route path="/studentprofiles" component={StudentProfiles} />
+                                <Route path="/transferschool" component={TransferSchool} />
+                                <Route path="/reservationrecords" component={ReservationRecords} />
+                                <Route path="/selectsyear" component={SelectsYear} />
+                                <Route path="/btnadd" component={BtnAdd} />
                                 <Route path="/searchs" component={Searchs} />
                                 <Route path="/pagitxt" component={PaginationText} />
                                 <Route path="/paginumber" component={PaginationNumber} />
-                              
+
                                 {/* huy */}
                                 <Route path="/boxdatasbj" component={SubjectList} />
                                 <Route path="/boxdataclass" component={ClassList} />
@@ -113,16 +116,16 @@ export default class App extends Component {
                                 <Route path="/edit-student-information" component={EditStudentInformation}></Route>
                                 {/* 9.2 kết quả học tập */}
                                 <Route path="/study-process" component={StudyProcess} />
-                              
+
                                 {/* Long */}
                                 <Route
-                                  path="/DeclareSchoolYear"
-                                  component={DeclareSchoolYear}
+                                    path="/DeclareSchoolYear"
+                                    component={DeclareSchoolYear}
                                 />
                                 <Route path="/CourseSetting" component={CourseSetting} />
                                 <Route
-                                  path="/TrainingLevelsManage"
-                                  component={TrainingLevelsManage}
+                                    path="/TrainingLevelsManage"
+                                    component={TrainingLevelsManage}
                                 />
                             </div>
                         </main>
