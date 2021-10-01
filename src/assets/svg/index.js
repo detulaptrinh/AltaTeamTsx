@@ -16,6 +16,7 @@ import IconPlus from "./plus.svg";
 import IconList from "./listicon.svg";
 import IconEllipse2 from "./ellipsecauhinh2.svg";
 import IconEllipse3 from "./ellipsecauhinh3.svg";
+import IconDate from "./icondate.svg";
 
 export {
     IconBag,
@@ -36,4 +37,5 @@ export {
     IconList,
     IconEllipse2,
     IconEllipse3,
+    IconDate,
 }

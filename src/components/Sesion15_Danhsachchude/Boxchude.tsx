@@ -4,6 +4,12 @@ import { Row, Col, Button,Select,Table, Radio,Divider,Input, Pagination, InputNu
 import { FormOutlined,DeleteOutlined, ContainerOutlined } from '@ant-design/icons';
 import Title from './Title'
 import Buttonnn from './Button'
+import {
+  IconEdit,
+  IconTrash,
+ 
+
+} from "../../assets/svg";
 
 //   tao bang
 const columns =  [ 
@@ -100,8 +106,8 @@ const columns =  [
           
             <Col className="sesion15__box2">
                   <div className="sesion15__divicon">
-                  <FormOutlined className="sesion15__iconform" style={{ fontSize: '32px' , color: '#FF7506' }}/> 
-                  <DeleteOutlined className="sesion15__icondelet" style={{ fontSize: '32px' , color: '#FF7506' }}/>
+                     <img className="sesion15__iconform" src={IconEdit}/>
+                     <img className="sesion15__icondelet" src={IconTrash}/>
                   </div>
                   <p className="sesion15__text1">Danh sách chủ đề</p>
                  
