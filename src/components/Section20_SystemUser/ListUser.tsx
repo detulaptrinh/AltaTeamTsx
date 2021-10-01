@@ -127,6 +127,7 @@ class ListUser extends Component {
     render(){
         return(
         <>
+        <div className="section20">
             <div className="Section20__Title">
                 <Row>
                     <Col span={24}>
@@ -227,6 +228,7 @@ class ListUser extends Component {
                     </Col>
                 </Col>
             </div>
+        </div>
         </>
     )
     /* Modal */

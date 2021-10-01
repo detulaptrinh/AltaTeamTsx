@@ -25,6 +25,7 @@ class TabEdit extends Component {
   render(){
       return (
           <>
+          <div className="section19">
             <div className="section19__title">
                 <Row>
                     <Col span={24}>
@@ -266,6 +267,7 @@ class TabEdit extends Component {
             </Col>
           </Row>
         </Card>
+      </div>
       </div>
     </>
   )
