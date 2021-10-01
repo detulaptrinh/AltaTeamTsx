@@ -1,31 +1,31 @@
 /* modal */
-.ant-modal-content>button {
+/* .section-9-modal-delete .ant-modal-content>button {
     display: none;
 }
 
-.ant-modal-footer {
+.section-9-modal-delete .ant-modal-footer {
     border: none;
     text-align: center;
 }
 
-.ant-modal-footer>button {
+.section-9-modal-delete .ant-modal-footer>button {
     width: 160px;
     height: 52px;
     padding: 0;
     border-radius: 8px;
 }
 
-.ant-modal-footer {
+.section-9-modal-delete .ant-modal-footer {
     padding: 0 40px;
     padding-bottom: 40px;
 }
 
-.ant-modal-footer .ant-btn+.ant-btn:not(.ant-dropdown-trigger) {
+.section-9-modal-delete .ant-modal-footer .ant-btn+.ant-btn:not(.ant-dropdown-trigger) {
     margin-bottom: 0;
     margin-left: 32px;
 }
 
-.ant-modal-footer>.ant-btn {
+.section-9-modal-delete .ant-modal-footer>.ant-btn {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
@@ -36,24 +36,24 @@
     background: #F2F2F2;
 }
 
-.ant-modal-footer>.ant-btn-primary {
+.section-9-modal-delete .ant-modal-footer>.ant-btn-primary {
     background: #FF7506;
     color: #FFFFFF;
 }
 
-.ant-modal-content {
+.section-9-modal-delete .ant-modal-content {
     margin: 0 auto;
     width: 435px;
     min-height: 243px;
     border-radius: 8px;
 }
 
-.ant-modal-body {
+.section-9-modal-delete .ant-modal-body {
     padding: 0 40px;
     margin: 0 auto;
 }
 
-.ant-modal-body h3 {
+.section-9-modal-delete .ant-modal-body h3 {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
@@ -66,7 +66,7 @@
     margin: 0;
 }
 
-.ant-modal-body p {
+.section-9-modal-delete .ant-modal-body p {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: normal;
@@ -74,4 +74,4 @@
     color: #373839;
     padding-bottom: 32px;
     margin: 0;
-}
+} */

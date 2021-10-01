@@ -1,21 +1,26 @@
-.section-9-1 .title {
+
+.section-9-1.ant-row {
+    margin-bottom: 0.1rem;
+}
+
+.section-9-1 .section-9-1-title {
     height: 6rem;
     line-height: 6rem;
     letter-spacing: 0.015em;
     display: flex;
-
+    
     font-family: "Mulish";
     font-style: normal;
     font-weight: 800;
 }
 
-.section-9-1 .title span {
+.section-9-1 .section-9-1-title>span {
     font-size: 1.8rem;
     /* Inactivated Icon */
     color: #C9C4C0;
 }
 
-.section-9-1 .title i {
+.section-9-1 .section-9-1-title>i {
     font-size: 3rem;
     color: #FF7506;
     height: 6rem;
@@ -23,25 +28,25 @@
     padding: 0 1rem;
 }
 
-.section-9-1 .title .title-info-student {
+.section-9-1 .section-9-1-title>.title-info-student {
     font-size: 4.8rem;
     /* /Orange / 7 */
     color: #373839;
 }
 
 /* switch tab */
-.section-9-1 .switch-tab {
+.section-9-1 .section-9-1-switch-tab {
     width: 100%;
     height: 5.2rem;
 }
 
 /* left-tab */
-.section-9-1 .left-tab {
+.section-9-1 .section-9-1-switch-tab-left {
     width: 100%;
     height: auto;
 }
 
-.section-9-1 .left-tab-box {
+.section-9-1 .section-9-1-switch-tab-left>.left-tab-box {
     margin-top: 0.8rem;
     width: 47.1rem;
     height: 4.8rem;
@@ -57,7 +62,7 @@
     position: relative;
 }
 
-.section-9-1 .left-tab-box-general-information {
+.section-9-1 .section-9-1-switch-tab-left .left-tab-box>.left-tab-box-general-information {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -76,9 +81,8 @@
     border-radius: 2.4rem;
 }
 
-.section-9-1 .left-tab-box-general-information a {
+.section-9-1 .section-9-1-switch-tab-left .left-tab-box>.left-tab-box-general-information>a {
     /* LMS Student / Sub-header */
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
@@ -87,11 +91,10 @@
     /* identical to box height */
 
     letter-spacing: 0.015em;
-
     color: #FFFFFF;
 }
 
-.section-9-1 .left-tab-box-study-process {
+.section-9-1 .section-9-1-switch-tab-left .left-tab-box>.left-tab-box-study-process {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -102,7 +105,7 @@
     margin-left: 22.5rem;
 }
 
-.section-9-1 .left-tab-box-study-process a {
+.section-9-1 .section-9-1-switch-tab-left .left-tab-box>.left-tab-box-study-process>a {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 600;
@@ -113,35 +116,34 @@
 
     /* /Orange / 7 */
     color: #373839;
-
     opacity: 0.5;
 }
 
 /* right btn */
-.section-9-1 .right-btn {
+.section-9-1 .section-9-1-switch-tab-right-btn {
     width: 100%;
     height: 5.2rem;
 }
 
-.section-9-1 .right-btn-box {
+.section-9-1 .section-9-1-switch-tab-right-btn>.right-btn-box {
     float: right;
 }
 
-.section-9-1 .right-btn .btn-delete {
+.section-9-1 .section-9-1-switch-tab-right-btn>.right-btn-box>.btn-delete {
     width: 5.5rem;
     height: 5.2rem;
     border-right: 0.1rem solid #C9C4C0;
     float: left;
 }
 
-.section-9-1 .right-btn .btn-delete i {
+.section-9-1 .section-9-1-switch-tab-right-btn>.right-btn-box>.btn-delete i {
     color: #FF7506;
     font-size: 3.5rem;
     margin-top: 0.7rem;
 }
 
 /* btn */
-.section-9-1 .btn-bk-ffffff {
+.section-9-1 .section-9-1-switch-tab-right-btn>.right-btn-box>.btn-bk-ffffff {
     width: 17.6rem;
     height: 5.2rem;
     line-height: 5.2rem;
@@ -157,7 +159,7 @@
     font-size: 1.8rem;
 }
 
-.section-9-1 .btn-bk-ff7506 {
+.section-9-1 .section-9-1-switch-tab-right-btn>.right-btn-box>.btn-bk-ff7506 {
     width: 17.6rem;
     height: 5.2rem;
     line-height: 5.2rem;
@@ -174,7 +176,7 @@
     font-size: 1.8rem;
 }
 
-.section-9-1 .right-btn .btn-excel {
+.section-9-1 .section-9-1-switch-tab-right-btn>.right-btn-box>.btn-excel {
     width: 17.6rem;
     height: 5.2rem;
     margin-left: 2rem;
@@ -182,7 +184,7 @@
     float: left;
 }
 
-.section-9-1 .right-btn .btn-edit {
+.section-9-1 .section-9-1-switch-tab-right-btn>.right-btn-box>.btn-edit {
     width: 17.6rem;
     height: 5.2rem;
     margin-left: 2rem;
@@ -190,12 +192,12 @@
 }
 
 /* card */
-.section-9-1 .site-card-border-less-wrapper {
+.section-9-1 .section-9-1-site-card-border-less-wrapper {
     margin-top: 2vh;
     box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
 }
 
-.section-9-1 .ant-card .ant-card-head {
+.section-9-1 .section-9-1-site-card-border-less-wrapper>.ant-card>.ant-card-head {
     background: #CC5C00;
     padding: 0 62px;
     color: #FFFFFF;
@@ -206,12 +208,12 @@
     font-size: 18px;
 }
 
-.section-9-1 .ant-card .ant-card-body {
+.section-9-1 .section-9-1-site-card-border-less-wrapper>.ant-card>.ant-card-body {
     padding: 2.4rem 6.2rem;
 }
 
 /* avatar */
-.section-9-1 .ant-col img {
+.section-9-1 .section-9-1-site-card-border-less-wrapper>.ant-col>img {
     width: 23.2rem;
     height: 23.2rem;
 }
