@@ -5,8 +5,10 @@ import { FormOutlined, PlusOutlined} from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col, } from 'antd';
 import { Card } from 'antd';
-import image1 from '../../assets/images/frame19.png'
-import image2 from '../../assets/images/frame613.png'
+import {
+  AvatarSchool,
+  Avatar613,
+} from "../../assets/images"
 import {
   Form,
   Input,
@@ -85,7 +87,7 @@ function Box() {
             <Col span={24}>
               <div className="tab__content">
                 <Col span={5}><div className="tab__content__image">
-                  <img src={image1} />
+                  <img src={AvatarSchool} />
                 </div>
                 </Col>
 
@@ -179,7 +181,7 @@ function Box() {
               <div className="tab__content2">
                 <Col span={5}>
                   <div className="tab__content__image2">
-                    <img src={image2} />
+                    <img src={Avatar613} />
                   </div>
                 </Col>
 

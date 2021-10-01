@@ -5,8 +5,10 @@ import { FormOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
-import image1 from '../../assets/images/frame19.png'
-import image2 from '../../assets/images/frame613.png'
+import {
+  AvatarSchool,
+  Avatar613,
+} from "../../assets/images"
 import {
   Form,
   Input,
@@ -68,7 +70,7 @@ class TabEdit extends Component {
           <Row className="row1">
             <Col span={24}><div className="tabedit__content">
               <Col span={5}><div className="tabedit__content__image">
-                <img src={image1} />
+                <img src={AvatarSchool} />
               </div>
               </Col>
 
@@ -166,7 +168,7 @@ class TabEdit extends Component {
             <Col span={24}><div className="tabedit__content2">
               <Col span={5}>
                 <div className="tabedit__content__image2">
-                  <img src={image2} />
+                  <img src={Avatar613} />
                 </div>
               </Col>
 
@@ -221,7 +223,7 @@ class TabEdit extends Component {
             <Col span={24}><div className="tabedit__content2">
               <Col span={5}>
                 <div className="tabedit__content__image3">
-                  <img src={image2} />
+                  <img src={Avatar613} />
                 </div>
               </Col>
 
