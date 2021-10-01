@@ -73,10 +73,22 @@
   top: 11px;
 }
 
-.TrainingLevelsManage__btnAdd {
+.TrainingLevelsManage__select.ant-select-single:not(.ant-select-customize-input)
+  .ant-select-selector {
+  height: 32px;
+  border: none;
+}
+
+.TrainingLevelsManage__select.ant-select-single.ant-select-show-arrow
+  .ant-select-selection-item {
+  padding: 0;
+}
+
+.TrainingLevelsManage__btnAdd.ant-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   width: 176px;
   height: 52px;
   background: #ff7506;
@@ -91,14 +103,14 @@
   color: #ffffff;
 }
 
-.TrainingLevelsManage__btnAdd:hover,
-.TrainingLevelsManage__btnAdd:focus {
+.TrainingLevelsManage__btnAdd.ant-btn:hover,
+.TrainingLevelsManage__btnAdd.ant-btn:focus {
   border-color: #ff7506;
   background-color: #ff7506;
   color: #ffffff;
 }
 
-.TrainingLevelsManage__btnAdd > img {
+.TrainingLevelsManage__btnAdd.ant-btn > img {
   margin-right: 1.3rem;
 }
 
@@ -157,6 +169,7 @@
   font-size: 1.4rem;
   line-height: 1.8rem;
   color: #373839;
+  height: auto;
 }
 
 .TrainingLevelsManage__table.ant-table-wrapper {
@@ -233,6 +246,16 @@
 
 .TrainingLevelsManage__table .btnEdit {
   margin-right: 2rem;
+}
+
+.TrainingLevelsManage__table .ant-table-column-title,
+.TrainingLevelsManage__table .ant-table-thead > tr > th:nth-child(2),
+.TrainingLevelsManage__table .ant-table-tbody > tr > td:nth-child(2) {
+  text-align: left;
+}
+
+.TrainingLevelsManage__table .ant-table-cell {
+  width: auto !important;
 }
 
 .TrainingLevelsManage-content__foot {
@@ -340,6 +363,8 @@
 }
 
 .TrainingLevelsManage-modal .ant-modal-footer {
+  display: flex;
+  justify-content: center;
   border-top: none;
   text-align: center;
   padding: 0;
@@ -388,6 +413,7 @@
   line-height: 130%;
   color: #373839;
   margin-bottom: 3.2rem;
+  padding-bottom: 0;
 }
 
 .TrainingLevelsManage-modal-add-edit.ant-modal {
@@ -395,6 +421,8 @@
 }
 
 .TrainingLevelsManage-modal-add-edit .ant-modal-content {
+  width: auto;
+  height: auto;
   padding: 2.4rem 6.4rem 4rem;
   background: #ffffff;
   border-radius: 16px;
@@ -431,6 +459,7 @@
 }
 
 .TrainingLevelsManage__form .TrainingLevelsManage__form-input {
+  width: 100%;
   height: 40px;
   background: #f2f2f2;
   border-radius: 8px;
@@ -507,6 +536,7 @@
 }
 
 .TrainingLevelsManage__form .TrainingLevelsManage__form-textarea {
+  width: 100%;
   min-height: 120px;
   background: #f2f2f2;
   border-radius: 8px;
@@ -521,6 +551,8 @@
 }
 
 .TrainingLevelsManage__form .TrainingLevelsManage__form-btns {
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin-top: 3rem;
 }
