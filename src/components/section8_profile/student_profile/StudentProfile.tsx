@@ -2,12 +2,13 @@ import React, { Component, useState } from 'react';
 import ReactDOM from 'react-dom';
 import './StudentProfile.css'
 import { Select, Table, Tag, Modal, Form, Input, Pagination, InputNumber, Menu, Dropdown, Checkbox, Col, Row } from 'antd';
-import unIcon2 from '../../../assets/boxdata/unIcon2.svg'
-import plusIcon from '../../../assets/boxdata/plusIcon.svg'
-import viewIcon from '../../../assets/boxdata/viewIcon.svg'
-import editIcon from '../../../assets/boxdata/editIcon.svg'
-import trashIcon from '../../../assets/boxdata/trashIcon.svg'
-import updateIcon from '../../../assets/boxdata/updateIcon.svg'
+import {
+    IconPlus,
+    IconTrash,
+    IconUn2,
+    IconUpdate,
+    IconEyesOr,
+  } from "../../../assets/svg/index";
 
 const { Option } = Select;
 
@@ -71,9 +72,9 @@ const data = [
         class: '6A',
         status: 'Đang theo học',
         // status: <button className="status-btn">Đang theo học</button>,
-        btnview: <img src={viewIcon} alt="" />,
-        btnupdate: <img src={updateIcon} alt="" />,
-        btntrash: <img src={trashIcon} alt="" />,
+        btnview: <img src={IconEyesOr} alt="" />,
+        btnupdate: <img src={IconUpdate} alt="" />,
+        btntrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -85,9 +86,9 @@ const data = [
         class: '6A',
         status: 'Đã chuyển lớp',
         // status: <button className="status-btn">Đang theo học</button>,
-        btnview: <img src={viewIcon} alt="" />,
-        btnupdate: <img src={updateIcon} alt="" />,
-        btntrash: <img src={trashIcon} alt="" />,
+        btnview: <img src={IconEyesOr} alt="" />,
+        btnupdate: <img src={IconUpdate} alt="" />,
+        btntrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -99,9 +100,9 @@ const data = [
         class: '6A',
         status: 'Đã tốt nghiệp',
         // status: <button className="status-btn">Đang theo học</button>,
-        btnview: <img src={viewIcon} alt="" />,
-        btnupdate: <img src={updateIcon} alt="" />,
-        btntrash: <img src={trashIcon} alt="" />,
+        btnview: <img src={IconEyesOr} alt="" />,
+        btnupdate: <img src={IconUpdate} alt="" />,
+        btntrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -113,9 +114,9 @@ const data = [
         class: '6A',
         status: 'Đã chuyển trường',
         // status: <button className="status-btn">Đang theo học</button>,
-        btnview: <img src={viewIcon} alt="" />,
-        btnupdate: <img src={updateIcon} alt="" />,
-        btntrash: <img src={trashIcon} alt="" />,
+        btnview: <img src={IconEyesOr} alt="" />,
+        btnupdate: <img src={IconUpdate} alt="" />,
+        btntrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -127,9 +128,9 @@ const data = [
         class: '6A',
         status: 'Đang theo học',
         // status: <button className="status-btn">Đang theo học</button>,
-        btnview: <img src={viewIcon} alt="" />,
-        btnupdate: <img src={updateIcon} alt="" />,
-        btntrash: <img src={trashIcon} alt="" />,
+        btnview: <img src={IconEyesOr} alt="" />,
+        btnupdate: <img src={IconUpdate} alt="" />,
+        btntrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -141,9 +142,9 @@ const data = [
         class: '6A',
         status: 'Đang theo học',
         // status: <button className="status-btn">Đang theo học</button>,
-        btnview: <img src={viewIcon} alt="" />,
-        btnupdate: <img src={updateIcon} alt="" />,
-        btntrash: <img src={trashIcon} alt="" />,
+        btnview: <img src={IconEyesOr} alt="" />,
+        btnupdate: <img src={IconUpdate} alt="" />,
+        btntrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -155,9 +156,9 @@ const data = [
         class: '6A',
         status: 'Đang theo học',
         // status: <button className="status-btn">Đang theo học</button>,
-        btnview: <img src={viewIcon} alt="" />,
-        btnupdate: <img src={updateIcon} alt="" />,
-        btntrash: <img src={trashIcon} alt="" />,
+        btnview: <img src={IconEyesOr} alt="" />,
+        btnupdate: <img src={IconUpdate} alt="" />,
+        btntrash: <img src={IconTrash} alt="" />,
     },
 ]; // 
 
@@ -194,13 +195,13 @@ class ProfileStudent extends Component {
                         </Col>
                         <Col className="box__btn-button" span={6}>
                             <button className="box__btn-button_del">
-                                <img className="box__btn-button_del-icon" src={unIcon2} alt="" />
+                                <img className="box__btn-button_del-icon" src={IconUn2} alt="" />
                             </button>
                             <button className="box__btn-button_export">
                                 Xuất File
                             </button>
                             <button className="box__btn-button_cre">
-                                <img className="box__btn-button_cre-icon" src={plusIcon} alt="" />
+                                <img className="box__btn-button_cre-icon" src={IconPlus} alt="" />
                                 Thêm mới
                             </button>
                         </Col>

@@ -130,8 +130,6 @@ export default class App extends Component {
                             </div>
                         </main>
                     </div>
-
-
                 </Router>
             </div>
         )

@@ -1,12 +1,21 @@
 import React, { Component, useState } from 'react';
 import ReactDOM from 'react-dom';
 import './SubjectList.css'
-import { Select, Table, Modal, Form, Input, Pagination, InputNumber } from 'antd';
-import unIcon from '../../assets/boxdata/unIcon.svg'
-import plusIcon from '../../assets/boxdata/plusIcon.svg'
-import listIcon from '../../assets/boxdata/listIcon.svg'
-import editIcon from '../../assets/boxdata/editIcon.svg'
-import trashIcon from '../../assets/boxdata/trashIcon.svg'
+import { 
+    Select, 
+    Table, 
+    Modal, 
+    Form, 
+    Input, 
+    Pagination,
+    InputNumber } from 'antd';
+import {
+    IconPlus,
+    IconEdit,
+    IconTrash,
+    IconUn,
+  } from "../../assets/svg/index";
+  
 
 const { Option } = Select;
 
@@ -43,7 +52,7 @@ const columns = [
     },
 ];
 
-const data = [
+const data: DataType[] = [
     {
         key: '1',
         name: 'KHTN',
@@ -51,8 +60,8 @@ const data = [
         type: 'Môn bắt buộc',
         hk1: '4',
         hk2: '4',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '2',
@@ -61,8 +70,8 @@ const data = [
         type: 'Môn tự chọn',
         hk1: '4',
         hk2: '4',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '3',
@@ -71,8 +80,8 @@ const data = [
         type: 'Môn bắt buộc',
         hk1: '4',
         hk2: '4',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '4',
@@ -81,8 +90,8 @@ const data = [
         type: 'Môn bắt buộc',
         hk1: '4',
         hk2: '4',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '5',
@@ -91,8 +100,8 @@ const data = [
         type: 'Môn tự chọn',
         hk1: '4',
         hk2: '4',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '6',
@@ -101,8 +110,8 @@ const data = [
         type: 'Môn bắc buộc',
         hk1: '4',
         hk2: '4',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '7',
@@ -111,47 +120,49 @@ const data = [
         type: 'Môn tự chọn',
         hk1: '4',
         hk2: '4',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
 ]; // rowSelection object indicates the need for row selection
 
 const rowSelection = {
     onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
-        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+      console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
     },
-};
+    getCheckboxProps: (record: DataType) => ({
+      disabled: record.name === 'Disabled User', // Column configuration not to be checked
+      name: record.name,
+    }),
+  };
 
-interface DataType {
+  interface DataType {
     key: React.Key;
-    id: string;
     name: string;
-    date: string;
-    sex: string;
-    object: string;
-    position: string;
-    status: string;
-    buttonview: string;
-    buttonreload: string;
-    buttondelete: string;
-}
+    title: string;
+    type: string;
+    hk1: string;
+    hk2: string;
+    buttonedit: object;
+    buttontrash: object;
+  }
 
-class SubjectList extends Component {
-    render() {
-        // const [visible, setVisible] = useState(false);
-        // const [isModalVisible, setIsModalVisible] = useState(false);
 
-        // const showModal = () => {
-        //     setIsModalVisible(true);
-        // };
+export default function SubjectList()  {
+        const [selectionType, setSelectionType] = useState<'checkbox' | 'radio'>('checkbox');
+        const [visible, setVisible] = useState(false);
+        const [isModalVisible, setIsModalVisible] = useState(false);
 
-        // const handleOk = () => {
-        //     setIsModalVisible(false);
-        // };
+        const showModal = () => {
+            setIsModalVisible(true);
+        };
 
-        // const handleCancel = () => {
-        //     setIsModalVisible(false);
-        // }
+        const handleOk = () => {
+            setIsModalVisible(false);
+        };
+
+        const handleCancel = () => {
+            setIsModalVisible(false);
+        }
 
         return (
             <>
@@ -187,7 +198,7 @@ class SubjectList extends Component {
                             <button className="box__chb-btn-clk">Lớp học</button>
                             <button className="box__chb-btn-clk">Loại điểm</button>
                         </div>
-                    </div>
+                    </div> 
                     <div className="box__btn">
                         <div className="box__btn-block">
                             <p className="box__btn-block-title">Khối</p>
@@ -206,23 +217,22 @@ class SubjectList extends Component {
                             </Select>
                         </div>
                         <div className="box__btn-button">
-                            <button className="box__btn-button_del" >
-                                <img className="box__btn-button_del-icon" src={unIcon} alt="" />
+                            <button className="box__btn-button_del"  onClick={showModal} >
+                                <img className="box__btn-button_del-icon" src={IconUn} alt="" />
                             </button>
-                            {/* onClick={showModal} */}
-                            {/*   <Modal className="box__btn-del" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                              <Modal className="box__btn-del" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                                     <h1>Xóa</h1>
                                     <p>Xác nhận muốn xóa những thông tin đã chọn? Sau khi xóa sẽ không thể hoàn tác.</p>
                                     <button className="box__btn-del-cancel" onClick={handleCancel}>Hủy</button>
                                     <button className="box__btn-del-acp" onClick={handleOk}>Lưu</button>
-                                </Modal> */}
-                            <button className="box__btn-button_cre" >
-                                <img className="box__btn-button_cre-icon" src={plusIcon} alt="" />
-                                Thêm mới
+                                </Modal>
+                                
+                            <button className="box__btn-button_cre"  onClick={() => setVisible(true)}>
+                                <img className="box__btn-button_cre-icon" src={IconPlus} alt="" />
+                                Thêm mới 
                             </button>
-                            {/* onClick={() => setVisible(true)} */}
-                            {/*   <Modal
-                                    className="box__btn-cre"
+                              <Modal
+                                    className="section-5"
                                     centered
                                     visible={visible}
                                     onOk={() => setVisible(false)}
@@ -259,7 +269,7 @@ class SubjectList extends Component {
                                         <button className="box__btn-button-cancel" onClick={() => setVisible(false)}>Hủy</button>
                                         <button className="box__btn-button-save" onClick={() => setVisible(false)}>Lưu</button>
                                     </Form>
-                                </Modal>*/}
+                                </Modal>
                         </div>
                     </div>
                     <div className="box__sbj">
@@ -269,7 +279,10 @@ class SubjectList extends Component {
                         </div>
                         <div className="box__sbj-tbl">
                             <Table
-                                // rowSelection={rowSelection}
+                                rowSelection={{
+                                    type: selectionType,
+                                    ...rowSelection,
+                                  }}
                                 columns={columns}
                                 dataSource={data}
                                 pagination={false}
@@ -294,6 +307,4 @@ class SubjectList extends Component {
             </>
         );
     }
-}
 
-export default SubjectList;

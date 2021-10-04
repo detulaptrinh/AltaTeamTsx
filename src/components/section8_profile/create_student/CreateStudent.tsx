@@ -1,19 +1,13 @@
 import React, { Component } from 'react'
-
-// css
 import './CreateStudent.css';
-
-// icon antd
 import { Row, Col, Card, Input, Checkbox, Select, DatePicker } from 'antd';
-
-// avatar
-import importAvatar from '../../../assets/boxdata/importAvatar.png';
-import editAvatar from '../../../assets/boxdata/editAvatar.png';
+import {
+    importAvatar,
+    editAvatar,
+  } from "../../../assets/images/index";
 
 const style = { height: '16px', background: '#F2F2F2' };
-
-const { Option } = Select; //select
-
+const { Option } = Select;
 export default class CreateStudent extends Component {
     render() {
         return (
