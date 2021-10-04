@@ -4,13 +4,19 @@ import React, { Component } from 'react'
 import './StudyProcess.css';
 
 // icon antd
-import { Row, Col, Card, Collapse, Space } from 'antd';
+import { Row, Col, Card, Collapse, Space, Select } from 'antd';
 import LearningOutcomes from './learning_outcomes/LearningOutcomes';
 import DanhSachKhenThuong from './danh_sach_khen_thuong/DanhSachKhenThuong';
 
 const { Panel } = Collapse;
 
 const style = { borderTopLeftRadius: '0.8rem' };
+
+const { Option } = Select;
+
+function handleChange(value) {
+  console.log(`selected ${value}`);
+}
 
 export default class StudyProcess extends Component {
     render() {
@@ -37,6 +43,16 @@ export default class StudyProcess extends Component {
                             <div className="left-tab-box-study-process">
                                 <a href="">Quá trình học tập</a>
                             </div>
+                        </div>
+                        <div className="left-tab-select">
+                            <Select defaultValue="2020" onChange={handleChange}>
+                                <Option value="2020">2020-2021</Option>
+                                <Option value="2021">2021-2022</Option>
+                            </Select>
+                            <Select defaultValue="lucy" onChange={handleChange}>
+                                <Option value="jack">Jack</Option>
+                                <Option value="lucy">Lucy</Option>
+                            </Select>
                         </div>
                     </Col>
                     <Col className="right-btn" span={12}>

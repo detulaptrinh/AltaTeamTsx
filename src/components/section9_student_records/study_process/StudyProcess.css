@@ -42,6 +42,7 @@
     height: auto;
 }
 
+/* left tab box */
 .section-9-2 .left-tab-box {
     margin-top: 0.8rem;
     width: 47.1rem;
@@ -54,6 +55,7 @@
     /* Grey/5 */
     background: #F2F2F2;
     border-radius: 3.2rem;
+    float: left;
 
     position: relative;
 }
@@ -75,14 +77,12 @@
 
 .section-9-2 .left-tab-box-general-information a {
     /* LMS Student / Sub-header */
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 800;
     font-size: 1.8rem;
     line-height: 2.3rem;
     /* identical to box height */
-
     letter-spacing: 0.015em;
     color: #373839;
     opacity: 0.5;
@@ -95,7 +95,6 @@
     align-items: center;
     width: 22.7rem;
     height: 3.6rem;
-
     margin-left: 22.5rem;
 
     /* /Orange / 7 */
@@ -108,12 +107,39 @@
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
-
     /* identical to box height */
     letter-spacing: 0.015em;
-
     /* /Orange / 7 */
     color: #FFFFFF;
+}
+
+/* left tab select */
+.section-9-2 .left-tab-select {
+    height: 4.8rem;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.section-9-2 .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid #373839;
+    border-radius: 4px;
+}
+
+.section-9-2 .ant-select-single.ant-select-show-arrow .ant-select-selection-search {
+    right: 30px;
+    border-right: 1px solid #373839;
+}
+
+.section-9-2 .left-tab-select .ant-select {
+    width: 13.6rem;
+    height: 3.2rem;
+    margin-left: 1.45rem;
+}
+
+.section-9-2 .left-tab-select .ant-select:first-child {
+    margin-left: 2.4rem;
 }
 
 /* right btn */
@@ -265,4 +291,3 @@
 .section-9-2 .ant-collapse-content>.ant-collapse-content-box {
     padding: 2.6rem 6.4rem;
 }
-

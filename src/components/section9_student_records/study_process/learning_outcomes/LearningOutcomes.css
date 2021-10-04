@@ -31,6 +31,14 @@
     color: #FFFFFF;
 }
 
+.section-9-2 .box .border-top-left-radius-8 .ant-card-head-wrapper {
+    border-top-left-radius: 0.8rem;
+}
+
+.section-9-2 .box .border-top-right-radius-8 .ant-card-head-wrapper {
+    border-top-right-radius: 0.8rem;
+}
+
 .section-9-2 .box .ant-card-body {
     padding: 1.3rem 4rem;
     border-right: 0.1rem solid #C9C4C0;
@@ -61,7 +69,7 @@
     margin: 0;
 }
 
-.section-9-2 .switch-semester  {
+.section-9-2 .switch-semester {
     margin-bottom: 1rem;
 }
 
@@ -95,11 +103,12 @@
     left: 0.6rem;
     top: 0.6rem;
 
- 
+
 
     background: #373839;
     border-radius: 2.4rem;
 }
+
 .section-9-2 .switch-semester .switch-semester-left-tab-box-general-information a {
     /* LMS Student / Sub-header */
 
@@ -112,7 +121,7 @@
 
     color: #FFFFFF;
     letter-spacing: 0.015em;
-    
+
 }
 
 .section-9-2 .switch-semester .switch-semester-left-tab-box-study-process {
