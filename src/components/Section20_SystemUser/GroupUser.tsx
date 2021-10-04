@@ -1,24 +1,16 @@
 import React, { Component } from 'react'
 import './GroupUser.css'
-import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
-import { PlusOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col, Space } from 'antd';
 import { Table } from 'antd';
-import { Card } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
 import { IconEdit, IconTrash, IconPlus} from '../../assets/svg';
 import {
-    Form,
     Input,
     Select,
-    DatePicker,
 } from 'antd';
 
 import { Modal } from 'antd';
-import { ExclamationCircleOutlined } from '@ant-design/icons';
-
-
 
 function showDeleteConfirm() {
     confirm({
