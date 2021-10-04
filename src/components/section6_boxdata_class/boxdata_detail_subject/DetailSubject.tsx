@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Breadcrumb } from 'antd';
 import './DetailSubject.css'
-import editIcon from '../../../assets/boxdata/editIcon.svg'
-import trashIcon from '../../../assets/boxdata/trashIcon.svg'
-import viewIcon from '../../../assets/boxdata/viewIcon.svg'
 import { Row, Col, Table } from 'antd';
 import 'antd/dist/antd.less'
+import {
+    IconEdit,
+    IconTrash,
+  } from "../../../assets/svg/index";
 
 const columns = [
     {
@@ -103,10 +104,7 @@ const data = [
 
 
 
-class DetailSubject extends Component {
-
-    render() {
-
+export default function DetailSubject() {
         return (
             <>
                 <div className="section-6-4">
@@ -131,10 +129,10 @@ class DetailSubject extends Component {
                             </Col>
                             <Col className="information-button" span={12}>
                                 <button className="information-button-btn" >
-                                    <img src={editIcon} alt="" />
+                                    <img src={IconEdit} alt="" />
                                 </button>
                                 <button className="information-button-btn">
-                                    <img src={trashIcon} alt="" />
+                                    <img src={IconTrash} alt="" />
                                 </button>
                             </Col>
                         </Row>
@@ -216,6 +214,3 @@ class DetailSubject extends Component {
             </>
         );
     }
-}
-
-export default DetailSubject;

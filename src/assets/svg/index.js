@@ -22,30 +22,44 @@ import IconInfo from "./infoIcon.svg";
 import IconCalendar from "./calendarIcon.svg";
 import IconChevronRight from "./chevronRightIcon.svg";
 import IconDate from "./icondate.svg";
+import IconUn from "./unIcon.svg";
+import IconUn2 from "./unIcon2.svg";
+import IconUpload from "./uploadIcon.svg";
+import IconDownload from "./downloadIcon.svg";
+import IconEyes2 from "./downloadIcon.svg";
+import IconPlusPrimary from "./PlusPrimary.svg";
+import IconUpdate from "./updateIcon.svg";
 
 export {
-  IconBag,
-  IconBook,
-  IconChart,
-  IconEllipse,
-  IconEyes,
-  IconEyesOr,
-  IconLogo,
-  IconReload,
-  IconSelect,
-  IconSettings,
-  IconTrash,
-  IconUserCircle,
-  IconUser,
-  IconEdit,
-  IconShow,
-  IconPlus,
-  IconList,
-  IconEllipse2,
-  IconEllipse3,
-  IconSearch,
-  IconInfo,
-  IconCalendar,
-  IconChevronRight,
-  IconDate,
+    IconBag,
+    IconBook,
+    IconChart,
+    IconEllipse,
+    IconEyes,
+    IconEyes2,
+    IconEyesOr,
+    IconLogo,
+    IconReload,
+    IconSelect,
+    IconSettings,
+    IconTrash,
+    IconUserCircle,
+    IconUser,
+    IconEdit,
+    IconShow,
+    IconPlus,
+    IconList,
+    IconEllipse2,
+    IconEllipse3,
+    IconSearch,
+    IconInfo,
+    IconCalendar,
+    IconChevronRight,
+    IconDate,
+    IconUn,
+    IconUn2,
+    IconUpload,
+    IconDownload,
+    IconPlusPrimary,
+    IconUpdate,
 };

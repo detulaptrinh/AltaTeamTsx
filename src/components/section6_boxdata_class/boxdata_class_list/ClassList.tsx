@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom';
 import './ClassList.css'
 import { Link } from 'react-router-dom';
 import { Select, Table, Modal, Form, Input, Pagination, InputNumber, Menu, Dropdown, Checkbox } from 'antd';
-import { DownOutlined } from "@ant-design/icons";
-import unIcon2 from '../../../assets/boxdata/unIcon2.svg'
-import plusIcon from '../../../assets/boxdata/plusIcon.svg'
-import viewIcon from '../../../assets/boxdata/viewIcon.svg'
-import editIcon from '../../../assets/boxdata/editIcon.svg'
-import trashIcon from '../../../assets/boxdata/trashIcon.svg'
-import uploadIcon from '../../../assets/boxdata/uploadIcon.svg'
-import downloadIcon from '../../../assets/boxdata/downloadIcon.svg'
-import searchIcon from '../../../assets/boxdata/searchIcon.svg'
+import {
+    IconPlus,
+    IconEdit,
+    IconTrash,
+    IconUn2,
+    IconPlusPrimary,
+    IconUpload,
+    IconDownload,
+    IconEyesOr,
+  } from "../../../assets/svg/index";
 
 const { Option } = Select;
 
@@ -43,139 +44,137 @@ const columns = [
     },
 ];
 
-const data = [
+const data: DataType[] = [
     {
         key: '1',
         name: '2020-6A',
         title: '6A',
         type: 'Nguyễn Văn A',
-        buttonview: <img src={viewIcon} alt="" />,
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonview: <img src={IconEyesOr} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '2',
         name: '2020-6B',
         title: '6B',
         type: 'Phạm Thị C',
-        buttonview: <img src={viewIcon} alt="" />,
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonview: <img src={IconEyesOr} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '3',
         name: '2020-6C',
         title: '6C',
         type: 'Trần Hoàng A',
-        buttonview: <img src={viewIcon} alt="" />,
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonview: <img src={IconEyesOr} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '4',
         name: '2020-7A',
         title: '7A',
         type: 'Charlie',
-        buttonview: <img src={viewIcon} alt="" />,
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonview: <img src={IconEyesOr} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '5',
         name: '2020-6B',
         title: '6B',
         type: 'Phạm Thị C',
-        buttonview: <img src={viewIcon} alt="" />,
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonview: <img src={IconEyesOr} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '6',
         name: '2020-7C',
         title: '7C',
         type: 'Trần Hoàng A',
-        buttonview: <img src={viewIcon} alt="" />,
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonview: <img src={IconEyesOr} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '7',
         name: '2020-8A',
         title: '8A',
         type: 'Phạm Thị C',
-        buttonview: <img src={viewIcon} alt="" />,
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonview: <img src={IconEyesOr} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
 ]; // rowSelection object indicates the need for row selection
 
 const rowSelection = {
     onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
-        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+      console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
     },
-};
+    getCheckboxProps: (record: DataType) => ({
+      disabled: record.name === 'Disabled User', // Column configuration not to be checked
+      name: record.name,
+    }),
+  };
+
 
 interface DataType {
     key: React.Key;
-    id: string;
+    title: string;
     name: string;
-    date: string;
-    sex: string;
-    object: string;
-    position: string;
-    status: string;
-    buttonview: string;
-    buttonreload: string;
-    buttondelete: string;
+    type: string;
+    buttonview: object;
+    buttonedit: object;
+    buttontrash: object;
 }
 
-class ClassList extends Component {
-    render() {
-        // const [visible, setVisible] = useState(false);
+export default function ClassList() {
+        const [visible, setVisible] = useState(false);
 
-        // const [isModalVisible, setIsModalVisible] = useState(false);
-        // const showModal = () => {
-        //     setIsModalVisible(true);
-        // };
-        // const handleOk = () => {
-        //     setIsModalVisible(false);
-        // };
-        // const handleCancel = () => {
-        //     setIsModalVisible(false);
-        // }
+        const [isModalVisible, setIsModalVisible] = useState(false);
+        const showModal = () => {
+            setIsModalVisible(true);
+        };
+        const handleOk = () => {
+            setIsModalVisible(false);
+        };
+        const handleCancel = () => {
+            setIsModalVisible(false);
+        }
 
-        // // tai file len
-        // const [uploadModalVisible, setUploadModalVisible] = useState(false);
-        // const showUploadModal = () => {
-        //     setUploadModalVisible(true);
-        // };
-        // const handleUploadOk = () => {
-        //     setUploadModalVisible(false);
-        // };
-        // const handleUploadCancel = () => {
-        //     setUploadModalVisible(false);
-        // }
-        // // nhap thu cong
-        // const [importModalVisible, setImportModalVisible] = useState(false);
-        // const showImportModal = () => {
-        //     setImportModalVisible(true);
-        // };
-        // const handleImportOk = () => {
-        //     setImportModalVisible(false);
-        // };
-        // const handleImportCancel = () => {
-        //     setImportModalVisible(false);
-        // }
+        // tai file len
+        const [uploadModalVisible, setUploadModalVisible] = useState(false);
+        const showUploadModal = () => {
+            setUploadModalVisible(true);
+        };
+        const handleUploadOk = () => {
+            setUploadModalVisible(false);
+        };
+        const handleUploadCancel = () => {
+            setUploadModalVisible(false);
+        }
+        // nhap thu cong
+        const [importModalVisible, setImportModalVisible] = useState(false);
+        const showImportModal = () => {
+            setImportModalVisible(true);
+        };
+        const handleImportOk = () => {
+            setImportModalVisible(false);
+        };
+        const handleImportCancel = () => {
+            setImportModalVisible(false);
+        }
 
         const menu = (
             <Menu className="box__btn-button_cre-open">
                 <Menu.Item key="0">
-                    <button className="box__btn-button_cre-upload" >Tải file lên</button>
-                    {/* onClick={showUploadModal} */}
+                    <button className="box__btn-button_cre-upload"  onClick={showUploadModal} >Tải file lên</button>
                 </Menu.Item>
                 <Menu.Item key="1">
-                    <button className="box__btn-button_cre-import" >Nhập thủ công</button>
-                    {/*onClick={showImportModal}  */}
+                    <button className="box__btn-button_cre-import" onClick={showImportModal}>Nhập thủ công</button>
                 </Menu.Item>
             </Menu>
         );
@@ -226,56 +225,51 @@ class ClassList extends Component {
                             </Select>
                         </div>
                         <div className="box__btn-button">
-                            <button className="box__btn-button_del">
-                                <img className="box__btn-button_del-icon" src={unIcon2} alt="" />
+                            <button className="box__btn-button_del" onClick={showModal}>
+                                <img className="box__btn-button_del-icon" src={IconUn2} alt="" />
                             </button>
-                            {/*  onClick={showModal} */}
-                            {/*  <Modal className="box__btn-del" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                             <Modal className="box__btn-del" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                                     <h1>Xóa</h1>
                                     <p>Xác nhận muốn xóa những thông tin đã chọn? Sau khi xóa sẽ không thể hoàn tác.</p>
                                     <button className="box__btn-del-cancel" onClick={handleCancel}>Hủy</button>
                                     <button className="box__btn-del-acp" onClick={handleOk}>Lưu</button>
-                                </Modal>*/}
+                                </Modal>
 
                             <button className="box__btn-button_export">
                                 Xuất File
                             </button>
-
-                            <Dropdown className="box__btn-button_cre" overlay={menu}  >
+                            <Dropdown className="box__btn-button_cre" overlay={menu} trigger={['click']} >
                                 <a className="ant-dropdown-link" >
-                                    <img className="box__btn-button_cre-icon" src={plusIcon} alt="" />
+                                    <img className="box__btn-button_cre-icon" src={IconPlus} alt="" onClick={e => e.preventDefault()} />
                                     Thêm mới
                                 </a>
-                            </Dropdown>
-                            {/* overlay={menu} trigger={['click']} */}
-                            {/* img: onClick={e => e.preventDefault()} */}
-                            {/* 
-                                <Modal className="box__btn-upload" visible={uploadModalVisible} onOk={handleUploadOk} onCancel={handleUploadCancel}>
+                            </Dropdown>             
+                                <Modal className="section-6-modal1" visible={uploadModalVisible} onOk={handleUploadOk} onCancel={handleUploadCancel}>
                                     <h1>Tải lên file</h1>
                                     <div className="box__btn-upload-fileattach">
                                         <p>Tệp đính kèm:</p>
                                         <button className="box__btn-upload-fileattach__btn1">
-                                            <img src={uploadIcon} alt="" />
+                                            <img src={IconUpload} alt="" />
                                         </button>
                                         <button className="box__btn-upload-fileattach__btn2">Chọn tệp tải lên...</button>
                                     </div>
                                     <div className="box__btn-upload-filesamp">
                                         <p>Tải file mẫu:</p>
-                                        <img src={downloadIcon} alt="" />
+                                        <img src={IconDownload} alt="" />
                                         <i>[Tải xuống file mẫu]</i>
                                     </div>
                                     <button className="box__btn-upload-cancel" onClick={handleUploadCancel}>Hủy</button>
                                     <button className="box__btn-upload-acp" onClick={handleUploadOk}>Tải lên</button>
                                 </Modal>
                             
-                                <Modal className="box__btn-import" visible={importModalVisible} onOk={handleImportOk} onCancel={handleImportCancel}>
+                                <Modal className="section-6-modal2" visible={importModalVisible} onOk={handleImportOk} onCancel={handleImportCancel}>
                                     <h1>Thêm lớp học mới</h1>
                                     <Form>
                                         <p>Thông tin chung</p>
                                         <div className="box__btn-import-school">
                                             <div className="box__btn-import-block1">
                                                 <p className="box__btn-import-school-txt1">Niên khóa:</p>
-                                                <Select className="box__btn-import_year">
+                                                <Select className="box__btn-import_year" placeholder="2020 - 2021">
                                                     <Select value="0">2020 - 2021</Select>
                                                     <Select value="1">2019 - 2020</Select>
                                                     <Select value="2">2018 - 2019</Select>
@@ -324,12 +318,16 @@ class ClassList extends Component {
                                                 </Select>
                                             </div>
                                         </div>
+                                        <button className="box__btn-import-icon-plus">
+                                            <img src={IconPlusPrimary} alt="plus_primary" />
+                                            <span>Thêm học kì mới</span>
+                                        </button>
                                     </Form>
                                     <div className="box__btn-button-import">
                                         <button className="box__btn-button-cancel" onClick={handleImportCancel}>Hủy</button>
                                         <button className="box__btn-button-save" onClick={handleImportCancel}>Lưu</button>
                                     </div>
-                                </Modal>*/}
+                                </Modal>
 
                         </div>
                     </div>
@@ -341,7 +339,7 @@ class ClassList extends Component {
                         </div>
                         <div className="box__sbj-tblclass">
                             <Table
-                                // rowSelection={rowSelection}
+                                rowSelection={rowSelection}
                                 columns={columns}
                                 dataSource={data}
                                 pagination={false}
@@ -366,6 +364,3 @@ class ClassList extends Component {
             </>
         );
     }
-}
-
-export default ClassList;

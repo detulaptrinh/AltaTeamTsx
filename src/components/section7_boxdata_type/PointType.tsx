@@ -4,14 +4,11 @@ import './PointType.css'
 import { Link } from 'react-router-dom';
 import { Select, Table, Modal, Form, Input, Pagination, InputNumber, Menu, Dropdown, Checkbox, Col, Row } from 'antd';
 import { DownOutlined } from "@ant-design/icons";
-import unIcon2 from '../../assets/boxdata/unIcon2.svg'
-import plusIcon from '../../assets/boxdata/plusIcon.svg'
-import viewIcon from '../../assets/boxdata/viewIcon.svg'
-import editIcon from '../../assets/boxdata/editIcon.svg'
-import trashIcon from '../../assets/boxdata/trashIcon.svg'
-import uploadIcon from '../../assets/boxdata/uploadIcon.svg'
-import downloadIcon from '../../assets/boxdata/downloadIcon.svg'
-import searchIcon from '../../assets/boxdata/searchIcon.svg'
+import {
+    IconPlus,
+    IconEdit,
+    IconTrash,
+  } from "../../assets/svg/index";
 
 const { Option } = Select;
 
@@ -54,8 +51,8 @@ const data = [
         number: '1',
         hk1: '3',
         hk2: '3',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -63,8 +60,8 @@ const data = [
         number: '1',
         hk1: '3',
         hk2: '3',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -72,8 +69,8 @@ const data = [
         number: '1',
         hk1: '3',
         hk2: '3',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -81,8 +78,8 @@ const data = [
         number: '1',
         hk1: '3',
         hk2: '3',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -90,8 +87,8 @@ const data = [
         number: '1',
         hk1: '3',
         hk2: '3',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -99,8 +96,8 @@ const data = [
         number: '1',
         hk1: '3',
         hk2: '3',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
     {
         key: '1',
@@ -108,14 +105,13 @@ const data = [
         number: '1',
         hk1: '3',
         hk2: '3',
-        buttonedit: <img src={editIcon} alt="" />,
-        buttontrash: <img src={trashIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
+        buttontrash: <img src={IconTrash} alt="" />,
     },
 ];
 
 
-class PointType extends Component {
-    render() {
+export default function PointType() {
         return (
             <>
                 <div className="section-7">
@@ -155,7 +151,7 @@ class PointType extends Component {
                             <Row>
                                 <Col span={24}>
                                     <button className="box__btn-button_cre">
-                                        <img className="box__btn-button_cre-icon" src={plusIcon} alt="" />
+                                        <img className="box__btn-button_cre-icon" src={IconPlus} alt="" />
                                         Thêm mới
                                     </button>
                                 </Col>
@@ -194,6 +190,3 @@ class PointType extends Component {
             </>
         );
     }
-}
-
-export default PointType;

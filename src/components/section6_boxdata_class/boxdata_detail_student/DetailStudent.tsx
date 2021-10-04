@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Breadcrumb } from 'antd';
 import './DetailStudent.css'
-import editIcon from '../../../assets/boxdata/editIcon.svg'
-import trashIcon from '../../../assets/boxdata/trashIcon.svg'
-import ellipseIcon from '../../../assets/boxdata/ellipseIcon.svg'
 import { Row, Col, Table, Tag } from 'antd';
+import {
+    IconEdit,
+    IconTrash,
+  } from "../../../assets/svg/index";
 
 const columns = [
     {
@@ -53,7 +54,7 @@ const data = [
         date: '05/09/2020',
         status: 'Đang theo học',
         // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -64,7 +65,7 @@ const data = [
         date: '05/09/2020',
         status: 'Đã chuyển lớp',
         // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -75,7 +76,7 @@ const data = [
         date: '05/09/2020',
         status: 'Đã chuyển trường',
         // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -86,7 +87,7 @@ const data = [
         date: '05/09/2020',
         status: 'Đã thôi học',
         // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -97,7 +98,7 @@ const data = [
         date: '05/09/2020',
         status: 'Đang tốt nghiệp',
         // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -108,7 +109,7 @@ const data = [
         date: '05/09/2020',
         status: 'Đang theo học',
         // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -119,11 +120,11 @@ const data = [
         date: '05/09/2020',
         status: 'Đang theo học',
         // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={editIcon} alt="" />,
+        buttonedit: <img src={IconEdit} alt="" />,
     },
-]; // rowSelection object indicates the need for row selection
-class DetailStudent extends Component {
-    render() {
+]; 
+
+export default function DetailStudent() {
         return (
             <>
                 <div className="section-6-3">
@@ -147,11 +148,11 @@ class DetailStudent extends Component {
                                 <div className="information-title">Thông tin học viên</div>
                             </Col>
                             <Col className="information-button" span={12}>
-                                <button className="information-button-btn" >
-                                    <img src={editIcon} alt="" />
-                                </button>
                                 <button className="information-button-btn">
-                                    <img src={trashIcon} alt="" />
+                                    <img src={IconTrash} alt="" />
+                                </button>
+                                <button className="information-button-btn" >
+                                    <img src={IconEdit} alt="" />
                                 </button>
                             </Col>
                         </Row>
@@ -233,6 +234,3 @@ class DetailStudent extends Component {
             </>
         );
     }
-}
-
-export default DetailStudent;
