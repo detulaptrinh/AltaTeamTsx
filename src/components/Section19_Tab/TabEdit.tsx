@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import './TabEdit.css'
-import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
-import { FormOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
@@ -17,7 +15,6 @@ import {
 } from 'antd';
 
 import { Modal } from 'antd';
-import { ExclamationCircleOutlined } from '@ant-design/icons';
 
 const { confirm } = Modal;
 const { Option } = Select;

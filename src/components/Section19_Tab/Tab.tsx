@@ -1,7 +1,6 @@
 import React from 'react'
 import './Tab.css'
-import { DeleteOutlined, PicCenterOutlined } from '@ant-design/icons';
-import { FormOutlined, PlusOutlined} from '@ant-design/icons';
+import { FormOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col, } from 'antd';
 import { Card } from 'antd';
@@ -10,14 +9,10 @@ import {
   Avatar613,
 } from "../../assets/images"
 import {
-  Form,
-  Input,
-  Select,
-  DatePicker,
+  Select
 } from 'antd';
 
 import { Modal } from 'antd';
-import { ExclamationCircleOutlined } from '@ant-design/icons';
 
 const { confirm } = Modal;
 const { Option } = Select;
