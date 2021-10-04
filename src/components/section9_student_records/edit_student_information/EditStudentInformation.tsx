@@ -217,7 +217,7 @@ export default class EditStudentInformation extends Component {
                 </div>
 
                 {/* Thông tin gia đình */}
-                <div className="site-card-border-less-wrapper site-card-border-less-wrapper-mt-0">
+                <div className="section-9-1-1-site-card-border-less-wrapper site-card-border-less-wrapper-mt-0">
                     <Card title="Thông tin gia đình" bordered={false}>
                         <Row>
                             <Col span={8}>
