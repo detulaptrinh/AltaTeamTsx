@@ -1,9 +1,9 @@
 .sesion15_box1{
 
-    width: 278px;
-    height: 900px;
-    margin-left: 0px;
-    margin-top: -40px;
+    width: 27.8rem;
+    height: 90rem;
+    margin-left: 0rem;
+    margin-top: -4rem;
 
     /* White */
 
@@ -15,10 +15,10 @@
 }
 .sesion15_box2{
 
-    width: 1320px;
-    height: 820px;
-    margin-left: 300px;
-    margin-top: -820px;
+    width: 132rem;
+    height: 82rem;
+    margin-left: 30rem;
+    margin-top: -82rem;
 
     background: #FFFFFF;
     /* Tab */
@@ -28,8 +28,8 @@
 }
 .sesion15_box3{
  
-    width: 278px;
-    height: 171px;
+    width: 27.8rem;
+    height: 17.1rem;
     margin-left: 0rem;
     margin-top: 0rem;
 
@@ -42,15 +42,15 @@
 .sesion15_text1{
     /* Danh sách phân công giảng dạy */
    
-    width: 378px;
-    height: 171px;
-    margin-left:66px;
-    padding-top: 26px;
+    width: 37.8rem;
+    height: 17.1rem;
+    margin-left:6.6rem;
+    padding-top: 2.6rem;
     /* LMS Student / sub-head 1 */
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 2.2rem;
     line-height: 1.75rem;
     /* identical to box height */
     letter-spacing: 0.015em;
@@ -59,20 +59,20 @@
 }
 .sesion15_btn1{
    
-    width: 230px;
-    height: 56px;
-    margin-left: 24px;
-    margin-top: 31px;
+    width: 23rem;
+    height: 5.6rem;
+    margin-left: 2.4rem;
+    margin-top: 3.1rem;
     /* /Orange / 5 */
     background: #CC5C00;
     border-radius: 0.5rem;
 }
 .sesion15_btn2{
    
-    width: 230px;
-    height: 56px;
-    margin-left: 24px;
-    margin-top: 31px;
+    width: 23rem;
+    height: 5.6rem;
+    margin-left: 2.4rem;
+    margin-top: 3.1rem;
     /* /Orange / 1 */  
     background: #FFF9F4;
     /* Orange/4 */ 
@@ -82,10 +82,10 @@
 }
 .sesion15_btn3{
 
-    width: 230px;
-    height: 56px;
-    margin-left: 24px;
-    margin-top: 31px;
+    width: 23rem;
+    height: 5.6rem;
+    margin-left: 2.4rem;
+    margin-top: 3.1rem;
     
     /* /Orange / 1 */
     
@@ -98,10 +98,10 @@
 }
 .sesion15_btn4{
  
-    width: 230px;
-    height: 56px;
-    margin-left: 24px;
-    margin-top: 31px;
+    width: 23rem;
+    height: 5.6rem;
+    margin-left: 2.4rem;
+    margin-top: 3.1rem;
     
     /* /Orange / 1 */
     
@@ -115,10 +115,10 @@
 }
 .sesion15_btn5{
    
-    width: 230px;
-    height: 56px;
-    margin-left: 24px;
-    margin-top: 31px;
+    width: 23rem;
+    height: 5.6rem;
+    margin-left: 2.4rem;
+    margin-top: 3.1rem;
     
     /* /Orange / 1 */
     
@@ -131,10 +131,10 @@
 }
 .sesion15_btn6{
 
-    width: 230px;
-    height: 56px;
-    margin-left: 24px;
-    margin-top: 31px;
+    width: 23rem;
+    height: 5.6rem;
+    margin-left: 2.4rem;
+    margin-top: 3.1rem;
     
     /* /Orange / 1 */
     
@@ -147,16 +147,16 @@
 }
 .sesion15_textbtn1{
  
-    width: 52px;
-    height: 23px;
+    width: 5.2rem;
+    height: 2.3rem;
 
-    margin-right: 120px;
-    margin-top: 23px;
+    margin-right: 12rem;
+    margin-top: 2.3rem;
     /* LMS Student / Sub-header */
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.438rem;
     /* identical to box height */
     letter-spacing: 0.015em;
@@ -165,10 +165,10 @@
 }
 .sesion15_textbtn2{
  
-    width: 194px;
-    height: 23px;
-    margin-left: 16px;
-    margin-top: 16px;
+    width: 19.4rem;
+    height: 2.3rem;
+    margin-left: 1.6rem;
+    margin-top: 1.6rem;
     text-align: left;
 
     /* LMS Student / sub-header phụ */
@@ -176,8 +176,8 @@
     font-family: Mulish;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     /* identical to box height */
 
     letter-spacing: 0.015em;
@@ -188,10 +188,10 @@
 }
 .sesion15_gv{
 
-    width: 150px;
-    height: 21px;
-    margin-left: 24px;
-    padding-top: 24px;   
+    width: 15rem;
+    height: 2.1rem;
+    margin-left: 2.4rem;
+    padding-top: 2.5rem;   
     /* LMS Student / Content */
     font-family: Source Sans Pro;
     font-style: normal;
@@ -205,15 +205,15 @@
 .sesion15_nienkhoa{
     /* Niên khóa */
     
-    width: 74px;
-    height: 20px;
-    margin-left: 24px;
-    margin-top: 40px;
+    width: 7.4rem;
+    height: 2rem;
+    margin-left: 2.4rem;
+    margin-top: 4rem;
     /* LMS Student / Menu */
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.25rem;
     letter-spacing: 0.015em;
     /* White */
@@ -222,15 +222,15 @@
 .sesion15_bomon{
     /* Bộ Môn */
    
-    width: 54px;
-    height: 20px;
-    margin-left: 24px;
-    margin-top: 40px;
+    width: 5.4rem;
+    height: 2rem;
+    margin-left: 2.4rem;
+    margin-top: 4rem;
     /* LMS Student / Menu */
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.25rem;
     letter-spacing: 0.015em;
     /* White */
@@ -238,16 +238,16 @@
 }
 .sesion15_selectNK{
  
-    margin-top: -10px;
+    margin-top: -1rem;
     color: #373839;
 }
 .sesion15_selectNK select{
  
-    margin-left: 90px;
-    margin-top: -9px;
+    margin-left: 9rem;
+    margin-top: -0.9rem;
     padding: 0rem;
-    width: 106px;
-    height: 30px;
+    width: 10.6rem;
+    height: 3rem;
     border: none;
     border-radius:0.5rem;
     font-size: 1.6rem;
@@ -256,11 +256,11 @@
     outline: none;
 }
 .sesion15_selectNK::before{
-    content: url("/src/assets/avg/downArrowIcon.svg");
+    content: url("/src/assets/svg/downArrowIcon.svg");
 
     padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-top: -9px;
-    margin-left: 170px;
+    margin-top: -0.8rem;
+    margin-left: 17rem;
     width: 3rem;
     height: 3rem;
     background: white;
@@ -274,16 +274,16 @@
     pointer-events: none;
 }
 .sesion15_selectBM{
-    margin-top: -10px;
+    margin-top: -1rem;
     color: #373839;
 }
 .sesion15_selectBM select{
   
-    margin-left: 90px;
-    margin-top: -10px;
+    margin-left: 9rem;
+    margin-top: -1rem;
     padding: 0rem;
-    width: 140px;
-    height: 30px;
+    width: 14rem;
+    height: 3rem;
     border: none;
     border-radius:0.5rem;
     font-size: 1.6rem;
@@ -292,11 +292,12 @@
     outline: none;
 }
 .sesion15_selectBM::before{
-    content: url("/src/assets/avg/downArrowIcon.svg");
+  content: url("/src/assets/svg/downArrowIcon.svg");
+
 
     padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-top: -9px;
-    margin-left: 200px;
+    margin-top: -0.8rem;
+    margin-left: 20rem;
     width: 3rem;
     height: 3rem;
     background: white;
@@ -312,7 +313,7 @@
 .sesion15_body-table{
     width: 100%;
     height: 60rem;
-    margin-top: -100px;
+    margin-top: -10rem;
     display: flex;
     justify-content: center;
    
@@ -349,7 +350,9 @@ border-top-left-radius: 1rem;
     text-align: left;
 
   }
-  
+  /* .sesion15_body-table .ant-table-cell:nth-child(6){
+    
+  } */
   .sesion15_body-table .ant-table-thead > tr > th,
   .sesion15_body-table .ant-table-tbody > tr > td,
   .sesion15_body-table  .ant-table tfoot > tr > th,
@@ -370,7 +373,7 @@ border-top-left-radius: 1rem;
     text-align: center;
   }
   .sesion15_body-table  .ant-table-tbody > tr > td {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 0.1rem solid #f0f0f0;
   }
   .sesion15_body-table .ant-table-thead > tr > th,
   .sesion15_body-table  .ant-table-tbody > tr > td,
@@ -390,16 +393,16 @@ border-top-left-radius: 1rem;
     font-size: 1.6rem;
     line-height: 2rem;
     color: #373839;
-    margin-top: 80px;
+    margin-top: 8rem;
   }
   
   .sesion15_col-left .ant-input-number {
-    width: 48px;
-    height: 32px;
+    width: 4.8rem;
+    height: 3.2rem;
     background-color: transparent;
-    border: 1px solid #ff7506;
+    border: 0.1rem solid #ff7506;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     
   }
   .sesion15_col-left-txt-view {
@@ -415,7 +418,7 @@ border-top-left-radius: 1rem;
   .sesion15_footer-col-right {
     width: 100%;
     height: 5rem;
-    margin-top: 80px;
+    margin-top: 8rem;
   }
   
   .sesion15_footer-col-right-pagination{

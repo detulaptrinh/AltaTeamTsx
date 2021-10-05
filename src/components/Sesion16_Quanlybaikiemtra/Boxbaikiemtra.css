@@ -1,18 +1,18 @@
 .sesion16___textbaikiemtra{
     /* Quản lý bài kiểm tra */
 
-    width: 588px;
-    height: 60px;
-    margin-left: 0px;
-    margin-top: 0px;
+    width: 58.8rem;
+    height: 6rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
 
     /* LMS Student / H1 */
 
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 4.8rem;
+    line-height: 6rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -20,32 +20,32 @@
     color: #373839;
 }
 .sesion16___colbaikiemtra{
-    width: 1620px;
-    height: 800px;
-    margin-left: 0px;
-    margin-top: 15px;
+    width: 162rem;
+    height: 80rem;
+    margin-left: 0rem;
+    margin-top: 1.5rem;
 
     background: #FFFFFF;
     /* Tab */
 
-    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
-    border-radius: 16px;
+    box-shadow: 0.4rem 0.4rem 2.5rem 0.4rem rgba(154, 202, 245, 0.25);
+    border-radius: 1.6rem;
 }
 .sesion16___textxemchitiet{
     /* Xem chi tiết bài kiểm tra */
 
-    width: 368px;
-    height: 28px;
-    margin-left: 64px;
-    padding-top: 24px;
+    width: 36.8rem;
+    height: 2.8rem;
+    margin-left: 6.4rem;
+    padding-top: 2.4rem;
 
     /* LMS Student / sub-head 1 */
 
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
     /* identical to box height */
 
     letter-spacing: 0.015em;
@@ -65,11 +65,11 @@
     color: #373839;
 }
 .sesion16___selectTT select{
-    margin-left: 0px;
-    margin-top: -20px;
+    margin-left: 0rem;
+    margin-top: -2rem;
     padding: 0rem;
-    width: 140px;
-    height: 30px;
+    width: 14rem;
+    height: 3rem;
     border: none;
     border-radius:0.5rem;
     font-size: 1.6rem;
@@ -78,11 +78,12 @@
     outline: none;
 }
 .sesion16___selectTT::before{
-    content: url("/src/assets/avg/downArrowIcon.svg");
+  content: url("/src/assets/svg/downArrowIcon.svg");
+
 
     padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-top: -3px;
-    margin-left: 110px;
+    margin-top: -0.3rem;
+    margin-left: 11rem;
     width: 3rem;
     height: 3rem;
     background: white;
@@ -101,11 +102,11 @@
     color: #373839;
 }
 .sesion16___selectCL select{
-    margin-left: 30px;
-    margin-top: -20px;
+    margin-left: 3rem;
+    margin-top: -2rem;
     padding: 0rem;
-    width: 140px;
-    height: 30px;
+    width: 14rem;
+    height: 3rem;
     border: none;
     border-radius:0.5rem;
     font-size: 1.6rem;
@@ -114,11 +115,12 @@
     outline: none;
 }
 .sesion16___selectCL::before{
-    content: url("/src/assets/avg/downArrowIcon.svg");
+  content: url("/src/assets/svg/downArrowIcon.svg");
+
 
     padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-top: -3px;
-    margin-left: 140px;
+    margin-top: -0.3rem;
+    margin-left: 14rem;
     width: 3rem;
     height: 3rem;
     background: white;
@@ -137,11 +139,11 @@
     color: #373839;
 }
 .sesion16___selectCK select{
-    margin-left: 30px;
-    margin-top: -20px;
+    margin-left: 3rem;
+    margin-top: -2rem;
     padding: 0rem;
-    width: 140px;
-    height: 30px;
+    width: 14rem;
+    height: 3rem;
     border: none;
     border-radius:0.5rem;
     font-size: 1.6rem;
@@ -150,11 +152,12 @@
     outline: none;
 }
 .sesion16___selectCK::before{
-    content: url("/src/assets/avg/downArrowIcon.svg");
+  content: url("/src/assets/svg/downArrowIcon.svg");
+
 
     padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin-top: -3px;
-    margin-left: 140px;
+    margin-top: -0.3rem;
+    margin-left: 14rem;
     width: 3rem;
     height: 3rem;
     background: white;
@@ -173,32 +176,31 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0rem;
     
-    width: 176px;
-    height: 52px;
-    margin-left: 1380px;
-    margin-top: 31px;
+    width: 17.6rem;
+    height: 5.2rem;
+    margin-left: 138rem;
+    margin-top: 3.1rem;
 
     /* Orange/4 */
 
     background: #FF7506;
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }
 .sesion16___textadd{
-    position: static;
-    width: 100px;
-    height: 23px;
-    left: calc(50% - 88px/2 + 17px);
-    top: calc(50% - 23px/2);
+    width: 10rem;
+    height: 2.3rem;
+    margin-left: calc(50% - 8.8rem/2 + 1.7rem);
+    margin-top: calc(50% - 2.3rem/2);
     
     /* LMS Student / Sub-header */
     
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     /* identical to box height */
     
     letter-spacing: 0.015em;
@@ -211,7 +213,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 10px;
+    margin: 0rem 1rem;
 }
 .sesion16___iconplus{
  
@@ -223,7 +225,7 @@
 .sesion16___col-search{
     width: 100%;
     height: 9rem;
-    margin-top: -50px;
+    margin-top: -5rem;
     float: right;
 }
 .sesion16___table-headers-search{
@@ -232,13 +234,13 @@
     border-radius: 2.4rem;
     position: relative;
 
-    padding: 4px 11px;
+    padding: 0.4rem 1.1rem;
     color: #c5c5c5;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5715;
     background-color: #f0f3f6;
     background-image: none;
-    border: 1px solid #f0f3f6;
+    border: 0.1rem solid #f0f3f6;
     border-radius: 4.2rem;
     transition: all 0.3s;
     display: inline-flex;
@@ -259,7 +261,7 @@
     word-spacing: normal;
     line-height: normal;
     text-transform: none;
-    text-indent: 0px;
+    text-indent: 0rem;
     text-shadow: none;
     display: inline-block;
     text-align: start;
@@ -268,24 +270,24 @@
     cursor: text;
     background-color: #f0f3f6;
     margin: 0em;
-    padding: 1px 2px;
+    padding: 0.1rem 0.2rem;
 }
 .sesion16___table-headers-search .ant-input-prefix {
     margin-right: 2rem;
   }
   .sesion16___table-headers-search  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
     border-color: #f0f3f6;
-    border-right-width: 1px !important;
+    border-right-width: 0.1rem !important;
     z-index: 1;
   }
   .sesion16___table-headers-search  .ant-input-affix-wrapper:hover {
     border-color: #f0f3f6;
-    border-right-width: 1px !important;
+    border-right-width: 0.1rem !important;
 }
 .sesion16___body-table{
     width: 100%;
     height: 100%;
-    margin-top: 0px;
+    margin-top: 0rem;
     display: flex;
     justify-content: center;
 }
@@ -345,10 +347,10 @@
     padding: 1rem;
     overflow-wrap: normal;
     text-align: left;
-    padding-left: 40px;
+    padding-left: 4rem;
 }
 .sesion16___body-table .ant-table-tbody > tr > td {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 0.1rem solid #f0f0f0;
 }
 .sesion16___body-table .ant-table-thead > tr > th,
 .sesion16___body-table .ant-table-tbody > tr > td,
@@ -360,17 +362,17 @@
 }
 .sesion16___texttungay{
     /* Từ ngày */
-    width: 62px;
-    height: 21px;
-    margin-left: 43px;
-    padding-top: 10px;
+    width: 6.2rem;
+    height: 2.1rem;
+    margin-left: 4.3rem;
+    padding-top: 1rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -382,17 +384,17 @@
 }
 .sesion16___textdenngay{
   /* Den ngày */
-  width: 72px;
-  height: 21px;
-  margin-left: 23px;
-  padding-top: 10px;
+  width: 7.2rem;
+  height: 2.1rem;
+  margin-left: 2.3rem;
+  padding-top: 1rem;
 
   /* LMS Student / Content */
 
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 130%;
   /* identical to box height, or 21px */
 
@@ -411,16 +413,16 @@
     font-size: 1.6rem;
     line-height: 2rem;
     color: #373839;
-    margin-top: -140px;
+    margin-top: -14rem;
   }
   
   .sesion16___col-left .ant-input-number {
-    width: 48px;
-    height: 32px;
+    width: 4.8rem;
+    height: 3.2rem;
     background-color: transparent;
-    border: 1px solid #ff7506;
+    border: 0.1rem solid #ff7506;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     
   }
   .sesion16___col-left-txt-view {
@@ -436,7 +438,7 @@
   .sesion16___footer-col-right {
     width: 100%;
     height: 5rem;
-    margin-top: -140px;
+    margin-top: -14rem;
   }
   
   .sesion16___footer-col-right-pagination{
@@ -496,11 +498,11 @@
 }
 
 .sesion16___datepicker{
-  margin-left: 0px;
-  margin-top: 5px;
+  margin-left: 0rem;
+  margin-top: 0.5rem;
   padding: 0rem;
-  width: 140px;
-  height: 30px;
+  width: 14rem;
+  height: 3rem;
   border: none;
   border-radius:0.5rem;
   font-size: 1.6rem;
@@ -512,8 +514,8 @@
 .sesion16___iconcalendar{
   
     padding: 0.2rem 0rem 0.5rem 0rem;
-    margin-top: 5px;
-    margin-left: 695px;
+    margin-top: 0.5rem;
+    margin-left: 69.5rem;
     text-align: center;
     width: 3rem;
     height: 3rem;
@@ -528,8 +530,8 @@
 } 
 .sesion16___iconcalendar1{
    padding: 0.2rem 0rem 0.5rem 0rem;
-    margin-top: 5px;
-    margin-left: 930px;
+    margin-top: 0.5rem;
+    margin-left: 93rem;
     text-align: center;
     width: 3rem;
     height: 3rem;

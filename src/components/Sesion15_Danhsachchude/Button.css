@@ -1,16 +1,16 @@
 .sesion15__textphanconggd{
-    width: 290px;
-    height: 23px;
-    margin-left: calc(50% - 191px/2);
-    margin-top: calc(50% - 23px/2);
+    width: 29rem;
+    height: 2.3rem;
+    margin-left: calc(50% - 19.1rem/2);
+    margin-top: calc(50% - 2.3rem/2);
 
     /* LMS Student / Sub-header */
 
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     /* identical to box height */
 
     letter-spacing: 0.015em;
@@ -23,7 +23,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 10px;
+    margin: 0px 1rem;
 }
 .sesion15__button{
     /* button */
@@ -35,13 +35,13 @@
     align-items: center;
     padding: 0px;
 
-    width: 238px;
-    height: 52px;
-    margin-left: 1530px;
-    margin-top: 160px;
+    width: 23.8rem;
+    height: 5.2rem;
+    margin-left: 153rem;
+    margin-top: 16rem;
 
     /* Orange/4 */
 
     background: #FF7506;
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }

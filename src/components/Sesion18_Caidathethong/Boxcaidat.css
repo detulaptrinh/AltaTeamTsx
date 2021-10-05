@@ -1,9 +1,9 @@
 .sesion18__boxCH{
-    width: 430px;
-    height: 120px;
-    margin-left: 0px;
-    margin-top: 0px;
-    border-radius: 15px;
+    width: 43rem;
+    height: 12rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    border-radius: 1.5rem;
     /* Gradient */
     
     background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
@@ -11,27 +11,27 @@
 }
 .sesion18__textcauhinh{
     /* Cấu hình */  
-    width: 430px;
-    height: 35px;
+    width: 43rem;
+    height: 3.5rem;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 2rem;
 
     /* LMS Student / H2 */
 
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
     letter-spacing: 0.015em;
 
     color: #FFFFFF;
 }
 .sesion18__textch{
     /* Theme, các thông tin khác về cấu hình */
-    width: 430px;
-    height: 23px;
-    margin-top: 0px;
+    width: 43rem;
+    height: 2.3rem;
+    margin-top: 0rem;
     text-align: center;
 
     /* LMS Student / Sub-header */
@@ -39,8 +39,8 @@
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     /* identical to box height */
 
     letter-spacing: 0.015em;
@@ -48,11 +48,11 @@
     color: #FFFFFF;
 }
 .sesion18__boxTT{
-    width: 430px;
-    height: 120px;
-    margin-left: 70px;
-    margin-top: 0px;
-    border-radius: 15px;
+    width: 43rem;
+    height: 12rem;
+    margin-left: 7rem;
+    margin-top: 0rem;
+    border-radius: 1.5rem;
     /* Gradient */
 
     background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
@@ -60,54 +60,78 @@
 }
 .sesion18__boxND{
 
-    width: 430px;
-    height: 120px;
-    margin-left: 1000px;
-    margin-top: -120px;
-    border-radius: 15px;
+    width: 43rem;
+    height: 12rem;
+    margin-left: 100rem;
+    margin-top: -12rem;
+    border-radius: 1.5rem;
     /* Gradient */
 
     background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
     opacity: 0.9;
 }
 .sesion18__boxTL{
-    width: 430px;
-    height: 120px;
-    margin-left: 0px;
-    margin-top: 70px;
-    border-radius: 15px;
+    width: 43rem;
+    height: 12rem;
+    margin-left: 0rem;
+    margin-top: 7rem;
+    border-radius: 1.5rem;
     /* Style */
 
     background: linear-gradient(98.91deg, #56CCF2 1.13%, #2F80ED 100%);
     opacity: 0.9;
 }
 .sesion18__boxMH{
-    width: 430px;
-    height: 121px;
-    margin-left: 70px;
-    margin-top: 70px;
-    border-radius: 15px;
+    width: 43rem;
+    height: 12.1rem;
+    margin-left: 7rem;
+    margin-top: 7rem;
+    border-radius: 1.5rem;
     /* Style */
 
     background: linear-gradient(98.91deg, #56CCF2 1.13%, #2F80ED 100%);
 }
 .sesion18__boxDT{
-    width: 430px;
-    height: 121px;
+    width: 43rem;
+    height: 12.1rem;
     margin-left: 100rem;
-    margin-top: -120px;
-    border-radius: 15px;
+    margin-top: -12rem;
+    border-radius: 1.5rem;
     /* Style */
 
     background: linear-gradient(98.91deg, #56CCF2 1.13%, #2F80ED 100%);
 }
 .sesion18__elipse{
     content: url("/src/assets/svg/ellipse.svg");
+    background: #FFFFFF;
+    opacity: 0.1;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 10.4rem;
+    height: 10.4rem;
+    border-radius: 50%;
+    margin-top: -14rem;
+    margin-left: -4rem;
     
 }
 .sesion18__elipse1{
-    content: url("/src/assets/avg/ellipsecauhinh2.svg");
+    content: url("/src/assets/svg/ellipsecauhinh2.svg");
+    background: #FFFFFF;
+    opacity: 0.1;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 11.4rem;
+    height: 11.4rem;
+    border-radius: 50%;
+    margin-top: 0rem;
+    margin-left: 27rem;
 }
 .sesion18__elipse2{
-    content: url("/src/assets/avg/ellipsecauhinh3.svg");
+    content: url("/src/assets/svg/ellipsecauhinh3.svg");
+    background: #FFFFFF;
+    opacity: 0.1;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 15.4rem;
+    height: 15.4rem;
+    border-radius: 50%;
+    margin-top: -14rem;
+    margin-left: 30rem;
 }

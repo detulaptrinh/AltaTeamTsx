@@ -10,24 +10,30 @@ export default class Boxcauhinh extends Component {
            <Title/> 
            <Row>
             <Col className="sesion18_boxcauhinh">
+            <b className="sesison18_b"/>
                 <p className="sesison18_txtcauhinh">Cấu hình</p>
                 <Col className="sesison18_colcauhinh"></Col>
                 <p className="sesison18_textthemsudung">Theme đang sử dụng</p>
 
+                <div className="sesison18_theme_body">
                 <Col className="sesison18_theme1"></Col>
                 <p className="sesison18_texttheme1">Lorem ipsum dolor sit</p>
                 <Col className="sesison18_theme2"></Col>
                 <p className="sesison18_texttheme2">Lorem ipsum dolor sit</p>
                 <Col className="sesison18_theme3"></Col>
                 <p className="sesison18_texttheme3">Lorem ipsum dolor sit</p>
+                </div>
+
+                <div className="sesison18_theme_body1">
                 <Col className="sesison18_theme4"></Col>
                 <p className="sesison18_texttheme4">Lorem ipsum dolor sit</p>
                 <Col className="sesison18_theme5"></Col>
                 <p className="sesison18_texttheme5">Lorem ipsum dolor sit</p>
                 <Col className="sesison18_theme6"></Col>
                 <p className="sesison18_texttheme6">Lorem ipsum dolor sit</p>
+                </div>
                 
-                <b className="sesison18_b"/>
+               
                
                 <p className="sesison18_txttheme">Theme hiện có</p>
 
