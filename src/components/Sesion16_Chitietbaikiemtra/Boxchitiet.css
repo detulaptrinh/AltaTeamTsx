@@ -3,51 +3,51 @@
 
 
     position: relative;
-    width: 884px;
-    height: 706px;
-    left: 100px;
-    top: 50px;
+    width: 88.4rem;
+    height: 70.6rem;
+    left: 10rem;
+    top: 5rem;
 
     background: #FFFFFF;
-    border-radius: 16px;
+    border-radius: 1.6rem;
 }
 .sesion16_icon_close{
     position: absolute;
     left: 95.83%;
-    top: 10px;
+    top: 1rem;
    
 }
 .sesion16_boxchitiet{ 
     position: absolute;
-    width: 756px;
-    height: 278px;
-    left: 64px;
-    top: 288px;
+    width: 75.6rem;
+    height: 27.8rem;
+    left: 6.4rem;
+    top: 28.8rem;
 
     /* /Orange / 1 */
 
     background: #FFF9F4;
     /* Orange/4 */
 
-    border: 1px solid #FF7506;
+    border: 0.1rem solid #FF7506;
     box-sizing: border-box;
-    border-radius: 16px;
+    border-radius: 1.6rem;
 }
 .sesion16_textct{
     /* Xem chi tiết bài kiểm tra */
     position: absolute;
-    width: 342px;
-    height: 35px;
-    left: 271px;
-    top: 0px;
+    width: 34.2rem;
+    height: 3.5rem;
+    left: 27.1rem;
+    top: 0rem;
 
     /* LMS Student / H2 */
 
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -62,33 +62,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0rem;
 
     position: absolute;
-    width: 160px;
-    height: 52px;
-    left: 266px;
-    top: 614px;
+    width: 16rem;
+    height: 5.2rem;
+    left: 26.6rem;
+    top: 61.4rem;
 
     /* Grey/5 */
 
     background: #F2F2F2;
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }
 .sesion16_texthuy{
     position: static;
-    width: 36px;
-    height: 23px;
-    left: calc(50% - 36px/2);
-    top: calc(50% - 23px/2);
+    width: 3.6rem;
+    height: 2.3rem;
+    left: calc(50% - 3.6rem/2);
+    top: calc(50% - 2.3rem/2);
     
     /* LMS Student / Sub-header */
     
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     /* identical to box height */
     
     letter-spacing: 0.015em;
@@ -103,7 +103,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 10px;
+    margin: 0rem 1rem;
 }
 .sesion16_buttonconfirm{
     /* button */
@@ -113,33 +113,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0rem;
 
     position: absolute;
-    width: 160px;
-    height: 52px;
-    left: 458px;
-    top: 614px;
+    width: 16rem;
+    height: 5.2rem;
+    left: 45.8rem;
+    top: 61.4rem;
 
     /* Orange/4 */
 
     background: #FF7506;
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }
 .sesion16_textconfirm{
     position: static;
-    width: 94px;
-    height: 23px;
-    left: calc(50% - 84px/2);
-    top: calc(50% - 23px/2);
+    width: 9.4rem;
+    height: 2.3rem;
+    left: calc(50% - 8.4rem/2);
+    top: calc(50% - 2.3rem/2);
     
     /* LMS Student / Sub-header */
     
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     /* identical to box height */
     
     letter-spacing: 0.015em;
@@ -152,25 +152,25 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 10px;
+    margin: 0rem 1rem;
 }
 .sesion16_textmonhoc{
 /* Môn học: */
 
 
     position: absolute;
-    width: 86px;
-    height: 20px;
-    left: 64px;
-    top: 83px;
+    width: 8.6rem;
+    height: 2rem;
+    left: 6.4rem;
+    top: 8.3rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -181,17 +181,17 @@
 .sesion16_texttoanhoc{
     /* Toán học */
     position: absolute;
-    width: 81px;
-    height: 21px;
-    left: 110px;
-    top: 0px;
+    width: 8.1rem;
+    height: 2.1rem;
+    left: 11rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -207,18 +207,18 @@
 
 
     position: absolute;
-    width: 32px;
-    height: 20px;
-    left: 64px;
-    top: 120px;
+    width: 3.2rem;
+    height: 2rem;
+    left: 6.4rem;
+    top: 12rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -230,17 +230,17 @@
 
 
     position: absolute;
-    width: 25px;
-    height: 21px;
-    left: 110px;
-    top: 0px;
+    width: 2.5rem;
+    height: 2.1rem;
+    left: 11rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -256,18 +256,18 @@
 
 
     position: absolute;
-    width: 100px;
-    height: 20px;
-    left: 64px;
-    top: 158px;
+    width: 10rem;
+    height: 2rem;
+    left: 6.4rem;
+    top: 15.8rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -280,17 +280,17 @@
 
 
     position: absolute;
-    width: 8px;
-    height: 21px;
-    left: 110px;
-    top: 0px;
+    width: 0.8rem;
+    height: 2.1rem;
+    left: 11rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -306,18 +306,18 @@
 
 
     position: absolute;
-    width: 112px;
-    height: 20px;
-    left: 64px;
-    top: 196px;
+    width: 11.2rem;
+    height: 2rem;
+    left: 6.4rem;
+    top: 19.6rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -330,17 +330,17 @@
 
 
     position: absolute;
-    width: 112px;
-    height: 21px;
-    left: 110px;
-    top: 0px;
+    width: 11.2rem;
+    height: 2.1rem;
+    left: 11rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -356,18 +356,18 @@
 
 
     position: absolute;
-    width: 93px;
-    height: 20px;
-    left: 520px;
-    top: 83px;
+    width: 9.3rem;
+    height: 2rem;
+    left: 52rem;
+    top: 8.3rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -380,17 +380,17 @@
 
 
     position: absolute;
-    width: 75px;
-    height: 21px;
-    left: 144px;
-    top: 0px;
+    width: 7.5rem;
+    height: 2.1rem;
+    left: 14.1rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -406,18 +406,18 @@
 
 
     position: absolute;
-    width: 96px;
-    height: 20px;
-    left: 520px;
-    top: 121px;
+    width: 9.6rem;
+    height: 2rem;
+    left: 52rem;
+    top: 12.1rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -429,17 +429,17 @@
 
 
     position: absolute;
-    width: 80px;
-    height: 21px;
-    left: 144px;
-    top: 0px;
+    width: 8rem;
+    height: 2.1rem;
+    left: 14.4rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -455,18 +455,18 @@
 
 
     position: absolute;
-    width: 93px;
-    height: 20px;
-    left: 520px;
-    top: 159px;
+    width: 9.3rem;
+    height: 2rem;
+    left: 52rem;
+    top: 15.9rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -479,17 +479,17 @@
 
 
     position: absolute;
-    width: 80px;
-    height: 21px;
-    left: 144px;
-    top: 0px;
+    width: 8rem;
+    height: 2.1rem;
+    left: 14.4rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -505,18 +505,18 @@
 
 
     position: absolute;
-    width: 130px;
-    height: 20px;
-    left: 520px;
-    top: 197px;
+    width: 13rem;
+    height: 2rem;
+    left: 52rem;
+    top: 19.7rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -528,17 +528,17 @@
 
 
     position: absolute;
-    width: 186px;
-    height: 21px;
-    left: 144px;
-    top: 0px;
+    width: 18.6rem;
+    height: 2.1rem;
+    left: 14.4rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -554,18 +554,18 @@
 
 
     position: absolute;
-    width: 135px;
-    height: 20px;
-    left: 520px;
-    top: 235px;
+    width: 13.5rem;
+    height: 2rem;
+    left: 52rem;
+    top: 13.5rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* Darkest_Test_N1 */
@@ -578,17 +578,17 @@
 
 
     position: absolute;
-    width: 186px;
-    height: 21px;
-    left: 144px;
-    top: 0px;
+    width: 18.6rem;
+    height: 2.1rem;
+    left: 14.4rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -604,18 +604,18 @@
 
 
     position: absolute;
-    width: 85px;
-    height: 20px;
-    left: 32px;
-    top: 24px;
+    width: 8.5rem;
+    height: 2rem;
+    left: 3.2rem;
+    top: 2.4rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* Darkest_Test_N1 */
@@ -627,17 +627,17 @@
 
 
     position: absolute;
-    width: 570px;
-    height: 21px;
-    left: 168px;
-    top: 0px;
+    width: 57rem;
+    height: 2.1rem;
+    left: 16.8rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* identical to box height, or 21px */
 
@@ -653,18 +653,18 @@
 
 
     position: absolute; 
-    width: 66.85px;
-    height: 20px;
-    left: 32px;
-    top: 61px;
+    width: 6.685rem;
+    height: 2rem;
+    left: 3.2rem;
+    top: 6.1rem;
 
     /* LMS Student / Menu */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     letter-spacing: 0.015em;
 
     /* /Orange / 7 */
@@ -676,17 +676,17 @@
 
 
     position: absolute;
-    width: 525px;
-    height: 63px;
-    left: 168px;
-    top: 0px;
+    width: 52.5rem;
+    height: 6.3rem;
+    left: 16.8rem;
+    top: 0rem;
 
     /* LMS Student / Content */
 
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     /* or 21px */
 
