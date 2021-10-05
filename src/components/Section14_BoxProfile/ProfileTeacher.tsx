@@ -45,7 +45,7 @@ export default class ProfileTeacher extends Component {
             </Col>
             <Col span={8}>
               <Select
-                className="select__dash"
+                className="select__dash dashs"
                 id="school_year"
                 defaultValue="2020-2021"
               >
