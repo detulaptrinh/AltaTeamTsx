@@ -22,7 +22,9 @@ input.ant-input.input__process{
 .ant-row__fix{
     margin-bottom: 3rem;
 }
-
+.table__process{
+    margin-top: 2rem;
+}
 .table__process .ant-table-thead tr th{
     background: black;
     color: white;

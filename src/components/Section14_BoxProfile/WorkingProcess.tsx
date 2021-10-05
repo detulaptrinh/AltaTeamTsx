@@ -26,7 +26,7 @@ export default class WorkingProcess extends Component {
             <div className="section14">
             <Row>
                 <Col span={24}>
-                  <div className="title">
+                  <div className="titles">
                     <div className="title-info-student">Hồ sơ giảng viên</div>
                   </div>
                 </Col>
