@@ -21,6 +21,7 @@ const DemoArea= () => {
     xAxis: {
       range: [0, 1],
     },
+    color:'#FF7506',
   };
   return <Area {...config} />;
 };

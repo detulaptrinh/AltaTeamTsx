@@ -4,6 +4,10 @@ import { DatePicker, Select } from 'antd';
 import "./dash.css"
 import DemoArea from './DemoArea';
 import DemoColumn from './DemoColumn';
+import DemoProgress from "./DemoProcess";
+import Progress2 from "./Process2";
+import Progress3 from "./Process3";
+import Progress4 from "./Process4";
 import moment from 'moment';
 
 const { Option } = Select;
@@ -64,9 +68,15 @@ function Dashboard(date: any, dateString: any) {
                                 </Select>
                             </form>
                         </div>
-                        <div>
-                            <label htmlFor="value1">Lớp 6</label>
-                            <meter id="value1" min="0" max="100" /* low="30" high="75" optimum="30" */ value="65" />
+                        <div className="progress">
+                            <label htmlFor="value1">Khối 6</label>
+                            <DemoProgress />
+                            <label htmlFor="value1">Khối 7</label>
+                            <Progress2 />
+                            <label htmlFor="value1">Khối 8</label>
+                            <Progress3 />
+                            <label htmlFor="value1">Khối 9</label>
+                            <Progress4 />
                         </div>
                     </div>
                 </div>

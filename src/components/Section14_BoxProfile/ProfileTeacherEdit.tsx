@@ -21,9 +21,7 @@ import {
   Space,
 } from "antd";
 import { AvatarTeacher } from "../../assets/images";
-import { 
-  IconTrash,
-} from "../../assets/svg"
+import { IconTrash } from "../../assets/svg";
 import { Link } from "react-router-dom";
 
 const { confirm } = Modal;
@@ -175,7 +173,7 @@ export default function ProfileTeacherEdit() {
               </div>
               <div className="btn-edit">
                 <button className="btn-bk-ff7506">
-                  <Link className="" to="profile-teacher-edit">
+                  <Link className="text__box_white" to="profile-teacher-edit">
                     Lưu
                   </Link>
                 </button>

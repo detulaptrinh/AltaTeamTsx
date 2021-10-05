@@ -872,6 +872,27 @@
     font-size: 1.6rem;
   }
   .select__dash .ant-select-selector span.ant-select-selection-item{
-      top: 0.5rem;
+
       font-size: 1.8rem;
+  }
+
+.overview_content .count_students .progress label{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    color:#373839;
+    font-family: 'Source Sans Pro';
+}
+.overview_content .count_students .progress canvas {
+    height:20px !important;
+    width:38.6rem !important;
+    border-radius: 30% !important;
+    margin-bottom: 2rem;
+}
+.overview_content .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    align-items: center;
+    border-color:#373839;
   }
