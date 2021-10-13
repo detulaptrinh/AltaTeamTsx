@@ -18,6 +18,7 @@ import {
   IconTrash,
   IconChevronRight,
 } from "../../assets/svg/index";
+import educationLevelData from "../../data/EducationLevel.json";
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -28,53 +29,7 @@ interface ITrainingLevel {
   note: string;
 }
 
-const data: ITrainingLevel[] = [
-  {
-    level: "THCS",
-    status: false,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    level: "THCS",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    level: "THCS",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    level: "THCS",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    level: "THCS",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    level: "Đại học",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    level: "Đại học",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    level: "Tiểu học",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    level: "Cao đẳng",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-];
+const data: ITrainingLevel[] = educationLevelData;
 
 const TrainingLevelsManage = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);

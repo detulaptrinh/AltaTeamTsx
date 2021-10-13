@@ -1,0 +1,47 @@
+[
+  {
+    "level": "THCS",
+    "status": false,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  },
+  {
+    "level": "THCS",
+    "status": true,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  },
+  {
+    "level": "THCS",
+    "status": true,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  },
+  {
+    "level": "THCS",
+    "status": true,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  },
+  {
+    "level": "THCS",
+    "status": true,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  },
+  {
+    "level": "Đại học",
+    "status": true,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  },
+  {
+    "level": "Đại học",
+    "status": true,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  },
+  {
+    "level": "Tiểu học",
+    "status": true,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  },
+  {
+    "level": "Cao đẳng",
+    "status": true,
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+  }
+]

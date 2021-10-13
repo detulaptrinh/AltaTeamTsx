@@ -18,6 +18,7 @@ import {
   IconTrash,
   IconChevronRight,
 } from "../../assets/svg/index";
+import courseData from "../../data/Courses.json";
 
 const { Option } = Select;
 
@@ -27,53 +28,7 @@ interface ICourse {
   note: string;
 }
 
-const data: ICourse[] = [
-  {
-    type: "Môn Căn bản",
-    status: false,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    type: "Môn Nâng cao",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    type: "Môn Tăng cường",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    type: "Môn Phụ đạo",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    type: "Môn Phụ đạo",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    type: "Môn Phụ đạo",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    type: "Môn Phụ đạo",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    type: "Môn Phụ đạo",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-  {
-    type: "Môn Phụ đạo",
-    status: true,
-    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.",
-  },
-];
+const data: ICourse[] = courseData;
 
 const CourseSetting = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
