@@ -1,111 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import './GroupUser.css'
-import { Button } from 'antd';
-import { Row, Col, Space } from 'antd';
+import { Button, Modal, Switch } from 'antd';
+import { Row, Col } from 'antd';
 import { Table } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import { IconEdit, IconTrash, IconPlus} from '../../assets/svg';
+import { IconPlus} from '../../assets/svg';
 import {
     Input,
     Select,
 } from 'antd';
+import { columnsGroupUser,dataGroupUser } from '../../models/groupUserModel'
 
-import { Modal } from 'antd';
-
-function showDeleteConfirm() {
-    confirm({
-      title: 'Xóa thông tin',
-      content: 'Xác nhận muốn xoá thông tin này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
-      okText: 'Xác nhận',
-      okType: 'danger',
-      cancelText: 'Hủy',
-      onOk() {
-        console.log('OK');
-      },
-      onCancel() {
-        console.log('Cancel');
-      },
-    });
-}
-
-const { confirm } = Modal;
 const { Option } = Select;
 
-const columns = [
-    {
-        title: 'Tên nhóm',
-        dataIndex: 'name',
-        sorter: true,
-        width: '15%'
-    },
-    {
-        title: 'Tổng số thành viên',
-        dataIndex: 'member',
-        sorter: true,
-        width: '25%'
-    },
-    {
-        title: 'Ghi chú',
-        dataIndex: 'ghichu',
-        width: '50%'
-    },
-    {       
-        render: () => (
-            <Space size="middle">
-              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
-              <a onClick={showDeleteConfirm}><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
-            </Space>
-          ),
-    },
-];
-
-const dataSource = [
-    {
-        name: 'Quản trị viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
-    },
-    {
-        name: 'Học sinh tiểu học',
-        member: 8,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
-    },
-    {
-        name: 'Phòng hành chính',
-        member: 7,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
-    },
-    {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
-    },
-    {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
-    },
-    {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
-    },
-    {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
-    },
-    {
-        name: 'Nhân viên',
-        member: 6,
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.'
-    },
-
-];
-
-
-class GroupUser extends Component {
-    render(){
+    
+function GroupUser() {
         return(
         <>
         <div className="section20">
@@ -149,18 +58,20 @@ class GroupUser extends Component {
                         <Col span={9}>
                             <div className="switch-group">
                                 <div className="switch-group__tab-left">
-                                    <a href="">Nhóm người dùng</a>
+                                    <a href="/groupuser">Nhóm người dùng</a>
                                 </div>
 
                                 <div className="switch-group__tab-right">
-                                    <a href="">Danh sách người dùng</a>
+                                    <a href="/listuser">Danh sách người dùng</a>
                                 </div>
                             </div>
                         </Col>
 
                         <Col span={10}>
                             <div className="box__btn-group">                             
-                                <Button className="box__btn-group__add" ><img style={{padding:10}} src={IconPlus} />Thêm mới</Button>
+                                <Button className="box__btn-group__add" >
+                                    <img style={{padding:10}} src={IconPlus} />Thêm mới</Button>
+                                   
                             </div>
                         </Col>
                     </Col>
@@ -185,8 +96,8 @@ class GroupUser extends Component {
             </Col> 
                 <div className="tab-table">
                     <Table
-                        columns={columns}
-                        dataSource={dataSource}
+                        columns={columnsGroupUser}
+                        dataSource={dataGroupUser}
                     />
                 </div>
 
@@ -216,6 +127,6 @@ class GroupUser extends Component {
     )
     /* Modal */
 }
-}
+
 
 export default GroupUser;
