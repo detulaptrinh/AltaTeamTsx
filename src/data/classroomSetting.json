@@ -1,0 +1,37 @@
+[
+    {
+        "class": "Căn bản",
+        "status": false,
+        "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+    },
+    {
+        "class": "Nâng cao",
+        "status": true,
+        "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+    },
+    {
+        "class": "Tăng cường",
+        "status": true,
+        "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+    },
+    {
+        "class": "Phụ đạo",
+        "status": true,
+        "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+    },
+    {
+        "class": "Phụ đạo",
+        "status": true,
+        "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+    },
+    {
+        "class": "Phụ đạo",
+        "status": true,
+        "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+    },
+    {
+        "class": "Phụ đạo",
+        "status": true,
+        "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo."
+    }
+]

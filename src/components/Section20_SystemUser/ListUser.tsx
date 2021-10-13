@@ -4,16 +4,63 @@ import { Button } from 'antd';
 import { Row, Col } from 'antd';
 import { Table } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import { IconPlus} from '../../assets/svg';
-import { columnsListUser,dataListUser } from '../../models/listUserModel'
+import { IconPlus, IconTrash, IconEdit} from '../../assets/svg';
+import dataListUser from '../../data/listUser.json'
 import {
     Input,
     Select
 } from 'antd';
 
-import { Modal, Switch } from 'antd';
+import { Modal, Switch, Space } from 'antd';
 
 const { Option } = Select;
+
+interface ListUser {
+    name: string;
+    email: string;
+    groupuser: string;
+    note: boolean;
+}
+
+const data: ListUser[] = dataListUser;
+
+const columnsListUser = [
+    {
+        title: 'Tên',
+        dataIndex: 'name',
+        width: '15%'
+    },
+    {
+        title: 'Email',
+        dataIndex: 'email',
+        width: '25%'
+    },
+    {
+        title: 'Nhóm người dùng',
+        dataIndex: 'groupuser', 
+        width: '20%'
+    },
+    {
+        title: 'Trạng thái',
+        dataIndex: 'note',
+        width: '30%',
+        render: (status: boolean) =>
+        status ? (
+          <span className="note-text">Đang hoạt động</span>
+        ) : (
+          <span className="note-text">Đã vô hiệu hoá</span>
+        ),
+    },
+   
+    {       
+        render: () => (
+            <Space size="middle">
+              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
+              <a><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
+            </Space>
+          ),
+    },
+];
 
 function ListUser() {
     const [addNewModal, setaddNewModal] = useState(false);
@@ -100,7 +147,7 @@ function ListUser() {
                                             <Button className="modal__btn-group__cancel" onClick={handleCancel}>Hủy</Button>
                                             <Button className="modal__btn-group__save" >Lưu</Button>
                                         </div>
-                                    </Modal>
+                                </Modal>
                             </div>
                         </Col>
                     </Col>
@@ -127,7 +174,7 @@ function ListUser() {
                 <div className="tab-table">
                     <Table
                         columns={columnsListUser}
-                        dataSource={dataListUser}
+                        dataSource={data}
                     />
                 </div>
 

@@ -82,14 +82,6 @@
     border: 1px solid #373839;
     border-radius: 4px;
 }
-.section-5  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
-    border: none;
-}
-
-.section-5 .box__chb-slt_sch_select .ant-select-selection-search {
-    right: 3rem;
-    border-right: 1px solid #373839;
-}
 
 .section-5 .box__chb-slt_yr p {
     font-family: Source Sans Pro;
@@ -111,10 +103,7 @@
     border: 1px solid #373839;
     border-radius: 4px;
 }
-.section-5 .box__chb-slt_yr_select .ant-select-selection-search {
-    right: 3rem;
-    border-right: 1px solid #373839;
-}
+
 .section-5 .box__chb-btn {
     margin-top: 6rem;
 }
@@ -200,14 +189,6 @@
     border: 1px solid #373839;
     padding: 0px 4px 0px 8px;
     border-radius: 4px;
-}
-.section-5 .box__btn-block_select .ant-select-selection-search {
-    right: 3rem;
-    border-right: 1px solid #373839;
-}
-.section-5 .box__btn-class_select .ant-select-selection-search {
-    right: 3rem;
-    border-right: 1px solid #373839;
 }
 
 .section-5 .box__btn-button {
