@@ -42,11 +42,6 @@
     background: #ffffff;
     border-radius: 4px;
 }
-.section-8 .box__btn-block_select .ant-select-selection-search,
-.section-8 .box__btn-class_select .ant-select-selection-search {
-    right: 3rem;
-    border-right: 1px solid #373839;
-}
 .section-8 .box__btn .ant-select .ant-select-selector {
     border: none;
     color: black;
@@ -94,7 +89,6 @@
 /* button right */
 .section-8  .box__btn-button{
     display: flex;
-    justify-content: flex-end;
 }
 .section-8 .box__btn-button_del {
     background: none;
@@ -109,6 +103,10 @@
     border-right: 1px solid #c9c4c0;
 }
 .section-8 .box__btn-button_export {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 16rem;
     height: 5.2rem;
@@ -125,6 +123,10 @@
     border-radius: 8px;
 }
 .section-8 .box__btn-button_cre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 17.6rem;
     height: 5.2rem;
@@ -191,11 +193,8 @@
     border: none;
     padding: 0.85rem;
 }
-.section-8 .ant-table-thead .ant-table-cell {
-    background: none;
-}
-.section-8 .ant-table-thead{
-    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+.section-8 .table-list .ant-table-thead > tr > th {
+    background: #ff7506;
 }
 .section-8 .table-list .ant-table-thead .ant-table-cell:first-child {
     border-top-left-radius: 0.8rem;
@@ -226,26 +225,16 @@
     background: #f0f3f6;
     border: 1px solid #f2f2f2;
 }
+.section-8 .table-list .ant-table-cell:nth-child(8) {
+    width: 1rem;
+}
 .section-8 .table-list .ant-table-cell:nth-child(9) {
-    width: 20rem;
+    width: 1rem;
 }
-.section-8 .table-list .ant-table-cell:nth-child(1) {
-    padding: 0 2rem;
+.section-8 .table-list .ant-table-cell:nth-child(10) {
+    width: 1rem;
 }
-.section-8 .table-list .btnView,
-.section-8 .table-list .btnUpdate,
-.section-8 .table-list .btnTrash {
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.section-8 .table-list .btnView,
-.section-8 .table-list .btnUpdate {
-  margin-right: 2rem;
-}
-.section-8 .table-list .ant-table-tbody .ant-table-cell .ant-tag {
+.section-8 .table-list .ant-table-tbody .ant-table-cell span {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -371,68 +360,3 @@
 .section-8 .box__sbj-pagin .ant-pagination-jump-prev a:hover {
     color: rgba(0, 0, 0, 0.85);
 }
-
-/* custom dropdown upload*/
-.section8-dropdown-cre {
-    background-color: transparent;
-    box-shadow: none;
-}
-.section8-dropdown-cre .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
-    color: transparent;
-    background-color: transparent;
-    padding: 1rem 0px;
-}
-.section8-dropdown-cre .section8-dropdown-cre-btn{
-    cursor: pointer;
-    width: 17.6rem;
-    height: 5.2rem;
-    background: #FFFFFF;
-    border: 1px solid #FF7506;
-    box-sizing: border-box;
-    border-radius: 8px;
-
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    letter-spacing: 0.015em;
-    color: #FF7506;
-}
-/* custom dropdown update*/
-.section8-dropdown-update{
-    margin-top: 1rem;
-    margin-left: -0.5rem;
-    width: 20rem;
-    height: 28rem;
-    background: #FFFFFF;
-    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
-    border-radius: 8px;
-    padding: 8px 16px;
-    overflow: hidden;
-}
-.section8-dropdown-update .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
-    color: transparent;
-    margin-top: 1.1rem;
-    background-color: transparent;
-    padding: 0;
-}
-.section8-dropdown-update .section8-dropdown-update-btn{
-    border: none;
-    cursor: pointer;
-    padding-bottom: 0.5rem;
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid #CC5C00;
-    background-color: #fff;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 130%;
-    color: #373839;
-}
-.section8-dropdown-update .border-btn{
-    border-bottom: none !important;
-}
-/*  */
