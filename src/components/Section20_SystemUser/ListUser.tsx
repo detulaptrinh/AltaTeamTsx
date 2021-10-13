@@ -1,124 +1,32 @@
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
 import './ListUser.css'
 import { Button } from 'antd';
 import { Row, Col } from 'antd';
-import { Table, Space } from 'antd';
+import { Table } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import { IconEdit, IconTrash, IconPlus} from '../../assets/svg';
-
+import { IconPlus} from '../../assets/svg';
+import { columnsListUser,dataListUser } from '../../models/listUserModel'
 import {
     Input,
     Select
 } from 'antd';
 
-import { Modal } from 'antd';
+import { Modal, Switch } from 'antd';
 
-function showDeleteConfirm() {
-    confirm({
-      title: 'Xóa thông tin',
-      content: 'Xác nhận muốn xoá thông tin này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
-      okText: 'Xác nhận',
-      okType: 'danger',
-      cancelText: 'Hủy',
-      onOk() {
-        console.log('OK');
-      },
-      onCancel() {
-        console.log('Cancel');
-      },
-    });
-}
-const { confirm } = Modal;
 const { Option } = Select;
 
-const columns = [
-    {
-        title: 'Tên',
-        dataIndex: 'name',
-        width: '20%'
-    },
-    {
-        title: 'Email',
-        dataIndex: 'email',
-        width: '25%'
-    },
-    {
-        title: 'Nhóm người dùng',
-        dataIndex: 'groupuser', 
-        width: '20%'
-    },
-    {
-        title: 'Trạng thái',
-        dataIndex: 'ghichu',
-        width: '30%'
-    },
-   
-    {       
-        render: () => (
-            <Space size="middle">
-              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
-              <a onClick={showDeleteConfirm}><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
-            </Space>
-          ),
-    },
-];
-
-const dataSource = [
-    {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Quản trị viên',
-        ghichu: 'Đã vô hiệu hóa',
-    },
-    {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Học sinh tiểu học',
-        ghichu: 'Đang hoạt động'
-    },
-    {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Phòng hành chính',
-        ghichu: 'Đang hoạt động'
-    },
-    {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Nhân viên',
-        ghichu: 'Đang hoạt động'
-    },
-    {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Nhân viên',
-        ghichu: 'Đang hoạt động' 
-    },
-    {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Nhân viên',
-        ghichu: 'Đang hoạt động'
-    },
-    {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Nhân viên',
-        ghichu: 'Đang hoạt động'
-    },
-    {
-        name: 'Nguyễn Văn C',
-        email: 'abcdefkdd@gmail.com',
-        groupuser: 'Nhân viên',
-        ghichu: 'Đang hoạt động'
-    },
-
-];
-
-
-
-class ListUser extends Component {
-    render(){
+function ListUser() {
+    const [addNewModal, setaddNewModal] = useState(false);
+    const showaddNewModal = () => {
+    setaddNewModal(true);
+  };
+    const handleSave = () => {
+      setaddNewModal(false);
+    };
+  
+    const handleCancel = () => {
+      setaddNewModal(false);
+    };
         return(
         <>
         <div className="section20">
@@ -159,18 +67,40 @@ class ListUser extends Component {
                         <Col span={9}>
                             <div className="switch-list">
                                 <div className="switch-list__tab-left">
-                                    <a href="">Nhóm người dùng</a>
+                                    <a href="/groupuser">Nhóm người dùng</a>
                                 </div>
 
                                 <div className="switch-list__tab-right">
-                                    <a href="">Danh sách người dùng</a>
+                                    <a href="/listuser">Danh sách người dùng</a>
                                 </div>
                             </div>
                         </Col>
 
                         <Col span={10}>
                             <div className="box__btn-group">                             
-                                <Button className="box__btn-group__add" ><img style={{padding:10}} src={IconPlus}/>Thêm mới</Button>
+                                <Button className="box__btn-group__add" onClick={showaddNewModal} ><img style={{padding:10}} src={IconPlus}/>Thêm mới</Button>
+                                <Modal className="modal-groupuser"title="Thiết lập người dùng" visible={addNewModal}>
+                                        <div className="form-control">
+                                       <label>Tên người dùng<span className="obligatory">*</span> </label>
+                                            <Input/>                       
+                                       </div>
+                                       <div className="form-control">
+                                       <label>Email<span className="obligatory">*</span></label>
+                                            <Input/>                                
+                                       </div>
+                                       <div className="form-control">
+                                       <label>Nhóm người dùng<span className="obligatory">*</span></label>
+                                           <Input/>                                    
+                                       </div>
+                                       <div className="form-switch">
+                                       <Switch/>
+                                       <label>Đang hoạt động</label>
+                                        </div>
+                                        <div className="btn-group__modal">
+                                            <Button className="modal__btn-group__cancel" onClick={handleCancel}>Hủy</Button>
+                                            <Button className="modal__btn-group__save" >Lưu</Button>
+                                        </div>
+                                    </Modal>
                             </div>
                         </Col>
                     </Col>
@@ -196,8 +126,8 @@ class ListUser extends Component {
 
                 <div className="tab-table">
                     <Table
-                        columns={columns}
-                        dataSource={dataSource}
+                        columns={columnsListUser}
+                        dataSource={dataListUser}
                     />
                 </div>
 
@@ -228,6 +158,6 @@ class ListUser extends Component {
     /* Modal */
   
   }
-}
+
 
 export default ListUser;

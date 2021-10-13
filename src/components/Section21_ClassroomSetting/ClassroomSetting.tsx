@@ -4,7 +4,8 @@ import { Button } from 'antd';
 import { Row, Col } from 'antd';
 import { Table, Space } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import { IconEdit, IconTrash, IconPlus} from '../../assets/svg';
+import { IconPlus} from '../../assets/svg';
+import { dataClassroomSetting, columnsClassroomSetting } from '../../models/classroomSettingModel';
 import {
     Input,
     Select
@@ -12,102 +13,10 @@ import {
 
 import { Modal } from 'antd';
      
-function showDeleteConfirm() {
-    confirm({
-      title: 'Xóa thông tin',
-      content: 'Xác nhận muốn xoá thông tin này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
-      okText: 'Xác nhận',
-      okType: 'danger',
-      cancelText: 'Hủy',
-      onOk() {
-        console.log('OK');
-      },
-      onCancel() {
-        console.log('Cancel');
-      },
-    });
-    
-}
-
-
-
 const { confirm } = Modal;
 const { Option } = Select;
 
-const columns = [
-    {
-        title: 'Loại lớp',
-        dataIndex: 'class',
-        sorter: true,
-        width: '10%'
-       
-    },
-    {
-        title: 'Trạng thái',
-        dataIndex: 'status',
-        width: '30%'
-        
-    },
-    {
-        title: 'Ghi chú',
-        dataIndex: 'ghichu', 
-        width: '50%'
-    },
-   
-   
-    {       
-        render: () => (
-            <Space size="middle">
-              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
-              <a onClick={showDeleteConfirm}><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
-            </Space>
-          ),
-    },
-];
 
-const dataSource = [
-    {
-        class: 'Căn bản',
-        status: 'Đã vô hiệu hóa',
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
-    },
-    {
-        class: 'Nâng cao',
-        status: 'Đang hoạt động',
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
-    },
-    {
-        class: 'Tăng cường',
-        status: 'Đang hoạt động',
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
-    },
-    {
-        class: 'Phụ đạo',
-        status: 'Đang hoạt động',
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
-    },
-    {
-        class: 'Phụ đạo',
-        status: 'Đang hoạt động',
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
-    },
-    {
-        class: 'Phụ đạo',
-        status: 'Đang hoạt động',
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
-    },
-    {
-        class: 'Phụ đạo',
-        status: 'Đang hoạt động',
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
-    },
-    {
-        class: 'Phụ đạo',
-        status: 'Đang hoạt động',
-        ghichu: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada posuere justo.',
-    },
-
-];
 
 class ClassroomSetting extends Component {
     render(){
@@ -176,8 +85,8 @@ class ClassroomSetting extends Component {
             </Col> 
                 <div className="tab-table">
                     <Table
-                        columns={columns}
-                        dataSource={dataSource}
+                        columns={columnsClassroomSetting}
+                        dataSource={dataClassroomSetting}
                     />
                 </div>
 
