@@ -24,6 +24,7 @@ import {
   IconPlusPrimary,
   IconMinusPrimary,
 } from "../../assets/svg/index";
+import schoolYearData from "../../data/SchoolYear.json"
 
 const { Option } = Select;
 
@@ -34,56 +35,7 @@ interface ISchoolYear {
   timeEnd: string;
 }
 
-const data: ISchoolYear[] = [
-  {
-    index: 1,
-    schoolYear: "2020-2021",
-    timeStart: "05/10/2020",
-    timeEnd: "05/10/2021",
-  },
-  {
-    index: 2,
-    schoolYear: "2019-2020",
-    timeStart: "05/10/2020",
-    timeEnd: "05/10/2021",
-  },
-  {
-    index: 3,
-    schoolYear: "2018-2019",
-    timeStart: "05/10/2020",
-    timeEnd: "05/10/2021",
-  },
-  {
-    index: 4,
-    schoolYear: "2017-2018",
-    timeStart: "05/10/2020",
-    timeEnd: "05/10/2021",
-  },
-  {
-    index: 5,
-    schoolYear: "2016-2017",
-    timeStart: "05/10/2020",
-    timeEnd: "05/10/2021",
-  },
-  {
-    index: 6,
-    schoolYear: "2015-2016",
-    timeStart: "05/10/2020",
-    timeEnd: "05/10/2021",
-  },
-  {
-    index: 7,
-    schoolYear: "2015-2016",
-    timeStart: "05/10/2020",
-    timeEnd: "05/10/2021",
-  },
-  {
-    index: 8,
-    schoolYear: "2013-2014",
-    timeStart: "05/10/2020",
-    timeEnd: "05/10/2021",
-  },
-];
+const data: ISchoolYear[] = schoolYearData;
 
 const DeclareSchoolYear = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
