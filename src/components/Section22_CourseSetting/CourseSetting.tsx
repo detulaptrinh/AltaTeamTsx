@@ -153,21 +153,7 @@ const CourseSetting = (): JSX.Element => {
       </div>
 
       {/* MODAL DELETE COURSE */}
-      <Modal
-        className="CourseSetting-modal CourseSetting-modal-del"
-        title="Xoá môn học"
-        visible={isModalDel}
-        onOk={handleOkDel}
-        onCancel={handleCancelDel}
-        okText="Xác nhận"
-        cancelText="Huỷ"
-        centered
-      >
-        <p className="CourseSetting-modal-del-desc">
-          Xác nhận muốn xoá môn học này và toàn bộ thông tin bên trong? Sau khi
-          xoá sẽ không thể hoàn tác.
-        </p>
-      </Modal>
+      
 
       {/* MODAL ADD COURSE */}
       <Modal

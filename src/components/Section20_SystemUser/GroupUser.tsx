@@ -1,19 +1,56 @@
 import React, { Component, useState } from 'react'
 import './GroupUser.css'
-import { Button, Modal, Switch } from 'antd';
+import { Button} from 'antd';
 import { Row, Col } from 'antd';
-import { Table } from 'antd';
+import { Table, Space } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
-import { IconPlus} from '../../assets/svg';
+import { IconPlus, IconEdit, IconTrash} from '../../assets/svg';
 import {
     Input,
     Select,
 } from 'antd';
-import { columnsGroupUser,dataGroupUser } from '../../models/groupUserModel'
+import dataGroupUser from '../../data/groupUser.json'
+
 
 const { Option } = Select;
 
-    
+interface GroupUser {
+    name: string;
+    member: number;
+    note: string;
+}
+
+const data: GroupUser[] = dataGroupUser;
+
+const columnsGroupUser = [
+    {
+        title: 'Tên nhóm',
+        dataIndex: 'name',
+        sorter: true,
+        width: '15%'
+    },
+    {
+        title: 'Tổng số thành viên',
+        dataIndex: 'member',
+        sorter: true,
+        width: '25%'
+    },
+    {
+        title: 'Ghi chú',
+        dataIndex: 'note',
+        width: '50%'
+    },
+    {       
+        render: () => (
+            <Space size="middle">
+              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
+              <a><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
+            </Space>
+          ),
+    },
+];
+
+
 function GroupUser() {
         return(
         <>
@@ -23,8 +60,12 @@ function GroupUser() {
                     <Col span={24}>
                         <div className="title">
                             <Breadcrumb separator=">">
-                                <Breadcrumb.Item className="tittle__breadcrumb__left">Cài đặt hệ thống</Breadcrumb.Item>
-                                <Breadcrumb.Item className="tittle__breadcrumb__right">Người dùng hệ thống</Breadcrumb.Item>
+                                <Breadcrumb.Item className="tittle__breadcrumb__left">
+                                    Cài đặt hệ thống
+                                </Breadcrumb.Item>
+                                <Breadcrumb.Item className="tittle__breadcrumb__right">
+                                    Người dùng hệ thống
+                                </Breadcrumb.Item>
                             </Breadcrumb>
                         </div>
                     </Col>
@@ -70,8 +111,7 @@ function GroupUser() {
                         <Col span={10}>
                             <div className="box__btn-group">                             
                                 <Button className="box__btn-group__add" >
-                                    <img style={{padding:10}} src={IconPlus} />Thêm mới</Button>
-                                   
+                                    <img style={{padding:10}} src={IconPlus} />Thêm mới</Button>                                
                             </div>
                         </Col>
                     </Col>
@@ -97,7 +137,7 @@ function GroupUser() {
                 <div className="tab-table">
                     <Table
                         columns={columnsGroupUser}
-                        dataSource={dataGroupUser}
+                        dataSource={data}
                     />
                 </div>
 
@@ -122,11 +162,9 @@ function GroupUser() {
                     </Col>
                 </Col>
             </div>
-            </div>
-        </>
-    )
-    /* Modal */
+        </div>
+    </>
+)
 }
-
 
 export default GroupUser;
