@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import "./dash.css";
-import { DeleteOutlined } from "@ant-design/icons";
 import {
   Form,
   Input,
   Select,
   DatePicker,
   Modal,
-  Card,
-  Row,
-  Col,
-  Button,
+
   Checkbox,
   Table,
   Space,
@@ -336,7 +332,7 @@ export default function Page2() {
             </div>
             <div className="box__sbj-tbl">
               <Table
-                className="table__page pages"
+                className="table__page"
                 columns={columns}
                 dataSource={data}
                 pagination={false}

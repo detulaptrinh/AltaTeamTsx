@@ -1,22 +1,10 @@
 import React, { useState } from "react";
 import "./dash.css";
 import {
-  DeleteOutlined,
-  PicCenterOutlined,
-  FormOutlined,
-  ExclamationCircleOutlined,
-} from "@ant-design/icons";
-import {
   Form,
   Input,
   Select,
-  DatePicker,
   Modal,
-  Card,
-  Row,
-  Col,
-  Button,
-  Checkbox,
   Table,
   Space,
   InputNumber,

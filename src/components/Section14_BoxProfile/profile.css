@@ -277,6 +277,16 @@
   letter-spacing: 0.015em;
   color: #373839;
 }
+.modal__profile__updateq h1{
+  text-align: center;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
 .box__excel label {
   font-size: 1.6rem;
   font-weight: 700;
@@ -286,8 +296,12 @@
 }
 
 .box__inputnumber {
-  margin-top: 25rem;
+  margin-top: 29rem;
+  margin-left: 2rem;
   display: flex;
+}
+.box__inputnumbers{
+  margin-top: 7rem;
 }
 .box__inputnumber-txt p {
   font-family: Source Sans Pro;
@@ -372,6 +386,15 @@
   font-family: 'Mulish';
   background: none;
   font-size: 1.8rem;
+  padding: 1rem;
+}
+.table__page .ant-table-tbody > tr > td{
+  padding:1rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-style: normal;
+  color: #373839;
+  font-family: 'Source Sans Pro';
 }
 .table__page .ant-table-thead {
   background: linear-gradient(270deg, #ff5400 0%, #f17f21 80.56%);
@@ -411,7 +434,11 @@
   height: 3.2rem;
   margin: 0 0.5rem;
   background: #ffd8b8;
-  border: 1px solid black;
+  border: 1px solid #ff7506;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display:flex;
+  float: right;
 }
 .btn__profile {
   cursor: pointer;
@@ -428,6 +455,65 @@
   letter-spacing: 0.015em;
   color: #ffffff;
 }
+.btn___img{
+  display:flex;
+}
+.btn__img{
+  border: none;
+  background:none;
+  padding: 0 1rem;
+}
+.btn-refresh {
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-refresh__menu {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  transform: translateY(-100%);
+  padding: 8px 16px;
+  margin: 0;
+  width: 176px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(133, 178, 220, 0.25);
+  border-radius: 4px;
+}
+
+.btn-refresh:hover .btn-refresh__menu {
+  display: block;
+}
+
+.btn-refresh__menu li {
+  padding: 4px;
+}
+
+.btn-refresh__menu li + li {
+  border-top: 1px solid #cc5c00;
+}
+
+.btn-refresh__menu li a {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #373839;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.btn-refresh__menu li:hover a {
+  font-weight: 600;
+  opacity: 1;
+}
 
 .box__excel .ant-modal-content .input__fixsize {
   width: 35rem;
@@ -438,7 +524,21 @@
 .box__excel .ant-modal-content .bgef {
   background: #efefef;
 }
-.btn__status {
+.modal__profile__updateq .ant-modal-content .ant-input .input__fix{
+  width: 35rem;
+  background: #efefef;
+  border: none;
+  border-radius: 0.4rem;
+  float:right;
+  border-radius:8px;
+}
+.modal__profile__updateq .ant-modal-content .bgef {
+  background: #efefef;
+  width:39rem;
+  height: 3.2rem;
+  border-radius: 4px;
+}
+.btn__woking {
   border-radius: 0.4rem;
   border: 2px solid #3cc13b;
   background: none;
@@ -447,6 +547,43 @@
   font-weight: normal;
   text-align: center;
 }
+.btn__pause {
+  border-radius: 0.4rem;
+  border: 2px solid #0B80EC;
+  background: none;
+  padding: 8px 20px;
+  color: #0B80EC;
+  font-weight: normal;
+  text-align: center;
+}
+.btn__quitWork {
+  border-radius: 0.4rem;
+  border: 2px solid #ED2025;
+  background: none;
+  padding: 8px 20px;
+  color: #ED2025;
+  font-weight: normal;
+  text-align: center;
+}
+.btn__retired {
+  border-radius: 0.4rem;
+  border: 2px solid #FF7506;
+  background: none;
+  padding: 8px 20px;
+  color: #FF7506;
+  font-weight: normal;
+  text-align: center;
+}
+.btn__quitSchool {
+  border-radius: 0.4rem;
+  border: 2px solid #ED2025;
+  background: none;
+  padding: 8px 20px;
+  color: #ED2025;
+  font-weight: normal;
+  text-align: center;
+}
+
 
 /* profile-teacher */
 .tab {
@@ -593,7 +730,6 @@
 .section14 .ant-input {
   background-color: #ffffff;
   font-size: 1.6rem;
-  float: right;
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: normal;
@@ -622,12 +758,9 @@
 .section14-pf .ant-row{
     margin-bottom: -0.5rem;
 }
-/* .ant-select-single.ant-select-show-arrow .ant-select-selection-item{
-    font-size: 1.6rem;
-    padding: 0.5rem;  
-    width:11rem;
+.section14 .table__page .ant-table-tbody > tr.ant-table-row:hover > td {
+  background: transparent;
 }
- */
 .arrow__fix .ant-select-arrow {
   font-size: 1.6rem;
   padding: 0.2rem;
@@ -983,4 +1116,35 @@
 .section14 span.ant-select-arrow{
     font-size: 1.8rem;
     margin-right: 0.2rem;
+}
+.modal__profile__updateq .ant-modal-content{
+  width: 90rem;
+  height: 50rem;
+  border-radius: 2rem;
+  top: 20rem;
+  right: 20rem;
+}
+.modal__profile__updateq .ant-modal-content .ant-picker{
+  width: 58.5rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  background: #f2f2f2;
+  float: right;
+}
+.modal__profile__updateq .ant-modal-content .input__note{
+  width: 58.5rem;
+  height: 13.5rem;
+  border-radius: 4px;
+  background: #f2f2f2;
+  float: right;
+}
+.modal__profile__updateq .ant-modal-content .note{
+  background: #f2f2f2;
+  width: 58.5rem;
+  border:none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Source Sans Pro';
+  color:#292b2e;
+
 }
