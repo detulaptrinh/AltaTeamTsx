@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 import './SubjectList.css'
 import {
@@ -20,135 +20,141 @@ import {
 
 const { Option } = Select;
 
-const columns = [
-    {
-        title: 'Mã môn học',
-        dataIndex: 'name',
-        render: (text: string) => <a>{text}</a>,
-    },
-    {
-        title: 'Tên môn học',
-        dataIndex: 'title',
+const SubjectList = (): JSX.Element => {
+    const columns = [
+        {
+            title: 'Mã môn học',
+            dataIndex: 'name',
+            render: (text: string) => <a>{text}</a>,
+        },
+        {
+            title: 'Tên môn học',
+            dataIndex: 'title',
 
-    },
-    {
-        title: 'Loại môn',
-        dataIndex: 'type',
-    },
-    {
-        title: 'Số tiết HK1',
-        dataIndex: 'hk1',
-    },
-    {
-        title: 'Số tiết HK2',
-        dataIndex: 'hk2',
-    },
-    {
-        title: '',
-        dataIndex: 'buttonedit',
-    },
-    {
-        title: '',
-        dataIndex: 'buttontrash',
-    },
-];
+        },
+        {
+            title: 'Loại môn',
+            dataIndex: 'type',
+        },
+        {
+            title: 'Số tiết HK1',
+            dataIndex: 'hk1',
+        },
+        {
+            title: 'Số tiết HK2',
+            dataIndex: 'hk2',
+        },
+        {
+            title: '',
+            render: () => (
+                <Fragment>
+                    <button className="btnEdit" onClick={showEditModal}>
+                        <img src={IconEdit} alt="IconEdit" />
+                    </button>
+                    <button className="btnTrash" onClick={showModal}>
+                        <img src={IconTrash} alt="IconTrash" />
+                    </button>
+                </Fragment>
+            ),
+        },
+    ];
 
-const data: DataType[] = [
-    {
-        key: '1',
-        name: 'KHTN',
-        title: 'Ngữ Văn',
-        type: 'Môn bắt buộc',
-        hk1: '4',
-        hk2: '4',
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '2',
-        name: 'VHXH',
-        title: 'Toán',
-        type: 'Môn tự chọn',
-        hk1: '4',
-        hk2: '4',
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '3',
-        name: 'AV',
-        title: 'Anh Văn',
-        type: 'Môn bắt buộc',
-        hk1: '4',
-        hk2: '4',
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '4',
-        name: 'AV',
-        title: 'Anh Văn',
-        type: 'Môn bắt buộc',
-        hk1: '4',
-        hk2: '4',
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '5',
-        name: 'VHXH',
-        title: 'Giáo dục công dân',
-        type: 'Môn tự chọn',
-        hk1: '4',
-        hk2: '4',
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '6',
-        name: 'KHTN',
-        title: 'Sinh học',
-        type: 'Môn bắc buộc',
-        hk1: '4',
-        hk2: '4',
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '7',
-        name: 'KHXH',
-        title: 'Hóa học',
-        type: 'Môn tự chọn',
-        hk1: '4',
-        hk2: '4',
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-]; // rowSelection object indicates the need for row selection
+    const data: DataType[] = [
+        {
+            key: '1',
+            name: 'KHTN',
+            title: 'Ngữ Văn',
+            type: 'Môn bắt buộc',
+            hk1: '4',
+            hk2: '4',
+            buttonedit: <img src={IconEdit} alt="" />,
+            buttontrash: <img src={IconTrash} alt="" />,
+        },
+        {
+            key: '2',
+            name: 'VHXH',
+            title: 'Toán',
+            type: 'Môn tự chọn',
+            hk1: '4',
+            hk2: '4',
+            buttonedit: <img src={IconEdit} alt="" />,
+            buttontrash: <img src={IconTrash} alt="" />,
+        },
+        {
+            key: '3',
+            name: 'AV',
+            title: 'Anh Văn',
+            type: 'Môn bắt buộc',
+            hk1: '4',
+            hk2: '4',
+            buttonedit: <img src={IconEdit} alt="" />,
+            buttontrash: <img src={IconTrash} alt="" />,
+        },
+        {
+            key: '4',
+            name: 'AV',
+            title: 'Anh Văn',
+            type: 'Môn bắt buộc',
+            hk1: '4',
+            hk2: '4',
+            buttonedit: <img src={IconEdit} alt="" />,
+            buttontrash: <img src={IconTrash} alt="" />,
+        },
+        {
+            key: '5',
+            name: 'VHXH',
+            title: 'Giáo dục công dân',
+            type: 'Môn tự chọn',
+            hk1: '4',
+            hk2: '4',
+            buttonedit: <img src={IconEdit} alt="" />,
+            buttontrash: <img src={IconTrash} alt="" />,
+        },
+        {
+            key: '6',
+            name: 'KHTN',
+            title: 'Sinh học',
+            type: 'Môn bắc buộc',
+            hk1: '4',
+            hk2: '4',
+            buttonedit: <img src={IconEdit} alt="" />,
+            buttontrash: <img src={IconTrash} alt="" />,
+        },
+        {
+            key: '7',
+            name: 'KHXH',
+            title: 'Hóa học',
+            type: 'Môn tự chọn',
+            hk1: '4',
+            hk2: '4',
+            buttonedit: <img src={IconEdit} alt="" />,
+            buttontrash: <img src={IconTrash} alt="" />,
+        },
+    ]; // rowSelection object indicates the need for row selection
 
-const rowSelection = {
-    onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
-        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-    },
-    getCheckboxProps: (record: DataType) => ({
-        disabled: record.name === 'Disabled User', // Column configuration not to be checked
-        name: record.name,
-    }),
-};
+    const rowSelection = {
+        onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
+            console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+        },
+        getCheckboxProps: (record: DataType) => ({
+            disabled: record.name === 'Disabled User', // Column configuration not to be checked
+            name: record.name,
+        }),
+    };
 
-interface DataType {
-    key: React.Key;
-    name: string;
-    title: string;
-    type: string;
-    hk1: string;
-    hk2: string;
-    buttonedit: object;
-    buttontrash: object;
-}
+    interface DataType {
+        key: React.Key;
+        name: string;
+        title: string;
+        type: string;
+        hk1: string;
+        hk2: string;
+        buttonedit: object;
+        buttontrash: object;
+    }
 
 
-export default function SubjectList() {
+
     const [selectionType, setSelectionType] = useState<'checkbox' | 'radio'>('checkbox');
     const [visible, setVisible] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -163,6 +169,17 @@ export default function SubjectList() {
 
     const handleCancel = () => {
         setIsModalVisible(false);
+    }
+    // edit
+    const [editModalVisible, setEditModalVisible] = useState(false);
+    const showEditModal = () => {
+        setEditModalVisible(true);
+    };
+    const handleEditOk = () => {
+        setEditModalVisible(false);
+    };
+    const handleEditCancel = () => {
+        setEditModalVisible(false);
     }
 
     return (
@@ -288,6 +305,41 @@ export default function SubjectList() {
                             dataSource={data}
                             pagination={false}
                         />
+                        <Modal
+                            className="section-5" visible={editModalVisible} onOk={handleEditOk} onCancel={handleEditCancel}
+                        >
+                            <Form>
+                                <h1>Thiết lập môn học</h1>
+                                <Form.Item label="Tổ - Bộ môn:">
+                                    <Select className="ant-select-opt">
+                                        <Select.Option value="khtn">Khoa học tự nhiên</Select.Option>
+                                        <Select.Option value="khxh">Văn hóa xã hội</Select.Option>
+                                    </Select>
+                                </Form.Item>
+                                <Form.Item label="Tên môn học:">
+                                    <Input />
+                                </Form.Item>
+                                <Form.Item label="Mã môn:">
+                                    <Input className="ant-input-sbj" />
+                                </Form.Item>
+                                <Form.Item label="Loại môn học:">
+                                    <Select className="ant-select-opt">
+                                        <Select.Option value="batbuoc">Môn học bắt buộc</Select.Option>
+                                        <Select.Option value="tuchon">Môn học tự chọn</Select.Option>
+                                    </Select>
+                                </Form.Item>
+                                <hr />
+                                <p>Số tiết/Học kì</p>
+                                <Form.Item className="ant-input-hk1" label="Học kì I:">
+                                    <Input />
+                                </Form.Item>
+                                <Form.Item className="ant-input-hk2" label="Học kì II:">
+                                    <Input />
+                                </Form.Item>
+                                <button className="box__btn-button-cancel" onClick={handleEditCancel}>Hủy</button>
+                                <button className="box__btn-button-save" onClick={handleEditCancel}>Lưu</button>
+                            </Form>
+                        </Modal>
                     </div>
                     <div className="box__sbj-pagtion">
                         <div className="box__sbj-pagtion-txt">
@@ -308,4 +360,4 @@ export default function SubjectList() {
         </>
     );
 }
-
+export default SubjectList;

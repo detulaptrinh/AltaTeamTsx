@@ -439,6 +439,7 @@
 .section-7-create .ant-input {
     background: #f2f2f2;
     border-radius: 8px;
+    border: none;
 }
 
 .section-7-create .create-point .ant-input {
@@ -454,6 +455,7 @@
     max-height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
+    border: none;
 }
 
 .section-7-create .ant-form-item .ant-select,

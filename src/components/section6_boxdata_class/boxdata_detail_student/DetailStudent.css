@@ -197,7 +197,11 @@
 }
 
 .section-6-3 .ant-table-thead .ant-table-cell {
-    background: #ff7506;
+    background: none;
+}
+
+.section-6-3 .ant-table-thead {
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
 }
 
 .section-6-3 .table-list .ant-table-thead>tr>th {
@@ -210,10 +214,6 @@
     color: #ffffff;
     border: none;
     padding: 0.85rem;
-}
-
-.section-6-3 .table-list .ant-table-thead>tr>th {
-    background: #ff7506;
 }
 
 .section-6-3 .table-list .ant-table-thead .ant-table-cell:first-child {
@@ -274,6 +274,13 @@
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.section-6-3 .table-list .btnEdit {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 
@@ -388,6 +395,7 @@
     height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
+    border: none;
 }
 
 .section-6-3-input .ant-input-sbj {
@@ -408,6 +416,7 @@
     max-height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
+    border: none;
 }
 
 .section-6-3-input .ant-form-item .ant-select,

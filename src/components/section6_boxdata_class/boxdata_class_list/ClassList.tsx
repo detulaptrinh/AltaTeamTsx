@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 import './ClassList.css'
 import { Link } from 'react-router-dom';
@@ -16,122 +16,101 @@ import {
 
 const { Option } = Select;
 
-const columns = [
-    {
-        title: 'Mã lớp',
-        dataIndex: 'name',
-        render: (text: string) => <a>{text}</a>,
-    },
-    {
-        title: 'Tên lớp',
-        dataIndex: 'title',
-    },
-    {
-        title: 'Giáo viên chủ nhiệm',
-        dataIndex: 'type',
-    },
-    {
-        title: '',
-        dataIndex: 'buttonview',
-    },
-    {
-        title: '',
-        dataIndex: 'buttonedit',
-    },
-    {
-        title: '',
-        dataIndex: 'buttontrash',
-    },
-];
+const ClassList = (): JSX.Element => {
+    const columns = [
+        {
+            title: 'Mã lớp',
+            dataIndex: 'name',
+            render: (text: string) => <a>{text}</a>,
+        },
+        {
+            title: 'Tên lớp',
+            dataIndex: 'title',
+        },
+        {
+            title: 'Giáo viên chủ nhiệm',
+            dataIndex: 'type',
+        },
+        {
+            title: '',
+            render: () => (
+                <Fragment>
+                    <button className="btnView" >
+                        <img src={IconEyesOr} alt="IconEdit" />
+                    </button>
+                    <button className="btnUpdate" >
+                        <img src={IconEdit} alt="IconEdit" onClick={showEditModal} />
+                    </button>
+                    <button className="btnTrash" onClick={showModal}>
+                        <img src={IconTrash} alt="IconTrash" />
+                    </button>
+                </Fragment>
+            ),
+        },
+    ];
 
-const data: DataType[] = [
-    {
-        key: '1',
-        name: '2020-6A',
-        title: '6A',
-        type: 'Nguyễn Văn A',
-        buttonview: <img src={IconEyesOr} alt="" />,
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '2',
-        name: '2020-6B',
-        title: '6B',
-        type: 'Phạm Thị C',
-        buttonview: <img src={IconEyesOr} alt="" />,
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '3',
-        name: '2020-6C',
-        title: '6C',
-        type: 'Trần Hoàng A',
-        buttonview: <img src={IconEyesOr} alt="" />,
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '4',
-        name: '2020-7A',
-        title: '7A',
-        type: 'Charlie',
-        buttonview: <img src={IconEyesOr} alt="" />,
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '5',
-        name: '2020-6B',
-        title: '6B',
-        type: 'Phạm Thị C',
-        buttonview: <img src={IconEyesOr} alt="" />,
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '6',
-        name: '2020-7C',
-        title: '7C',
-        type: 'Trần Hoàng A',
-        buttonview: <img src={IconEyesOr} alt="" />,
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-    {
-        key: '7',
-        name: '2020-8A',
-        title: '8A',
-        type: 'Phạm Thị C',
-        buttonview: <img src={IconEyesOr} alt="" />,
-        buttonedit: <img src={IconEdit} alt="" />,
-        buttontrash: <img src={IconTrash} alt="" />,
-    },
-]; // rowSelection object indicates the need for row selection
+    const data: DataType[] = [
+        {
+            key: '1',
+            name: '2020-6A',
+            title: '6A',
+            type: 'Nguyễn Văn A',
+        },
+        {
+            key: '2',
+            name: '2020-6B',
+            title: '6B',
+            type: 'Phạm Thị C',
+        },
+        {
+            key: '3',
+            name: '2020-6C',
+            title: '6C',
+            type: 'Trần Hoàng A',
+        },
+        {
+            key: '4',
+            name: '2020-7A',
+            title: '7A',
+            type: 'Charlie',
+        },
+        {
+            key: '5',
+            name: '2020-6B',
+            title: '6B',
+            type: 'Phạm Thị C',
+        },
+        {
+            key: '6',
+            name: '2020-7C',
+            title: '7C',
+            type: 'Trần Hoàng A',
+        },
+        {
+            key: '7',
+            name: '2020-8A',
+            title: '8A',
+            type: 'Phạm Thị C',
+        },
+    ]; // rowSelection object indicates the need for row selection
 
-const rowSelection = {
-    onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
-        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-    },
-    getCheckboxProps: (record: DataType) => ({
-        disabled: record.name === 'Disabled User', // Column configuration not to be checked
-        name: record.name,
-    }),
-};
+    const rowSelection = {
+        onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
+            console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+        },
+        getCheckboxProps: (record: DataType) => ({
+            disabled: record.name === 'Disabled User', // Column configuration not to be checked
+            name: record.name,
+        }),
+    };
 
+    interface DataType {
+        key: React.Key;
+        title: string;
+        name: string;
+        type: string;
+    }
 
-interface DataType {
-    key: React.Key;
-    title: string;
-    name: string;
-    type: string;
-    buttonview: object;
-    buttonedit: object;
-    buttontrash: object;
-}
-
-export default function ClassList() {
     const [visible, setVisible] = useState(false);
 
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -167,6 +146,17 @@ export default function ClassList() {
     const handleImportCancel = () => {
         setImportModalVisible(false);
     }
+    // edit
+    const [editModalVisible, setEditModalVisible] = useState(false);
+    const showEditModal = () => {
+        setEditModalVisible(true);
+    };
+    const handleEditOk = () => {
+        setEditModalVisible(false);
+    };
+    const handleEditCancel = () => {
+        setEditModalVisible(false);
+    }
 
     const menu = (
         <Menu className="section6-dropdown-cre">
@@ -181,7 +171,7 @@ export default function ClassList() {
 
 
     return (
-        <>
+        <Fragment>
             {/* <User/> */}
             <div className="section-6">
                 <div className="box__title">
@@ -344,6 +334,72 @@ export default function ClassList() {
                             dataSource={data}
                             pagination={false}
                         />
+                        <Modal className="section-6-modal2" visible={editModalVisible} onOk={handleEditOk} onCancel={handleEditCancel}>
+                            <h1>Thiết lập lớp học</h1>
+                            <Form>
+                                <p>Thông tin chung</p>
+                                <div className="box__btn-import-school">
+                                    <div className="box__btn-import-block1">
+                                        <p className="box__btn-import-school-txt1">Niên khóa:</p>
+                                        <Select className="box__btn-import_year" defaultValue="0">
+                                            <Select value="0">2020 - 2021</Select>
+                                            <Select value="1">2019 - 2020</Select>
+                                            <Select value="2">2018 - 2019</Select>
+                                            <Select value="3">2017 - 2018</Select>
+                                        </Select>
+                                    </div>
+                                    <div className="box__btn-import-block2">
+                                        <p className="box__btn-import-school-txt2">Khoa - khối:</p>
+                                        <Select className="box__btn-import_blck" defaultValue="0">
+                                            <Select value="0">Khối 6</Select>
+                                            <Select value="1">Khối 7</Select>
+                                            <Select value="2">Khối 8</Select>
+                                        </Select>
+                                    </div>
+                                </div>
+                                <Form.Item label="Tên lớp:">
+                                    <Input value="6A1" readOnly />
+                                </Form.Item>
+                                <Form.Item label="Số lượng học viên:">
+                                    <Input className="ant-input-sbj" value="45" readOnly />
+                                </Form.Item>
+                                <Form.Item label="Phân loại lớp:">
+                                    <Select className="ant-select-opt" defaultValue="0">
+                                        <Select.Option value="0">Lớp căn bản</Select.Option>
+                                        <Select.Option value="1">Lớp nâng cao</Select.Option>
+                                    </Select>
+                                </Form.Item>
+                                <Form.Item label="Giáo viên chủ nhiệm:">
+                                    <Select className="ant-select-opt" defaultValue="0">
+                                        <Select.Option value="0">Trần Thị B</Select.Option>
+                                        <Select.Option value="1">Trần Thị B</Select.Option>
+                                    </Select>
+                                </Form.Item>
+                                <Form.Item label="Mô tả:">
+                                    <Input.TextArea value="Loremmmmmmmmmmmmmmmmmmmm" readOnly />
+                                </Form.Item>
+                                <hr />
+                                <p>Danh sách môn học</p>
+                                <div className="box__btn-import-list">
+                                    <Checkbox></Checkbox>
+                                    <p className="box__btn-import-list-txt">Kế thừa dữ liệu:</p>
+                                    <div className="box__btn-import-list-slct">
+                                        <Select className="box__btn-import-list-select" placeholder="Niên khóa">
+                                            <Select value="0">2020 - 2021</Select>
+                                            <Select value="1">2019 - 2020</Select>
+                                        </Select>
+                                    </div>
+                                </div>
+                                <button className="box__btn-import-icon-plus">
+                                    <img src={IconPlusPrimary} alt="plus_primary" />
+                                    <span>Thêm học kì mới</span>
+                                </button>
+                            </Form>
+                            <div className="box__btn-button-import">
+                                <button className="box__btn-button-cancel" onClick={handleEditCancel}>Hủy</button>
+                                <button className="box__btn-button-save" onClick={handleEditCancel}>Lưu</button>
+                            </div>
+                        </Modal>
                     </div>
                     <div className="box__sbj-pagtion">
                         <div className="box__sbj-pagtion-txt">
@@ -361,6 +417,7 @@ export default function ClassList() {
                     </div>
                 </div>
             </div>
-        </>
+        </Fragment>
     );
 }
+export default ClassList;

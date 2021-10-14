@@ -1,5 +1,4 @@
-import React, { Component, useState } from 'react';
-import { Breadcrumb } from 'antd';
+import React, { useState, Fragment } from 'react';
 import './DetailStudent.css'
 import { Row, Col, Table, Tag, Modal, Form, Select, Input, Checkbox } from 'antd';
 import {
@@ -41,7 +40,13 @@ const columns = [
     },
     {
         title: '',
-        dataIndex: 'buttonedit',
+        render: () => (
+            <Fragment>
+                <button className="btnEdit" >
+                    <img src={IconEdit} alt="IconEdit" />
+                </button>
+            </Fragment>
+        ),
     },
 ];
 
@@ -54,8 +59,6 @@ const data = [
         year: '2020-2021',
         date: '05/09/2020',
         status: 'Đang theo học',
-        // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -65,8 +68,6 @@ const data = [
         year: '2020-2021',
         date: '05/09/2020',
         status: 'Đã chuyển lớp',
-        // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -76,8 +77,6 @@ const data = [
         year: '2020-2021',
         date: '05/09/2020',
         status: 'Đã chuyển trường',
-        // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -87,8 +86,6 @@ const data = [
         year: '2020-2021',
         date: '05/09/2020',
         status: 'Đã thôi học',
-        // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -98,8 +95,6 @@ const data = [
         year: '2020-2021',
         date: '05/09/2020',
         status: 'Đang tốt nghiệp',
-        // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -109,8 +104,6 @@ const data = [
         year: '2020-2021',
         date: '05/09/2020',
         status: 'Đang theo học',
-        // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={IconEdit} alt="" />,
     },
     {
         key: '1',
@@ -120,8 +113,6 @@ const data = [
         year: '2020-2021',
         date: '05/09/2020',
         status: 'Đang theo học',
-        // status: <button className="status-btn">Đang theo học</button>,
-        buttonedit: <img src={IconEdit} alt="" />,
     },
 ];
 
@@ -148,6 +139,7 @@ export default function DetailStudent() {
     const handleImportCancel = () => {
         setImportModalVisible(false);
     }
+
     return (
         <>
             <div className="section-6-3">
