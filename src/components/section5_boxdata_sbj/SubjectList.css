@@ -383,6 +383,7 @@
     height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
+    border: none;
 }
 
 .section-5 .ant-input-sbj {
@@ -393,17 +394,23 @@
     height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
+    border: none;
 }
 
 .section-5 .ant-modal-content .ant-select .ant-select-selector {
     margin-bottom: 1rem;
     float: right;
     padding: 0.4rem 1.2rem;
-    width: 100%;
     max-width: 56.1rem;
     height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
+}
+
+.section-5 .ant-form-item .ant-select,
+.ant-form-item .ant-cascader-picker {
+    float: right;
+    width: 56.1rem !important;
 }
 
 .section-5 Select Option {
@@ -553,14 +560,12 @@
     border: 1px solid #f2f2f2;
 }
 
-.section-5 .box__sbj-tbl .ant-table-thead {
-    border: none;
-    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+.section-5 .ant-table-thead .ant-table-cell {
+    background: none;
 }
 
-.section-5 .box__sbj-tbl .ant-table-thead .ant-table-cell {
-    border: none;
-    background: #ff7506;
+.section-5 .ant-table-thead {
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
 }
 
 .section-5 .box__sbj-tbl .ant-table-thead>tr>th {
@@ -589,23 +594,24 @@
 }
 
 .section-5 .box__sbj-tbl .ant-table-cell:nth-child(1) {
+    padding: 0 2rem;
     width: 1rem;
-}
-
-.section-5 .box__sbj-tbl .ant-table-cell:nth-child(5) {
-    text-align: center;
-}
-
-.section-5 .box__sbj-tbl .ant-table-cell:nth-child(6) {
-    text-align: center;
 }
 
 .section-5 .box__sbj-tbl .ant-table-cell:nth-child(7) {
-    width: 1rem;
+    width: 15rem;
 }
 
-.section-5 .box__sbj-tbl .ant-table-cell:nth-child(8) {
-    width: 1rem;
+.section-5 .box__sbj-tbl .btnEdit,
+.section-5 .box__sbj-tbl .btnTrash {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.section-5 .box__sbj-tbl .btnEdit {
+    margin-right: 2rem;
 }
 
 

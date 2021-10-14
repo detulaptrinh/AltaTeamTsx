@@ -131,7 +131,7 @@
 .section-8 .box__btn-button_del-icon {
     width: 4.5rem;
     height: 4.5rem;
-    margin-top: 0.5rem;
+    margin: 0;
     padding-right: 1rem;
     border-right: 1px solid #c9c4c0;
 }
@@ -517,3 +517,228 @@
 
 
 /*  */
+
+
+/* modal update class table */
+
+.section8-update-change .ant-modal-content {
+    width: 88.4rem;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 1.6rem;
+    padding: 2.4rem 6.4rem;
+    margin-left: -20%;
+}
+
+.section8-update-change h1 {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.015em;
+    text-align: center;
+    color: #373839;
+}
+
+.section8-update-change .text-update-left {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    margin-top: 2rem;
+    color: #373839;
+}
+
+.section8-update-change .text-update-right {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    margin-top: 1.8rem;
+    color: #373839;
+}
+
+.section8-update-change .text-update-right .text-update-right-input-class {
+    width: 10rem;
+    height: 3.2rem;
+    margin-left: 1.1rem;
+    background: #C9C4C0;
+    opacity: 0.5;
+    border-radius: 4px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+}
+
+.section8-update-change .text-update-right .ant-picker {
+    width: 14.4rem;
+    height: 3.2rem;
+    padding: 0px 4px 0px 8px;
+    background: #FFFFFF;
+    border: 1px solid #373839;
+    border-radius: 4px;
+}
+
+.section8-update-change .text-update-right .ant-picker-input {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+}
+
+
+/* .section8-update-change .text-update-right .ant-picker-input input {
+    border-right: 1px solid black;
+} */
+
+.section8-update-change .text-update-right .ant-picker-input .ant-picker-suffix span {
+    width: 2.4rem;
+    color: #FF7506;
+}
+
+.section8-update-change .text-update-right .text-update-right-class .ant-select-selector {
+    padding: 0.8rem 1.6rem;
+    width: 19.6rem;
+    height: 4rem;
+    background: #F2F2F2;
+    border-radius: 0.8rem;
+    border: none;
+}
+
+.section8-update-change .text-update-right .ant-select .ant-select-selection-item {
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    opacity: 0.5;
+}
+
+.section8-update-change textarea {
+    background: #F2F2F2;
+    height: 13.6rem !important;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.section8-update-change .text-update-right p {
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #373839;
+    opacity: 0.5;
+}
+
+.section8-update-change .text-update-right-upload1 {
+    width: 36.6rem;
+    height: 3.2rem;
+    background: #efefef;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.section8-update-change .text-update-right-upload1 img {
+    float: left;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid #c9c4c0;
+}
+
+.section8-update-change .text-update-right-upload2 {
+    float: right;
+    width: 17.1rem;
+    height: 3.2rem;
+    background: #ffd8b8;
+    border: 1px solid #ff7506;
+}
+
+.section8-update-change .update-change-btn {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.section8-update-change .update-change-btncancel {
+    cursor: pointer;
+    height: 5.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.section8-update-change .update-change-btnacp {
+    cursor: pointer;
+    height: 5.2rem;
+    margin-left: 3.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #C9C4C0;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
+
+
+/* modal update school table */
+
+.section8-update-change .text-update-right .text-update-right-inputform-school {
+    width: 56.1rem;
+    height: 4rem;
+    border-radius: 8px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 20px;
+    background: #F2F2F2;
+    border: none;
+}
+
+.section8-update-change .text-update-right .text-update-right-inputadd-school {
+    width: 56.1rem;
+    height: 4rem;
+    background: #F2F2F2;
+    border-radius: 8px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 20px;
+    border: none;
+}
+
+
+/* modal update discount table */
+
+.section8-update-change .text-update-right .text-update-right-discount .ant-select-selector {
+    padding: 0.8rem 1.6rem;
+    width: 56.1rem;
+    height: 4rem;
+    background: #F2F2F2;
+    border-radius: 8px;
+    border: none;
+}

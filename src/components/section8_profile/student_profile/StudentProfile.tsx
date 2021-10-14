@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import './StudentProfile.css'
-import { Select, Table, Tag, Modal, Form, Input, Pagination, InputNumber, Menu, Dropdown, Checkbox, Col, Row } from 'antd';
+import { Select, Table, Tag, Modal, DatePicker, Input, Pagination, InputNumber, Menu, Dropdown, Checkbox, Col, Row } from 'antd';
 import {
     IconPlus,
     IconTrash,
@@ -191,6 +191,72 @@ const ProfileStudent = (): JSX.Element => {
     const handleDelCancel = () => {
         setDelModalVisible(false);
     }
+    // update change class   
+    const [changeClassModalVisible, setChangeClassModalVisible] = useState(false);
+    const showChangeClassModal = () => {
+        setChangeClassModalVisible(true);
+    };
+    const handleChangeClassOk = () => {
+        setChangeClassModalVisible(false);
+    };
+    const handleChangeClassCancel = () => {
+        setChangeClassModalVisible(false);
+    }
+    // update change school   
+    const [changeSchoolModalVisible, setChangeSchoolModalVisible] = useState(false);
+    const showChangeSchoolModal = () => {
+        setChangeSchoolModalVisible(true);
+    };
+    const handleChangeSchoolOk = () => {
+        setChangeSchoolModalVisible(false);
+    };
+    const handleChangeSchoolCancel = () => {
+        setChangeSchoolModalVisible(false);
+    }
+    // update change reserve   
+    const [changeReserveModalVisible, setChangeReserveModalVisible] = useState(false);
+    const showChangeReserveModal = () => {
+        setChangeReserveModalVisible(true);
+    };
+    const handleChangeReserveOk = () => {
+        setChangeReserveModalVisible(false);
+    };
+    const handleChangeReserveCancel = () => {
+        setChangeReserveModalVisible(false);
+    }
+    // update change discount   
+    const [changeDiscountModalVisible, setChangeDiscountModalVisible] = useState(false);
+    const showChangeDiscountModal = () => {
+        setChangeDiscountModalVisible(true);
+    };
+    const handleChangeDiscountOk = () => {
+        setChangeDiscountModalVisible(false);
+    };
+    const handleChangeDiscountCancel = () => {
+        setChangeDiscountModalVisible(false);
+    }
+    // update change reward   
+    const [changeRewardModalVisible, setChangeRewardModalVisible] = useState(false);
+    const showChangeRewardModal = () => {
+        setChangeRewardModalVisible(true);
+    };
+    const handleChangeRewardOk = () => {
+        setChangeRewardModalVisible(false);
+    };
+    const handleChangeRewardCancel = () => {
+        setChangeRewardModalVisible(false);
+    }
+    // update change Rules   
+    const [changeRulesModalVisible, setChangeRulesModalVisible] = useState(false);
+    const showChangeRulesModal = () => {
+        setChangeRulesModalVisible(true);
+    };
+    const handleChangeRulesOk = () => {
+        setChangeRulesModalVisible(false);
+    };
+    const handleChangeRulesCancel = () => {
+        setChangeRulesModalVisible(false);
+    }
 
     // dropdown update
     const menuUpdate = (
@@ -199,22 +265,22 @@ const ProfileStudent = (): JSX.Element => {
                 <button className="section8-dropdown-update-btn">Sửa hồ sơ</button>
             </Menu.Item>
             <Menu.Item key="1">
-                <button className="section8-dropdown-update-btn" >Chuyển lớp</button>
+                <button className="section8-dropdown-update-btn" onClick={showChangeClassModal}>Chuyển lớp</button>
             </Menu.Item>
             <Menu.Item key="2">
-                <button className="section8-dropdown-update-btn" >Chuyển trường</button>
+                <button className="section8-dropdown-update-btn" onClick={showChangeSchoolModal}>Chuyển trường</button>
             </Menu.Item>
             <Menu.Item key="3">
-                <button className="section8-dropdown-update-btn" >Bảo lưu</button>
+                <button className="section8-dropdown-update-btn" onClick={showChangeReserveModal}>Bảo lưu</button>
             </Menu.Item>
             <Menu.Item key="4">
-                <button className="section8-dropdown-update-btn" >Cập nhật miễn giảm</button>
+                <button className="section8-dropdown-update-btn" onClick={showChangeDiscountModal}>Cập nhật miễn giảm</button>
             </Menu.Item>
             <Menu.Item key="5">
-                <button className="section8-dropdown-update-btn" >Cập nhật khen thưởng</button>
+                <button className="section8-dropdown-update-btn" onClick={showChangeRewardModal}>Cập nhật khen thưởng</button>
             </Menu.Item>
             <Menu.Item key="6">
-                <button className="section8-dropdown-update-btn border-btn" >Cập nhật kỷ luật</button>
+                <button className="section8-dropdown-update-btn border-btn" onClick={showChangeRulesModal}>Cập nhật kỷ luật</button>
             </Menu.Item>
         </Menu >
     );
@@ -318,6 +384,283 @@ const ProfileStudent = (): JSX.Element => {
                             dataSource={data}
                             pagination={false}
                         />
+                        {/* view */}
+
+                        {/* update */}
+                        {/* update change class */}
+                        <Modal className="section8-update-change" visible={changeClassModalVisible} onOk={handleChangeClassOk} onCancel={handleChangeClassCancel}>
+                            <h1>Cập nhật chuyển lớp</h1>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tên học viên:</Col>
+                                <Col className="text-update-right" span={19}>Nguyễn Ngọc Tuyết</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Lớp hiện tại:</Col>
+                                <Col className="text-update-right" span={19}>10A1</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Ngày chuyển lớp:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <DatePicker placeholder="dd/mm/yy" />
+                                    <Input className="text-update-right-input-class" value="Học kì I" readOnly />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Chuyển đến lớp:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Select className="text-update-right-class" defaultValue="0">
+                                        <Option value="0">Chọn lớp</Option>
+                                        <Option value="1">10A3</Option>
+                                        <Option value="2">10A4</Option>
+                                        <Option value="2">10A5</Option>
+                                    </Select>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Lý do chuyển lớp:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Input.TextArea />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tệp đính kèm:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <button className="text-update-right-upload1">
+                                        <img src={IconUpload} alt="" />
+                                    </button>
+                                    <button className="text-update-right-upload2">Chọn tệp tải lên...</button>
+                                    <p>Kiểu file .pdf .jpeg .png .jpg với dung lượng tối đa là 100 MB.</p>
+                                </Col>
+                            </Row>
+                            <Row >
+                                <Col span={24} className="update-change-btn">
+                                    <button className="update-change-btncancel" onClick={handleChangeClassCancel}>Hủy</button>
+                                    <button className="update-change-btnacp" onClick={handleChangeClassCancel}>Lưu</button>
+                                </Col>
+                            </Row>
+                        </Modal>
+
+                        {/* update change school */}
+                        <Modal className="section8-update-change" visible={changeSchoolModalVisible} onOk={handleChangeSchoolOk} onCancel={handleChangeSchoolCancel}>
+                            <h1>Cập nhật chuyển trường</h1>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tên học viên:</Col>
+                                <Col className="text-update-right" span={19}>Nguyễn Ngọc Tuyết</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Lớp hiện tại:</Col>
+                                <Col className="text-update-right" span={19}>10A1</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Ngày chuyển trường:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <DatePicker placeholder="dd/mm/yy" />
+                                    <Input className="text-update-right-input-class" value="Học kì I" readOnly />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Chuyển đến trường:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Input className="text-update-right-inputform-school" placeholder="Nhập tên trường" />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Địa chỉ trường:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Input className="text-update-right-inputadd-school" />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Lý do chuyển trường:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Input.TextArea />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tệp đính kèm:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <button className="text-update-right-upload1">
+                                        <img src={IconUpload} alt="" />
+                                    </button>
+                                    <button className="text-update-right-upload2">Chọn tệp tải lên...</button>
+                                    <p>Kiểu file .pdf .jpeg .png .jpg với dung lượng tối đa là 100 MB.</p>
+                                </Col>
+                            </Row>
+                            <Row >
+                                <Col span={24} className="update-change-btn">
+                                    <button className="update-change-btncancel" onClick={handleChangeSchoolCancel}>Hủy</button>
+                                    <button className="update-change-btnacp" onClick={handleChangeSchoolCancel}>Lưu</button>
+                                </Col>
+                            </Row>
+                        </Modal>
+
+                        {/* update change reserve */}
+                        <Modal className="section8-update-change" visible={changeReserveModalVisible} onOk={handleChangeReserveOk} onCancel={handleChangeReserveCancel}>
+                            <h1>Cập nhật bảo lưu</h1>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tên học viên:</Col>
+                                <Col className="text-update-right" span={19}>Nguyễn Ngọc Tuyết</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Lớp hiện tại:</Col>
+                                <Col className="text-update-right" span={19}>10A1</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Ngày bảo lưu:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <DatePicker placeholder="dd/mm/yy" />
+                                    <Input className="text-update-right-input-class" value="Học kì I" readOnly />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Thời hạn bảo lưu:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Input className="text-update-right-inputform-school" />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Lý do chuyển bảo lưu:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Input.TextArea />
+                                    <p>Kết quả học tập của học viên sẽ được bảo lưu trong hồ sơ học viên.</p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tệp đính kèm:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <button className="text-update-right-upload1">
+                                        <img src={IconUpload} alt="" />
+                                    </button>
+                                    <button className="text-update-right-upload2">Chọn tệp tải lên...</button>
+                                    <p>Kiểu file .pdf .jpeg .png .jpg với dung lượng tối đa là 100 MB.</p>
+                                </Col>
+                            </Row>
+                            <Row >
+                                <Col span={24} className="update-change-btn">
+                                    <button className="update-change-btncancel" onClick={handleChangeReserveCancel}>Hủy</button>
+                                    <button className="update-change-btnacp" onClick={handleChangeReserveCancel}>Lưu</button>
+                                </Col>
+                            </Row>
+                        </Modal>
+
+                        {/* update change discount */}
+                        <Modal className="section8-update-change" visible={changeDiscountModalVisible} onOk={handleChangeDiscountOk} onCancel={handleChangeDiscountCancel}>
+                            <h1>Cập nhật miễm giảm</h1>
+                            <Row>
+                                <Col className="text-update-left" span={6}>Tên học viên:</Col>
+                                <Col className="text-update-right" span={18}>Nguyễn Ngọc Tuyết</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={6}>Lớp hiện tại:</Col>
+                                <Col className="text-update-right" span={18}>10A1</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={6}>Đổi tượng miễn giảm:</Col>
+                                <Col className="text-update-right" span={18}>
+                                    <Select className="text-update-right-discount">
+                                        <Option value="1">Con thương binh</Option>
+                                        <Option value="2">Sổ hộ nghèo</Option>
+                                    </Select>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={6}>Hình thức miễn giảm:</Col>
+                                <Col className="text-update-right" span={18}>
+                                    <Input className="text-update-right-inputform-school" />
+                                </Col>
+                            </Row>
+                            <Row >
+                                <Col span={24} className="update-change-btn">
+                                    <button className="update-change-btncancel" onClick={handleChangeDiscountCancel}>Hủy</button>
+                                    <button className="update-change-btnacp" onClick={handleChangeDiscountCancel}>Lưu</button>
+                                </Col>
+                            </Row>
+                        </Modal>
+
+                        {/* update change reward */}
+                        <Modal className="section8-update-change" visible={changeRewardModalVisible} onOk={handleChangeRewardOk} onCancel={handleChangeRewardCancel}>
+                            <h1>Cập nhật khen thưởng</h1>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tên học viên:</Col>
+                                <Col className="text-update-right" span={19}>Nguyễn Ngọc Tuyết</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Lớp hiện tại:</Col>
+                                <Col className="text-update-right" span={19}>10A1</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Ngày khen thưởng:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <DatePicker placeholder="dd/mm/yy" />
+                                    <Input className="text-update-right-input-class" value="Học kì I" readOnly />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Nội dung:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Input.TextArea />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tệp đính kèm:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <button className="text-update-right-upload1">
+                                        <img src={IconUpload} alt="" />
+                                    </button>
+                                    <button className="text-update-right-upload2">Chọn tệp tải lên...</button>
+                                    <p>Kiểu file .pdf .jpeg .png .jpg với dung lượng tối đa là 100 MB.</p>
+                                </Col>
+                            </Row>
+                            <Row >
+                                <Col span={24} className="update-change-btn">
+                                    <button className="update-change-btncancel" onClick={handleChangeRewardCancel}>Hủy</button>
+                                    <button className="update-change-btnacp" onClick={handleChangeRewardCancel}>Lưu</button>
+                                </Col>
+                            </Row>
+                        </Modal>
+
+                        {/* update change Rules */}
+                        <Modal className="section8-update-change" visible={changeRulesModalVisible} onOk={handleChangeRulesOk} onCancel={handleChangeRulesCancel}>
+                            <h1>Cập nhật kỷ luật</h1>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tên học viên:</Col>
+                                <Col className="text-update-right" span={19}>Nguyễn Ngọc Tuyết</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Lớp hiện tại:</Col>
+                                <Col className="text-update-right" span={19}>10A1</Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Ngày kỷ luật:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <DatePicker placeholder="dd/mm/yy" />
+                                    <Input className="text-update-right-input-class" value="Học kì I" readOnly />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Nội dung:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <Input.TextArea />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-update-left" span={5}>Tệp đính kèm:</Col>
+                                <Col className="text-update-right" span={19}>
+                                    <button className="text-update-right-upload1">
+                                        <img src={IconUpload} alt="" />
+                                    </button>
+                                    <button className="text-update-right-upload2">Chọn tệp tải lên...</button>
+                                    <p>Kiểu file .pdf .jpeg .png .jpg với dung lượng tối đa là 100 MB.</p>
+                                </Col>
+                            </Row>
+                            <Row >
+                                <Col span={24} className="update-change-btn">
+                                    <button className="update-change-btncancel" onClick={handleChangeRulesCancel}>Hủy</button>
+                                    <button className="update-change-btnacp" onClick={handleChangeRulesCancel}>Lưu</button>
+                                </Col>
+                            </Row>
+                        </Modal>
+
                         {/* delete */}
                         <Modal className="box__btn-del" visible={delModalVisible} onOk={handleDelOk} onCancel={handleDelCancel}>
                             <h1>Xóa</h1>
@@ -342,7 +685,7 @@ const ProfileStudent = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-        </Fragment>
+        </Fragment >
     );
 }
 

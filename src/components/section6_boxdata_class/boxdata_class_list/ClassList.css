@@ -607,6 +607,7 @@
     height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
+    border: none;
 }
 
 .section-6-modal2 .ant-input-sbj {
@@ -626,6 +627,7 @@
     height: 4rem;
     background: #f2f2f2;
     border-radius: 8px;
+    border: none;
 }
 
 .section-6-modal2 .box__btn-import-list .box__btn-import-list-txt {
@@ -767,6 +769,10 @@
     height: auto;
 }
 
+.section-6 .ant-table-thead .ant-table-cell {
+    background: none;
+}
+
 .section-6 .ant-table-thead {
     background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
 }
@@ -789,10 +795,6 @@
     border: 1px solid #f2f2f2;
 }
 
-.section-6 .box__sbj-tblclass .ant-table-thead>tr>th {
-    background: #ff7506;
-}
-
 .section-6 .box__sbj-tblclass {
     border-radius: 8rem;
 }
@@ -812,15 +814,7 @@
 }
 
 .section-6 .box__sbj-tblclass .ant-table-cell:nth-child(5) {
-    width: 1rem;
-}
-
-.section-6 .box__sbj-tblclass .ant-table-cell:nth-child(6) {
-    width: 1rem;
-}
-
-.section-6 .box__sbj-tblclass .ant-table-cell:nth-child(7) {
-    width: 1rem;
+    width: 20rem;
 }
 
 .section-6 .box__sbj-tblclass .ant-table-thead>tr>th {
@@ -846,6 +840,20 @@
 
 .section-6 .box__sbj-tblclass .ant-table-tbody .ant-table-cell a {
     color: #373839;
+}
+
+.section-6 .box__sbj-tblclass .btnView,
+.section-6 .box__sbj-tblclass .btnUpdate,
+.section-6 .box__sbj-tblclass .btnTrash {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.section-6 .box__sbj-tblclass .btnView,
+.section-6 .box__sbj-tblclass .btnUpdate {
+    margin-right: 2rem;
 }
 
 
