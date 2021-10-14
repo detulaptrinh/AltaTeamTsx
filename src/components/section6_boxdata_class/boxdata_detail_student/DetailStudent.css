@@ -1,4 +1,5 @@
 /* Breadcrumb */
+
 .section-6-3 .breadcrumb-title {
     height: 6rem;
     line-height: 6rem;
@@ -8,10 +9,12 @@
     font-style: normal;
     font-weight: 800;
 }
+
 .section-6-3 .breadcrumb-title span {
     font-size: 1.8rem;
     color: #c9c4c0;
 }
+
 .section-6-3 .breadcrumb-title i {
     font-size: 3rem;
     color: #ff7506;
@@ -19,11 +22,15 @@
     line-height: 6rem;
     padding: 0 1rem;
 }
+
 .section-6-3 .breadcrumb-title .breadcrumb-title-active {
     font-size: 4.8rem;
     color: #373839;
 }
+
+
 /* box general information */
+
 .section-6-3 .section-6-3__information {
     width: 100%;
     height: 25.8rem;
@@ -34,6 +41,7 @@
     border-radius: 1.6rem;
     padding: 0 6.4rem;
 }
+
 .section-6-3 .information-title {
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -42,19 +50,24 @@
     color: #cc5c00;
     padding: 2.4rem 0;
 }
+
 .section-6-3 .information-button {
     padding: 2.4rem 0;
 }
+
 .section-6-3 .information-button-btn {
+    cursor: pointer;
     float: right;
     background: none;
     border: none;
     margin-left: 0.5rem;
 }
+
 .section-6-3 .information-box {
     width: 100%;
     height: auto;
 }
+
 .section-6-3 .information-box-title-left {
     width: 10.4rem;
     height: 3.6rem;
@@ -65,6 +78,7 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
+
 .section-6-3 .information-box-content {
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -73,6 +87,7 @@
     color: #373839;
     opacity: 0.8;
 }
+
 .section-6-3 .information-box-title-center {
     width: 16.8rem;
     height: 3.6rem;
@@ -83,6 +98,7 @@
     letter-spacing: 0.015em;
     color: #373839;
 }
+
 .section-6-3 .information-box-title-right {
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -92,7 +108,10 @@
     letter-spacing: 0.015em;
     padding-left: calc(20.6rem - 1.6rem);
 }
+
+
 /*  */
+
 .section-6-3 .section-6-3__student-list {
     width: 100%;
     height: 64.2rem;
@@ -101,10 +120,12 @@
     box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
     border-radius: 16px 16px 0px 0px;
 }
+
 .section-6-3 .student-list-tab {
     width: 100%;
     height: auto;
 }
+
 .section-6-3 .student-list-tab-box {
     margin: 3.2rem 0 0 6.4rem;
     width: 51.9rem;
@@ -118,6 +139,7 @@
     border-radius: 3.2rem;
     position: relative;
 }
+
 .section-6-3 .student-list-tab-box-list {
     display: flex;
     flex-direction: row;
@@ -132,6 +154,7 @@
     background: #373839;
     border-radius: 2.4rem;
 }
+
 .section-6-3 .student-list-tab-box-list a {
     font-family: "Mulish";
     font-style: normal;
@@ -141,6 +164,7 @@
     letter-spacing: 0.015em;
     color: #ffffff;
 }
+
 .section-6-3 .student-list-tab-box-subject {
     display: flex;
     flex-direction: row;
@@ -151,6 +175,7 @@
     height: 3.6rem;
     margin-left: 26.1rem;
 }
+
 .section-6-3 .student-list-tab-box-subject a {
     font-family: "Mulish";
     font-style: normal;
@@ -162,15 +187,20 @@
     color: #373839;
     opacity: 0.5;
 }
+
+
 /*  */
+
 .section-6-3 .table-list {
     margin: 2.4rem 6.4rem 0 6.4rem;
     height: auto;
 }
+
 .section-6-3 .ant-table-thead .ant-table-cell {
     background: #ff7506;
 }
-.section-6-3 .table-list .ant-table-thead > tr > th {
+
+.section-6-3 .table-list .ant-table-thead>tr>th {
     font-family: Mulish;
     font-style: normal;
     font-weight: 800;
@@ -181,21 +211,27 @@
     border: none;
     padding: 0.85rem;
 }
-.section-6-3 .table-list .ant-table-thead > tr > th {
+
+.section-6-3 .table-list .ant-table-thead>tr>th {
     background: #ff7506;
 }
+
 .section-6-3 .table-list .ant-table-thead .ant-table-cell:first-child {
     border-top-left-radius: 0.8rem;
 }
+
 .section-6-3 .table-list .ant-table-thead .ant-table-cell:last-child {
     border-top-right-radius: 0.8rem;
 }
+
 .section-6-3 .table-list .ant-table-tbody .ant-table-cell {
     color: #373839;
 }
+
 .section-6-3 .table-list .ant-table-tbody .ant-table-cell a {
     color: #373839;
 }
+
 .section-6-3 .table-list .ant-table-tbody {
     font-family: Source Sans Pro;
     font-style: normal;
@@ -204,17 +240,21 @@
     line-height: 130%;
     color: #373839;
 }
+
 .section-6-3 .table-list .ant-table-tbody tr:nth-child(odd) {
     background: #ffffff;
     border: 1px solid #f2f2f2;
 }
+
 .section-6-3 .table-list .ant-table-tbody tr:nth-child(even) {
     background: #f0f3f6;
     border: 1px solid #f2f2f2;
 }
+
 .section-6-3 .table-list .ant-table-cell:nth-child(1) {
     text-align: center;
 }
+
 .section-6-3 .table-list .ant-table-tbody .ant-table-cell span {
     display: flex;
     flex-direction: row;
@@ -225,7 +265,6 @@
     height: 3.7rem;
     box-sizing: border-box;
     border-radius: 0.4rem;
-
     font-family: Source Sans Pro;
     top: calc(50% - 21px / 2);
     font-style: normal;
@@ -236,29 +275,251 @@
     align-items: center;
     text-align: center;
 }
-/* .section-6-3 .table-list .status-btn {
-    border: none;
-    border: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 16px;
-    width: 14.367rem;
-    height: 3.7rem;
-    border: 1px solid #49c510;
-    background-color: #fff;
-    box-sizing: border-box;
-    border-radius: 0.4rem;
 
-    font-family: Source Sans Pro;
-    top: calc(50% - 21px / 2);
+
+/* modal input */
+
+.section-6-3-input .ant-modal-content {
+    width: 88.4rem;
+    height: 82rem;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1rem;
+    right: 20%;
+    margin-top: -15%;
+}
+
+.section-6-3-input h1 {
+    font-weight: bold;
+    text-align: center;
+    font-family: Mulish;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+    transform: translateY(-50%);
+}
+
+.section-6-3-input .ant-form p {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-top: 2rem;
+    letter-spacing: 0.015em;
+    color: #cc5c00;
+}
+
+.section-6-3-input .box__btn-import-school {
+    width: 100%;
+    height: 6rem;
+}
+
+.section-6-3-input .box__btn-import-block1 {
+    float: left;
+    width: 40%;
+}
+
+.section-6-3-input .box__btn-import-block2 {
+    width: 45%;
+    float: right;
+}
+
+.section-6-3-input .box__btn-import-school .box__btn-import_year {
+    width: 14.4rem;
+}
+
+.section-6-3-input .ant-modal-content .box__btn-import-school .box__btn-import_year .ant-select .ant-select-selector {
+    height: 3.2rem !important;
+}
+
+.section-6-3-input .box__btn-import_year .ant-select-selection-search {
+    right: 3rem;
+    border-right: 1px solid #373839;
+}
+
+.section-6-3-input .box__btn-import-school .box__btn-import-block1 .ant-select .ant-select-selector {
+    border: none;
+    padding: 0.4rem 1.2rem;
+    border: 1px solid #373839;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.section-6-3-input .box__btn-import-school .box__btn-import-school-txt1 {
+    float: left;
+    margin-top: 1rem;
+    padding-right: 2rem;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
     font-size: 1.6rem;
-    line-height: 130%;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.section-6-3-input .box__btn-import-school .box__btn-import-school-txt2 {
+    float: left;
+    margin-top: 1rem;
+    padding-right: 2.6rem;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.section-6-3-input .box__btn-import-block2 .box__btn-import_blck {
+    float: right;
+    width: 25.2rem;
+    height: 4rem;
+    border-radius: 4px;
+}
+
+.section-6-3-input .ant-input {
+    float: right;
+    width: 56.1rem;
+    height: 4rem;
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+
+.section-6-3-input .ant-input-sbj {
+    left: 15%;
+    float: left;
+    width: 17.1rem;
+    height: 4rem;
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+
+.section-6-3-input .ant-modal-content .ant-select .ant-select-selector {
+    float: right;
+    width: 100%;
+    padding: 0.4rem 1.2rem;
+    max-width: 56.1rem;
+    height: 4rem;
+    max-height: 4rem;
+    background: #f2f2f2;
+    border-radius: 8px;
+}
+
+.section-6-3-input .ant-form-item .ant-select,
+.ant-form-item .ant-cascader-picker {
+    float: right;
+    width: 56.1rem !important;
+}
+
+
+/* .section-6-3-input .ant-select-opt  .ant-select-selector {
+    float: right;
+    width: 56.1rem !important;
+    max-width: 56.1rem !important;
+} */
+
+.section-6-3-input .box__btn-import-list .box__btn-import-list-txt {
+    display: inline;
+    margin-top: -10rem;
+    margin-left: 1.6rem;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.section-6-3-input .box__btn-import-list .box__btn-import-list-slct {
+    display: inline;
+}
+
+.section-6-3-input .box__btn-import-list .box__btn-import-list-select {
+    transform: translateY(30%);
+    margin-left: 0.8rem;
+    width: 14.4rem;
+    border-radius: 4px;
+}
+
+.section-6-3-input .box__btn-import-list-select .ant-select-selection-search {
+    right: 3rem;
+    border-right: 1px solid #373839;
+}
+
+.section-6-3-input .box__btn-import-list .ant-select .ant-select-selector {
+    border: none;
+    border: 1px solid #7c7c7c;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.section-6-3-input .box__btn-import-icon-plus {
+    margin-top: 3rem;
     display: flex;
     align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.section-6-3-input .box__btn-import-icon-plus>img {
+    border-radius: 50%;
+    margin-right: 1.2rem;
+}
+
+.section-6-3-input .box__btn-import-icon-plus>span {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #0b80ec;
+}
+
+.section-6-3-input .box__btn-button-import {
     text-align: center;
-    color: #3cc13b;
-} */
+}
+
+.section-6-3-input .box__btn-button-cancel {
+    cursor: pointer;
+    margin-top: 4rem;
+    height: 5.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 23px;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.section-6-3-input .box__btn-button-save {
+    cursor: pointer;
+    margin-top: 4rem;
+    margin-left: 3.2rem;
+    height: 5.2rem;
+    width: 16rem;
+    border: none;
+    border-radius: 8px;
+    background: #ff7506;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
