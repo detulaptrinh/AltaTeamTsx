@@ -50,9 +50,9 @@ export default class ProfileTeacher extends Component {
                 defaultValue="2020-2021"
               >
                 <Option value="2017-2018">2017-2018</Option>
-                <Option value="2017-2018">2018-2019</Option>
-                <Option value="2017-2018">2019-2020</Option>
-                <Option value="2017-2018" selected>
+                <Option value="2018-2019">2018-2019</Option>
+                <Option value="2019-2020">2019-2020</Option>
+                <Option value="2020-2021" selected>
                   2020-2021
                 </Option>
               </Select>
