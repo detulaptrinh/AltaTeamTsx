@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react'
 import './GroupUser.css'
-import { Button} from 'antd';
+import { Button, Modal, Form, Checkbox} from 'antd';
 import { Row, Col } from 'antd';
 import { Table, Space } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
@@ -14,6 +14,8 @@ import dataGroupUser from '../../data/groupUser.json'
 
 const { Option } = Select;
 
+const { TextArea } = Input;
+
 interface GroupUser {
     name: string;
     member: number;
@@ -22,36 +24,63 @@ interface GroupUser {
 
 const data: GroupUser[] = dataGroupUser;
 
-const columnsGroupUser = [
-    {
-        title: 'Tên nhóm',
-        dataIndex: 'name',
-        sorter: true,
-        width: '15%'
-    },
-    {
-        title: 'Tổng số thành viên',
-        dataIndex: 'member',
-        sorter: true,
-        width: '25%'
-    },
-    {
-        title: 'Ghi chú',
-        dataIndex: 'note',
-        width: '50%'
-    },
-    {       
-        render: () => (
-            <Space size="middle">
-              <a><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
-              <a><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
-            </Space>
-          ),
-    },
-];
 
 
 function GroupUser() {
+    const columnsGroupUser = [
+        {
+            title: 'Tên nhóm',
+            dataIndex: 'name',
+            sorter: true,
+            width: '15%'
+        },
+        {
+            title: 'Tổng số thành viên',
+            dataIndex: 'member',
+            sorter: true,
+            width: '25%'
+        },
+        {
+            title: 'Ghi chú',
+            dataIndex: 'note',
+            width: '50%'
+        },
+        {       
+            render: () => (
+                <Space size="middle">
+                  <a onClick={showaddNewModal}><img src={IconEdit} className="edit__icon" alt="" style={{width:32,height:32}}/></a>
+                  <a onClick={showdeleteModal}><img src={IconTrash} className="delete__icon" alt="" style={{width:32,height:32}}/></a>
+                </Space>
+              ),
+        },
+    ];
+
+    const [addNewModal, setaddNewModal] = useState(false);
+
+    const [deleteModal, setdeleteModal] = useState(false);
+
+    const [option, setoption] = useState(false);
+
+    const showdeleteModal = () => {
+        setdeleteModal(true);
+    };
+
+    const handleCancelDelete = () => {
+        setdeleteModal(false);
+    }
+
+    const showaddNewModal = () => {
+        setaddNewModal(true);
+    };
+
+    const handleSave = () => {
+        setaddNewModal(false);
+    };
+
+    const handleCancel = () => {
+        setaddNewModal(false);
+    };
+    
         return(
         <>
         <div className="section20">
@@ -110,7 +139,7 @@ function GroupUser() {
 
                         <Col span={10}>
                             <div className="box__btn-group">                             
-                                <Button className="box__btn-group__add" >
+                                <Button className="box__btn-group__add" onClick={showaddNewModal}>
                                     <img style={{padding:10}} src={IconPlus} />Thêm mới</Button>                                
                             </div>
                         </Col>
@@ -162,6 +191,159 @@ function GroupUser() {
                     </Col>
                 </Col>
             </div>
+
+             {/* Modal Add New*/}
+            <Modal className="modal-groupuser" title="Thiết lập nhóm người dùng" visible={addNewModal}>
+                <Form>
+                    <div className="form-control">
+                        <label>Tên nhóm:</label>
+                        <Input />
+                    </div>
+
+                    <div className="form-control">
+                        <label>Ghi chú:</label>
+                        <TextArea rows={4} className="modal-group-textarea" />
+                    </div>
+
+                    <div className="form-checkbox">
+                        <div className="form-label">
+                            <label>Phân quyền:</label>
+                        </div>    
+                        <div className="checkbox">
+                            <Checkbox
+                            >Toàn quyền quản trị
+                            </Checkbox>
+                            <Checkbox
+                             onChange={() => {
+                                setoption(!option);
+                              }}
+                              checked={option}
+                            >Tùy chọn                    
+                            </Checkbox>
+                       </div>
+                    </div>
+                </Form>
+
+                {option && (
+                <Form className="form-option">
+                <div className="form-checkbox">
+                     <div className="form-label">
+                        <label>Khai báo dữ liệu:</label>
+                     </div>
+                        <div className="checkbox">
+                       <Checkbox
+                       >Xem
+                       </Checkbox>
+                       <Checkbox
+                       >Chỉnh sửa
+                       </Checkbox>
+                       <Checkbox
+                       >Xóa
+                       </Checkbox>
+                       <Checkbox
+                       >Thêm mới                 
+                       </Checkbox>
+                       </div>
+                    </div>
+
+                    <div className="form-checkbox">
+                     <div className="form-label">
+                        <label>Hồ sơ học viên:</label>
+                     </div>
+                        <div className="checkbox">
+                       <Checkbox
+                       >Xem
+                       </Checkbox>
+                       <Checkbox
+                       >Chỉnh sửa
+                       </Checkbox>
+                       <Checkbox
+                       >Xóa
+                       </Checkbox>
+                       <Checkbox
+                       >Thêm mới                 
+                       </Checkbox>
+                       </div>
+                    </div>
+
+                    <div className="form-checkbox">
+                     <div className="form-label">
+                        <label>Hồ sơ giảng viên:</label>
+                     </div>
+                        <div className="checkbox">
+                       <Checkbox
+                       >Xem
+                       </Checkbox>
+                       <Checkbox
+                       >Chỉnh sửa
+                       </Checkbox>
+                       <Checkbox
+                       >Xóa
+                       </Checkbox>
+                       <Checkbox
+                       >Thêm mới                 
+                       </Checkbox>
+                       </div>
+                    </div>
+
+                    <div className="form-checkbox">
+                     <div className="form-label">
+                        <label>Thi cử:</label>
+                     </div>
+                        <div className="checkbox">
+                       <Checkbox
+                       >Xem
+                       </Checkbox>
+                       <Checkbox
+                       >Chỉnh sửa
+                       </Checkbox>
+                       <Checkbox
+                       >Xóa
+                       </Checkbox>
+                       <Checkbox
+                       >Thêm mới                 
+                       </Checkbox>
+                       <Checkbox>
+                       Nhập điểm               
+                       </Checkbox>
+                       </div>
+                    </div>
+
+                    <div className="form-checkbox">
+                     <div className="form-label">
+                        <label>Cài đặt hệ thống:</label>
+                     </div>
+                        <div className="checkbox">
+                       <Checkbox
+                       >Xem
+                       </Checkbox>
+                       <Checkbox
+                       >Chỉnh sửa
+                       </Checkbox>
+                       <Checkbox
+                       >Xóa
+                       </Checkbox>
+                       <Checkbox
+                       >Thêm mới                 
+                       </Checkbox>
+                       </div>
+                    </div>
+                </Form>
+                )}
+                <div className="btn-group__modal">
+                        <Button className="modal__btn-group__cancel" onClick={handleCancel}>Hủy</Button>
+                        <Button className="modal__btn-group__save" onClick={handleSave}>Lưu</Button>
+                    </div>
+                </Modal>
+
+                {/* Modal Delete*/}
+                <Modal className="modal-delete" title="Xóa nhóm người dùng" visible={deleteModal}>
+                    <p className="modal-delete-content">Xác nhận muốn xoá nhóm người này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.</p>
+                    <div className="btn-group__modal">
+                        <Button className="modal__btn-group__cancel" onClick={handleCancelDelete}>Hủy</Button>
+                        <Button className="modal__btn-group__save" >Xác nhận</Button>
+                    </div>
+                </Modal>  
         </div>
     </>
 )

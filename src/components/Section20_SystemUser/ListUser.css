@@ -349,3 +349,44 @@
 .section20 .tab-table .ant-table-thead .ant-table-cell:last-child{
     border-top-right-radius: 0.8rem;
 }
+
+.modal-delete .ant-modal-content{
+    padding-top: 2.6rem;
+    width: 43.5rem;
+    height: 24.3rem;
+    border-radius: 8px;
+}
+
+.modal-delete .ant-modal-header{
+    border: none;
+    text-align: center;
+    padding: 0;
+}
+
+.modal-delete .ant-modal-title{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+
+.modal-delete .modal-delete-content{
+    margin-bottom: 0px !important;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #373839;
+}
+
+.modal-delete .ant-modal-body{
+    padding: 16px 39px 0px  38px;
+}
+
+.modal-delete .btn-group__modal{
+    margin-top: 3.2rem;
+}
