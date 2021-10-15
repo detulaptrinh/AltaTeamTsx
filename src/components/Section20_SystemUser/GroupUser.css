@@ -230,13 +230,13 @@
     align-items: center;
     background: #F2F2F2;    
     border-radius: 8px;
-    border: none;
+    border-color: #f2f2f2;
 }
 
 .modal-groupuser .ant-modal-header{
     padding-bottom: 2.4rem;
+    padding-top: 0;
     border: none;
-
 }
 
 .modal-groupuser .ant-switch-handle{
@@ -251,7 +251,9 @@
     line-height: 20px;
     letter-spacing: 0.015em;
     color: #373839;
+    padding-right: 5rem;
 }
+
 .modal-groupuser .ant-modal-body{
     padding: 0 6.4rem;
 }
@@ -260,7 +262,14 @@
     border-radius: 1.6rem;
     padding-top:2.4rem;
     width: 88.4rem;
-    height: 42.4rem;
+    height: 100%;
+    display: inline-block;
+}
+
+.modal-group-textarea{
+    width: 56.1rem;
+    border-radius: 8px;
+    background: #F2F2F2;
 }
 
 .modal-groupuser .ant-modal-title{
@@ -280,6 +289,7 @@
     height: 5.2rem;
     text-align: center;
     margin-top: 4.8rem;
+    margin-bottom: 4rem;
 }
 
 .modal__btn-group__cancel.ant-btn,
@@ -304,6 +314,37 @@
     color: #373839;
 }
 
+.modal-groupuser .checkbox{
+    margin-right: 9,4rem;
+}
+.modal-groupuser .form-checkbox{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.checkbox > label{
+    font-family: Source Sans Pro;
+    font-style: normal !important;
+    font-weight: normal !important;
+
+}
+
+.modal-groupuser .ant-checkbox{
+    background: #FFFFFF;
+    border: 2px solid #0B80EC;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.modal-groupuser .form-label{
+    min-width: 19.5rem;
+}
+
+.modal-groupuser .form-option{
+    border-top: 1px solid #C9C4C0;
+    margin-top: 2.4rem;
+    padding-top: 2.4rem;
+}
 .modal__btn-group__save.ant-btn{
     display: flex;
     flex-direction: column;

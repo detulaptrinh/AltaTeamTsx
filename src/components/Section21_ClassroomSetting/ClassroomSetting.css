@@ -1,3 +1,22 @@
+.primary{
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B80EC;
+}
+
+.danger{
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED2025;
+}
+
+
 .Section21__Title{
     height: 50%;
 }
