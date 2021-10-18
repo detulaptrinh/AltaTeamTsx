@@ -13,6 +13,7 @@ import {
     IconDownload,
     IconEyesOr,
 } from "../../../assets/svg/index";
+import dataClassList from '../../../data/classList.json'
 
 const { Option } = Select;
 
@@ -49,67 +50,71 @@ const ClassList = (): JSX.Element => {
         },
     ];
 
-    const data: DataType[] = [
-        {
-            key: '1',
-            name: '2020-6A',
-            title: '6A',
-            type: 'Nguyễn Văn A',
-        },
-        {
-            key: '2',
-            name: '2020-6B',
-            title: '6B',
-            type: 'Phạm Thị C',
-        },
-        {
-            key: '3',
-            name: '2020-6C',
-            title: '6C',
-            type: 'Trần Hoàng A',
-        },
-        {
-            key: '4',
-            name: '2020-7A',
-            title: '7A',
-            type: 'Charlie',
-        },
-        {
-            key: '5',
-            name: '2020-6B',
-            title: '6B',
-            type: 'Phạm Thị C',
-        },
-        {
-            key: '6',
-            name: '2020-7C',
-            title: '7C',
-            type: 'Trần Hoàng A',
-        },
-        {
-            key: '7',
-            name: '2020-8A',
-            title: '8A',
-            type: 'Phạm Thị C',
-        },
-    ]; // rowSelection object indicates the need for row selection
-
-    const rowSelection = {
-        onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
-            console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-        },
-        getCheckboxProps: (record: DataType) => ({
-            disabled: record.name === 'Disabled User', // Column configuration not to be checked
-            name: record.name,
-        }),
-    };
-
-    interface DataType {
+    interface ClassList {
         key: React.Key;
         title: string;
         name: string;
         type: string;
     }
+
+    const data: ClassList[] = dataClassList;
+
+    // const data: DataType[] = [
+    //     {
+    //         key: '1',
+    //         name: '2020-6A',
+    //         title: '6A',
+    //         type: 'Nguyễn Văn A',
+    //     },
+    //     {
+    //         key: '2',
+    //         name: '2020-6B',
+    //         title: '6B',
+    //         type: 'Phạm Thị C',
+    //     },
+    //     {
+    //         key: '3',
+    //         name: '2020-6C',
+    //         title: '6C',
+    //         type: 'Trần Hoàng A',
+    //     },
+    //     {
+    //         key: '4',
+    //         name: '2020-7A',
+    //         title: '7A',
+    //         type: 'Charlie',
+    //     },
+    //     {
+    //         key: '5',
+    //         name: '2020-6B',
+    //         title: '6B',
+    //         type: 'Phạm Thị C',
+    //     },
+    //     {
+    //         key: '6',
+    //         name: '2020-7C',
+    //         title: '7C',
+    //         type: 'Trần Hoàng A',
+    //     },
+    //     {
+    //         key: '7',
+    //         name: '2020-8A',
+    //         title: '8A',
+    //         type: 'Phạm Thị C',
+    //     },
+    // ]; // rowSelection object indicates the need for row selection
+
+    const rowSelection = {
+        onChange: (selectedRowKeys: React.Key[], selectedRows: ClassList[]) => {
+            console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+        },
+        getCheckboxProps: (record: ClassList) => ({
+            disabled: record.name === 'Disabled User', // Column configuration not to be checked
+            name: record.name,
+        }),
+    };
+
+
 
     const [visible, setVisible] = useState(false);
 

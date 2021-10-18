@@ -6,6 +6,7 @@ import {
     IconTrash,
     IconPlusPrimary,
 } from "../../../assets/svg/index";
+import dataDetailStudent from '../../../data/detailStudent.json'
 
 const columns = [
     {
@@ -50,71 +51,81 @@ const columns = [
     },
 ];
 
-const data = [
-    {
-        key: '1',
-        stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: 'Đang theo học',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: 'Đã chuyển lớp',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: 'Đã chuyển trường',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: 'Đã thôi học',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: 'Đang tốt nghiệp',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: 'Đang theo học',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: '2020-6A',
-        name: 'Nguyễn Văn A',
-        year: '2020-2021',
-        date: '05/09/2020',
-        status: 'Đang theo học',
-    },
-];
+interface DetailStudent {
+    key: React.Key;
+    stt: number;
+    id: string;
+    year: string;
+    date: string;
+    status: string;
+}
+const data: DetailStudent[] = dataDetailStudent;
+
+// const data = [
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: '2020-6A',
+//         name: 'Nguyễn Văn A',
+//         year: '2020-2021',
+//         date: '05/09/2020',
+//         status: 'Đang theo học',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: '2020-6A',
+//         name: 'Nguyễn Văn A',
+//         year: '2020-2021',
+//         date: '05/09/2020',
+//         status: 'Đã chuyển lớp',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: '2020-6A',
+//         name: 'Nguyễn Văn A',
+//         year: '2020-2021',
+//         date: '05/09/2020',
+//         status: 'Đã chuyển trường',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: '2020-6A',
+//         name: 'Nguyễn Văn A',
+//         year: '2020-2021',
+//         date: '05/09/2020',
+//         status: 'Đã thôi học',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: '2020-6A',
+//         name: 'Nguyễn Văn A',
+//         year: '2020-2021',
+//         date: '05/09/2020',
+//         status: 'Đang tốt nghiệp',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: '2020-6A',
+//         name: 'Nguyễn Văn A',
+//         year: '2020-2021',
+//         date: '05/09/2020',
+//         status: 'Đang theo học',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: '2020-6A',
+//         name: 'Nguyễn Văn A',
+//         year: '2020-2021',
+//         date: '05/09/2020',
+//         status: 'Đang theo học',
+//     },
+// ];
 
 export default function DetailStudent() {
     // delete

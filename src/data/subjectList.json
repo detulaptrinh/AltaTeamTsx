@@ -1,0 +1,57 @@
+[{
+        "key": 1,
+        "name": "KHTN",
+        "title": "Anh Văn",
+        "type": "Môn bắt buộc",
+        "hk1": 4,
+        "hk2": 4
+    },
+    {
+        "key": 2,
+        "name": "VHXH",
+        "title": "Toán",
+        "type": "Môn tự chọn",
+        "hk1": 4,
+        "hk2": 4
+    },
+    {
+        "key": 3,
+        "name": "AV",
+        "title": "Anh Văn",
+        "type": "Môn bắt buộc",
+        "hk1": 4,
+        "hk2": 4
+    },
+    {
+        "key": 4,
+        "name": "AV",
+        "title": "Anh Văn",
+        "type": "Môn bắt buộc",
+        "hk1": 4,
+        "hk2": 4
+    },
+    {
+        "key": 5,
+        "name": "VHXH",
+        "title": "Giáo dục công dân",
+        "type": "Môn tự chọn",
+        "hk1": 4,
+        "hk2": 4
+    },
+    {
+        "key": 6,
+        "name": "KHTN",
+        "title": "Sinh học",
+        "type": "Môn bắc buộc",
+        "hk1": 4,
+        "hk2": 4
+    },
+    {
+        "key": 7,
+        "name": "KHXH",
+        "title": "Hóa học",
+        "type": "Môn tự chọn",
+        "hk1": 4,
+        "hk2": 4
+    }
+]

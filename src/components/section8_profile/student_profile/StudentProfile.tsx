@@ -10,6 +10,7 @@ import {
     IconUpload,
     IconDownload,
 } from "../../../assets/svg/index";
+import dataProfileStudent from '../../../data/profileStudent.json'
 
 
 const { Option } = Select;
@@ -74,79 +75,8 @@ const ProfileStudent = (): JSX.Element => {
         },
     ];
 
-    const data: DataType[] = [
-        {
-            key: '1',
-            id: '2020-6A',
-            name: 'Nguyễn Văn A',
-            date: '12/02/1998',
-            sex: 'Nam',
-            nation: 'Kinh',
-            class: '6A',
-            status: 'Đang theo học',
-        },
-        {
-            key: '1',
-            id: '2020-6A',
-            name: 'Nguyễn Văn A',
-            date: '12/02/1998',
-            sex: 'Nam',
-            nation: 'Kinh',
-            class: '6A',
-            status: 'Đã chuyển lớp',
-        },
-        {
-            key: '1',
-            id: '2020-6A',
-            name: 'Đã thôi học',
-            date: '12/02/1998',
-            sex: 'Nam',
-            nation: 'Kinh',
-            class: '6A',
-            status: 'Đã tốt nghiệp',
-        },
-        {
-            key: '1',
-            id: '2020-6A',
-            name: 'Nguyễn Văn A',
-            date: '12/02/1998',
-            sex: 'Nam',
-            nation: 'Kinh',
-            class: '6A',
-            status: 'Đã chuyển trường',
-        },
-        {
-            key: '1',
-            id: '2020-6A',
-            name: 'Nguyễn Văn A',
-            date: '12/02/1998',
-            sex: 'Nam',
-            nation: 'Kinh',
-            class: '6A',
-            status: 'Đang theo học',
-        },
-        {
-            key: '1',
-            id: '2020-6A',
-            name: 'Nguyễn Văn A',
-            date: '12/02/1998',
-            sex: 'Nam',
-            nation: 'Kinh',
-            class: '6A',
-            status: 'Đang theo học',
-        },
-        {
-            key: '1',
-            id: '2020-6A',
-            name: 'Nguyễn Văn A',
-            date: '12/02/1998',
-            sex: 'Nam',
-            nation: 'Kinh',
-            class: '6A',
-            status: 'Đang theo học',
-        },
-    ]; //
-    interface DataType {
+    const data: ProfileStudent[] = dataProfileStudent;
+    interface ProfileStudent {
         key: React.Key;
         id: string;
         name: string;
@@ -156,13 +86,86 @@ const ProfileStudent = (): JSX.Element => {
         class: string;
         status: string;
     }
+    // const data: DataType[] = [
+    //     {
+    //         key: '1',
+    //         id: '2020-6A',
+    //         name: 'Nguyễn Văn A',
+    //         date: '12/02/1998',
+    //         sex: 'Nam',
+    //         nation: 'Kinh',
+    //         class: '6A',
+    //         status: 'Đang theo học',
+    //     },
+    //     {
+    //         key: '1',
+    //         id: '2020-6A',
+    //         name: 'Nguyễn Văn A',
+    //         date: '12/02/1998',
+    //         sex: 'Nam',
+    //         nation: 'Kinh',
+    //         class: '6A',
+    //         status: 'Đã chuyển lớp',
+    //     },
+    //     {
+    //         key: '1',
+    //         id: '2020-6A',
+    //         name: 'Đã thôi học',
+    //         date: '12/02/1998',
+    //         sex: 'Nam',
+    //         nation: 'Kinh',
+    //         class: '6A',
+    //         status: 'Đã tốt nghiệp',
+    //     },
+    //     {
+    //         key: '1',
+    //         id: '2020-6A',
+    //         name: 'Nguyễn Văn A',
+    //         date: '12/02/1998',
+    //         sex: 'Nam',
+    //         nation: 'Kinh',
+    //         class: '6A',
+    //         status: 'Đã chuyển trường',
+    //     },
+    //     {
+    //         key: '1',
+    //         id: '2020-6A',
+    //         name: 'Nguyễn Văn A',
+    //         date: '12/02/1998',
+    //         sex: 'Nam',
+    //         nation: 'Kinh',
+    //         class: '6A',
+    //         status: 'Đang theo học',
+    //     },
+    //     {
+    //         key: '1',
+    //         id: '2020-6A',
+    //         name: 'Nguyễn Văn A',
+    //         date: '12/02/1998',
+    //         sex: 'Nam',
+    //         nation: 'Kinh',
+    //         class: '6A',
+    //         status: 'Đang theo học',
+    //     },
+    //     {
+    //         key: '1',
+    //         id: '2020-6A',
+    //         name: 'Nguyễn Văn A',
+    //         date: '12/02/1998',
+    //         sex: 'Nam',
+    //         nation: 'Kinh',
+    //         class: '6A',
+    //         status: 'Đang theo học',
+    //     },
+    // ]; //
+
 
     const [selectionType, setSelectionType] = useState<'checkbox' | 'radio'>('checkbox');
     const rowSelection = {
-        onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
+        onChange: (selectedRowKeys: React.Key[], selectedRows: ProfileStudent[]) => {
             console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
         },
-        getCheckboxProps: (record: DataType) => ({
+        getCheckboxProps: (record: ProfileStudent) => ({
             disabled: record.name === 'Disabled User', // Column configuration not to be checked
             name: record.name,
         }),
