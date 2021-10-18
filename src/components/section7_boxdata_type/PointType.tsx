@@ -8,6 +8,7 @@ import {
     IconEdit,
     IconTrash,
 } from "../../assets/svg/index";
+import dataPointType from '../../data/pointType.json'
 
 const { Option } = Select;
 
@@ -49,61 +50,71 @@ const PointType = (): JSX.Element => {
         },
     ];
 
-    const data = [
-        {
-            key: '1',
-            type: 'Kiểm tra miệng',
-            number: '1',
-            hk1: '3',
-            hk2: '3',
-        },
-        {
-            key: '1',
-            type: 'Kiểm tra miệng',
-            number: '1',
-            hk1: '3',
-            hk2: '3',
-        },
-        {
-            key: '1',
-            type: 'Kiểm tra miệng',
-            number: '1',
-            hk1: '3',
-            hk2: '3',
-        },
-        {
-            key: '1',
-            type: 'Kiểm tra miệng',
-            number: '1',
-            hk1: '3',
-            hk2: '3',
-        },
-        {
-            key: '1',
-            type: 'Kiểm tra miệng',
-            number: '1',
-            hk1: '3',
-            hk2: '3',
-        },
-        {
-            key: '1',
-            type: 'Kiểm tra miệng',
-            number: '1',
-            hk1: '3',
-            hk2: '3',
-        },
-        {
-            key: '1',
-            type: 'Kiểm tra miệng',
-            number: '1',
-            hk1: '3',
-            hk2: '3',
-        },
-    ];
+    const data: PointType[] = dataPointType;
+
+    interface PointType {
+        key: React.Key;
+        type: string;
+        number: number;
+        hk1: number;
+        hk2: number;
+    }
+    // const data = [
+    //     {
+    //         key: '1',
+    //         type: 'Kiểm tra miệng',
+    //         number: '1',
+    //         hk1: '3',
+    //         hk2: '3',
+    //     },
+    //     {
+    //         key: '1',
+    //         type: 'Kiểm tra miệng',
+    //         number: '1',
+    //         hk1: '3',
+    //         hk2: '3',
+    //     },
+    //     {
+    //         key: '1',
+    //         type: 'Kiểm tra miệng',
+    //         number: '1',
+    //         hk1: '3',
+    //         hk2: '3',
+    //     },
+    //     {
+    //         key: '1',
+    //         type: 'Kiểm tra miệng',
+    //         number: '1',
+    //         hk1: '3',
+    //         hk2: '3',
+    //     },
+    //     {
+    //         key: '1',
+    //         type: 'Kiểm tra miệng',
+    //         number: '1',
+    //         hk1: '3',
+    //         hk2: '3',
+    //     },
+    //     {
+    //         key: '1',
+    //         type: 'Kiểm tra miệng',
+    //         number: '1',
+    //         hk1: '3',
+    //         hk2: '3',
+    //     },
+    //     {
+    //         key: '1',
+    //         type: 'Kiểm tra miệng',
+    //         number: '1',
+    //         hk1: '3',
+    //         hk2: '3',
+    //     },
+    // ];
 
 
 
     // edit
+
     const [importModalVisible, setImportModalVisible] = useState(false);
     const showImportModal = () => {
         setImportModalVisible(true);

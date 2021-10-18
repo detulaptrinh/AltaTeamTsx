@@ -8,6 +8,7 @@ import {
     IconTrash,
     IconPlusPrimary,
 } from "../../../assets/svg/index";
+import dataDetailSubject from '../../../data/detailSubject.json'
 
 const columns = [
     {
@@ -37,71 +38,83 @@ const columns = [
     },
 ];
 
-const data = [
-    {
-        key: '1',
-        stt: '1',
-        id: 'D43',
-        name: 'Toán học',
-        type: 'Môn bắc buộc',
-        hk1: '4',
-        hk2: '4',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: 'D43',
-        name: 'Toán học',
-        type: 'Môn bắc buộc',
-        hk1: '4',
-        hk2: '4',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: 'D43',
-        name: 'Toán học',
-        type: 'Môn bắc buộc',
-        hk1: '4',
-        hk2: '4',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: 'D43',
-        name: 'Toán học',
-        type: 'Môn bắc buộc',
-        hk1: '4',
-        hk2: '4',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: 'D43',
-        name: 'Toán học',
-        type: 'Môn bắc buộc',
-        hk1: '4',
-        hk2: '4',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: 'D43',
-        name: 'Toán học',
-        type: 'Môn bắc buộc',
-        hk1: '4',
-        hk2: '4',
-    },
-    {
-        key: '1',
-        stt: '1',
-        id: 'D43',
-        name: 'Toán học',
-        type: 'Môn bắc buộc',
-        hk1: '4',
-        hk2: '4',
-    },
-]; // rowSelection object indicates the need for row selection
+const data: DetailSubject[] = dataDetailSubject;
+
+interface DetailSubject {
+    key: React.Key;
+    stt: number;
+    id: string;
+    name: string;
+    type: string;
+    hk1: number;
+    hk2: number;
+}
+
+// const data = [
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: 'D43',
+//         name: 'Toán học',
+//         type: 'Môn bắc buộc',
+//         hk1: '4',
+//         hk2: '4',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: 'D43',
+//         name: 'Toán học',
+//         type: 'Môn bắc buộc',
+//         hk1: '4',
+//         hk2: '4',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: 'D43',
+//         name: 'Toán học',
+//         type: 'Môn bắc buộc',
+//         hk1: '4',
+//         hk2: '4',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: 'D43',
+//         name: 'Toán học',
+//         type: 'Môn bắc buộc',
+//         hk1: '4',
+//         hk2: '4',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: 'D43',
+//         name: 'Toán học',
+//         type: 'Môn bắc buộc',
+//         hk1: '4',
+//         hk2: '4',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: 'D43',
+//         name: 'Toán học',
+//         type: 'Môn bắc buộc',
+//         hk1: '4',
+//         hk2: '4',
+//     },
+//     {
+//         key: '1',
+//         stt: '1',
+//         id: 'D43',
+//         name: 'Toán học',
+//         type: 'Môn bắc buộc',
+//         hk1: '4',
+//         hk2: '4',
+//     },
+// ]; // rowSelection object indicates the need for row selection
 
 
 

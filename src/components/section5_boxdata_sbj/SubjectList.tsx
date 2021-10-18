@@ -16,6 +16,7 @@ import {
     IconTrash,
     IconUn,
 } from "../../assets/svg/index";
+import dataSubjectList from '../../data/subjectList.json'
 
 
 const { Option } = Select;
@@ -59,100 +60,85 @@ const SubjectList = (): JSX.Element => {
         },
     ];
 
-    const data: DataType[] = [
-        {
-            key: '1',
-            name: 'KHTN',
-            title: 'Ngữ Văn',
-            type: 'Môn bắt buộc',
-            hk1: '4',
-            hk2: '4',
-            buttonedit: <img src={IconEdit} alt="" />,
-            buttontrash: <img src={IconTrash} alt="" />,
-        },
-        {
-            key: '2',
-            name: 'VHXH',
-            title: 'Toán',
-            type: 'Môn tự chọn',
-            hk1: '4',
-            hk2: '4',
-            buttonedit: <img src={IconEdit} alt="" />,
-            buttontrash: <img src={IconTrash} alt="" />,
-        },
-        {
-            key: '3',
-            name: 'AV',
-            title: 'Anh Văn',
-            type: 'Môn bắt buộc',
-            hk1: '4',
-            hk2: '4',
-            buttonedit: <img src={IconEdit} alt="" />,
-            buttontrash: <img src={IconTrash} alt="" />,
-        },
-        {
-            key: '4',
-            name: 'AV',
-            title: 'Anh Văn',
-            type: 'Môn bắt buộc',
-            hk1: '4',
-            hk2: '4',
-            buttonedit: <img src={IconEdit} alt="" />,
-            buttontrash: <img src={IconTrash} alt="" />,
-        },
-        {
-            key: '5',
-            name: 'VHXH',
-            title: 'Giáo dục công dân',
-            type: 'Môn tự chọn',
-            hk1: '4',
-            hk2: '4',
-            buttonedit: <img src={IconEdit} alt="" />,
-            buttontrash: <img src={IconTrash} alt="" />,
-        },
-        {
-            key: '6',
-            name: 'KHTN',
-            title: 'Sinh học',
-            type: 'Môn bắc buộc',
-            hk1: '4',
-            hk2: '4',
-            buttonedit: <img src={IconEdit} alt="" />,
-            buttontrash: <img src={IconTrash} alt="" />,
-        },
-        {
-            key: '7',
-            name: 'KHXH',
-            title: 'Hóa học',
-            type: 'Môn tự chọn',
-            hk1: '4',
-            hk2: '4',
-            buttonedit: <img src={IconEdit} alt="" />,
-            buttontrash: <img src={IconTrash} alt="" />,
-        },
-    ]; // rowSelection object indicates the need for row selection
+    const data: SubjectList[] = dataSubjectList;
 
-    const rowSelection = {
-        onChange: (selectedRowKeys: React.Key[], selectedRows: DataType[]) => {
-            console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-        },
-        getCheckboxProps: (record: DataType) => ({
-            disabled: record.name === 'Disabled User', // Column configuration not to be checked
-            name: record.name,
-        }),
-    };
-
-    interface DataType {
+    interface SubjectList {
         key: React.Key;
         name: string;
         title: string;
         type: string;
-        hk1: string;
-        hk2: string;
-        buttonedit: object;
-        buttontrash: object;
+        hk1: number;
+        hk2: number;
     }
 
+    // const data: DataType[] = [
+    //     {
+    //         key: '1',
+    //         name: 'KHTN',
+    //         title: 'Ngữ Văn',
+    //         type: 'Môn bắt buộc',
+    //         hk1: '4',
+    //         hk2: '4',
+    //     },
+    //     {
+    //         key: '2',
+    //         name: 'VHXH',
+    //         title: 'Toán',
+    //         type: 'Môn tự chọn',
+    //         hk1: '4',
+    //         hk2: '4',
+    //     },
+    //     {
+    //         key: '3',
+    //         name: 'AV',
+    //         title: 'Anh Văn',
+    //         type: 'Môn bắt buộc',
+    //         hk1: '4',
+    //         hk2: '4',
+    //     },
+    //     {
+    //         key: '4',
+    //         name: 'AV',
+    //         title: 'Anh Văn',
+    //         type: 'Môn bắt buộc',
+    //         hk1: '4',
+    //         hk2: '4',
+    //     },
+    //     {
+    //         key: '5',
+    //         name: 'VHXH',
+    //         title: 'Giáo dục công dân',
+    //         type: 'Môn tự chọn',
+    //         hk1: '4',
+    //         hk2: '4',
+    //     },
+    //     {
+    //         key: '6',
+    //         name: 'KHTN',
+    //         title: 'Sinh học',
+    //         type: 'Môn bắc buộc',
+    //         hk1: '4',
+    //         hk2: '4',
+    //     },
+    //     {
+    //         key: '7',
+    //         name: 'KHXH',
+    //         title: 'Hóa học',
+    //         type: 'Môn tự chọn',
+    //         hk1: '4',
+    //         hk2: '4',
+    //     },
+    // ]; 
+
+    const rowSelection = {
+        onChange: (selectedRowKeys: React.Key[], selectedRows: SubjectList[]) => {
+            console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+        },
+        getCheckboxProps: (record: SubjectList) => ({
+            disabled: record.name === 'Disabled User', // Column configuration not to be checked
+            name: record.name,
+        }),
+    };
 
 
     const [selectionType, setSelectionType] = useState<'checkbox' | 'radio'>('checkbox');
