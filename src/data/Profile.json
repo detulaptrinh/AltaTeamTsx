@@ -1,0 +1,47 @@
+[
+    {
+      "id": "2020-6A",
+      "name": "Nguyễn Văn A",
+      "date": "12/02/1998",
+      "sex": "Nam",
+      "object": "Toán",
+      "position": "Giáo viên",
+      "status": "woking"
+    },
+    {
+      "id": "2020-6A",
+      "name": "Nguyễn Văn B",
+      "date": "12/02/1998",
+      "sex": "Nam",
+      "object": "Toán",
+      "position": "Giáo viên",
+      "status": "quitWork"
+    },
+    {
+      "id": "2020-6A",
+      "name": "Nguyễn Văn A",
+      "date": "12/02/1998",
+      "sex": "Nam",
+      "object": "Toán",
+      "position": "Giáo viên",
+      "status": "pause"
+    },
+    {
+      "id": "2020-6A",
+      "name": "Nguyễn Văn A",
+      "date": "12/02/1998",
+      "sex": "Nam",
+      "object": "Toán",
+      "position": "Giáo viên",
+      "status": "retired"
+    },
+    {
+      "id": "2020-6A",
+      "name": "Nguyễn Văn A",
+      "date": "12/02/1998",
+      "sex": "Nam",
+      "object": "Toán",
+      "position": "Giáo viên",
+      "status": "working"
+    }
+  ]

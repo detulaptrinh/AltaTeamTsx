@@ -325,11 +325,6 @@
     color: black;
 }
 
-
-.box__chb-btn-clk.hover{
-    background: #CC5C00;
-    color: #FFFFFF;
-}
 .box__chb-btn-clk.active{
   background: #CC5C00;
   color: #FFFFFF;
@@ -575,6 +570,11 @@
     background: #F2F2F2;
     border-radius: 8px;
     float:right;
+    color: #373839;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Source Sans Pro';
 }
 .box__btn-page4 .ant-modal-content .ant-input {
     width:56.1rem;
@@ -582,13 +582,38 @@
     background: #F2F2F2;
     border-radius: 8px;
     float:right;
+    color: #373839;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Source Sans Pro';
+}
+.box__btn-page3 .ant-modal-content .ant-select {
+    color: #373839;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Source Sans Pro';
+}
+.box__btn-page4 .ant-modal-content .ant-select {
+    color: #373839;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Source Sans Pro';
 }
 .box__btn-page4 .ant-modal-content .custom-input {
     width:29rem;
     margin-right: 27.1rem;
     float:right;
 }
-
+.box__btn-page4 .ant-modal-content .custom-input span{
+    color: #373839;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Source Sans Pro';
+}
 .box__btn-page3 Select Option{
     width: 50%;
 }.box__btn-page4 Select Option{
@@ -600,7 +625,8 @@
     margin-left: -50%;
     margin-top: -40%;
     font-size: 1.6rem;
-    color: #2c1a0c;
+    color: #FF7506;
+    font-weight: bold;
 }
 .box__btn-page4 .ant-modal-content .ant-select-arrow span{
     height: 1rem;

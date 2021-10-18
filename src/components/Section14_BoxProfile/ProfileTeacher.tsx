@@ -204,7 +204,7 @@ export default class ProfileTeacher extends Component {
                         </Col>
                         <Col className="text-right" span={16}>
                           <div className="text-right-box">
-                            <i className="bx bx-wifi-0"></i>Đang theo học
+                            <i className="fix-1 bx bx-wifi-0"/>Đang theo học
                           </div>
                         </Col>
                       </Row>

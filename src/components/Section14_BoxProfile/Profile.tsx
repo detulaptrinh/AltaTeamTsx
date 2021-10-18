@@ -20,6 +20,7 @@ import {
   SearchOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import { Profiles } from "../../data"
 import "./profile.css";
 import { IconEyesOr, IconReload, IconTrash } from "../../assets/svg";
 import moment from "moment";
@@ -36,53 +37,8 @@ interface ICourse {
   status: string;
 }
 
-const data: ICourse[] = [
-  {
-    id: "2020-6A",
-    name: "Nguyễn Văn A",
-    date: "12/02/1998",
-    sex: "Nam",
-    object: "Toán",
-    position: "Giáo viên",
-    status: "woking",
-  },
-  {
-    id: "2020-6A",
-    name: "Nguyễn Văn A",
-    date: "12/02/1998",
-    sex: "Nam",
-    object: "Toán",
-    position: "Giáo viên",
-    status: "quitWork",
-  },
-  {
-    id: "2020-6A",
-    name: "Nguyễn Văn A",
-    date: "12/02/1998",
-    sex: "Nam",
-    object: "Toán",
-    position: "Giáo viên",
-    status: "pause",
-  },
-  {
-    id: "2020-6A",
-    name: "Nguyễn Văn A",
-    date: "12/02/1998",
-    sex: "Nam",
-    object: "Toán",
-    position: "Giáo viên",
-    status: "retired",
-  },
-  {
-    id: "2020-6A",
-    name: "Nguyễn Văn A",
-    date: "12/02/1998",
-    sex: "Nam",
-    object: "Toán",
-    position: "Giáo viên",
-    status: "working",
-  },
-];
+const data: ICourse[] = Profiles
+ 
 
 const Profile = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
@@ -133,15 +89,15 @@ const Profile = (): JSX.Element => {
       render: (status) => {
         switch (status) {
           case "pause":
-            return <span className="btn__pause">Tạm nghỉ</span>;
+            return <span className=" btn__pause"><i className="fix-0 bx bx-wifi-0"/>Tạm nghỉ</span>;
           case "quitWork":
-            return <span className="btn__quitWork">Đã nghỉ việc</span>;
+            return <span className="btn__quitWork"><i className="fix-0 bx bx-wifi-0"/>Đã nghỉ việc</span>;
           case "retired":
-            return <span className="btn__retired">Nghỉ hưu</span>;
+            return <span className="btn__retired"><i className="fix-0 bx bx-wifi-0"/>Nghỉ hưu</span>;
           case "quitSchool":
-            return <span className="btn__quitSchool">Đã thôi học</span>;
+            return <span className="btn__quitSchool"><i className="fix-0 bx bx-wifi-0"/>Đã thôi học</span>;
           default:
-            return <span className="btn__woking">Đang làm việc</span>;
+            return <span className="btn__woking"><i className="fix-0 bx bx-wifi-0"/>Đang làm việc</span>;
         }
       },
     },
@@ -438,7 +394,6 @@ const Profile = (): JSX.Element => {
               <Form.Item label="Quyết định nghỉ hưu">
                 <Upload>
                   <Button className="bgef" icon={<UploadOutlined />}>
-                    <Input className="input__fix"></Input>
                   </Button>
                   <Button className="btn__upload btn__link">
                     Chọn tệp ảnh gửi lên
