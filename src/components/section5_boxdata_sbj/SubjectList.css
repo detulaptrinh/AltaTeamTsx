@@ -143,11 +143,10 @@
     color: #373839;
 }
 
-.section-5 .box__chb-btn-clk:hover {
-    background: #cc5c00;
-    color: #ffffff;
+.section-5 .box__chb-btn-clk.active{
+    background: #CC5C00;
+    color: #FFFFFF;
 }
-
 
 /*  */
 

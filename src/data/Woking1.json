@@ -1,0 +1,30 @@
+[
+    {
+      "unit":"THPT Campus",
+      "object":"Toán - Tin",
+      "position": "Giảng viên",
+      "datestart":"01/01/2021",
+      "dateend":"Chưa xác định"
+    },
+    {
+      "unit":"THPT Campus",
+      "object":"Lý - Hóa",
+      "position": "Giảng viên",
+      "datestart":"01/01/2021",
+      "dateend":"01/01/2025"
+    },
+    {
+      "unit":"THPT Campus",
+      "object":"Sinh - Sử",
+      "position": "Trưởng bộ môn",
+      "datestart":"01/01/2021",
+      "dateend":"01/01/2025"
+    },
+    {
+      "unit":"THPT Campus",
+      "object":"Toán - Văn",
+      "position": "Trưởng bộ môn",
+      "datestart":"01/01/2021",
+      "dateend":"01/01/2025"
+    }
+  ]

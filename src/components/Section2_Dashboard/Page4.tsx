@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import "./dash.css";
 import {
   Form,
@@ -12,79 +12,100 @@ import {
 } from "antd";
 import { Link } from "react-router-dom";
 import { IconEdit, IconTrash, IconShow } from "../../assets/svg";
+import Page4 from "../../data/Page4.json";
 
 const { confirm } = Modal;
 const { Option } = Select;
 
-const columns = [
-  {
-    title: "Mã khoa - khối",
-    dataIndex: "id",
-  },
-  {
-    title: "Tên khoa - khối",
-    dataIndex: "name",
-  },
+interface ICourse {
+  id: string;
+  name: string;
+}
 
-  {
-    title: "",
-    dataIndex: "icon",
-    render: () => (
-      <Space>
-        <img src={IconShow} />
-        <img src={IconEdit} />
-        <img src={IconTrash} />
-      </Space>
-    ),
-  },
-];
+const data: ICourse[] = Page4;
 
-const data = [
-  {
-    key: "1",
-    id: "K09",
-    name: "Khối 9",
-  },
-  {
-    key: "2",
-    id: "K10",
-    name: "Khối 10",
-  },
-  {
-    key: "3",
-    id: "K11",
-    name: "Khối 11",
-  },
-];
+const Profile = (): JSX.Element => {
+  const [isModalDel, setIsModalDel] = useState<boolean>(false);
+  const [isModalAdd, setIsModalAdd] = useState<boolean>(false);
+  const [isModalEdit, setIsModalEdit] = useState<boolean>(false);
+  const [isModalShow, setIsModalShow] = useState<boolean>(false);
 
-export default function Page4() {
-  const [visible, setVisible] = useState(false);
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const [isModalVisibles, setIsModalVisibles] = useState(false);
+  const columns = [
+    {
+      title: "Mã khoa - khối",
+      dataIndex: "id",
+    },
+    {
+      title: "Tên khoa - khối",
+      dataIndex: "name",
+    },
+    {
+      title: "",
+      dataIndex: "icon",
+      render: () => (
+        <Space>
+          <button className="btn__img" onClick={showModalShow}>
+            <img src={IconShow} alt="IconEdit" />
+          </button>
+          <button className="btn__img" onClick={showModalEdit}>
+            <img src={IconEdit} alt="IconEdit" />
+          </button>
+          <button className="btn__img" onClick={showModalDel}>
+            <img src={IconTrash} alt="IconEdit" />
+          </button>
+        </Space>
+      ),
+    },
+  ];
 
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-  const showModals = () => {
-    setIsModalVisibles(true);
+  const showModalDel = (): void => {
+    setIsModalDel(true);
   };
 
-  const handleOk = () => {
-    setIsModalVisible(false);
+  const handleOkDel = (): void => {
+    setIsModalDel(false);
   };
 
-  const handleCancel = () => {
-    setIsModalVisible(false);
+  const handleCancelDel = (): void => {
+    setIsModalDel(false);
   };
-  const handleOks = () => {
-    setIsModalVisibles(false);
+  const showModalAdd = (): void => {
+    setIsModalAdd(true);
   };
 
-  const handleCancels = () => {
-    setIsModalVisibles(false);
+  const handleOkAdd = (): void => {
+    setIsModalAdd(false);
   };
+
+  const handleCancelAdd = (): void => {
+    setIsModalAdd(false);
+  };
+  const showModalEdit = (): void => {
+    setIsModalEdit(true);
+  };
+
+  const handleOkEdit = (): void => {
+    setIsModalEdit(false);
+  };
+
+  const handleCancelEdit = (): void => {
+    setIsModalEdit(false);
+  };
+  const showModalShow = (): void => {
+    setIsModalShow(true);
+  };
+
+  const handleOkShow = (): void => {
+    setIsModalShow(false);
+  };
+
+  const handleCancelShow = (): void => {
+    setIsModalShow(false);
+  };
+
   return (
-    <>
+    <Fragment>
+      <>
       <div className="overview">
         {/* <User/> */}
         <div className="boxmain">
@@ -132,16 +153,28 @@ export default function Page4() {
                   Khoa - Khối
                 </Link>
               </button>
-              <button className="box__chb-btn-clk">Môn học</button>
-              <button className="box__chb-btn-clk">Lớp học</button>
-              <button className="box__chb-btn-clk">Loại điểm</button>
+              <button className="box__chb-btn-clk">
+                  <Link className="text__box_black" to="/boxdatasbj">
+                    Môn học
+                  </Link>
+                </button>
+                <button className="box__chb-btn-clk">
+                  <Link className="text__box_black" to="/boxdataclass">
+                    Lớp học
+                  </Link>
+                </button>
+                <button className="box__chb-btn-clk">
+                  <Link className="text__box_black" to="/boxdatatype">
+                    Loại điểm
+                  </Link>
+                </button>
             </div>
           </div>
           <div className="box__btn">
             <div className="box__btn-button__page">
               <button
                 className="box__btn-button_cre"
-                onClick={() => setVisible(true)}
+                onClick={showModalAdd}
               >
                 <i className="bx bx-plus" />
                 Thêm mới
@@ -149,9 +182,9 @@ export default function Page4() {
               <Modal
                 className="box__btn-page4"
                 centered
-                visible={visible}
-                onOk={() => setVisible(false)}
-                onCancel={() => setVisible(false)}
+                visible={isModalAdd}
+                onOk={handleOkAdd}
+                onCancel={handleCancelAdd}
               >
                 <Form>
                   <h1>Thêm Khoa - Khối mới</h1>
@@ -169,13 +202,50 @@ export default function Page4() {
                   </Form.Item>
                   <button
                     className="box__btn-button-cancel-page4"
-                    onClick={() => setVisible(false)}
+                    onClick={handleCancelAdd}
                   >
                     Hủy
                   </button>
                   <button
                     className="box__btn-button-save-page4"
-                    onClick={() => setVisible(false)}
+                    onClick={handleOkAdd}
+                  >
+                    Lưu
+                  </button>
+                </Form>
+              </Modal>
+              <Modal
+                className="box__btn-page4"
+                centered
+                visible={isModalEdit}
+                onOk={handleOkEdit}
+                onCancel={handleCancelEdit}
+              >
+                <Form>
+                  <h1>Thiết lập Khoa - Khối</h1>
+                  <Form.Item label="Mã - Khoa khối:">
+                    <div className="custom-input">
+                      <span>K11</span>
+                    </div>
+                  </Form.Item>
+                  <Form.Item label="Khoa - khối:">
+                    <Input value="Khối 11"></Input>
+                  </Form.Item>
+                  <Form.Item label="Trưởng tổ - Bộ môn:">
+                    <Select defaultValue="Phạm Văn G" className="ant-select-opt">
+                      <Option value="khtn">Lê Văn B</Option>
+                      <Option value="khxh">Nguyễn Kim E</Option>
+                    </Select>
+                  </Form.Item>
+                  <button
+                    className="box__btn-button-cancel-page4"
+                    onClick={handleCancelEdit}
+                  >
+                    Hủy
+                  </button>
+                  <button
+                    className="box__btn-button-save-page4"
+                    onClick={handleOkEdit}
                   >
                     Lưu
                   </button>
@@ -214,5 +284,27 @@ export default function Page4() {
         </div>
       </div>
     </>
+      <Modal
+        className="box__btn__profile"
+        visible={isModalDel}
+        onOk={handleOkDel}
+        onCancel={handleCancelDel}
+      >
+        <h1>Xóa</h1>
+        <p>
+          Xác nhận muốn xóa những thông tin đã chọn? Sau khi xóa sẽ không thể
+          hoàn tác.
+        </p>
+
+        <button className="box__btn-del-cancel" onClick={handleCancelDel}>
+          Hủy
+        </button>
+        <button className="box__btn-del-acp" onClick={handleOkDel}>
+          Lưu
+        </button>
+      </Modal>
+    </Fragment>
   );
-}
+};
+
+export default Profile;
