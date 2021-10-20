@@ -24,7 +24,49 @@
   padding: 0 0.4rem 0 0.8rem;
 }
 
-.my-select-year:before {
+/* SELECT BLOCK */
+.my-select-block-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.my-select-block select{
+  width: 13.6rem;
+  height: 3.2rem;
+  border: 0.1rem solid #373839;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-appearance: "button";
+  outline: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem 0 0.8rem;
+}
+
+.my-select-block:before {
+  content: url("/src/assets/avg/downArrowIcon.svg");
+  position: absolute;
+  width: 3rem;
+  height: 3.2rem;
+  background: white;
+  border: 0.1rem solid #373839;
+  box-sizing: border-box;
+  border-radius: 0 0.4rem 0.4rem 0;
+  text-align: center;
+  left: 11rem;
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: none;
+}
+
+.my-select-block:before {
   content: url("/src/assets/avg/downArrowIcon.svg");
   position: absolute;
   width: 3rem;
@@ -44,16 +86,14 @@
 .button-add-box{
   width: 100%;
   height: 100%;
-  
 }
 .button-add-box button {
   width: 17.6rem;
   position: relative;
-  display: inline-block;
+  flex-direction: row;
   font-weight: 800;
   white-space: nowrap;
   text-align: center;
-  background-image: none;
   border: 0.1rem solid transparent;
   box-shadow: 0 0.2rem 0 rgb(0 0 0 / 2%);
   cursor: pointer;
@@ -69,7 +109,6 @@
   color: #ffff;
   border-color: #d9d9d9;
   background: #ff7506;
-  text-align: center;
   
 }
 .button-add-box button:hover,

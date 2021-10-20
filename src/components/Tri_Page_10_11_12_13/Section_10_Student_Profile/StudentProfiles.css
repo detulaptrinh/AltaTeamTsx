@@ -26,83 +26,12 @@
   line-height: 5rem;
   position: relative;
 }
-.studentProfile-headers-select-group-box-block select {
-  width: 13.6rem;
-  height: 3.2rem;
-  border: 0.1rem solid #373839;
-  box-sizing: border-box;
-  background: white;
-  border-radius: 0.4rem;
-  font-size: 1.6rem;
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: normal;
-  -webkit-appearance: "button";
-  outline: none;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 0.4rem 0 0.8rem;
-}
-.studentProfile-headers-select-group-box-block:before {
-  content: url("/src/assets/avg/downArrowIcon.svg");
-  position: absolute;
-  width: 3rem;
-  height: 3.2rem;
-  background: white;
-  border: 0.1rem solid #373839;
-  box-sizing: border-box;
-  border-radius: 0 0.4rem 0.4rem 0;
-  text-align: center;
-  top: 0.9rem;
-  left: 11rem;
-  line-height: 2.7rem;
-  -webkit-appearance: none;
-  appearance: none;
-  pointer-events: none;
-}
-.studentProfile-headers-select-group-box-date select {
-  width: 13.6rem;
-  height: 3.2rem;
-  border: 0.1rem solid #373839;
-  box-sizing: border-box;
-  background: white;
-  border-radius: 0.4rem;
-  font-size: 1.6rem;
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: normal;
-  -webkit-appearance: "button";
-  outline: none;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 0.4rem 0 0.8rem;
-  margin-left: 1.6rem;
-}
-.studentProfile-headers-select-group-box-date:before {
-  content: url("/src/assets/avg/downArrowIcon.svg");
-  position: absolute;
-  width: 3rem;
-  height: 3.2rem;
-  background: white;
-  border: 0.1rem solid #373839;
-  box-sizing: border-box;
-  border-radius: 0 0.4rem 0.4rem 0;
-  text-align: center;
-  top: 0.9rem;
-  left: 26rem;
-  line-height: 2.7rem;
-  -webkit-appearance: none;
-  appearance: none;
-  pointer-events: none;
-}
+
 .studentProfile-headers-tabs-group {
   width: 100%;
   display: flex;
   height: 5.2rem;
   line-height: 5rem;
-  background-color: red;
   position: relative;
 }
 .studentProfile-headers-btn-group {
@@ -112,11 +41,10 @@
 .studentProfile-headers-btn-group-add button {
   width: 17.6rem;
   position: relative;
-  display: inline-block;
+  flex-direction: row;
   font-weight: 800;
   white-space: nowrap;
   text-align: center;
-  background-image: none;
   border: 0.1rem solid transparent;
   box-shadow: 0 0.2rem 0 rgb(0 0 0 / 2%);
   cursor: pointer;
@@ -147,267 +75,74 @@
   background-color: #ff7506;
 }
 
-/* BODY */
-.studentProfile-body {
-  width: 100%;
-  height: 80.9rem;
-  box-shadow: 0.4rem 0.4rem 2.5rem 0.4rem rgba(154, 202, 245, 0.25);
-  border-radius: 1.6rem;
-  background: #ffffff;
-}
-.studentProfile-body-table-group-table-headers-col-name {
-  width: 100%;
-  height: 9rem;
-}
-.studentProfile-body-table-group-table-headers-name {
+/* TAP */
+
+.studentProfile-headers-tabs-group-btn .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
   font-family: "Mulish";
-  font-size: 22px;
   font-style: normal;
   font-weight: 800;
-  line-height: 5rem;
-  letter-spacing: 0.015em;
-  text-align: left;
-  color: #373839;
-  margin-top: 2.4rem;
-  margin-left: 6.4rem;
-}
-
-.studentProfile-body-table-group-table-headers-col-search {
-  width: 100%;
-  height: 9rem;
-}
-.studentProfile-body-table-group-table-headers-search {
-  width: 43.8rem;
-  height: 4rem;
-  border-radius: 2.4rem;
-  position: relative;
-  display: inline-block;
-  padding: 4px 11px;
-  color: #c5c5c5;
-  font-size: 14px;
-  line-height: 1.5715;
-  background-color: #f0f3f6;
-  background-image: none;
-  border: 1px solid #f0f3f6;
-  border-radius: 4.2rem;
-  transition: all 0.3s;
-  display: inline-flex;
-  float: right;
-  margin-top: 2.4rem;
-  margin-right: 6.4rem;
-}
-
-.studentProfile-body-table-group-table-headers-search input {
-  font-family: "Source Sans Pro";
-  font-size: 1.4rem;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.7rem;
-  letter-spacing: 0em;
-  text-align: left;
-  text-rendering: auto;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: start;
-  appearance: auto;
-  -webkit-rtl-ordering: "logical";
-  cursor: text;
-  background-color: #f0f3f6;
-  margin: 0em;
-  padding: 1px 2px;
-}
-.studentProfile-body-table-group-table-body {
-  width: 100%;
-  height: 60rem;
-  display: flex;
-  justify-content: center;
-}
-/* TABLE */
-.studentProfile-body-table-group-table-body-table {
-  width: 92%;
-  height: 50rem;
-  border: 0.01rem solid #f0f3f6;
-  border-radius: 1rem;
-}
-.studentProfile-body-table-group-table-body-table .ant-table-thead > tr > th {
-  color: #ffffff;
-  text-align: center;
-  background: none;
-  border-bottom: 0em;
-  font-family: "Mulish";
   font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 2.3rem;
+  line-height: 3.3rem;
   letter-spacing: 0.015em;
-  text-align: left;
-}
-.studentProfile-body-table-group-table-body-table .ant-table-thead{
-  background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
-}
-.studentProfile-body-table-group-table-body-table
-  .ant-table-tbody
-  > tr
-  .studentProfile-body-table-group-table-body-table.ant-table-row:hover
-  > td {
-  background: #f0f3f6;
-  text-align: left;
-}
-.studentProfile-body-table-group-table-body-table .ant-table-thead > tr > th,
-.studentProfile-body-table-group-table-body-table .ant-table-tbody > tr > td,
-.studentProfile-body-table-group-table-body-table .ant-table tfoot > tr > th,
-.studentProfile-body-table-group-table-body-table .ant-table tfoot > tr > td {
-  padding: 1rem;
-  overflow-wrap: normal;
-  text-align: left;
-}
-.studentProfile-body-table-group-table-body-table .ant-table-tbody > tr > td {
-  border-bottom: 1px solid #f0f0f0;
-  font-family: "Source Sans Pro";
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.1rem;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.studentProfile-body-table-group-table-body-table .ant-table-thead > tr > th,
-.studentProfile-body-table-group-table-body-table .ant-table-tbody > tr > td,
-.studentProfile-body-table-group-table-body-table .ant-table tfoot > tr > th,
-.studentProfile-body-table-group-table-body-table .ant-table tfoot > tr > td {
-  width: 20rem;
-  height: 4rem;
-  overflow-wrap: normal;
-}
-.studentProfile-body-table-group-table-body-table
-  table
-  > thead
-  > tr:first-child
-  th:last-child {
-  border-top-right-radius: 2rem;
-}
-.studentProfile-body-table-group-table-body-table
-  table
-  > thead
-  > tr:first-child
-  th:first-child {
-  border-top-left-radius: 2rem;
-}
-/* FOOTER BODY */
-.studentProfile-body-table-group-footer {
-  width: 100%;
-  height: 10rem;
-}
-.studentProfile-body-table-group-footer-col-left {
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  font-family: "Source Sans Pro";
-  font-style: italic;
-  font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 2rem;
-  color: #373839;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
 }
 
-.studentProfile-body-table-group-footer-col-left .ant-input-number {
-  width: 48px;
-  height: 32px;
-  background-color: transparent;
-  border: 1px solid #ff7506;
-  box-sizing: border-box;
-  border-radius: 4px;
+.studentProfile-headers-tabs-group-btn .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active,
+.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab-active {
+  background: #373839;
+  color: #ffff; 
 }
-.studentProfile-body-table-group-footer-col-left-txt-view {
-  margin: 0.5rem 2rem 0 6.4rem;
+.studentProfile-headers-tabs-group-btn .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+.ant-tabs-card.ant-tabs-bottom > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+.ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+.ant-tabs-card.ant-tabs-bottom
+  > div
+  > .ant-tabs-nav
+  .ant-tabs-tab
+  + .ant-tabs-tab {
+  margin-left: 1.6rem;
 }
-.studentProfile-body-table-group-footer-col-left-txt-rol {
-  margin: 0.5rem 0 0 2rem;
+.studentProfile-headers-tabs-group-btn .ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 2.4rem;
+  border-color: none;
+}
+.studentProfile-headers-tabs-group-btn .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab,.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+  margin: 0;
+  padding: 8px 16px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border: 0rem;
+  width: 211px;
+  height: 39px;
+  padding: 8px, 48px, 8px, 48px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3.3rem;
+  letter-spacing: 0.015em;
+  color:  #373839;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+  padding-left: 4.8rem;
+  
 }
 
-.studentProfile-body-table-group-footer-col-right {
-  width: 100%;
-  height: 5rem;
+.studentProfile-headers-tabs-group-btn .ant-tabs-tabpane {
+  position: fixed;
+  flex: none;
+  width: 160.4rem;
+  height: 500rem;
+  top: 23rem;
+  left: 21.5rem;
+  outline: none;
 }
-
-.studentProfile-body-table-group-footer-col-right-pagination {
-  float: right;
-  margin-right: 6.4rem;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination-item-active
-  a {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: #fff9f4;
-  border-radius: 50%;
-  background: #ff7506;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination
-  a:hover {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: #fff9f4;
-  border-radius: 50%;
-  background: #ff7506;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination-options {
-  display: none;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination
-  li {
-  border: none;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination-prev
-  button {
-  border: none;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination-prev
-  button:hover {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: #fff9f4;
-  border-radius: 50%;
-  background: #ff7506;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination-next
-  button {
-  border: none;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination-next
-  button:hover {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: #fff9f4;
-  border-radius: 50%;
-  background: #ff7506;
-}
-.studentProfile-body-table-group-footer-col-right-pagination
-  .ant-pagination-jump-prev
-  a:hover {
-  color: rgba(0, 0, 0, 0.85);
-}
-
 /* MODEL UPDATE BONUS */
 
 .bg-modal-update-bonus-modal-content .ant-modal-close-x {
