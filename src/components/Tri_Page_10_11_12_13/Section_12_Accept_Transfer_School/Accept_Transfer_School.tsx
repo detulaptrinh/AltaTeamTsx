@@ -75,7 +75,7 @@ const columns = [
         dataIndex: 'icon',
         render: () => (
             <Space>
-                <EyeOutlined style={{ width: '2.668rem', height: '2.133', color: '#FF7506' }} />
+                <EyeOutlined style={{ width: '2.668rem', height: '2.133', color: '#FF7506'}} />
             </Space>
         ),
     },
