@@ -1,0 +1,35 @@
+[
+ {
+     "idobj":"vl009",
+     "nameobj":"Vật lý 9"
+ },
+ {
+     "idobj":"hh010",
+     "nameobj":"Hóa học 10"
+ },
+ {
+     "idobj":"sh010",
+     "nameobj":"Sinh học 10"
+ },
+ {
+     "idobj":"vl010",
+     "nameobj":"Vật lý 10"
+ },
+ {
+    "idobj":"vl009",
+    "nameobj":"Vật lý 9"
+},
+{
+    "idobj":"hh010",
+    "nameobj":"Hóa học 10"
+},
+{
+    "idobj":"sh010",
+    "nameobj":"Sinh học 10"
+},
+{
+    "idobj":"vl010",
+    "nameobj":"Vật lý 10"
+}
+ 
+]

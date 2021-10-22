@@ -11,8 +11,9 @@ import {
   Pagination,
 } from "antd";
 import { Link } from "react-router-dom";
-import { IconEdit, IconTrash, IconShow } from "../../assets/svg";
+import { IconEdit, IconTrash, IconShow, IconUn } from "../../assets/svg";
 import Page3 from "../../data/Page3.json";
+import PageList3 from "../../data/Pagelist3.json";
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -22,14 +23,32 @@ interface ICourse {
   year: string;
   leader: string;
 }
+interface ICourses {
+  idobj: string;
+  nameobj: string;
+}
+
+
 
 const data: ICourse[] = Page3;
+const datas: ICourses[] = PageList3;
 
 const Profile = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
   const [isModalAdd, setIsModalAdd] = useState<boolean>(false);
   const [isModalEdit, setIsModalEdit] = useState<boolean>(false);
   const [isModalShow, setIsModalShow] = useState<boolean>(false);
+
+  const columnss = [
+    {
+      title: "Mã môn học",
+      dataIndex: "idobj",
+    },
+    {
+      title: "Tên môn học",
+      dataIndex: "nameobj"
+    }
+  ]
 
   const columns = [
     {
@@ -303,6 +322,25 @@ const Profile = (): JSX.Element => {
         <button className="box__btn-del-acp" onClick={handleOkDel}>
           Lưu
         </button>
+      </Modal>
+      <Modal
+       className="box__btn__show"
+       visible={isModalShow}
+       onOk={handleOkShow}
+       onCancel={handleCancelShow}
+      >
+        <h1>Danh sách môn học</h1>
+        <button className="btn__img" onClick={showModalDel}>
+          <img src={IconUn} />
+        </button>
+        <Table
+        className="table__page"
+        columns={columnss}
+        dataSource={datas}
+        pagination={false}
+        scroll={{y:260}}
+        />
+
       </Modal>
     </Fragment>
   );
