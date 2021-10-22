@@ -54,6 +54,9 @@ import BtnAdd from "./components/Tri_Page_10_11_12_13/Categories/ButtonAdd";
 import CourseSetting from "./components/Section22_CourseSetting/CourseSetting";
 import TrainingLevelsManage from "./components/Section23_TrainingLevelsManage/TrainingLevelsManage";
 import DeclareSchoolYear from "./components/Section2_DeclareSchoolYear/DeclareSchoolYear";
+import Bonus from "./components/Tri_Page_10_11_12_13/Section_10_Student_Profile/Bonus";
+import SelectsBlock from "./components/Tri_Page_10_11_12_13/Categories/SelectBlock";
+import Disciplines from "./components/Tri_Page_10_11_12_13/Section_10_Student_Profile/Disciplines";
 
 export default class App extends Component {
   render() {
@@ -98,15 +101,7 @@ export default class App extends Component {
                 {/* tri */}
                 <Route path="/studentprofiles" component={StudentProfiles} />
                 <Route path="/transferschool" component={TransferSchool} />
-                <Route
-                  path="/reservationrecords"
-                  component={ReservationRecords}
-                />
-                <Route path="/selectsyear" component={SelectsYear} />
-                <Route path="/btnadd" component={BtnAdd} />
-                <Route path="/searchs" component={Searchs} />
-                <Route path="/pagitxt" component={PaginationText} />
-                <Route path="/paginumber" component={PaginationNumber} />
+                <Route path="/reservationrecords" component={ReservationRecords} />
 
                 {/* huy */}
                 <Route path="/boxdatasbj" component={SubjectList} />

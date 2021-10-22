@@ -1,3 +1,51 @@
+
+  /* BUTTON */
+  .bonus-headers-btn-group {
+    width: 100%;
+    height: 6rem;
+  }
+  .bonus-headers-btn-group-add{
+      position: relative;
+      top: -8rem;
+      text-align: right;
+  }
+  .bonus-headers-btn-group-add button {
+    width: 17.6rem;
+    position: relative;
+    flex-direction: row;
+    font-weight: 800;
+    white-space: nowrap;
+    text-align: center;
+    border: 0.1rem solid transparent;
+    box-shadow: 0 0.2rem 0 rgb(0 0 0 / 2%);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    height: 5.2rem;
+    font-size: 1.8rem;
+    font-family: "Mulish";
+    border-radius: 0.8rem;
+    color: #ffff;
+    border-color: #d9d9d9;
+    background: #ff7506;
+    float: right;
+  }
+  .bonus-headers-btn-group-add button:hover,
+  .bonus-headers-btn-group-add button:focus,
+  .bonus-headers-btn-group-add button :active {
+    text-decoration: none;
+    background: #ff7506;
+  }
+  .bonus-headers-btn-group-add button:hover,
+  .bonus-headers-btn-group-add button:focus {
+    color: #ffff;
+    border-color: #ffff;
+    background-color: #ff7506;
+  }
+  
 /* BODY */
 .bonus-body {
   width: 100%;
@@ -211,4 +259,244 @@
   .ant-pagination-jump-prev
   a:hover {
   color: rgba(0, 0, 0, 0.85);
+}
+
+/* MODEL TEXT */
+.bg-modal-update-bonus-style-name-update-bonus {
+  color: #373839;
+  font-family: "Mulish";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+.bg-modal-update-bonus-style-label label {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  text-align: left;
+  margin-left: 6.4rem;
+}
+
+.bg-modal-update-bonus-style-txt-name {
+  text-align: center;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 10.8rem;
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.bg-modal-update-bonus-style-txt-class {
+  text-align: center;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 8.6rem;
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* INPUT  textarea*/
+
+.bg-modal-update-bonus-style-input {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 58.5rem;
+  height: 13.5rem;
+  margin-left: 9.8rem;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+.bg-modal-update-bonus-style-input:hover {
+  border: 0.1rem solid rgba(55, 56, 57, 0.5);
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+}
+
+/* DATE PICKER */
+
+.bg-modal-update-bonus-style-date-picker:hover,
+.ant-picker-focused {
+  border-color: #40a9ff;
+  border-right-width: 1px !important;
+}
+.bg-modal-update-bonus-style-date-picker {
+  box-sizing: border-box;
+  color: #373839;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  padding: 4px 11px 4px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #c9c4c0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 3rem;
+  float: left;
+}
+
+/* BUTTON */
+.bg-modal-update-bonus-style-btn-semester {
+  /* Inactivated Icon */
+  background: #c9c4c0;
+  opacity: 0.5;
+  border-radius: 4px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #373839;
+  margin-left: 2.4rem;
+  float: left;
+}
+
+.bg-modal-update-bonus-style-btn-semester:hover,
+.bg-modal-update-bonus-style-btn-semester:focus {
+  color: #373839;
+  border-color: #c9c4c0;
+  background: #c9c4c0;
+}
+
+.bg-modal-update-bonus-modal-content-btn-cancel {
+  height: 5.2rem;
+  width: 1rem;
+  border-radius: 0.8rem;
+  margin-left: 9.7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 7.3rem;
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+  border-color: #f2f2f2;
+  /* TEXT */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+.bg-modal-update-bonus-modal-content-btn-cancel:hover,
+.bg-modal-update-bonus-modal-content-btn-cancel:focus,
+.bg-modal-update-bonus-modal-content-btn-cancel:active {
+  text-decoration: none;
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #373839;
+}
+
+.bg-modal-update-bonus-modal-content-btn-save {
+  height: 5.2rem;
+  width: 1rem;
+  border-radius: 0.8rem;
+  margin-left: 3.4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 7.3rem;
+  background: #c9c4c0;
+  border-radius: 0.8rem;
+  /* TEXT */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.bg-modal-update-bonus-modal-content-btn-save:hover,
+.bg-modal-update-bonus-modal-content-btn-save:focus,
+.bg-modal-update-bonus-modal-content-btn-save:active {
+  text-decoration: none;
+  background: #ff7506;
+  border-color: #c9c4c0;
+  border-radius: 0.8rem #ff7506;
+  color: #ffffff;
+}
+
+.bg-modal-update-bonus .ant-modal-footer {
+  padding: 10px 16px;
+  text-align: right;
+  background: transparent;
+  border-top: 1px solid #f0f0f0;
+  border-radius: 0 0 2px 2px;
+  display: none;
+}
+/* MODEL UPDATE BONUS */
+
+.bg-modal-update-bonus-modal-content .ant-modal-close-x {
+  display: none;
+  width: 56px;
+  height: 56px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 56px;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+}
+
+.bg-modal-update-bonus-modal-content-name {
+  position: absolute;
+  width: 31.3rem;
+  height: 3.5rem;
+  /* LMS Student / H2 */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.015em;
+
+  /* /Orange / 7 */
+
+  color: #373839;
+}
+
+/* UPDATE FILE */
+
+.bg-modal-update-bonus-modal-content .ant-modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 1.6rem;
+  width: 88.4rem;
+  height: 55.4rem;
+  text-align: center;
 }

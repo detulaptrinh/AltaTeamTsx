@@ -23,6 +23,21 @@
   align-items: center;
   padding: 0 0.4rem 0 0.8rem;
 }
+.my-select-year:before {
+  content: url("/src/assets/avg/downArrowIcon.svg");
+  position: absolute;
+  width: 3rem;
+  height: 3.2rem;
+  background: white;
+  border: 0.1rem solid #373839;
+  box-sizing: border-box;
+  border-radius: 0 0.4rem 0.4rem 0;
+  text-align: center;
+  left: 11rem;
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: none;
+}
 
 /* SELECT BLOCK */
 .my-select-block-box{
@@ -50,21 +65,7 @@
   padding: 0 0.4rem 0 0.8rem;
 }
 
-.my-select-block:before {
-  content: url("/src/assets/avg/downArrowIcon.svg");
-  position: absolute;
-  width: 3rem;
-  height: 3.2rem;
-  background: white;
-  border: 0.1rem solid #373839;
-  box-sizing: border-box;
-  border-radius: 0 0.4rem 0.4rem 0;
-  text-align: center;
-  left: 11rem;
-  -webkit-appearance: none;
-  appearance: none;
-  pointer-events: none;
-}
+
 
 .my-select-block:before {
   content: url("/src/assets/avg/downArrowIcon.svg");

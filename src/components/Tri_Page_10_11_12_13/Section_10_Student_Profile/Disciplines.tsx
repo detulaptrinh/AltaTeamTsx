@@ -1,25 +1,23 @@
 import React, { useState } from 'react';
-import "./Bonus.css"
+import "./Disciplines.css"
 import {
     Row,
     Col,
     Space,
     Input,
-    InputNumber,
-    Pagination,
-    Table,
-    Tabs,
     Button,
+    Upload,
     Modal,
     Form,
     DatePicker,
-    Upload,
-
+    InputNumber,
+    Pagination,
+    Table,
+    Tabs
 } from 'antd';
 import { PlusOutlined, EyeOutlined } from '@ant-design/icons';
 import Searchs from '../Categories/Searchs';
 const { TextArea } = Input;
-
 
 const dataBonus = [
     {
@@ -79,86 +77,86 @@ const columns = [
 
 // css ant
 
-function Bonus() {
+function Disciplines() {
     const [visible, setVisible] = useState(false);
 
     return (
         <>
-            <div className="bonus-headers-btn-group-add">
+
+            <div className="disciplines-headers-btn-group-add">
                 <Button type="primary" shape="round" icon={<PlusOutlined />} onClick={() => setVisible(true)}>
                     Thêm mới
                 </Button>
             </div>
-
-            <div className="bg-modal-update-bonus">
-                <Modal className="bg-modal-update-bonus-modal-content"
+            <div className="bg-modal-update-disciplines">
+                <Modal className="bg-modal-update-disciplines-modal-content"
                     centered
                     visible={visible}
                     onOk={() => setVisible(false)}
                     onCancel={() => setVisible(false)} >
                     <Form>
-                        <h2 className="bg-modal-update-bonus-style-name-update-bonus">Cập nhật khen thưởng</h2>
-                        <Form.Item label="Học Viên" className="bg-modal-update-bonus-style-label">
+                        <h2 className="bg-modal-update-disciplines-style-name-update-disciplines">Cập nhật Kỉ Luật</h2>
+                        <Form.Item label="Học Viên" className="bg-modal-update-disciplines-style-label">
                             <p className="bg-modal-update-bonus-style-txt-name">Nguyễn Ngọc Tuyết</p>
                         </Form.Item>
-                        <Form.Item label="Lớp hiện tại" className="bg-modal-update-bonus-style-label">
-                            <p className="bg-modal-update-bonus-style-txt-class">10A</p>
+                        <Form.Item label="Lớp hiện tại" className="bg-modal-update-disciplines-style-label">
+                            <p className="bg-modal-update-disciplines-style-txt-class">10A</p>
                         </Form.Item>
-                        <Form.Item label="Ngày Khen Thưởng" className="bg-modal-update-bonus-style-label">
-                            <DatePicker className="bg-modal-update-bonus-style-date-picker" />
-                            <Button className="bg-modal-update-bonus-style-btn-semester">Học Kì I</Button>
+                        <Form.Item label="Ngày Khen Thưởng" className="bg-modal-update-disciplines-style-label">
+                            <DatePicker className="bg-modal-update-disciplines-style-date-picker" />
+                            <Button className="bg-modal-update-disciplines-style-btn-semester">Học Kì I</Button>
 
 
                         </Form.Item>
-                        <Form.Item label="Nội dung" className="bg-modal-update-bonus-style-label">
-                            <TextArea rows={4} className="bg-modal-update-bonus-style-input" />
+                        <Form.Item label="Nội dung" className="bg-modal-update-disciplines-style-label">
+                            <TextArea rows={4} className="bg-modal-update-disciplines-style-input" />
                         </Form.Item>
 
-                        <Form.Item label="Học kì I:" className="bg-modal-update-bonus-style-label">
+                        <Form.Item label="Học kì I:" className="bg-modal-update-disciplines-style-label">
                             <Upload>
-                                <Button className="bg-modal-update-bonus-modal-content-btn-update" >Chọn tệp tải lên...</Button>
+                                <Button className="bg-modal-update-disciplines-modal-content-btn-update" >Chọn tệp tải lên...</Button>
                             </Upload>,
                         </Form.Item>
 
-                        <Button className="bg-modal-update-bonus-modal-content-btn-cancel" onClick={() => setVisible(false)}>Hủy</Button>
-                        <Button className="bg-modal-update-bonus-modal-content-btn-save">Lưu</Button>
+                        <Button className="bg-modal-update-disciplines-modal-content-btn-cancel" onClick={() => setVisible(false)}>Hủy</Button>
+                        <Button className="bg-modal-update-disciplines-modal-content-btn-save">Lưu</Button>
                     </Form>
 
                 </Modal>
             </div>
-            <div className="bonus-body">
-                <div className="bonus-body-table-group">
-                    <div className="bonus-body-table-group-table-headers">
+            <div className="disciplines-body">
+                <div className="disciplines-body-table-group">
+                    <div className="disciplines-body-table-group-table-headers">
                         <Row>
-                            <Col span={12} className="bonus-body-table-group-table-headers-col-name">
-                                <p className="bonus-body-table-group-table-headers-name">
+                            <Col span={12} className="disciplines-body-table-group-table-headers-col-name">
+                                <p className="disciplines-body-table-group-table-headers-name">
                                     Danh sách mã khen thưởng
                                 </p>
                             </Col>
-                            <Col span={12} className="bonus-body-table-group-table-headers-col-search">
-                                <div className="bonus-body-table-search">
+                            <Col span={12} className="disciplines-body-table-group-table-headers-col-search">
+                                <div className="disciplines-body-table-search">
                                     <Searchs />
                                 </div>
                             </Col>
                         </Row>
                     </div>
-                    <div className="bonus-body-table-group-table-body">
-                        <div className="bonus-body-table-group-table-body-table">
+                    <div className="disciplines-body-table-group-table-body">
+                        <div className="disciplines-body-table-group-table-body-table">
                             <Table dataSource={dataBonus} columns={columns} pagination={false} />
                         </div>
                     </div>
                     <Row>
-                        <Col span={12} className="bonus-body-table-group-footer-col-left">
-                            <p className="bonus-body-table-group-footer-col-left-txt-view">
+                        <Col span={12} className="disciplines-body-table-group-footer-col-left">
+                            <p className="disciplines-body-table-group-footer-col-left-txt-view">
                                 Hiển thị
                             </p>
                             <InputNumber min={1} max={10} defaultValue={8} />
-                            <p className="bonus-body-table-group-footer-col-left-txt-rol">
+                            <p className="disciplines-body-table-group-footer-col-left-txt-rol">
                                 hàng trong một trang
                             </p>
                         </Col>
-                        <Col span={12} className="bonus-body-table-group-footer-col-right">
-                            <div className="bonus-body-table-group-footer-col-right-pagination">
+                        <Col span={12} className="disciplines-body-table-group-footer-col-right">
+                            <div className="disciplines-body-table-group-footer-col-right-pagination">
                                 <Pagination
                                     showSizeChanger
                                     defaultCurrent={8}
@@ -173,5 +171,4 @@ function Bonus() {
         </>
     )
 
-}
-export default Bonus;
+} export default Disciplines;
