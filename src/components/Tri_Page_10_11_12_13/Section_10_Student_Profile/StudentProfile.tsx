@@ -158,9 +158,6 @@ function  StudentProfile() {
                             visible={visible}
                             onOk={() => setVisible(false)}
                             onCancel={() => setVisible(false)}  >
-
-
-
                             <Form>
                                 <h2 className="bg-modal-update-bonus-style-name-update-bonus">Cập nhật khen thưởng</h2>
                                 <Form.Item label="Học Viên" className="bg-modal-update-bonus-style-label">

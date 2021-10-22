@@ -28,8 +28,7 @@
 .sesion15__button{
     /* button */
 /* Auto Layout */
-   position: absolute;
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -37,8 +36,8 @@
 
     width: 23.8rem;
     height: 5.2rem;
-    margin-left: 153rem;
-    margin-top: 16rem;
+    margin-left: 132rem;
+    margin-top: 10rem;
 
     /* Orange/4 */
 

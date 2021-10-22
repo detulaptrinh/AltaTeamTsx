@@ -6,6 +6,23 @@ import {
   IconDate,
 
 } from "../../assets/svg";
+import dataBoxbaikiemtra from "../../data/dataBoxbaikiemtra.json";
+
+interface databaikiemtra{
+  key: number;
+  date: string;
+  khoakhoi: string;
+  lop: string;
+  mon: string;
+  giangvien: string;
+  noidung: string;
+  thoiluong: string;
+  tinhtrang: string;
+  pheduyet: string;
+  icon: string;
+}
+const dataBonus: databaikiemtra[] = dataBoxbaikiemtra;
+
 
 //   tao bang
 const columns =  [ 
@@ -69,74 +86,6 @@ const columns =  [
                     
     
   ]; 
-  const data = [
-    {
-      key: '1',
-      date: 'Thứ 5, 21/08/2020 12:00 PM',
-      khoakhoi: '6',
-      lop: '6A1',
-      mon: 'Toán Đại Số',
-      giangvien: 'GV. Nguyễn Văn A',
-      noidung: 'Kiểm tra 1 tiết',
-      thoiluong: '45 phút',
-      tinhtrang: 'Chờ phê duyệt',
-      pheduyet:  ['Xác nhận', 'Hủy'],
-      icon: '',
-    },
-    {
-      key: '2',
-      date: 'Thứ 5, 21/08/2020 12:00 PM',
-      khoakhoi: '8',
-      lop: '8C',
-      mon: 'Toán Đại Số',
-      giangvien: 'GV. Nguyễn Văn A',
-      noidung: 'Kiểm tra 1 tiết',
-      thoiluong: '45 phút',
-      tinhtrang: 'Chưa bắt đầu',
-      pheduyet: 'Đã hủy',
-      icon: '',
-    },
-    {
-      key: '3',
-      date: 'Thứ 5, 21/08/2020 12:00 PM',
-      khoakhoi: '6',
-      lop: '6A1',
-      mon: 'Toán Đại Số',
-      giangvien: 'GV. Nguyễn Văn A',
-      noidung: 'Kiểm tra 1 tiết',
-      thoiluong: '45 phút',
-      tinhtrang: 'Chờ phê duyệt',
-      pheduyet: 'Đã duyệt',
-      icon: '',
-    },
-    {
-      key: '4',
-      date: 'Thứ 5, 21/08/2020 12:00 PM',
-      khoakhoi: '6',
-      lop: '6A1',
-      mon: 'Toán Đại Số',
-      giangvien: 'GV. Nguyễn Văn A',
-      noidung: 'Kiểm tra 1 tiết',
-      thoiluong: '45 phút',
-      tinhtrang: 'Chờ phê duyệt',
-      pheduyet: 'Đã duyệt',
-      icon: '',
-    },
-    {
-      key: '5',
-      date: 'Thứ 5, 21/08/2020 12:00 PM',
-      khoakhoi: '8',
-      lop: '8C',
-      mon: 'Toán Đại Số',
-      giangvien: 'GV. Nguyễn Văn A',
-      noidung: 'Kiểm tra 1 tiết',
-      thoiluong: '45 phút',
-      tinhtrang: 'Chưa bắt đầu',
-      pheduyet: 'Đã hủy',
-      icon: '',
-    },
-   
-  ]; 
  
   export default class Boxbaikiemtra extends Component {
     render() {
@@ -193,7 +142,7 @@ const columns =  [
                 </Col>
                 <div className="sesion16___body-table">
                       <div className="sesion16___table">
-                          <Table dataSource={data} columns={columns} pagination={false}/>
+                          <Table dataSource={dataBonus} columns={columns} pagination={false}/>
                       </div>
                 </div>
                 <Row>

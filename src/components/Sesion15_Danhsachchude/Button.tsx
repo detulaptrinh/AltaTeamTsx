@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './Button.css'
 import { Button } from 'antd';
-import { PlusOutlined,DeleteOutlined } from '@ant-design/icons';
-
+import {Link} from "react-router-dom"
 
 
 export default class Buttonnn extends Component {
@@ -10,7 +9,8 @@ export default class Buttonnn extends Component {
     return (
         <> 
            <Button className="sesion15__button"> 
-                <p className="sesion15__textphanconggd">Phân công giảng dạy</p>
+                <Link to="/phancong"><p className="sesion15__textphanconggd">Phân công giảng dạy</p></Link>
+                
            </Button>
       </>
     )

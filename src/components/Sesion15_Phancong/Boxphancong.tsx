@@ -1,14 +1,45 @@
 import React, { Component } from 'react'
 import './Boxphancong.css'
-import { Row, Col, Button,Select,Table, Space ,Divider, Checkbox,Pagination, InputNumber   } from 'antd';
+import { Row, Col, Button,Modal,Table, Space, Checkbox,Pagination, InputNumber   } from 'antd';
 import Title from './Title/Title'
 import Buttonn from './Button/Button'
+import {Link} from "react-router-dom"
 import {
   IconList,
   IconEdit,
   IconTrash,
 
 } from "../../assets/svg";
+import dataBoxphancong from "../../data/dataBoxphancong.json";
+
+function showDeleteConfirm() {
+  confirm({
+
+    title: 'Xóa phân công',
+    content: 'Xác nhận muốn xoá phân công này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
+    okText: 'Xác nhận',
+    okType: 'danger',
+    cancelText: 'Hủy',
+    onOk() {
+      console.log('OK');
+    },
+    onCancel() {
+      console.log('Cancel');
+    },
+  });
+}
+const { confirm } = Modal;
+
+interface dataphancong{
+  key: number;
+  ma: string;
+  name: string;
+  datebatdau: string;
+  dateketthuc: string;
+  danhsach: string;
+  icon: string;
+}
+const dataBonus: dataphancong[] = dataBoxphancong;
 
 
 //   tao bang
@@ -42,7 +73,7 @@ import {
     {
     title: 'Danh sách chủ đề',
     dataIndex: 'danhsach',
-    render: () =>  <img src={IconList}/>,
+    render: () =><Link to="/danhsach"><img src={IconList}/></Link>  ,
   
     },
     {
@@ -51,50 +82,13 @@ import {
     render: () => (
       <Space >
         <img src={IconEdit}/>
-        <img src={IconTrash}/>
+        <img src={IconTrash} onClick={showDeleteConfirm}/>
       </Space>
     ),
     },
     
   ]; 
-  const dataBonus= [
-    {
-      key: '1',
-      ma: '123 456 789',
-      name: '6A',
-      datebatdau: '01/01/2021',
-      dateketthuc: '30/12/2021',
-      danhsach: '',
-      icon: '',
-    },
-    {
-      key: '2',
-      ma: '123 456 789',
-      name: '6A',
-      datebatdau: '01/01/2021',
-      dateketthuc: '30/12/2021',
-      danhsach: '',
-      icon: '',
-    },
-    {
-      key: '3',
-      ma: '123 456 789',
-      name: '6A',
-      datebatdau: '01/01/2021',
-      dateketthuc: '30/12/2021',
-      danhsach: '',
-      icon: '',
-    },
-    {
-      key: '4',
-      ma: '123 456 789',
-      name: '6A',
-      datebatdau: '01/01/2021',
-      dateketthuc: '30/12/2021',
-      danhsach: '',
-      icon: '',
-    },
-  ]; 
+  
 
   export default class Boxphancong extends Component {
     render() {

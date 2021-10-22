@@ -1,0 +1,38 @@
+[
+    {
+        "key": 1,
+        "ma": "123 456 789",
+        "name": "6A",
+        "datebatdau": "01/01/2021",
+        "dateketthuc": "30/12/2021",
+        "danhsach": "",
+        "icon": ""
+      },
+      {
+        "key": 2,
+        "ma": "123 456 789",
+        "name": "6A",
+        "datebatdau": "01/01/2021",
+        "dateketthuc": "30/12/2021",
+        "danhsach": "",
+        "icon": ""
+      },
+      {
+        "key": 3,
+        "ma": "123 456 789",
+        "name": "6A",
+        "datebatdau": "01/01/2021",
+        "dateketthuc": "30/12/2021",
+        "danhsach": "",
+        "icon": ""
+      },
+      {
+        "key": 4,
+        "ma": "123 456 789",
+        "name": "6A",
+        "datebatdau": "01/01/2021",
+        "dateketthuc": "30/12/2021",
+        "danhsach": "",
+        "icon": ""
+      }
+]
