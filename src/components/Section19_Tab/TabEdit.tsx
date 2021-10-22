@@ -5,7 +5,7 @@ import { FormOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
-import image1 from '../../assets/images/frame19.png'
+
 import image2 from '../../assets/images/frame613.png'
 import {
   Form,
@@ -67,7 +67,7 @@ class TabEdit extends Component {
           <Row className="row1">
             <Col span={24}><div className="tabedit__content">
               <Col span={5}><div className="tabedit__content__image">
-                <img src={image1} />
+           
               </div>
               </Col>
 

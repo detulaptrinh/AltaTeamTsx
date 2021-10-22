@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import './Boxchude.css'
+<<<<<<< Updated upstream
 import { Row, Col, Button,Modal,Table, Radio,Divider,Input, Pagination, InputNumber   } from 'antd';
 import { FormOutlined,DeleteOutlined, ContainerOutlined } from '@ant-design/icons';
+=======
+import { Row, Col, Button,Table, Pagination, InputNumber   } from 'antd';
+>>>>>>> Stashed changes
 import Title from './Title'
 import Buttonnn from './Button'
 import {Link} from "react-router-dom"
 import {
   IconEdit,
   IconTrash,
- 
-
 } from "../../assets/svg";
+<<<<<<< Updated upstream
 import dataBoxchude from "../../data/dataBoxchude.json";
 
 function showDeleteConfirm() {
@@ -38,9 +41,19 @@ interface datachude{
   dateketthuc: string;
 }
 const dataBonus: datachude[] = dataBoxchude;
+=======
+import sesion15_dataBoxchude from '../../data/sesion15_dataBoxchude.json'
+>>>>>>> Stashed changes
 
+interface datachude {
+    key: Number;
+    chude: String;
+    mieuta: String;
+    dateketthuc: String;
+}
+const dataBoxchude: datachude[] = sesion15_dataBoxchude;
 //   tao bang
-const columns =  [ 
+const columnschude =  [ 
     {
       title: 'Chủ đề',
       dataIndex: 'chude',
@@ -54,8 +67,12 @@ const columns =  [
     title: 'Ngày kết thúc',
     dataIndex: 'dateketthuc',
     },   
+<<<<<<< Updated upstream
   ]; 
   
+=======
+  ];
+>>>>>>> Stashed changes
   export default class Boxchude extends Component {
     render() {
     return (
@@ -119,7 +136,11 @@ const columns =  [
                   <p className="sesion15__textMH">Môn học: <p className="sesion15__textMH1">Tin học kèm toán</p></p>
                   <div className="sesion15__body-table">
                             <div className="sesion15__table">
+<<<<<<< Updated upstream
                                 <Table dataSource={dataBonus} columns={columns} pagination={false} />
+=======
+                                <Table dataSource={dataBoxchude} columns={columnschude} pagination={false} />
+>>>>>>> Stashed changes
                             </div>
                   </div>
                   <Row>

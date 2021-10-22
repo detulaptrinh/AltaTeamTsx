@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import './Boxbaikiemtra.css'
 import { Row, Col, Button,Table,DatePicker,Input,Pagination, InputNumber   } from 'antd';
-import { PlusOutlined,SearchOutlined, CalendarOutlined,EyeOutlined } from '@ant-design/icons';
+import { SearchOutlined} from '@ant-design/icons';
 import {
   IconDate,
-
+  IconPlus,
+  IconEyes
 } from "../../assets/svg";
+<<<<<<< Updated upstream
 import dataBoxbaikiemtra from "../../data/dataBoxbaikiemtra.json";
 
 interface databaikiemtra{
@@ -23,9 +25,25 @@ interface databaikiemtra{
 }
 const dataBonus: databaikiemtra[] = dataBoxbaikiemtra;
 
+=======
+import sesison16_dataBoxbaikiemtra from '../../data/sesison16_dataBoxbaikiemtra.json'
+>>>>>>> Stashed changes
 
-//   tao bang
-const columns =  [ 
+interface datakiemtra {
+    key: Number;
+    date: String;
+    khoakhoi: String;
+    lop: String;
+    mon: String;
+    giangvien: String;
+    noidung: String;
+    thoiluong: String;
+    tinhtrang: String;
+    pheduyet: String;
+    icon: String;
+}
+const dataBoxbaikiemtra: datakiemtra[] = sesison16_dataBoxbaikiemtra;
+const columnsBoxbaikiemtra =  [ 
     {
       title: 'Ngày làm bài',
       dataIndex: 'date',
@@ -81,12 +99,17 @@ const columns =  [
     {
     title: '',
     dataIndex: 'icon',
-    render: () => <EyeOutlined style={{ fontSize: '32px' , color: '#FF7506' }}/>,
+    render: () => <img src={IconEyes}/>,
     },   
+<<<<<<< Updated upstream
                     
     
   ]; 
  
+=======
+                     
+  ]; 
+>>>>>>> Stashed changes
   export default class Boxbaikiemtra extends Component {
     render() {
     return (
@@ -129,7 +152,7 @@ const columns =  [
     
         <div className="sesion16___divbutton">
             <Button className="sesion16___butttonadd">
-                <PlusOutlined  className="sesion16___iconplus"/>
+                <img className="sesion16___iconplus" src={IconPlus}/>
                 <p className="sesion16___textadd">Thêm mới</p>
             </Button>
         </div>
@@ -142,7 +165,11 @@ const columns =  [
                 </Col>
                 <div className="sesion16___body-table">
                       <div className="sesion16___table">
+<<<<<<< Updated upstream
                           <Table dataSource={dataBonus} columns={columns} pagination={false}/>
+=======
+                          <Table dataSource={dataBoxbaikiemtra} columns={columnsBoxbaikiemtra} pagination={false}/>
+>>>>>>> Stashed changes
                       </div>
                 </div>
                 <Row>

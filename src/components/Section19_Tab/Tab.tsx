@@ -5,7 +5,6 @@ import { FormOutlined, PlusOutlined} from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col, } from 'antd';
 import { Card } from 'antd';
-import image1 from '../../assets/images/frame19.png'
 import image2 from '../../assets/images/frame613.png'
 import {
   Form,
@@ -84,7 +83,7 @@ function Box() {
             <Col span={24}>
               <div className="tab__content">
                 <Col span={5}><div className="tab__content__image">
-                  <img src={image1} />
+             
                 </div>
                 </Col>
 

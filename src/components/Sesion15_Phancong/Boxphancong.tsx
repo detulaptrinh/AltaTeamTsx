@@ -1,14 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component,useState } from 'react'
 import './Boxphancong.css'
+<<<<<<< Updated upstream
 import { Row, Col, Button,Modal,Table, Space, Checkbox,Pagination, InputNumber   } from 'antd';
 import Title from './Title/Title'
 import Buttonn from './Button/Button'
 import {Link} from "react-router-dom"
+=======
+import { Row, Col, Button,Table,Pagination, InputNumber, Modal } from 'antd';
+import Title from './Title/Title'
+import Buttonn from './Button/Button'
+import {  Space ,Checkbox  } from 'antd';
+>>>>>>> Stashed changes
 import {
-  IconList,
-  IconEdit,
-  IconTrash,
+    IconList,
+    IconEdit,
+    IconTrash,
+  
+  } from "../../assets/svg";
+import sesion15_dataBoxphancong from '../../data/sesion15_dataBoxphancong.json'
 
+
+<<<<<<< Updated upstream
 } from "../../assets/svg";
 import dataBoxphancong from "../../data/dataBoxphancong.json";
 
@@ -40,10 +52,22 @@ interface dataphancong{
   icon: string;
 }
 const dataBonus: dataphancong[] = dataBoxphancong;
+=======
+interface dataphancong {
+    key: Number;
+    ma: String;
+    name: String;
+    datebatdau: String;
+    dateketthuc: String;
+    danhsach: String;
+    icon: String;
+}
+const dataBoxphancong : dataphancong[] = sesion15_dataBoxphancong;
+>>>>>>> Stashed changes
 
 
 //   tao bang
-  const columns =  [ 
+const columnsBoxphancong =  [ 
     {
       title: '',
       dataIndex: 'row',
@@ -85,18 +109,51 @@ const dataBonus: dataphancong[] = dataBoxphancong;
         <img src={IconTrash} onClick={showDeleteConfirm}/>
       </Space>
     ),
+<<<<<<< Updated upstream
     },
     
   ]; 
   
+=======
+    }, 
+  ]; 
+>>>>>>> Stashed changes
 
   export default class Boxphancong extends Component {
     render() {
+      const [isModalDel, setIsModalDel] = useState(false);
+      const showModalDel = (): void  => {
+        setIsModalDel(true);
+      };
+    
+      const handleOkDel = (): void => {
+        setIsModalDel(false);
+      };
+    
+      const handleCancelDel = (): void => {
+        setIsModalDel(false);
+      };
     return (
         <>
+          {/* MODAL DELETE COURSE */}
+      <Modal
+        className="sesion15_Boxphancong-modal sesion15_Boxphancong-modal-del"
+        title="Xoá phân công"
+        visible={isModalDel}
+        onOk={handleOkDel}
+        onCancel={handleCancelDel}
+        okText="Xác nhận"
+        cancelText="Huỷ"
+        centered
+      >
+        <p className="sesion15_Boxphancong-modal-del-desc">
+          Xác nhận muốn xoá phân công này và toàn bộ thông tin bên trong? Sau khi
+          xoá sẽ không thể hoàn tác.
+        </p>
+      </Modal>
+      
         <Title/>
         <Buttonn/>
-      
             <Row>
             <Col className="sesion15_box1">
                  <Col className="sesion15_box3">
@@ -144,7 +201,7 @@ const dataBonus: dataphancong[] = dataBoxphancong;
                   <p className="sesion15_text1">Danh sách phân công giảng dạy</p>
                   <div className="sesion15_body-table">
                       <div className="sesion15_table">
-                          <Table  dataSource={dataBonus} columns={columns} pagination={false} />
+                          <Table  dataSource={dataBoxphancong} columns={columnsBoxphancong} pagination={false} />
                       </div>
                   </div>
                   <Row>
@@ -168,7 +225,6 @@ const dataBonus: dataphancong[] = dataBoxphancong;
                       </Col>
                   </Row>
             </Col>
-           
             </Row>
       </>
     )
