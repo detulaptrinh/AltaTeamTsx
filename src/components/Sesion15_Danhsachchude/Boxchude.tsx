@@ -1,15 +1,43 @@
 import React, { Component } from 'react'
 import './Boxchude.css'
-import { Row, Col, Button,Select,Table, Radio,Divider,Input, Pagination, InputNumber   } from 'antd';
+import { Row, Col, Button,Modal,Table, Radio,Divider,Input, Pagination, InputNumber   } from 'antd';
 import { FormOutlined,DeleteOutlined, ContainerOutlined } from '@ant-design/icons';
 import Title from './Title'
 import Buttonnn from './Button'
+import {Link} from "react-router-dom"
 import {
   IconEdit,
   IconTrash,
  
 
 } from "../../assets/svg";
+import dataBoxchude from "../../data/dataBoxchude.json";
+
+function showDeleteConfirm() {
+    confirm({
+  
+      title: 'Xóa phân công',
+      content: 'Xác nhận muốn xoá phân công này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
+      okText: 'Xác nhận',
+      okType: 'danger',
+      cancelText: 'Hủy',
+      onOk() {
+        console.log('OK');
+      },
+      onCancel() {
+        console.log('Cancel');
+      },
+    });
+  }
+  const { confirm } = Modal;
+
+interface datachude{
+  key: number;
+  chude: string;
+  mieuta: string;
+  dateketthuc: string;
+}
+const dataBonus: datachude[] = dataBoxchude;
 
 //   tao bang
 const columns =  [ 
@@ -27,32 +55,7 @@ const columns =  [
     dataIndex: 'dateketthuc',
     },   
   ]; 
-  const data = [
-    {
-      key: '1',
-      chude: 'Lorem ipsum dolor sit amet',
-      mieuta: 'Nullam malesuada posuere justo, in dictum ipsum',
-      dateketthuc: '01/01/2190',
-    },
-    {
-      key: '2',
-      chude: 'Lorem ipsum dolor sit amet',
-      mieuta: 'Nullam malesuada posuere justo, in dictum ipsum',
-      dateketthuc: '01/01/2190',
-    },
-    {
-      key: '3',
-      chude: 'Lorem ipsum dolor sit amet',
-      mieuta: 'Nullam malesuada posuere justo, in dictum ipsum',
-      dateketthuc: '01/01/2190',
-    },
-    {
-      key: '4',
-      chude: 'Lorem ipsum dolor sit amet',
-      mieuta: 'Nullam malesuada posuere justo, in dictum ipsum',
-      dateketthuc: '01/01/2190',
-    },
-  ]; 
+  
   export default class Boxchude extends Component {
     render() {
     return (
@@ -107,7 +110,7 @@ const columns =  [
             <Col className="sesion15__box2">
                   <div className="sesion15__divicon">
                      <img className="sesion15__iconform" src={IconEdit}/>
-                     <img className="sesion15__icondelet" src={IconTrash}/>
+                     <img className="sesion15__icondelet" src={IconTrash} onClick={showDeleteConfirm}/>
                   </div>
                   <p className="sesion15__text1">Danh sách chủ đề</p>
                  
@@ -116,7 +119,7 @@ const columns =  [
                   <p className="sesion15__textMH">Môn học: <p className="sesion15__textMH1">Tin học kèm toán</p></p>
                   <div className="sesion15__body-table">
                             <div className="sesion15__table">
-                                <Table dataSource={data} columns={columns} pagination={false} />
+                                <Table dataSource={dataBonus} columns={columns} pagination={false} />
                             </div>
                   </div>
                   <Row>
