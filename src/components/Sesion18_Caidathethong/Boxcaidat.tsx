@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Boxcaidat.css'
 import { Row, Col  } from 'antd';
 import Title from './Title';
+import {Link} from "react-router-dom"
 
 export default class Boxcaidat extends Component {
     render() {
@@ -9,15 +10,15 @@ export default class Boxcaidat extends Component {
         <>
         <Title/>
         <Row>
+        <Link to="/cauhinh">
             <Col className="sesion18__boxCH">
                 <p className="sesion18__textcauhinh">Cấu hình</p>
                 <p className="sesion18__textch">Theme, các thông tin khác về cấu hình</p>
                 <div className="sesion18__elipse"/>
                 <div className="sesion18__elipse1"/>
                 <div className="sesion18__elipse2"/>
-            
-            
             </Col>
+        </Link>
             <Col className="sesion18__boxTT">
                 <p className="sesion18__textcauhinh">Thông tin trường</p>
                 <p className="sesion18__textch">Thông tin chung của trường, các cơ sở</p>
