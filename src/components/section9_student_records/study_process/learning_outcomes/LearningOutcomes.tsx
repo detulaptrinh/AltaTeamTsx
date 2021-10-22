@@ -10,51 +10,121 @@ const { Panel } = Collapse;
 const dataSource = [
     {
         key: '1',
-        name: 'Mike',
-        age: 32,
-        address: '10 Downing Street',
+        monhoc: 'Toán Đại Số',
+        chuyencan: 32,
+        ktdaugio: 10,
+        muoilamphut: 10,
+        bonmuoilamphut: 10,
+        cuoiky: 10,
+        diemtb: 10,
     },
     {
         key: '2',
-        name: 'John',
-        age: 42,
-        address: '10 Downing Street',
+        monhoc: 'Toán Hình Học',
+        chuyencan: 32,
+        ktdaugio: 10,
+        muoilamphut: 10,
+        bonmuoilamphut: 10,
+        cuoiky: 10,
+        diemtb: 10,
     },
     {
         key: '3',
-        name: 'John',
-        age: 42,
-        address: '10 Downing Street',
+        monhoc: 'Sinh Học',
+        chuyencan: 32,
+        ktdaugio: 10,
+        muoilamphut: 10,
+        bonmuoilamphut: 10,
+        cuoiky: 10,
+        diemtb: 10,
     },
     {
         key: '4',
-        name: 'John',
-        age: 42,
-        address: '10 Downing Street',
+        monhoc: 'Vật Lý',
+        chuyencan: 32,
+        ktdaugio: 10,
+        muoilamphut: 10,
+        bonmuoilamphut: 10,
+        cuoiky: 10,
+        diemtb: 10,
     },
     {
         key: '5',
-        name: 'John',
-        age: 42,
-        address: '10 Downing Street',
+        monhoc: 'Địa Lý',
+        chuyencan: 32,
+        ktdaugio: 10,
+        muoilamphut: 10,
+        bonmuoilamphut: 10,
+        cuoiky: 10,
+        diemtb: 10,
+    },
+    {
+        key: '6',
+        monhoc: 'Tiếng Anh',
+        chuyencan: 32,
+        ktdaugio: 10,
+        muoilamphut: 10,
+        bonmuoilamphut: 10,
+        cuoiky: 10,
+        diemtb: 10,
+    },
+    {
+        key: '7',
+        monhoc: 'Ngữ Văn',
+        chuyencan: 32,
+        ktdaugio: 10,
+        muoilamphut: 10,
+        bonmuoilamphut: 10,
+        cuoiky: 10,
+        diemtb: 10,
+    },
+    {
+        key: '8',
+        monhoc: 'Lịch Sử',
+        chuyencan: 32,
+        ktdaugio: 10,
+        muoilamphut: 10,
+        bonmuoilamphut: 10,
+        cuoiky: 10,
+        diemtb: 10,
     },
 ];
 
 const columns = [
     {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
+        title: 'Môn học',
+        dataIndex: 'monhoc',
+        key: 'monhoc',
     },
     {
-        title: 'Age',
-        dataIndex: 'age',
-        key: 'age',
+        title: 'Chuyên cần',
+        dataIndex: 'chuyencan',
+        key: 'chuyencan',
     },
     {
-        title: 'Address',
-        dataIndex: 'address',
-        key: 'address',
+        title: 'Kiểm tra đầu giờ',
+        dataIndex: 'ktdaugio',
+        key: 'ktdaugio',
+    },
+    {
+        title: '15 phút',
+        dataIndex: 'muoilamphut',
+        key: 'muoilamphut',
+    },
+    {
+        title: '45 phút',
+        dataIndex: 'bonmuoilamphut',
+        key: 'bonmuoilamphut',
+    },
+    {
+        title: 'Cuối kỳ',
+        dataIndex: 'cuoiky',
+        key: 'cuoiky',
+    },
+    {
+        title: 'Điểm trung bình',
+        dataIndex: 'diemtb',
+        key: 'diemtb',
     },
 ];
 
@@ -125,8 +195,9 @@ export default class LearningOutcomes extends Component {
                     </div>
                 </Col>
 
+                {/* table */}
                 <div className="box">
-                    <Table dataSource={dataSource} columns={columns} />;
+                    <Table dataSource={dataSource} columns={columns} />
                 </div>
             </div>
         )
