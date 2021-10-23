@@ -77,7 +77,8 @@
   .disciplines-body-table-search {
     float: right;
     margin-top: 2.4rem;
-    margin-right: 6.4rem;
+    margin-right: -11rem;
+
   }
   .disciplines-body-table-group-table-body {
     width: 100%;
@@ -174,12 +175,12 @@
   }
   
   .disciplines-body-table-group-footer-col-left .ant-input-number {
-    width: 48px;
-    height: 32px;
+    width: 4.8rem;
+    height: 3.2rem;
     background-color: transparent;
-    border: 1px solid #ff7506;
+    border: 0.1rem solid #ff7506;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 0.4rem;
   }
   .disciplines-body-table-group-footer-col-left-txt-view {
     margin: 0.5rem 2rem 0 6.4rem;
@@ -265,20 +266,20 @@
 .bg-modal-update-disciplines-style-name-update-disciplines {
     color: #373839;
     font-family: "Mulish";
-    font-size: 28px;
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 35px;
+    line-height: 3.5rem;
     letter-spacing: 0.015em;
     text-align: center;
   }
   .bg-modal-update-bonus-style-label label {
     font-size: 1.6rem;
     font-family: "Source Sans Pro";
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 2rem;
     letter-spacing: 0.015em;
     text-align: left;
     margin-left: 6.4rem;
@@ -342,12 +343,7 @@
   }
   
   /* DATE PICKER */
-  
-  .bg-modal-update-bonus-style-date-picker:hover,
-  .ant-picker-focused {
-    border-color: #40a9ff;
-    border-right-width: 1px !important;
-  }
+
   .bg-modal-update-bonus-style-date-picker {
     box-sizing: border-box;
     color: #373839;
@@ -356,13 +352,13 @@
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 130%;
-    padding: 4px 11px 4px;
+    padding: 0.4rem 1.1rem 0.4rem;
     position: relative;
     display: inline-flex;
     align-items: center;
-    border: 1px solid #c9c4c0;
+    border: 0.1rem solid #c9c4c0;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     margin-left: 3rem;
     float: left;
   }
@@ -372,11 +368,11 @@
     /* Inactivated Icon */
     background: #c9c4c0;
     opacity: 0.5;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     color: #373839;
     margin-left: 2.4rem;
@@ -406,8 +402,8 @@
     font-family: "Mulish";
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     letter-spacing: 0.015em;
     color: #373839;
   }
@@ -435,8 +431,8 @@
     font-family: "Mulish";
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     letter-spacing: 0.015em;
     color: #ffffff;
   }
@@ -452,11 +448,11 @@
   }
   
   .bg-modal-update-bonus .ant-modal-footer {
-    padding: 10px 16px;
+    padding: 1rem 1.6rem;
     text-align: right;
     background: transparent;
-    border-top: 1px solid #f0f0f0;
-    border-radius: 0 0 2px 2px;
+    border-top: 0.1rem solid #f0f0f0;
+    border-radius: 0 0 0.2rem 0.2rem;
     display: none;
   }
   
@@ -464,20 +460,20 @@
 .bg-modal-update-disciplines-style-name-update-bonus {
     color: #373839;
     font-family: "Mulish";
-    font-size: 28px;
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 35px;
+    line-height: 3.5rem;
     letter-spacing: 0.015em;
     text-align: center;
   }
   .bg-modal-update-disciplines-style-label label {
     font-size: 1.6rem;
     font-family: "Source Sans Pro";
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 2rem;
     letter-spacing: 0.015em;
     text-align: left;
     margin-left: 6.4rem;
@@ -530,7 +526,7 @@
     height: 13.5rem;
     margin-left: 9.8rem;
     background: #f2f2f2;
-    border-radius: 4px;
+    border-radius: 0.4rem;
   }
   
   .bg-modal-update-disciplines-style-input:hover {
@@ -541,12 +537,6 @@
   }
   
   /* DATE PICKER */
-  
-  .bg-modal-update-disciplines-style-date-picker:hover,
-  .ant-picker-focused {
-    border-color: #40a9ff;
-    border-right-width: 1px !important;
-  }
   .bg-modal-update-disciplines-style-date-picker {
     box-sizing: border-box;
     color: #373839;
@@ -555,13 +545,13 @@
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 130%;
-    padding: 4px 11px 4px;
+    padding: 0.4rem 1.1rem 0.4rem;
     position: relative;
     display: inline-flex;
     align-items: center;
-    border: 1px solid #c9c4c0;
+    border: 0.1rem solid #c9c4c0;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     margin-left: 3rem;
     float: left;
   }
@@ -571,11 +561,11 @@
     /* Inactivated Icon */
     background: #c9c4c0;
     opacity: 0.5;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     color: #373839;
     margin-left: 2.4rem;
@@ -605,8 +595,8 @@
     font-family: "Mulish";
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     letter-spacing: 0.015em;
     color: #373839;
   }
@@ -634,8 +624,8 @@
     font-family: "Mulish";
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     letter-spacing: 0.015em;
     color: #ffffff;
   }
@@ -651,22 +641,22 @@
   }
   
   .bg-modal-update-disciplines .ant-modal-footer {
-    padding: 10px 16px;
+    padding: 1rem 1.6rem;
     text-align: right;
     background: transparent;
-    border-top: 1px solid #f0f0f0;
-    border-radius: 0 0 2px 2px;
+    border-top: 0.1rem solid #f0f0f0;
+    border-radius: 0 0 0.2rem 0.2rem;
     display: none;
   }
   /* MODEL UPDATE BONUS */
   
   .bg-modal-update-disciplines-modal-content .ant-modal-close-x {
     display: none;
-    width: 56px;
-    height: 56px;
-    font-size: 16px;
+    width: 5.6rem;
+    height: 5.6rem;
+    font-size: 1.6rem;
     font-style: normal;
-    line-height: 56px;
+    line-height: 5.6rem;
     text-align: center;
     text-transform: none;
     text-rendering: auto;
@@ -700,3 +690,28 @@
     text-align: center;
   }
   
+  .disciplines-btn-upload {
+    width: 17.1rem;
+    height: 3.2rem;
+    background: #ffd8b8;
+    border: 0.1rem solid #ff7506;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    margin-left: 2.4rem;
+  }
+  
+  .disciplines-btn-link-upload {
+    width: 39rem;
+    height: 3.2rem;
+    border: none;
+    box-sizing: border-box;
+    background: #efefef;
+    border-radius: 0.4rem;
+  }
+  
+  .disciplines-btn-link-upload img {
+    float: left;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    border-right: 0.1rem solid #c9c4c0;
+  }

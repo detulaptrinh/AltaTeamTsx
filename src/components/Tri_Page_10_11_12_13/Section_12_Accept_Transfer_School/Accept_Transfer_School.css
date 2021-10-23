@@ -63,7 +63,7 @@
 }
 .transfer_school_body_group {
   position: relative;
-  top:2.4rem;
+  top: 2.4rem;
   width: 100%;
   height: 80.9rem;
   box-shadow: 0.4rem 0.4rem 2.5rem 0.4rem rgba(154, 202, 245, 0.25);
@@ -76,7 +76,7 @@
 }
 .transfer_school_body_group_header_left_name {
   font-family: "Mulish";
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 800;
   line-height: 5rem;
@@ -152,7 +152,7 @@
   height: 4rem;
 }
 .transfer_school_body_group_table_table .ant-table-tbody > tr > td {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 0.1rem solid #f0f0f0;
   font-family: "Source Sans Pro";
   font-size: 1.6rem;
   font-style: normal;
@@ -193,4 +193,383 @@
 .transfer_school_footer_group_pagination_numb {
   float: right;
   padding: 5rem 6.4rem 0rem 0rem;
+}
+/* BUTTON ADD */
+.button-add-transfer-school {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+.button-add-transfer-school button {
+  width: 17.6rem;
+  position: relative;
+  flex-direction: row;
+  font-weight: 800;
+  white-space: nowrap;
+  text-align: center;
+  border: 0.1rem solid transparent;
+  box-shadow: 0 0.2rem 0 rgb(0 0 0 / 2%);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  height: 5.2rem;
+  font-size: 1.8rem;
+  font-family: "Mulish";
+  border-radius: 0.8rem;
+  color: #ffff;
+  border-color: #d9d9d9;
+  background: #ff7506;
+}
+.button-add-transfer-school button:hover,
+.button-add-transfer-school button:focus,
+.button-add-transfer-school button :active {
+  text-decoration: none;
+  background: #ff7506;
+}
+.button-add-transfer-school button:hover,
+.button-add-transfer-school button:focus {
+  color: #ffff;
+  border-color: #ffff;
+  background-color: #ff7506;
+}
+/* MODAL */
+
+.bg-modal-update-transfer-school-modal-content .ant-modal-content {
+  position: relative;
+  width: 88.4rem;
+  height: 80.6rem;
+
+  background: #ffffff;
+  border-radius: 1.6rem;
+}
+.bg-modal-update-transfer-school-style-name-update-transfer-school {
+  width: 34.9rem;
+  height: 3.5rem;
+  margin-top: 2.4rem;
+  margin-left: 27rem;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+.bg-modal-update-transfer-school-style-label .ant-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  width: 58.8rem;
+  height: 4rem;
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+}
+
+/*  */
+.bg-modal-update-transfer-school-select-conscious select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  position: static;
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+  flex: none;
+  order: 0rem;
+  flex-grow: 0rem;
+  margin: 0rem 0rem;
+  height: 4rem;
+  width: 58.5rem;
+  left: 0px;
+  top: 0px;
+  border-radius: 0.8rem;
+  padding: 0.8rem, 1.6rem, 0.8rem, 1.6rem;
+  justify: space-between;
+}
+.bg-modal-update-transfer-school-select-conscious :before {
+  content: url("/src/assets/avg/downArrowIcon.svg");
+  position: absolute;
+  height: 2rem;
+  width: 1.86rem;
+  border-radius: 0rem;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 0 0.4rem 0.4rem 0;
+  left: 56.5rem;
+  top: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: none;
+}
+/*  */
+.bg-modal-update-transfer-school-select-district select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  position: static;
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0rem 0rem;
+  height: 4rem;
+  width: 58.5rem;
+  border-radius: 0.8rem;
+  padding: 0.8rem, 1.6rem, 0.8rem, 1.6rem;
+  justify: space-between;
+}
+.bg-modal-update-transfer-school-select-district :before {
+  content: url("/src/assets/avg/downArrowIcon.svg");
+  position: absolute;
+  height: 2rem;
+  width: 1.86rem;
+  border-radius: 0px;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 0 0.4rem 0.4rem 0;
+  left: 56.5rem;
+  top: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: none;
+}
+
+/*  */
+
+.bg-modal-update-transfer-school-modal-content-btn-cancel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 7.3rem;
+  position: absolute;
+  width: 16rem;
+  height: 5.2rem;
+  left: 26.6rem;
+  top: 71.4rem;
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+  /*  */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 1rem 1rem;
+}
+.bg-modal-update-transfer-school-modal-content-btn-cancel:hover,
+.bg-modal-update-transfer-school-modal-content-btn-cancel:focus,
+.bg-modal-update-transfer-school-modal-content-btn-cancel:active {
+  text-decoration: none;
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #373839;
+}
+
+.bg-modal-update-transfer-school-modal-content-btn-next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  position: absolute;
+  width: 16rem;
+  height: 5.2rem;
+  left: 45.8rem;
+  top: 71.4rem;
+  background: #c9c4c0;
+  border-radius: 0.8rem;
+  /*  */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 1rem 1rem;
+}
+
+.bg-modal-update-transfer-school-modal-content-btn-next:hover,
+.bg-modal-update-transfer-school-modal-content-btn-next:focus,
+.bg-modal-update-transfer-school-modal-content-btn-next:active {
+  text-decoration: none;
+  background: #ff7506;
+  border-color: #c9c4c0;
+  border-radius: 0.8rem #ff7506;
+  color: #ffffff;
+}
+/*  */
+.bg-modal-update-transfer-school-date .ant-picker {
+  width: 58.5rem;
+  height: 4rem;
+  left: -3rem;
+  /* Grey/5 */
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+}
+/*  */
+.bg-modal-update-transfer-school-style-reason {
+  width: 19rem;
+  height: 2rem;
+  top: calc(50% - 2rem / 2 - 4.55rem);
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #292b2e;
+  opacity: 0.5;
+  width: 58.5rem;
+  height: 13.5rem;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+.bg-modal-update-transfer-school-style-reason:hover {
+  border: 0.1rem solid rgba(55, 56, 57, 0.5);
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+}
+.bg-modal-update-style-txt-name {
+  position: absolute;
+  width: 7rem;
+  height: 2rem;
+  top: -1.5rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: #373839;
+}
+/* MODEL NEXT */
+
+.bg-modal-update-transfer-school-modal-content-next .ant-modal-content {
+  position: relative;
+  width: 88.4rem;
+  height: 37.5rem;
+
+  background: #ffffff;
+  border-radius: 1.6rem;
+}
+
+.bg-modal-update-transfer-school-modal-content-btn-cancel-next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 7.3rem;
+  position: absolute;
+  width: 16rem;
+  height: 5.2rem;
+  left: 26.6rem;
+  top: 28.3rem;
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+.bg-modal-update-transfer-school-modal-content-btn-save {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  position: absolute;
+  width: 16rem;
+  height: 5.2rem;
+  left: 45.8rem;
+  top: 28.3rem;
+  background: #c9c4c0;
+  border-radius: 0.8rem;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+.bg-modal-update-transfer-school-modal-content-btn-save:hover,
+.bg-modal-update-transfer-school-modal-content-btn-save:focus,
+.bg-modal-update-transfer-school-modal-content-btn-save:active {
+  text-decoration: none;
+  background: #ff7506;
+  border-color: #c9c4c0;
+  border-radius: 0.8rem #ff7506;
+  color: #ffffff;
+}
+
+.bg-modal-update-transfer-school-style-name-new-contact {
+  width: 26.5rem;
+  height: 3.5rem;
+  margin-left: 31rem;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.015em;
+  color: #373839;
+}
+.txtsemester {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 130%;
+}
+
+.transfer-school-upload-group {
+  display: flex;
+  width: 500rem;
+  height: 50rem;
+}
+.transfer-school-btn-upload {
+  width: 17.1rem;
+  height: 3.2rem;
+  background: #ffd8b8;
+  border: 0.1rem solid #ff7506;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  margin-left: 2.4rem;
+}
+
+.transfer-school-btn-link-upload {
+  width: 39rem;
+  height: 3.2rem;
+  border: none;
+  box-sizing: border-box;
+  background: #efefef;
+  border-radius: 0.4rem;
+}
+
+.transfer-school-btn-link-upload img {
+  float: left;
+  margin-left: 1rem;
+  padding-right: 1rem;
+  border-right: 0.1rem solid #c9c4c0;
 }

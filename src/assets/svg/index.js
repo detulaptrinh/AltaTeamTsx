@@ -30,7 +30,7 @@ import IconEyes2 from "./downloadIcon.svg";
 import IconPlusPrimary from "./PlusPrimary.svg";
 import IconUpdate from "./updateIcon.svg";
 import IconMinusPrimary from "./MinusPrimary.svg";
-
+import IconSearchs from "./search.svg"
 export {
   IconBag,
   IconBook,
@@ -64,4 +64,5 @@ export {
   IconPlusPrimary,
   IconUpdate,
   IconMinusPrimary,
+  IconSearchs,
 };

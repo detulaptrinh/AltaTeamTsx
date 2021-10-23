@@ -15,29 +15,85 @@ import {
     Table,
     Tabs
 } from 'antd';
+import { IconUpload } from '../../../assets/svg';
 import { PlusOutlined, EyeOutlined } from '@ant-design/icons';
 import Searchs from '../Categories/Searchs';
 const { TextArea } = Input;
 
 const dataBonus = [
     {
-        key: '1',
-        id: '1235A',
-        name: 'Mike',
-        date: '12/20/2002',
+        id: '20206A',
+        name: 'Trần Trung',
+        date: '10/10/2002',
         sex: 'Nam',
         bonus: 2,
         icon: '',
     },
     {
-        key: '2',
-        id: '1235A',
-        name: 'John',
-        date: '12/20/2002',
+        id: '20206A',
+        name: 'Nguyễn Ngọc Tuyết',
+        date: '10/10/2002',
         sex: 'Nam',
         bonus: 2,
         icon: '',
     },
+    {
+        id: '20206A',
+        name: 'Hoàng Việt Cường',
+        date: '10/10/2002',
+        sex: 'Nữ',
+        bonus: 2,
+        icon: '',
+    },
+    {
+        id: '20206A',
+        name: 'Trần Thanh Tâm',
+        date: '10/10/2002',
+        sex: 'Nữ',
+        bonus: 2,
+        icon: '',
+    },
+    {
+        id: '20206A',
+        name: 'Tôn Thương Nguyệt',
+        date: '10/10/2002',
+        sex: 'Nữ',
+        bonus: 2,
+        icon: '',
+    },
+    {
+        id: '20206A',
+        name: 'Nguyễn Nhựt Chiều',
+        date: '10/10/2002',
+        sex: 'Nam',
+        bonus: 2,
+        icon: '',
+    },
+    {
+        id: '20206A',
+        name: 'Nguyễn Ngọc Diệu',
+        date: '10/10/2002',
+        sex: 'Nữ',
+        bonus: 2,
+        icon: '',
+    },
+    {
+        id: '20206A',
+        name: 'Uống Minh Minh',
+        date: '10/10/2002',
+        sex: 'Nam',
+        bonus: 2,
+        icon: '',
+    },
+    {
+        id: '20206A',
+        name: 'Ngọc Thanh Thanh',
+        date: '10/10/2002',
+        sex: 'Nữ',
+        bonus: 2,
+        icon: '',
+    },
+
 ];
 
 const columns = [
@@ -112,10 +168,14 @@ function Disciplines() {
                             <TextArea rows={4} className="bg-modal-update-disciplines-style-input" />
                         </Form.Item>
 
-                        <Form.Item label="Học kì I:" className="bg-modal-update-disciplines-style-label">
-                            <Upload>
+                        <Form.Item label="Tệp đính kèm" className="bg-modal-update-disciplines-style-label">
+                            {/* <Upload>
                                 <Button className="bg-modal-update-disciplines-modal-content-btn-update" >Chọn tệp tải lên...</Button>
-                            </Upload>,
+                            </Upload>, */}
+                            <button className="disciplines-btn-link-upload">
+                                <img src={IconUpload} alt="" />
+                            </button>
+                            <button className="disciplines-btn-upload">Chọn tệp tải lên...</button>
                         </Form.Item>
 
                         <Button className="bg-modal-update-disciplines-modal-content-btn-cancel" onClick={() => setVisible(false)}>Hủy</Button>
@@ -130,7 +190,7 @@ function Disciplines() {
                         <Row>
                             <Col span={12} className="disciplines-body-table-group-table-headers-col-name">
                                 <p className="disciplines-body-table-group-table-headers-name">
-                                    Danh sách mã khen thưởng
+                                    Danh sách kỷ luật của học viên
                                 </p>
                             </Col>
                             <Col span={12} className="disciplines-body-table-group-table-headers-col-search">
