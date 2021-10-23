@@ -57,6 +57,7 @@ import DeclareSchoolYear from "./components/Section2_DeclareSchoolYear/DeclareSc
 import Bonus from "./components/Tri_Page_10_11_12_13/Section_10_Student_Profile/Bonus";
 import SelectsBlock from "./components/Tri_Page_10_11_12_13/Categories/SelectBlock";
 import Disciplines from "./components/Tri_Page_10_11_12_13/Section_10_Student_Profile/Disciplines";
+import ModelDemo from "./components/Tri_Page_10_11_12_13/Categories/ModelDemo";
 
 export default class App extends Component {
   render() {
@@ -102,6 +103,8 @@ export default class App extends Component {
                 <Route path="/studentprofiles" component={StudentProfiles} />
                 <Route path="/transferschool" component={TransferSchool} />
                 <Route path="/reservationrecords" component={ReservationRecords} />
+                <Route path="/Bonus" component={Bonus} />
+
 
                 {/* huy */}
                 <Route path="/boxdatasbj" component={SubjectList} />
