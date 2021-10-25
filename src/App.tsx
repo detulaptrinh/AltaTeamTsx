@@ -103,8 +103,6 @@ export default class App extends Component {
                 <Route path="/studentprofiles" component={StudentProfiles} />
                 <Route path="/transferschool" component={TransferSchool} />
                 <Route path="/reservationrecords" component={ReservationRecords} />
-                <Route path="/Bonus" component={Bonus} />
-
 
                 {/* huy */}
                 <Route path="/boxdatasbj" component={SubjectList} />

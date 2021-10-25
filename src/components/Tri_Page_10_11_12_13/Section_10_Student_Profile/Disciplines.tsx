@@ -18,84 +18,9 @@ import {
 import { IconUpload } from '../../../assets/svg';
 import { PlusOutlined, EyeOutlined } from '@ant-design/icons';
 import Searchs from '../Categories/Searchs';
+import dataDisciplines from '../../../data/dataDisciplines.json'
+
 const { TextArea } = Input;
-
-const dataBonus = [
-    {
-        id: '20206A',
-        name: 'Trần Trung',
-        date: '10/10/2002',
-        sex: 'Nam',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Ngọc Tuyết',
-        date: '10/10/2002',
-        sex: 'Nam',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Hoàng Việt Cường',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Trần Thanh Tâm',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Tôn Thương Nguyệt',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Nhựt Chiều',
-        date: '10/10/2002',
-        sex: 'Nam',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Ngọc Diệu',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Uống Minh Minh',
-        date: '10/10/2002',
-        sex: 'Nam',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Ngọc Thanh Thanh',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-
-];
-
 const columns = [
     {
         title: 'Mã học viên',
@@ -128,12 +53,22 @@ const columns = [
     },
 ];
 
+const data: Disciplines[] = dataDisciplines;
+
+interface Disciplines {
+    id: string,
+    name: string,
+    date: string,
+    sex: string,
+    bonus:string,
+    icon:string,
+}
 
 // CLICK BUTTON MODAL UPDATE
 
 // css ant
 
-function Disciplines() {
+const Disciplines = (): JSX.Element => {
     const [visible, setVisible] = useState(false);
 
     return (
@@ -202,7 +137,7 @@ function Disciplines() {
                     </div>
                     <div className="disciplines-body-table-group-table-body">
                         <div className="disciplines-body-table-group-table-body-table">
-                            <Table dataSource={dataBonus} columns={columns} pagination={false} />
+                            <Table dataSource={data} columns={columns} pagination={false} />
                         </div>
                     </div>
                     <Row>
@@ -231,4 +166,5 @@ function Disciplines() {
         </>
     )
 
-} export default Disciplines;
+} 
+export default Disciplines;

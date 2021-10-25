@@ -6,7 +6,7 @@ import SelectsYear from '../Categories/SelectsYear';
 import BtnAddSection10 from '../Categories/ButtonAdd';
 import PaginationText from '../Categories/PaginationText';
 import PaginationNumber from '../Categories/PaginationsNumber';
-import dataransferSchool from '../../../data/dataTranferSchool.json'
+import dataTransferSchool from '../../../data/dataTranferSchool.json'
 import { IconUpload } from '../../../assets/svg';
 import Searchs from '../Categories/Searchs';
 const { Option } = Select;
@@ -14,169 +14,69 @@ const { TextArea } = Input;
 
 
 
-const dataTransferSchool = [
+const data: TransferSchool[] = dataTransferSchool;
 
-    {
-        id: '20206A',
-        name: 'Trần Trung',
-        date: '10/10/2002',
-        sex: 'Nam',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Ngọc Tuyết',
-        date: '10/10/2002',
-        sex: 'Nam',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Hoàng Việt Cường',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Trần Thanh Tâm',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Tôn Thương Nguyệt',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Nhựt Chiều',
-        date: '10/10/2002',
-        sex: 'Nam',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Ngọc Diệu',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Uống Minh Minh',
-        date: '10/10/2002',
-        sex: 'Nam',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Ngọc Thanh Thanh',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-];
-// const datas: TransferSchool[] = dataransferSchool;
+interface TransferSchool {
+    id: string,
+    name: string,
+    date: string,
+    sex: string,
+    transfer: string,
+    semester: string,
+    block: string,
+    dateTransfer: string, 
+    icon: string,
 
-// interface TransferSchool {
-//     key: React.Key;
-//     id: string;
-//     name: string;
-//     date: string;
-//     sex: string;
-//     nation: string;
-//     class: string;
-//     status: string;
-// }
-
-const columns = [
-    {
-        title: 'Mã học viên',
-        dataIndex: 'id',
-    },
-    {
-        title: 'Tên học viên',
-        dataIndex: 'name',
-    },
-    {
-        title: 'Ngày sinh',
-        dataIndex: 'date',
-    },
-    {
-        title: 'Giới tính',
-        dataIndex: 'sex',
-    },
-    {
-        title: 'Chuyển từ',
-        dataIndex: 'transfer',
-    },
-    {
-        title: 'Học kì chuyển',
-        dataIndex: 'semester',
-    },
-    {
-        title: 'Khối',
-        dataIndex: 'block',
-    },
-    {
-        title: 'Ngày chuyển',
-        dataIndex: 'dateTransfer',
-    },
-    {
-        title: '',
-        dataIndex: 'icon',
-        render: () => (
-            <Space>
-                <EyeOutlined style={{ width: '2.668rem', height: '2.133', color: '#FF7506' }} />
-            </Space>
-        ),
-    },
-];
-
-
-
+}
 const TransferSchool = (): JSX.Element => {
+    const columns = [
+        {
+            title: 'Mã học viên',
+            dataIndex: 'id',
+        },
+        {
+            title: 'Tên học viên',
+            dataIndex: 'name',
+        },
+        {
+            title: 'Ngày sinh',
+            dataIndex: 'date',
+        },
+        {
+            title: 'Giới tính',
+            dataIndex: 'sex',
+        },
+        {
+            title: 'Chuyển từ',
+            dataIndex: 'transfer',
+        },
+        {
+            title: 'Học kì chuyển',
+            dataIndex: 'semester',
+        },
+        {
+            title: 'Khối',
+            dataIndex: 'block',
+        },
+        {
+            title: 'Ngày chuyển',
+            dataIndex: 'dateTransfer',
+        },
+        {
+            title: '',
+            dataIndex: 'icon',
+            render: () => (
+                <Space>
+                    <EyeOutlined style={{ width: '2.668rem', height: '2.133', color: '#FF7506' }} />
+                </Space>
+            ),
+        },
+    ];
+    
+    
+    
 
+    
     const [importModalVisible, setImportModalVisible] = useState(false);
     const showImportModal = () => {
         setImportModalVisible(true);
@@ -319,7 +219,7 @@ const TransferSchool = (): JSX.Element => {
                         </div>
                         <div className="transfer_school_body_group_table">
                             <div className="transfer_school_body_group_table_table">
-                                <Table dataSource={dataTransferSchool} columns={columns} pagination={false} />
+                                <Table dataSource={data} columns={columns} pagination={false} />
                             </div>
                         </div>
                         <div className="transfer_school_footer_group">

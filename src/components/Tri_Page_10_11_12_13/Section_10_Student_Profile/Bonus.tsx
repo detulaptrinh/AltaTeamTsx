@@ -16,88 +16,13 @@ import {
     Upload,
 
 } from 'antd';
-import dataBonuss from '../../../data/dataBonus.json'
+import dataBonus from '../../../data/dataBonus.json'
 
 import { IconUpload } from '../../../assets/svg';
 import { PlusOutlined, EyeOutlined } from '@ant-design/icons';
 import Searchs from '../Categories/Searchs';
 const { TextArea } = Input;
 
-const dataBonus = [
-    {
-        id: '20206A',
-        name: 'Trần Trung',
-        date: '10/10/2002',
-        sex: 'Nam',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Ngọc Tuyết',
-        date: '10/10/2002',
-        sex: 'Nam',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Hoàng Việt Cường',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Trần Thanh Tâm',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Tôn Thương Nguyệt',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Nhựt Chiều',
-        date: '10/10/2002',
-        sex: 'Nam',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Ngọc Diệu',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Uống Minh Minh',
-        date: '10/10/2002',
-        sex: 'Nam',
-        bonus: 2,
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Ngọc Thanh Thanh',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        bonus: 2,
-        icon: '',
-    },
-
-];
 
 const columns = [
     {
@@ -136,18 +61,17 @@ const columns = [
 
 // css ant
 
-function Bonus() {
-    // const dataBonus: Bonus[] = dataBonuss;
-    // interface Bonus {
-    //     key: React.Key;
-    //     id: string;
-    //     name: string;
-    //     date: string;
-    //     sex: string;
-    //     nation: string;
-    //     class: string;
-    //     status: string;
-    // }
+const Bonus = (): JSX.Element => {
+    const data: Bonus[] = dataBonus;
+
+    interface Bonus {
+        id: string,
+        name: string,
+        date: string,
+        sex: string,
+        bonus: string,
+        icon: string,
+    }
     const [visible, setVisible] = useState(false);
 
     return (
@@ -214,7 +138,7 @@ function Bonus() {
                     </div>
                     <div className="bonus-body-table-group-table-body">
                         <div className="bonus-body-table-group-table-body-table">
-                            <Table dataSource={dataBonus} columns={columns} pagination={false} />
+                            <Table dataSource={data} columns={columns} pagination={false} />
                         </div>
                     </div>
                     <Row>

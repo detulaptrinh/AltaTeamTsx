@@ -10,111 +10,11 @@ import { EyeOutlined, PlusOutlined, SearchOutlined } from '@ant-design/icons';
 import Search from 'antd/lib/input/Search';
 import Slider from '@ant-design/react-slick';
 import { IconUpload } from '../../../assets/svg';
+import dataReservationRecords from '../../../data/dataReservationRecord.json'
+
 const { Option } = Select;
 const { TextArea } = Input;
 
-const dataReservationRecords =  [
-
-    {
-        id: '20206A',
-        name: 'Trần Trung',
-        date: '10/10/2002',
-        sex: 'Nam',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Ngọc Tuyết',
-        date: '10/10/2002',
-        sex: 'Nam',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Hoàng Việt Cường',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Trần Thanh Tâm',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Tôn Thương Nguyệt',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Nhựt Chiều',
-        date: '10/10/2002',
-        sex: 'Nam',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Nguyễn Ngọc Diệu',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Uống Minh Minh',
-        date: '10/10/2002',
-        sex: 'Nam',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-    {
-        id: '20206A',
-        name: 'Ngọc Thanh Thanh',
-        date: '10/10/2002',
-        sex: 'Nữ',
-        transfer: "THCS A",
-        semester: 'Học kì I',
-        block: 6,
-        dateTransfer: '12/12/2020',
-        icon: '',
-    },
-];
 
 const columns = [
     {
@@ -159,6 +59,20 @@ const columns = [
         ),
     },
 ];
+const data: ReservationRecords[] = dataReservationRecords;
+
+interface ReservationRecords {
+    id: string,
+    name: string,
+    date: string,
+    sex: string,
+    transfer: string,
+    semester: string,
+    block: string,
+    dateTransfer: string,
+    icon: string,
+
+}
 const ReservationRecords = (): JSX.Element => {
     const [importModalVisible, setImportModalVisible] = useState(false);
     const showImportModal = () => {
@@ -230,15 +144,15 @@ const ReservationRecords = (): JSX.Element => {
                                                     <Button className="bg-modal-update-reservation-records-modal-content-btn-update" >Chọn tệp tải lên...</Button>
                                                     <div className="noteUpload">Kích thước tệp không vượt quá 250MB.</div>
                                                 </Upload> */}
-                                               <div className="reservation-records-upload-container">
-                                               <div className="reservation-records-upload-group">
-                                                <button className="reservation-records-btn-link-upload">
-                                                    <img src={IconUpload} alt="" />
-                                                </button>
-                                                <button className="reservation-records-btn-upload">Chọn tệp tải lên...</button>
+                                                <div className="reservation-records-upload-container">
+                                                    <div className="reservation-records-upload-group">
+                                                        <button className="reservation-records-btn-link-upload">
+                                                            <img src={IconUpload} alt="" />
+                                                        </button>
+                                                        <button className="reservation-records-btn-upload">Chọn tệp tải lên...</button>
+                                                    </div>
+                                                    <div className="noteUpload">Kích thước tệp không vượt quá 250MB.</div>
                                                 </div>
-                                                <div className="noteUpload">Kích thước tệp không vượt quá 250MB.</div>
-                                               </div>
                                             </Form.Item>
 
                                             <Button className="bg-modal-update-reservation-records-modal-content-btn-cancel" onClick={handleImportCancel}>Hủy</Button>
