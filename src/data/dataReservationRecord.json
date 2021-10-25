@@ -4,7 +4,10 @@
     "name": "Trần Trung",
     "date": "10/10/2002",
     "sex": "Nam",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   },
   {
@@ -12,7 +15,10 @@
     "name": "Nguyễn Ngọc Tuyết",
     "date": "10/10/2002",
     "sex": "Nam",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   },
   {
@@ -20,7 +26,10 @@
     "name": "Hoàng Việt Cường",
     "date": "10/10/2002",
     "sex": "Nữ",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   },
   {
@@ -28,7 +37,10 @@
     "name": "Trần Thanh Tâm",
     "date": "10/10/2002",
     "sex": "Nữ",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   },
   {
@@ -36,7 +48,10 @@
     "name": "Tôn Thương Nguyệt",
     "date": "10/10/2002",
     "sex": "Nữ",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   },
   {
@@ -44,7 +59,10 @@
     "name": "Nguyễn Nhựt Chiều",
     "date": "10/10/2002",
     "sex": "Nam",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   },
   {
@@ -52,7 +70,10 @@
     "name": "Nguyễn Ngọc Diệu",
     "date": "10/10/2002",
     "sex": "Nữ",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   },
   {
@@ -60,7 +81,10 @@
     "name": "Uống Minh Minh",
     "date": "10/10/2002",
     "sex": "Nam",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   },
   {
@@ -68,7 +92,10 @@
     "name": "Ngọc Thanh Thanh",
     "date": "10/10/2002",
     "sex": "Nữ",
-    "bonus": "2",
+    "transfer": "THCS A",
+    "semester": "Học kì I",
+    "block": "6",
+    "dateTransfer": "12/12/2020",
     "icon": ""
   }
 ]
