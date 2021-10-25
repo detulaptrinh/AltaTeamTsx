@@ -476,3 +476,269 @@ border-top-left-radius: 1rem;
   .sesion15_footer-col-right-pagination .ant-pagination-jump-prev a:hover{
     color: rgba(0, 0, 0, 0.85);
   }  
+  .sesion15_modal .ant-modal-close {
+    display: none;
+  }
+  
+  .sesion15_modal .ant-modal-header {
+    text-align: center;
+    border-bottom: none;
+    padding: 0;
+  }
+  
+  .sesion15_modal .ant-modal-header .ant-modal-title {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+  }
+  
+  .sesion15_modal .ant-modal-body {
+    padding: 0;
+  }
+  
+  .sesion15_modal .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+    border-top: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .sesion15_modal .ant-modal-footer .ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 52px;
+    background: #f2f2f2;
+    border-color: #f2f2f2;
+    border-radius: 8px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+  }
+  
+  .sesion15_modal .ant-modal-footer .ant-btn.ant-btn-primary {
+    background: #ff7506;
+    border-color: #ff7506;
+    color: #fff;
+    margin-left: 3.1rem;
+  }
+  
+  .sesion15_modal-del.ant-modal {
+    width: 435px !important;
+  }
+  
+  .sesion15_modal-del .ant-modal-content {
+    border-radius: 8px;
+    padding: 2.6rem 3.8rem 4rem;
+  }
+  
+  .sesion15_modal-del .ant-modal-header {
+    margin-bottom: 1.6rem;
+  }
+  
+  .sesion15_modal-del .sesion15_modal-del-desc {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #373839;
+    margin-bottom: 3.2rem;
+    padding-bottom: 0;
+  }
+  .sesion15_form-btns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3.2rem;
+  }
+  
+  .sesion15_form-btns .ant-btn {
+    width: 160px;
+    height: 52px;
+    background: #f2f2f2;
+    border-color: #f2f2f2;
+    border-radius: 8px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+  }
+  
+  .sesion15_form-btns .ant-btn.sesion15_form-submit {
+    background: #ff7506;
+    border-color: #ff7506;
+    color: #fff;
+    margin-left: 3.2rem;
+  }
+  .sesion15_modal-add-edit.ant-modal {
+    width: 884px !important;
+  }
+  
+  .sesion15_modal-add-edit .ant-modal-content {
+    border-radius: 16px;
+    padding: 2.4rem 6.4rem 4rem;
+    width: auto;
+    height: auto;
+  }
+  
+  .sesion15_modal-add-edit .ant-modal-header {
+    margin-bottom: 2.4rem;
+  }
+  
+  .sesion15_modal-add-edit .ant-modal-footer {
+    display: none;
+  }
+  
+  .sesion15_modal-add-edit .ant-row {
+    align-items: center;
+  }
+  
+  .sesion15_modal-add-edit .ant-form-item {
+    margin-bottom: 1.6rem;
+  }
+  
+  .sesion15_modal-add-edit .ant-form-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .sesion15_modal-add-edit .ant-form-horizontal .ant-form-item-label {
+    text-align: left;
+  }
+  
+  .sesion15_modal-add-edit
+    .ant-form-horizontal
+    .ant-form-item-label
+    > label {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    color: #373839;
+  }
+  
+  .sesion15_modal-add-edit
+    .ant-form-horizontal
+    .ant-form-item-label
+    > label::before {
+    display: none;
+  }
+  /* .sesion15_bg-modal-update-giangvien{
+    text-align: center;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-left: 10.8rem;
+    font-family: "Source Sans Pro";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.1rem;
+    letter-spacing: 0em;
+    text-align: left;
+  } */
+  /* .sesion15_selectngonngu_LH{
+    width: 54.5rem;
+    height: 6rem;
+    margin-left: 18rem;
+    margin-top: -4rem;
+    color: #373839;
+} */
+.sesion15_selectngonngu_LH select{
+    padding: 0rem;
+    width: 57rem;
+    height: 4rem;
+    border: none;
+    border-radius:0.3rem;
+    font-size: 1.6rem;
+    background: #f2f2f2;
+    -webkit-appearance: button;
+    outline: none;
+    border-radius: 0.5rem;
+}
+.sesion15_selectngonngu_LH::before{
+    content: url("/src/assets/svg/downArrowIcon.svg");
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    margin-top: -0rem;
+    margin-left: 53rem;
+    width: 4rem;
+    height: 4rem;
+    background: #f2f2f2;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+}
+
+.sesion15_bg-modal-update-bonus-style-date-picker{
+  margin-left: 0rem;
+  margin-top: 0.5rem;
+  padding: 0rem;
+  width: 14rem;
+  height: 3rem;
+  border: none;
+  border-radius:0.5rem;
+  font-size: 1.6rem;
+  border: 0.016rem solid #373839;
+  -webkit-appearance: button;
+  outline: none;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.sesion15_iconcalendar_NBD{
+  
+    padding: 0.2rem 0rem 0.5rem 0rem;
+    margin-top: 0.5rem;
+    margin-left: -3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.5em;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+    background: #ffffff;
+    border: 0.016rem solid #373839;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+} 
+.sesion15_bg-modal-update-bonus-style-input {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 58.5rem;
+  height: 13.5rem;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+/* .sesion15_bg-modal-update-bonus-style-input:hover {
+  border: 0.1rem solid rgba(55, 56, 57, 0.5);
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+} */

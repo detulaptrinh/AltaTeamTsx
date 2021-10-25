@@ -1,34 +1,18 @@
-import React, { Component } from 'react'
-import './Boxphancong.css'
-import { Row, Col, Button,Modal,Table, Space, Checkbox,Pagination, InputNumber   } from 'antd';
-import Title from './Title/Title'
-import Buttonn from './Button/Button'
-import {Link} from "react-router-dom"
+import React, { Fragment, useState } from "react";
+import './Boxphancong.css';
+import { Row, Col, Button,Modal,Table, Space, Checkbox,Pagination, InputNumber, Form,Input,DatePicker } from 'antd';
+import Title from './Title/Title';
+import Buttonn from './Button/Button';
+import {Link} from "react-router-dom";
 import {
   IconList,
   IconEdit,
   IconTrash,
+  IconDate
 
 } from "../../assets/svg";
 import dataBoxphancong from "../../data/dataBoxphancong.json";
 
-function showDeleteConfirm() {
-  confirm({
-
-    title: 'Xóa phân công',
-    content: 'Xác nhận muốn xoá phân công này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
-    okText: 'Xác nhận',
-    okType: 'danger',
-    cancelText: 'Hủy',
-    onOk() {
-      console.log('OK');
-    },
-    onCancel() {
-      console.log('Cancel');
-    },
-  });
-}
-const { confirm } = Modal;
 
 interface dataphancong{
   key: number;
@@ -40,7 +24,10 @@ interface dataphancong{
   icon: string;
 }
 const dataBonus: dataphancong[] = dataBoxphancong;
-
+const { TextArea } = Input;
+const Boxphancong = (): JSX.Element => {
+  const [isModalDel, setIsModalDel] = useState<boolean>(false);
+  const [isModalEdit, setIsModalEdit] = useState<boolean>(false);
 
 //   tao bang
   const columns =  [ 
@@ -81,22 +68,39 @@ const dataBonus: dataphancong[] = dataBoxphancong;
     dataIndex: 'icon',
     render: () => (
       <Space >
-        <img src={IconEdit}/>
-        <img src={IconTrash} onClick={showDeleteConfirm}/>
+        <img src={IconEdit} onClick={showModalEdit}/>
+        <img src={IconTrash} onClick={showModalDel}/>
       </Space>
     ),
     },
     
   ]; 
   
+  const showModalDel = (): void => {
+    setIsModalDel(true);
+  };
 
-  export default class Boxphancong extends Component {
-    render() {
+  const handleOkDel = (): void => {
+    setIsModalDel(true);
+  };
+
+  const handleCancelDel = (): void => {
+    setIsModalDel(false);
+  };
+
+  const showModalEdit = (): void => {
+    setIsModalEdit(true);
+  };
+  const handleAddCourse = (values: any): void => {
+    console.log(values);
+  };
+  const handleCancelEdit = (): void => {
+    setIsModalEdit(false);
+  };
     return (
-        <>
+        <Fragment>
         <Title/>
         <Buttonn/>
-      
             <Row>
             <Col className="sesion15_box1">
                  <Col className="sesion15_box3">
@@ -168,10 +172,89 @@ const dataBonus: dataphancong[] = dataBoxphancong;
                       </Col>
                   </Row>
             </Col>
-           
             </Row>
-      </>
-    )
-}
+      {/* MODAL DELETE */}
+      <Modal
+        className="sesion15_modal sesion15_modal-del"
+        title="Xoá phân công"
+        visible={isModalDel}
+        onOk={handleOkDel}
+        onCancel={handleCancelDel}
+        okText="Xác nhận"
+        cancelText="Huỷ"
+        centered
+      >
+        <p className="sesion15_modal-del-desc">
+          Xác nhận muốn xoá phân công này và toàn bộ thông tin bên trong? Sau
+          khi xoá sẽ không thể hoàn tác.
+        </p>
+      </Modal>
 
-}
+       {/* MODAL EDIT  */}
+       <Modal
+        className="sesion15_modal sesion15_modal-add-edit"
+        title="Cập nhật lịch giảng dạy"
+        visible={isModalEdit}
+        onCancel={handleCancelEdit}
+        centered
+      >
+        <Form
+          className="sesion15_form"
+          name="validate_other"
+          labelCol={{ span: 6 }}
+          wrapperCol={{ span: 18 }}
+          onFinish={handleAddCourse}
+        >
+        <Form.Item label="Giảng viên: " className="sesion15_bg-modal-update-bonus-style-label">
+                            <p className="sesion15_bg-modal-update-giangvien">Nguyễn Ngọc Tuyết</p>
+        </Form.Item>
+        <Form.Item label="Môn học: " className="sesion15_bg-modal-update-bonus-style-label">
+                            <p className="sesion15_bg-modal-update-monhoc">Toán đại số</p>
+        </Form.Item>
+  
+        <Form.Item label="Lớp học:" className="sesion15_bg-modal-update-bonus-style-label">
+            <div className="sesion15_selectngonngu_LH">
+                          <select defaultValue="ggg">
+                          <option value="luachon">Lựa chọn</option>
+                          </select>
+                  </div> 
+       </Form.Item>
+       
+        <Form.Item label="Ngày bắt đầu:" className="sesion15_bg-modal-update-bonus-style-label">
+                          <DatePicker className="sesion15_bg-modal-update-bonus-style-date-picker" />
+                          <img className="sesion15_iconcalendar_NBD" src={IconDate}/>
+        </Form.Item> 
+        <Form.Item label="Ngày kết thúc:" className="sesion15_bg-modal-update-bonus-style-label">
+                          <DatePicker className="sesion15_bg-modal-update-bonus-style-date-picker" />
+                          <img className="sesion15_iconcalendar_NBD" src={IconDate}/>
+        </Form.Item>                  
+      
+          <Form.Item label="Mô tả" className="sesion15_bg-modal-update-bonus-style-label">
+              <TextArea rows={4} className="sesion15_bg-modal-update-bonus-style-input" />
+          </Form.Item>
+
+          <Form.Item wrapperCol={{ span: 24 }}>
+            <div className="sesion15_form-btns">
+              <Button
+                className="sesion15_form-cancel"
+                type="primary"
+                onClick={() => setIsModalEdit(false)}
+              >
+                Huỷ
+              </Button>
+              <Button
+                className="sesion15_form-submit"
+                type="primary"
+                htmlType="submit"
+              >
+                Lưu
+              </Button>
+            </div>
+          </Form.Item>
+        </Form>
+      </Modal>
+
+      </Fragment>
+    );
+  };
+  export default Boxphancong;
