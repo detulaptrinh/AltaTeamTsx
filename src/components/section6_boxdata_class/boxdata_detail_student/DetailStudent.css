@@ -255,13 +255,12 @@
     text-align: center;
 }
 
-.section-6-3 .table-list .ant-table-tbody .ant-table-cell span {
+.section-6-3 .table-list .ant-table-tbody .ant-table-cell .btnEdit-tag {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     padding: 0px 16px;
-    width: 14.367rem;
+    width: 16rem;
     height: 3.7rem;
     box-sizing: border-box;
     border-radius: 0.4rem;
@@ -531,4 +530,45 @@
     line-height: 2.3rem;
     letter-spacing: 0.015em;
     color: #ffffff;
+}
+/*  */
+.section-6-3 .fix-0 {
+    font-size: 2.5rem;
+    margin-left: -1rem;
+    margin-top: -0.75rem
+}
+/* onclick btn table */
+.section-6-3 .btnEdit-save{
+    cursor: pointer;
+    width: 6.7rem;
+    height: 3.2rem;
+    background: #FFD8B8;
+    border: 1px solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    color: #373839;
+}
+.section-6-3 .boxEdit-select .ant-select-selector{
+    width: 17.4rem !important;
+    height: 4rem !important;
+    background: #FFFFFF;
+    border: 1px solid rgba(55, 56, 57, 0.5);
+    box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+    border-radius: 0.8rem !important;
+}
+.section-6-3 .boxEdit-select .ant-select-selector .ant-select-selection-item{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #292B2E;
+    margin-top: 0.8rem;
 }

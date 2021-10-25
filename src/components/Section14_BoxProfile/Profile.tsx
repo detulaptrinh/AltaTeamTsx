@@ -38,7 +38,7 @@ interface ICourse {
 }
 
 const data: ICourse[] = Profiles
- 
+
 
 const Profile = (): JSX.Element => {
   const [isModalDel, setIsModalDel] = useState<boolean>(false);
@@ -89,15 +89,15 @@ const Profile = (): JSX.Element => {
       render: (status) => {
         switch (status) {
           case "pause":
-            return <span className=" btn__pause"><i className="fix-0 bx bx-wifi-0"/>Tạm nghỉ</span>;
+            return <span className=" btn__pause"><i className="fix-0 bx bx-wifi-0" />Tạm nghỉ</span>;
           case "quitWork":
-            return <span className="btn__quitWork"><i className="fix-0 bx bx-wifi-0"/>Đã nghỉ việc</span>;
+            return <span className="btn__quitWork"><i className="fix-0 bx bx-wifi-0" />Đã nghỉ việc</span>;
           case "retired":
-            return <span className="btn__retired"><i className="fix-0 bx bx-wifi-0"/>Nghỉ hưu</span>;
+            return <span className="btn__retired"><i className="fix-0 bx bx-wifi-0" />Nghỉ hưu</span>;
           case "quitSchool":
-            return <span className="btn__quitSchool"><i className="fix-0 bx bx-wifi-0"/>Đã thôi học</span>;
+            return <span className="btn__quitSchool"><i className="fix-0 bx bx-wifi-0" />Đã thôi học</span>;
           default:
-            return <span className="btn__woking"><i className="fix-0 bx bx-wifi-0"/>Đang làm việc</span>;
+            return <span className="btn__woking"><i className="fix-0 bx bx-wifi-0" />Đang làm việc</span>;
         }
       },
     },
@@ -303,7 +303,7 @@ const Profile = (): JSX.Element => {
                       <div className="mlist_btn">
                         <button
                           className="box__btn-del-cancel"
-                          /*  onClick={handleCancels} */
+                        /*  onClick={handleCancels} */
                         >
                           Hủy
                         </button>
@@ -387,7 +387,7 @@ const Profile = (): JSX.Element => {
               <Form.Item label="Ghi chú">
                 <div className="input__note">
                   <Input className="note"
-                  value="Mời bạn nhập ghi chú..."
+                    value="Mời bạn nhập ghi chú..."
                   ></Input>
                 </div>
               </Form.Item>
@@ -421,7 +421,7 @@ const Profile = (): JSX.Element => {
               <Form.Item label="Ghi chú">
                 <div className="input__note">
                   <Input className="note"
-                  value="Mời bạn nhập ghi chú..."
+                    value="Mời bạn nhập ghi chú..."
                   ></Input>
                 </div>
               </Form.Item>
@@ -456,7 +456,7 @@ const Profile = (): JSX.Element => {
               <Form.Item label="Ghi chú">
                 <div className="input__note">
                   <Input className="note"
-                  value="Mời bạn nhập ghi chú..."
+                    value="Mời bạn nhập ghi chú..."
                   ></Input>
                 </div>
               </Form.Item>
