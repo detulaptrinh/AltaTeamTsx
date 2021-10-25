@@ -350,3 +350,11 @@
 .section19 .ant-form-item{
     margin-bottom: 1.6rem;
 }
+
+.box__btn-group__export.ant-btn > span{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.015em;
+    color: #FF7506;
+}

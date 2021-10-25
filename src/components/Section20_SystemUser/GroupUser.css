@@ -199,6 +199,7 @@
 
 .modal-groupuser .form-control{
     display: flex;
+    align-items: center;
     margin-bottom: 1.6rem;
     justify-content: space-between;
 }
@@ -270,6 +271,7 @@
     width: 56.1rem;
     border-radius: 8px;
     background: #F2F2F2;
+    border-color: #F2F2F2;
 }
 
 .modal-groupuser .ant-modal-title{
@@ -300,6 +302,7 @@
     font-size: 1.8rem;
     line-height: 2.3rem;
     letter-spacing: 0.015em;
+    border-color: #F2F2F2;
 }
 .modal__btn-group__cancel.ant-btn{
     display: flex;
@@ -315,7 +318,7 @@
 }
 
 .modal-groupuser .checkbox{
-    margin-right: 9,4rem;
+  float: left;
 }
 .modal-groupuser .form-checkbox{
     display: flex;
@@ -375,6 +378,14 @@
 
 .modal-groupuser.ant-modal {
     width: 88.4rem !important;
+}
+
+.modal-groupuser.ant-checkbox-checked.ant-checkbox-inner{
+    border: none;
+}
+
+.modal-groupuser .ant-checkbox-inner{
+    border: none;
 }
 
 .title .ant-breadcrumb-separator{

@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Tab.css'
 import { FormOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { Row, Col, } from 'antd';
 import { Card } from 'antd';
+import { Link } from 'react-router-dom';
 import {
   AvatarSchool,
   Avatar613,
@@ -14,27 +15,21 @@ import {
 
 import { Modal } from 'antd';
 
-const { confirm } = Modal;
 const { Option } = Select;
 
-function showExportFileConfirm() {
-  confirm({
-    title: 'Xuất file lưu',
-    content: 'Xác nhận muốn xuất file này và toàn bộ thông tin bên trong? File lưu sẽ được tự động tải xuống.',
-    okText: 'Xác nhận',
-    okType: 'danger',
-    cancelText: 'Hủy',
-    onOk() {
-      console.log('OK');
-    },
-    onCancel() {
-      console.log('Cancel');
-    },
-  });
+
+function Tab() {
+  const [exportModal, setexportModal] = useState(false);
+
+  const showexportModal = () => {
+    setexportModal(true);
+};
+
+  const handleCancelDelete = () => {
+    setexportModal(false);
 }
 
 
-function Box() {
   return (
     <> 
     <div className="section19">
@@ -61,13 +56,16 @@ function Box() {
                         </div>
                         </Col>
                         <Col span={9}>
-
                         </Col>
 
                         <Col span={10}>
                         <div className="box__btn-group">
-                          <Button className="box__btn-group__export" onClick={showExportFileConfirm}>Xuất File</Button>
-                          <Button className="box__btn-group__edit" ><FormOutlined />Chỉnh sửa</Button>
+                          <Button className="box__btn-group__export" onClick={showexportModal}>Xuất File</Button>
+                          <Button className="box__btn-group__edit" >
+                            <Link to="/tabedit">
+                              <FormOutlined />Chỉnh sửa
+                            </Link>
+                          </Button> 
                        </div>
                         </Col>
                     </Col>
@@ -227,26 +225,18 @@ function Box() {
           </Row>
         </Card>
       </div>
+      {/* Modal export */}
+      <Modal className="modal-delete" title="Xuất file lưu" visible={exportModal}>
+                    <p className="modal-delete-content">Xác nhận muốn xuất file này và toàn bộ thông tin bên trong? File lưu sẽ được tự động tải xuống.</p>
+                    <div className="btn-group__modal">
+                        <Button className="modal__btn-group__cancel" onClick={handleCancelDelete}>Hủy</Button>
+                        <Button className="modal__btn-group__save" >Xác nhận</Button>
+                    </div>
+      </Modal>  
       </div>
     </>
   )
-  /* Modal */
-  function showDeleteConfirm() {
-    confirm({
-      title: 'Xóa thông tin',
-      content: 'Xác nhận muốn xoá thông tin này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
-      okText: 'Xác nhận',
-      okType: 'danger',
-      cancelText: 'Hủy',
-      onOk() {
-        console.log('OK');
-      },
-      onCancel() {
-        console.log('Cancel');
-      },
-    });
-
-  }
+ 
 }
 
-export default Box
+export default Tab
