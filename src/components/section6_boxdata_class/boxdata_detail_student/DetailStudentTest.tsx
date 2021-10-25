@@ -33,18 +33,24 @@ const columns = [
     {
         title: 'Tình trạng',
         dataIndex: 'status',
-        render: (tag: string) => {
-            const color = tag.includes('Đang theo học') ? "green" : tag.includes('Đã chuyển lớp') ? "orange" : tag.includes('Đã chuyển trường') ? "default" : tag.includes('Đã thôi học') ? "red" : "blue"
-            return <Tag className="btnEdit-tag" color={color} key={tag}><i className="fix-0 bx bx-wifi-0" />{tag}</Tag>
-            // return <Tag color={color} key={tag}><img src={ellipseIcon} alt="" /> {tag}</Tag>
-        }
+        render: () => (
+            <Fragment>
+                <Select className="boxEdit-select" defaultValue="0">
+                    <Select value="0">Đang theo học</Select>
+                    <Select value="1">Đã chuyển lớp</Select>
+                    <Select value="2">Đã chuyển trường</Select>
+                    <Select value="3">Đã thôi học</Select>
+                    <Select value="4">Đã tốt nghiệp</Select>
+                </Select>
+            </Fragment>
+        ),
     },
     {
         title: '',
         render: () => (
             <Fragment>
-                <button className="btnEdit" >
-                    <img src={IconEdit} alt="IconEdit" />
+                <button className="btnEdit-save" >
+                    Lưu
                 </button>
             </Fragment>
         ),
@@ -127,7 +133,7 @@ const data: DetailStudent[] = dataDetailStudent;
 //     },
 // ];
 
-export default function DetailStudent() {
+export default function DetailStudentTest() {
     // delete
     const [isModalVisible, setIsModalVisible] = useState(false);
     const showModal = () => {

@@ -47,7 +47,7 @@ const ProfileStudent = (): JSX.Element => {
             dataIndex: 'status',
             render: (tag: string) => {
                 const color = tag.includes('Đang theo học') ? "green" : tag.includes('Đã chuyển lớp') ? "orange" : tag.includes('Đã chuyển trường') ? "default" : tag.includes('Đã thôi học') ? "red" : "blue"
-                return <Tag color={color} key={tag}>{tag}</Tag>
+                return <Tag className="btn-tag" color={color} key={tag}><i className="fix-0 bx bx-wifi-0" />{tag}</Tag>
                 // return <Tag color={color} key={tag}><img src={ellipseIcon} alt="" /> {tag}</Tag>
             }
         },
