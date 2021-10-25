@@ -1,35 +1,13 @@
-import React, { Component } from 'react'
-import './Boxchude.css'
-import { Row, Col, Button,Modal,Table, Radio,Divider,Input, Pagination, InputNumber   } from 'antd';
-import { FormOutlined,DeleteOutlined, ContainerOutlined } from '@ant-design/icons';
-import Title from './Title'
-import Buttonnn from './Button'
-import {Link} from "react-router-dom"
+import React, { Fragment, useState } from "react";
+import './Boxchude.css';
+import { Row, Col, Button,Modal,Table, Pagination, InputNumber   } from 'antd';
+import Title from './Title';
+import Buttonnn from './Button';
 import {
   IconEdit,
   IconTrash,
- 
-
 } from "../../assets/svg";
 import dataBoxchude from "../../data/dataBoxchude.json";
-
-function showDeleteConfirm() {
-    confirm({
-  
-      title: 'Xóa phân công',
-      content: 'Xác nhận muốn xoá phân công này và toàn bộ thông tin bên trong? Sau khi xoá sẽ không thể hoàn tác.',
-      okText: 'Xác nhận',
-      okType: 'danger',
-      cancelText: 'Hủy',
-      onOk() {
-        console.log('OK');
-      },
-      onCancel() {
-        console.log('Cancel');
-      },
-    });
-  }
-  const { confirm } = Modal;
 
 interface datachude{
   key: number;
@@ -39,6 +17,8 @@ interface datachude{
 }
 const dataBonus: datachude[] = dataBoxchude;
 
+const Boxchude = (): JSX.Element => {
+  const [isModalDel, setIsModalDel] = useState<boolean>(false);
 //   tao bang
 const columns =  [ 
     {
@@ -55,11 +35,19 @@ const columns =  [
     dataIndex: 'dateketthuc',
     },   
   ]; 
-  
-  export default class Boxchude extends Component {
-    render() {
+  const showModalDel = (): void => {
+    setIsModalDel(true);
+  };
+
+  const handleOkDel = (): void => {
+    setIsModalDel(true);
+  };
+
+  const handleCancelDel = (): void => {
+    setIsModalDel(false);
+  };
     return (
-        <> 
+        <Fragment> 
            <Title/>
            <Buttonnn/>
            <Row>
@@ -84,7 +72,7 @@ const columns =  [
                         <option value="Tiếng Anh">Tiếng Anh</option>
                      </select>
                         </div>
-                        </p>
+                     </p>
      
                  </Col>
                  <Button className="sesion15__btn1">
@@ -110,10 +98,10 @@ const columns =  [
             <Col className="sesion15__box2">
                   <div className="sesion15__divicon">
                      <img className="sesion15__iconform" src={IconEdit}/>
-                     <img className="sesion15__icondelet" src={IconTrash} onClick={showDeleteConfirm}/>
+                     <img className="sesion15__icondelet" src={IconTrash} onClick={showModalDel}/>
                   </div>
                   <p className="sesion15__text1">Danh sách chủ đề</p>
-                 
+            
                   <p className="sesion15__textGV">Giảng viên: <p className="sesion15__textGV1">Lương Hoàng D</p></p> 
                   <p className="sesion15__textLH">Lớp học: <p className="sesion15__textLH1">6D</p></p>
                   <p className="sesion15__textMH">Môn học: <p className="sesion15__textMH1">Tin học kèm toán</p></p>
@@ -144,8 +132,24 @@ const columns =  [
                   </Row>
             </Col>
             </Row>
-      </>
-    )
-}
+      {/* MODAL DELETE */}
+      <Modal
+        className="sesion15__modal sesion15__modal-del"
+        title="Xoá phân công"
+        visible={isModalDel}
+        onOk={handleOkDel}
+        onCancel={handleCancelDel}
+        okText="Xác nhận"
+        cancelText="Huỷ"
+        centered
+      >
+        <p className="sesion15__modal-del-desc">
+          Xác nhận muốn xoá phân công này và toàn bộ thông tin bên trong? Sau
+          khi xoá sẽ không thể hoàn tác.
+        </p>
+      </Modal>
+      </Fragment>
+    );
+};
 
-  }
+export default Boxchude;

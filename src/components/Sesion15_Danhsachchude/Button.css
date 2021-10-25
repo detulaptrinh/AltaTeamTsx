@@ -2,7 +2,8 @@
     width: 29rem;
     height: 2.3rem;
     margin-left: calc(50% - 19.1rem/2);
-    margin-top: calc(50% - 2.3rem/2);
+    margin-top: calc(50% - 2.6rem/2);
+    padding-top: 5%;
 
     /* LMS Student / Sub-header */
 
@@ -11,6 +12,7 @@
     font-weight: 800;
     font-size: 1.8rem;
     line-height: 2.3rem;
+    text-align: center;
     /* identical to box height */
 
     letter-spacing: 0.015em;
