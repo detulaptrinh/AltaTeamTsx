@@ -64,6 +64,8 @@ function ClassroomSetting(){
 
     const [deleteModal, setdeleteModal] = useState(false);
 
+    const [statusClassroom, setStatusClassroom] = useState(false);
+
     const showdeleteModal = () => {
         setdeleteModal(true);
     };
@@ -181,11 +183,15 @@ function ClassroomSetting(){
                             <label>Loại môn học:</label>
                             <Input />
                         </div>
-                        <div className="form-control">
+                        <div className="form-control-status">
                             <label>Trạng thái:</label>
-                        <div className="form-switch">
-                            <Switch />
-                            <label>Đang hoạt động</label>
+                        <div className="form-switch-classroom">
+                        <Switch onChange={(e) => setStatusClassroom(!statusClassroom)}/>
+                            {statusClassroom ? (
+                                <span>Đang hoạt động</span>
+                            ) : (
+                                <span>Vô hiệu hoá</span>
+                              )}
                         </div>
                         </div>
 

@@ -6,6 +6,7 @@ import { Table } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
 import { IconPlus, IconTrash, IconEdit } from '../../assets/svg';
 import dataListUser from '../../data/listUser.json'
+import { Link } from 'react-router-dom';
 import {
     Input,
     Select
@@ -67,6 +68,8 @@ function ListUser() {
 
     const [deleteModal, setdeleteModal] = useState(false);
 
+    const [statusList, setStatusList] = useState(false);
+
     const showdeleteModal = () => {
         setdeleteModal(true);
     };
@@ -125,13 +128,17 @@ function ListUser() {
 
                             <Col span={9}>
                                 <div className="switch-list">
+                                <Link to="/groupuser">
                                     <div className="switch-list__tab-left">
                                         <a href="/groupuser">Nhóm người dùng</a>
                                     </div>
+                                </Link>
 
+                                <Link to="/listuser">
                                     <div className="switch-list__tab-right">
                                         <a href="/listuser">Danh sách người dùng</a>
                                     </div>
+                                 </Link>
                                 </div>
                             </Col>
 
@@ -209,8 +216,12 @@ function ListUser() {
                         </div>
 
                         <div className="form-switch">
-                            <Switch />
-                            <label>Đang hoạt động</label>
+                            <Switch onChange={(e) => setStatusList(!statusList)}/>
+                            {statusList ? (
+                                <label>Đang hoạt động</label>
+                            ) : (
+                                <label>Đã vô hiệu hoá</label>
+                              )}
                         </div>
 
                         <div className="btn-group__modal">

@@ -403,3 +403,17 @@
 .section21 .tab-table .ant-table-thead .ant-table-cell:last-child{
     border-top-right-radius: 0.8rem;
 }
+
+.form-control-status{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+.modal-groupuser .form-switch-classroom{
+    margin-left: 6.5rem;
+}
+
+.modal-groupuser .form-switch-classroom span{
+    padding-left: 10px ;
+    font-family: Source Sans Pro;
+}

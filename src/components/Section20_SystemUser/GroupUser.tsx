@@ -4,6 +4,7 @@ import { Button, Modal, Form, Checkbox} from 'antd';
 import { Row, Col } from 'antd';
 import { Table, Space } from 'antd';
 import { Breadcrumb, Pagination, InputNumber } from 'antd';
+import { Link } from "react-router-dom";
 import { IconPlus, IconEdit, IconTrash} from '../../assets/svg';
 import {
     Input,
@@ -127,13 +128,17 @@ function GroupUser() {
 
                         <Col span={9}>
                             <div className="switch-group">
+                                <Link to="/groupuser">
                                 <div className="switch-group__tab-left">
-                                    <a href="/groupuser">Nhóm người dùng</a>
+                                    <a>Nhóm người dùng</a>
                                 </div>
+                                </Link>
 
+                                <Link to="/listuser">
                                 <div className="switch-group__tab-right">
-                                    <a href="/listuser">Danh sách người dùng</a>
+                                    <a>Danh sách người dùng</a>
                                 </div>
+                                </Link>
                             </div>
                         </Col>
 
